@@ -1,4 +1,4 @@
-const body=document.body, country=body.dataset.country||'PT', locale=body.dataset.locale||'pt-PT', base=body.dataset.basePath||'https://jhacarreiro.github.io/whipit-pages/limited-offers', lidlDomain=body.dataset.lidlDomain||'https://www.lidl.pt';
+const body=document.body, country=body.dataset.country||'PT', locale=body.dataset.locale||'pt-PT', base=body.dataset.basePath||'https://whipit.gallivanter.biz/limited-offers', lidlDomain=body.dataset.lidlDomain||'https://www.lidl.pt';
 let UI={};try{UI=JSON.parse(document.getElementById('lidl-ui')?.textContent||'{}')}catch(e){};const tr=(k,f)=>UI[k]||f;
 const q=document.getElementById('q'),brand=document.getElementById('brand'),cat=document.getElementById('cat'),sortEl=document.getElementById('sort'),count=document.getElementById('count'),grid=document.getElementById('grid');
 const cards=[...document.querySelectorAll('[data-card]')], stateRank={now:0,lastcall:1,future:2,past:3,unknown:4};

@@ -1,24 +1,24 @@
 {
-  "generated_at": "2026-09-19T17:43:41Z",
+  "generated_at": "2026-09-19T18:40:28Z",
   "health": [
     {
       "id": 3,
       "source_id": "pcdiga-recondicionados",
-      "checked_at": "2026-09-19T17:04:33Z",
+      "checked_at": "2026-09-19T18:28:12Z",
       "status": "ok",
       "message": "products=191"
     },
     {
       "id": 2,
       "source_id": "worten-recondicionados-telemoveis",
-      "checked_at": "2026-09-19T17:04:33Z",
+      "checked_at": "2026-09-19T18:28:12Z",
       "status": "ok",
-      "message": "products=59"
+      "message": "products=58"
     },
     {
       "id": 1,
       "source_id": "pccomponentes-replay",
-      "checked_at": "2026-09-19T17:04:33Z",
+      "checked_at": "2026-09-19T18:28:12Z",
       "status": "ok",
       "message": "products=9"
     }

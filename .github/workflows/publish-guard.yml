@@ -1,0 +1,90 @@
+name: publish-guard
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  publish-guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Protect Limited Offers subtree
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          python3 - <<PY
+          import datetime as dt
+          import json
+          import os
+          import subprocess
+          import sys
+
+          base = os.environ["BASE_SHA"]
+          head = os.environ["HEAD_SHA"]
+
+          def git(*args):
+              return subprocess.check_output(["git", *args], text=True).strip()
+
+          changed = [p for p in git("diff", "--name-only", base, head).splitlines() if p]
+          limited = [p for p in changed if p.startswith("limited-offers/")]
+          if not limited:
+              print("Limited Offers not touched; nothing to guard.")
+              raise SystemExit(0)
+
+          foreign = [p for p in changed if not p.startswith("limited-offers/")]
+          if foreign:
+              print("A Limited Offers deployment must be isolated to limited-offers/.", file=sys.stderr)
+              print("Foreign paths:", *foreign, sep="\n  - ", file=sys.stderr)
+              raise SystemExit(1)
+
+          def exists(rev, path):
+              return subprocess.run(
+                  ["git", "cat-file", "-e", f"{rev}:{path}"],
+                  stdout=subprocess.DEVNULL,
+                  stderr=subprocess.DEVNULL,
+              ).returncode == 0
+
+          marker = "limited-offers/.limited-offers-deploy"
+          if not exists(head, marker):
+              print(f"Missing deploy ownership marker: {marker}", file=sys.stderr)
+              raise SystemExit(1)
+
+          products = "limited-offers/data/products.json"
+          if not exists(head, products):
+              print(f"Missing published catalog: {products}", file=sys.stderr)
+              raise SystemExit(1)
+
+          def load(rev):
+              return json.loads(git("show", f"{rev}:{products}"))
+
+          def stamp(value):
+              if not value:
+                  raise ValueError("missing generated_at")
+              return dt.datetime.fromisoformat(str(value).replace("Z", "+00:00"))
+
+          candidate = load(head)
+          candidate_at = stamp(candidate.get("generated_at"))
+          candidate_count = len(candidate.get("products") or [])
+          if candidate_count <= 0:
+              print("Candidate catalog is empty.", file=sys.stderr)
+              raise SystemExit(1)
+
+          if exists(base, products):
+              current = load(base)
+              current_at = stamp(current.get("generated_at"))
+              if candidate_at < current_at:
+                  print(
+                      f"Refusing stale Limited Offers deployment: {candidate_at.isoformat()} < {current_at.isoformat()}",
+                      file=sys.stderr,
+                  )
+                  raise SystemExit(1)
+
+          print(f"Limited Offers guard passed: generated_at={candidate_at.isoformat()} products={candidate_count}")
+          PY

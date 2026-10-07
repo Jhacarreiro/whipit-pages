@@ -91,11 +91,5 @@ h1,h2,h3{text-wrap:balance}
 .card-top .status{order:2;flex-shrink:0;margin-top:1px}
 .card-top h3{flex:1;min-width:0;min-height:0}
 @media(max-width:720px){.card-top{min-height:0}}
-/* accent (from the Capacity icon) and headline face */
-:root{--acc:#7F77DD;--acc-ink:#5148c4;--acc-bg:#f1f0fc}
-.phrases .old{text-decoration-color:var(--acc)}
-.phrases .current time{color:var(--acc-ink)}
-.lab-strip b{color:var(--acc-ink)}
-.cv-foot a{color:var(--acc-ink);text-decoration-color:var(--acc)}
-.product-card .button.secondary{background:var(--acc-bg);color:var(--acc-ink)}
+/* headline face */
 .hero h1{font-family:"Schibsted Grotesk",Inter,ui-sans-serif,system-ui,sans-serif;letter-spacing:-.04em;font-weight:800;line-height:.98}

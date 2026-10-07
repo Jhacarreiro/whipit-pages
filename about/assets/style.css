@@ -71,8 +71,8 @@ h1,h2,h3{text-wrap:balance}
 .product-card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:0 12px 30px #0000000b;display:grid;gap:12px;align-content:start}
 .product-card.quiet{background:#fbfaf7;box-shadow:none}
 .card-top{display:grid;gap:10px;justify-items:start}
-.card-top h3{font-size:22px;letter-spacing:-.045em;line-height:1.1;margin:0;min-height:2.2em;display:flex;gap:8px;align-items:flex-start}
-.product-icon{width:22px;height:22px;flex-shrink:0;margin-top:1px}
+.card-top h3{font-size:22px;letter-spacing:-.045em;line-height:1.1;margin:0;min-height:2.2em;display:flex;gap:10px;align-items:center}
+.product-icon{width:40px;height:40px;flex-shrink:0}
 .product-card p{margin:0;color:var(--muted);font-size:15px;line-height:1.45;min-height:calc(1.45em * 6)}
 .actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center;height:40px}
 .status{display:inline-block;border-radius:999px;padding:5px 9px;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.05em;white-space:nowrap}
@@ -86,3 +86,16 @@ h1,h2,h3{text-wrap:balance}
 @media(min-width:1080px){.product-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}}
 @media(min-width:1420px){.product-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}}
 @media(max-width:720px){.hero{padding-top:34px}.container{width:calc(100% - 32px)}.product-card p{min-height:0}.card-top h3{min-height:0}.actions{height:auto}}
+/* status pill in the top-right corner of each card */
+.card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;min-height:48px}
+.card-top .status{order:2;flex-shrink:0;margin-top:1px}
+.card-top h3{flex:1;min-width:0;min-height:0}
+@media(max-width:720px){.card-top{min-height:0}}
+/* accent (from the Capacity icon) and headline face */
+:root{--acc:#7F77DD;--acc-ink:#5148c4;--acc-bg:#f1f0fc}
+.phrases .old{text-decoration-color:var(--acc)}
+.phrases .current time{color:var(--acc-ink)}
+.lab-strip b{color:var(--acc-ink)}
+.cv-foot a{color:var(--acc-ink);text-decoration-color:var(--acc)}
+.product-card .button.secondary{background:var(--acc-bg);color:var(--acc-ink)}
+.hero h1{font-family:"Schibsted Grotesk",Inter,ui-sans-serif,system-ui,sans-serif;letter-spacing:-.04em;font-weight:800;line-height:.98}

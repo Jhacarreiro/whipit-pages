@@ -71,8 +71,8 @@ h1,h2,h3{text-wrap:balance}
 .product-card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:0 12px 30px #0000000b;display:grid;gap:12px;align-content:start}
 .product-card.quiet{background:#fbfaf7;box-shadow:none}
 .card-top{display:grid;gap:10px;justify-items:start}
-.card-top h3{font-size:22px;letter-spacing:-.045em;line-height:1.1;margin:0;min-height:2.2em;display:flex;gap:8px;align-items:flex-start}
-.product-icon{width:22px;height:22px;flex-shrink:0;margin-top:1px}
+.card-top h3{font-size:22px;letter-spacing:-.045em;line-height:1.1;margin:0;min-height:2.2em;display:flex;gap:10px;align-items:center}
+.product-icon{width:40px;height:40px;flex-shrink:0}
 .product-card p{margin:0;color:var(--muted);font-size:15px;line-height:1.45;min-height:calc(1.45em * 6)}
 .actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center;height:40px}
 .status{display:inline-block;border-radius:999px;padding:5px 9px;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.05em;white-space:nowrap}

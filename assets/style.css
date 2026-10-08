@@ -93,3 +93,6 @@ h1,h2,h3{text-wrap:balance}
 @media(max-width:720px){.card-top{min-height:0}}
 /* headline face */
 .hero h1{font-family:"Schibsted Grotesk",Inter,ui-sans-serif,system-ui,sans-serif;letter-spacing:-.04em;font-weight:800;line-height:.98}
+
+/* Display the circular mark from the original Radar wordmark. */
+.radar-icon{border-radius:50%;background:url("radar-logo.jpg") 25.8% 48.6% / 512% auto no-repeat}

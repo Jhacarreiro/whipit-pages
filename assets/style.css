@@ -149,4 +149,3 @@ h1,h2,h3{text-wrap:balance}
 .compact h2[data-count]::after{content:" " attr(data-count);font-size:14px;color:var(--muted);font-weight:700;letter-spacing:0}
 .compact .section-title{flex-wrap:nowrap}
 .compact .section-title p{display:none}
-.product-shot{display:block;width:100%;max-width:240px;height:auto;margin:0 auto 14px;border-radius:12px}

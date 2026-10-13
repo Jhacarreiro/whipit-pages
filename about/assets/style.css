@@ -149,3 +149,4 @@ h1,h2,h3{text-wrap:balance}
 .compact h2[data-count]::after{content:" " attr(data-count);font-size:14px;color:var(--muted);font-weight:700;letter-spacing:0}
 .compact .section-title{flex-wrap:nowrap}
 .compact .section-title p{display:none}
+.cv-title p a.cv-link{color:var(--ink);font-weight:700;text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:3px}

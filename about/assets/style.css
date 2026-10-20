@@ -74,6 +74,8 @@ h1,h2,h3{text-wrap:balance}
 .card-top h3{font-size:22px;letter-spacing:-.045em;line-height:1.1;margin:0;min-height:2.2em;display:flex;gap:10px;align-items:center}
 .product-icon{width:40px;height:40px;flex-shrink:0}
 .product-card p{margin:0;color:var(--muted);font-size:15px;line-height:1.45;min-height:calc(1.45em * 6)}
+.product-card p.metric{min-height:1.4em;font-size:13px;line-height:1.4;font-weight:600;color:var(--accent-ink);font-variant-numeric:tabular-nums}
+.product-card p.metric:empty{visibility:hidden}
 .actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center;height:40px}
 .status{display:inline-block;border-radius:999px;padding:5px 9px;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.05em;white-space:nowrap}
 .status.live{background:var(--green-bg);color:var(--green)}
@@ -136,7 +138,7 @@ h1,h2,h3{text-wrap:balance}
 .card-top h3{font-size:17px;gap:8px;overflow-wrap:break-word}
 .product-icon{width:32px;height:32px}
 .status{padding:4px 7px;font-size:10px}
-.product-card p{font-size:13px;line-height:1.4}
+.product-card p{font-size:13px;line-height:1.4}.product-card p.metric{font-size:12px}
 .button{padding:8px 11px;font-size:13px}
 }
 /* Compact mode (set by the inline script on very small screens): each section collapses to its title and opens on tap */

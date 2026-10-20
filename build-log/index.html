@@ -66,6 +66,15 @@ h1,h2,h3{text-wrap:balance;margin:0;font-weight:600}
 .how li{display:grid;grid-template-columns:22px 1fr;gap:8px;font-size:13.5px;counter-increment:s}
 .how li::before{content:counter(s);font:600 11px/20px var(--body);text-align:center;width:20px;height:20px;border-radius:50%;border:1px solid var(--line)}
 .how b{font-weight:600}
+.pcard{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:0 12px 30px #0000000b;display:grid;gap:12px}
+.pcard .card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.pcard h3{font-family:var(--display);font-size:22px;font-weight:800;letter-spacing:-.045em;line-height:1.1;display:flex;gap:10px;align-items:center}
+.pcard h3 img{width:40px;height:40px;flex-shrink:0}
+.status{border-radius:999px;padding:5px 9px;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;white-space:nowrap}
+.status.beta{background:var(--fixed-bg);color:var(--fixed)}
+.pcard p{margin:0;font-size:15px;line-height:1.45}
+.pcard .actions{display:flex;gap:8px;flex-wrap:wrap}
+.button{display:inline-flex;align-items:center;border-radius:12px;padding:9px 13px;background:var(--ink);color:#fff;font-weight:800;font-size:14px;text-decoration:none}
 .empty{font-family:var(--hand);font-size:19px;color:var(--accent-ink)}
 
 footer{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;border-top:1px solid var(--line);padding-block:16px 28px;font-size:12.5px;color:var(--muted)}
@@ -73,6 +82,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
 
 @media (max-width:1000px){.hero{grid-template-columns:minmax(0,1fr)}.grid{grid-template-columns:minmax(0,1fr)}}
 @media (max-width:760px){.split{grid-template-columns:1fr 1fr}.split div:nth-child(3){border-left:0}.split div:nth-child(n+3){border-top:1px solid var(--line)}}
+@media (max-width:360px){.wrap{width:calc(100% - 16px)}.pcard{padding:12px;border-radius:16px}.pcard .card-top{flex-wrap:wrap}.pcard h3{font-size:17px}.pcard h3 img{width:32px;height:32px}.panel{padding:12px}.top{gap:8px}.nav{gap:12px}.roads{width:100%}}
 @media (max-width:560px){.wrap{width:calc(100% - 32px)}.split{grid-template-columns:1fr}.split div{border-left:0;border-top:1px solid var(--line)}.split div:first-child{border-top:0}.brand i{display:none}}
 </style></head>
 <body><div class="wrap">
@@ -139,8 +149,11 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
   <aside class="side" aria-label="About this log">
     <section class="panel">
       <h4>Featured project</h4>
-      <p>The project with the most entries each week, shown with its card from the About page.</p>
-      <span class="empty">first one with the first issue</span>
+      <article class="pcard">
+        <div class="card-top"><h3><img src="../assets/capacity-icon.svg" alt="" width="40" height="40">Capacity</h3><span class="status beta">Beta</span></div>
+        <p>Share how much capacity you have right now, with one person or a small group, without turning care into another conversation.</p>
+        <div class="actions"><a class="button" href="https://sharecapacity.app/#beta">Join the beta</a></div>
+      </article>
     </section>
     <section class="panel">
       <h4>Agent usage</h4>

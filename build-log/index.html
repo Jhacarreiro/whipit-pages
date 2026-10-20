@@ -1,4 +1,163 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><title>Build Log — João Carreiro / Whipit</title><meta name="description" content="A personal journal of what I build, debug, test and learn with AI."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"><style>
-:root{--ink:#171b29;--soft:#5d6677;--orange:#ed6337;--line:#e8e8e5;--bg:#fcfcfa;--paper:#fff;--teal:#26b59b}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans',Arial,sans-serif}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}.frame{max-width:1370px;margin:auto;padding:0 38px}.top{border-bottom:1px solid var(--line);background:#fff}.topin{display:flex;align-items:center;justify-content:space-between;height:60px}.brand{font:18px Georgia,serif;letter-spacing:.035em}.brand span{font:italic 12px Georgia,serif;color:#8c8b8a;margin-left:16px;padding-left:16px;border-left:1px solid #ddd}.nav{display:flex;gap:36px;font-size:13px}.nav .active{border-bottom:2px solid var(--orange);padding:21px 0 19px;font-weight:700}.hero{padding-top:58px;padding-bottom:28px}.eyebrow{color:var(--orange);font-weight:700;font-size:12px;letter-spacing:.14em}.hero h1{font:clamp(46px,5.6vw,78px)/1.05 'DM Serif Display',Georgia,serif;letter-spacing:-.035em;margin:10px 0 10px}.hero h1 em{font-style:normal;color:var(--orange)}.lead{color:#58667c;font-size:18px;margin:0;max-width:720px;line-height:1.6}.main{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:42px;padding-bottom:65px}.tabs{display:flex;gap:30px;border-bottom:1px solid var(--line);margin-bottom:30px;align-items:center;overflow-x:auto}.tab{border:0;background:none;color:#677185;font-size:13px;padding:17px 0;white-space:nowrap}.tab.selected{color:var(--ink);border-bottom:2px solid var(--orange);font-weight:700}.sectionhead{display:flex;align-items:center;justify-content:space-between;margin:0 0 22px}.sectionhead h2{font:34px 'DM Serif Display',Georgia,serif;margin:0}.sectionhead span{font:italic 15px Georgia,serif;color:#81899b}.entry{display:grid;grid-template-columns:83px 15px 1fr;gap:13px;margin-bottom:16px}.date{font-size:12px;color:#647087;line-height:1.8;padding-top:19px}.rail{position:relative}.rail:before{content:"";position:absolute;top:0;bottom:-18px;left:7px;width:1px;background:#e5e6e7}.dot{position:absolute;top:23px;left:2px;width:11px;height:11px;background:var(--orange);border-radius:50%}.entry:nth-of-type(2) .dot,.entry:nth-of-type(3) .dot{background:#aab2be}.story{border:1px solid var(--line);background:#fff;border-radius:9px;padding:24px 25px;min-height:170px}.category{font-size:11px;font-weight:700;color:var(--orange);letter-spacing:.055em}.story h3{font:25px 'DM Serif Display',Georgia,serif;margin:8px 0 9px;line-height:1.15}.story p{color:#677184;font-size:14px;line-height:1.6;margin:0 0 16px;max-width:620px}.tags{display:flex;gap:7px;flex-wrap:wrap}.tag{font-size:11px;background:#f2f3f4;color:#566175;border-radius:5px;padding:6px 9px}.empty{background:linear-gradient(130deg,#fff,#fff9f5);border:1px solid #f2ded4;border-radius:9px;padding:23px;margin:20px 0 0 111px}.empty strong{font:21px 'DM Serif Display',Georgia,serif}.empty p{font-size:13px;line-height:1.7;color:var(--soft);margin:7px 0 0}.panel{background:#fff;border:1px solid var(--line);border-radius:9px;padding:22px;margin-bottom:15px}.panel h3{font:23px 'DM Serif Display',Georgia,serif;margin:0 0 19px}.side{padding-top:0}.side .smallheading{color:#626e82;font-size:11px;letter-spacing:.08em;text-transform:uppercase}.focus{border-left:3px solid var(--orange);padding:4px 0 4px 13px}.focus strong{font:19px 'DM Serif Display',Georgia,serif}.focus p{font-size:13px;color:var(--soft);line-height:1.5;margin:8px 0 0}.agent{margin-bottom:16px}.agent .name{display:flex;justify-content:space-between;gap:12px;font-size:13px;font-weight:600;margin-bottom:9px}.agent .name span:last-child{color:#85909e;font-weight:400}.track{height:7px;border-radius:9px;background:#f0f1f2;overflow:hidden}.fill{height:100%;width:0;border-radius:9px;background:var(--orange)}.agent:nth-child(2) .fill{background:var(--teal)}.agent:nth-child(3) .fill{background:#526479}.agent:nth-child(4) .fill{background:#9baac2}.notice{font-size:12px;color:#737f90;line-height:1.55;margin:14px 0 0}.visual{padding:28px 26px 46px;min-height:170px;background:linear-gradient(155deg,#fff9f4 12%,#e7d9ca 60%,#8a9a9f 100%);border-radius:8px;margin-bottom:15px;position:relative;overflow:hidden}.visual:after{content:"";position:absolute;bottom:-80px;right:-20px;width:420px;height:155px;border-radius:50%;background:#6f838b66;transform:rotate(-11deg)}.visual blockquote{font:italic 25px/1.1 'DM Serif Display',Georgia,serif;margin:0;position:relative;z-index:1}.visual i{display:block;width:32px;border-top:2px solid var(--orange);margin-top:17px}.filters{display:flex;gap:7px;flex-wrap:wrap}.filter{background:#f1f2f3;color:#5a6375;border:0;padding:8px 11px;border-radius:6px;font-size:12px}.filter.active{background:#242d39;color:white}.foot{border-top:1px solid var(--line);padding:22px 0;display:flex;justify-content:space-between;color:#8991a0;font-size:11px}.foot b{color:var(--orange)}[hidden]{display:none!important}@media(max-width:960px){.main{grid-template-columns:1fr;gap:20px}.side{display:grid;grid-template-columns:1fr 1fr;gap:15px}.panel,.visual{margin:0}.side .panel:last-child{grid-column:1/-1}}@media(max-width:600px){.frame{padding:0 20px}.brand{font-size:14px}.brand span{display:none}.nav{gap:19px}.hero{padding-top:40px}.hero h1{font-size:49px}.lead{font-size:15px}.main{gap:0}.entry{grid-template-columns:46px 12px 1fr;gap:8px}.date{font-size:10px}.story{padding:18px}.story h3{font-size:21px}.empty{margin-left:65px}.side{display:block}.side .panel,.side .visual{margin-bottom:15px}.sectionhead span{display:none}.foot{gap:15px;flex-wrap:wrap}}
-</style></head><body><header class="top"><div class="frame topin"><a class="brand" href="/">JOÃO CARREIRO / WHIPIT <span>No boring stuff. Impossible is welcome.</span></a><nav class="nav" aria-label="Main navigation"><a href="/">About me</a><a href="/#products">Projects</a><a class="active" href="/build-log/" aria-current="page">Build Log</a></nav></div></header><div class="frame"><section class="hero"><div class="eyebrow">BUILD LOG</div><h1>Building, one step at a time<em>.</em></h1><p class="lead">A living diary of what I build, debug, test and learn — turning ideas into real progress.</p></section><div class="main"><main><div class="tabs" role="tablist" aria-label="Build log views"><button class="tab selected" type="button" data-view="recent" aria-selected="true">Recent</button><button class="tab" type="button" data-view="weekly" aria-selected="false">Weekly</button><button class="tab" type="button" data-view="projects" aria-selected="false">Projects</button><button class="tab" type="button" data-view="decisions" aria-selected="false">Decisions</button><button class="tab" type="button" data-view="learnings" aria-selected="false">Learnings</button></div><div class="sectionhead"><h2 id="view-title">This week</h2><span>Progress, not perfection.</span></div><div id="entries"><div class="entry"><div class="date">COMING<br>SOON</div><div class="rail"><span class="dot"></span></div><article class="story"><div class="category">THE NEXT CHAPTER</div><h3>A journal of the work behind the work</h3><p>I'm putting together a way to capture what happens between an idea and a working project: experiments, discoveries, decisions, and the occasional wrong turn. The first entries will appear here once they're reviewed.</p><div class="tags"><span class="tag">Building in public</span><span class="tag">Work in progress</span></div></article></div></div><div class="empty"><strong>The story comes first. The data comes next.</strong><p>This page is live, but conversation histories and agent usage have not yet been imported. I'll publish only curated summaries — never raw private conversations.</p></div></main><aside class="side" aria-label="Build log sidebar"><section class="panel"><div class="smallheading">CURRENT FOCUS</div><h3 style="margin-top:10px">In focus</h3><div class="focus"><strong>Building a better workflow</strong><p>Connecting ideas, AI-assisted tools and practical outcomes — one iteration at a time.</p></div></section><section class="panel"><div class="smallheading">CONVERSATION SOURCES</div><h3 style="margin-top:10px">Agent usage</h3><div class="agent"><div class="name"><span>ChatGPT + Codex</span><span>—</span></div><div class="track"><div class="fill"></div></div></div><div class="agent"><div class="name"><span>Claude</span><span>—</span></div><div class="track"><div class="fill"></div></div></div><div class="agent"><div class="name"><span>OpenCode</span><span>—</span></div><div class="track"><div class="fill"></div></div></div><div class="agent"><div class="name"><span>CommandCode</span><span>—</span></div><div class="track"><div class="fill"></div></div></div><p class="notice">Awaiting verified activity data. No estimated or invented numbers.</p></section><div class="visual"><blockquote>Better tools.<br>More clarity.<br>A slightly better tomorrow.</blockquote><i></i></div><section class="panel"><h3>Explore</h3><div class="filters"><button type="button" class="filter active" data-filter="all">All</button><button type="button" class="filter" data-filter="projects">Projects</button><button type="button" class="filter" data-filter="decisions">Decisions</button><button type="button" class="filter" data-filter="learnings">Learnings</button></div><p class="notice">Filters become useful as new entries are published.</p></section></aside></div></div><footer class="frame foot"><span>JOÃO CARREIRO / WHIPIT · No boring stuff. Impossible is welcome.</span><span>Built in public. Details stay private. <b>●</b> 2026</span></footer><script>const titles={recent:'This week',weekly:'Weekly notes',projects:'Projects',decisions:'Decisions',learnings:'Learnings'};function selectView(name){document.querySelectorAll('[data-view]').forEach(b=>{let active=b.dataset.view===name;b.classList.toggle('selected',active);b.setAttribute('aria-selected',String(active))});document.getElementById('view-title').textContent=titles[name];document.querySelector('.story .category').textContent=name==='recent'?'THE NEXT CHAPTER':name.toUpperCase();document.querySelector('.story h3').textContent=name==='recent'?'A journal of the work behind the work':'Stories are on their way';document.querySelector('.story p').textContent=name==='recent'?"I'm putting together a way to capture what happens between an idea and a working project: experiments, discoveries, decisions, and the occasional wrong turn. The first entries will appear here once they're reviewed.":'Curated '+name+' will appear here as soon as the first verified entries are ready.'}document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>selectView(b.dataset.view)));document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(x=>x.classList.toggle('active',x===b));selectView(b.dataset.filter==='all'?'recent':b.dataset.filter)}));</script></body></html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Build Log — João Carreiro / Whipit</title><meta name="description" content="A weekly log of what I build with AI: the problem, my call, what AI did, the result, and the road not taken.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600;800&family=Inter:wght@400;500;600;700;800&family=Caveat:wght@500&display=swap">
+<style>
+:root{--bg:#f7f7f5;--card:#fff;--ink:#14171c;--muted:#5d636b;--line:#e4e5e1;--soft:#f1f2ef;--accent:#2f4bd1;--accent-soft:#eaeefc;--accent-ink:#2540bd;--dots:#dcded9;--light:#aab2bc;
+  --shipped:#1f8a55;--shipped-bg:#e5f5ec;--fixed:#a1600a;--fixed-bg:#fdf1dc;--decided:#2f5aa8;--decided-bg:#e8eefa;--dropped:#6c6f75;--dropped-bg:#efede9;
+  --display:"Schibsted Grotesk",Inter,ui-sans-serif,system-ui,sans-serif;--body:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;--hand:Caveat,"Segoe Print","Bradley Hand",cursive}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5}
+a{color:inherit}
+h1,h2,h3{text-wrap:balance;margin:0;font-weight:600}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{width:min(1200px,calc(100% - 40px));margin:0 auto}
+
+.top{display:flex;justify-content:space-between;align-items:center;gap:14px;padding-block:16px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.brand{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;text-decoration:none}
+.brand b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:14px}
+.brand i{font-size:13px;color:var(--muted);padding-left:12px;border-left:1px solid var(--line)}
+.nav{display:flex;gap:22px;font-size:14px}
+.nav a{text-decoration:none;color:var(--muted);padding-bottom:4px}
+.nav a[aria-current]{color:var(--ink);border-bottom:2px solid var(--accent)}
+
+.hero{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:end;padding-block:38px 28px;background-image:radial-gradient(var(--dots) 1.1px,transparent 1.3px);background-size:20px 20px;background-position:-4px -4px}
+.eyebrow{font:600 11.5px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink)}
+.hero h1{font-family:var(--display);font-weight:800;font-size:clamp(36px,5.8vw,62px);line-height:.98;letter-spacing:-.04em;margin-top:10px}
+.hero h1 .dot{color:var(--accent)}
+.hero p{margin:12px 0 0;color:var(--muted);font-size:19px;max-width:52ch}
+
+.roads{width:420px;max-width:100%;margin:0;display:grid;gap:2px}
+.roads svg{display:block;width:100%;height:auto;overflow:visible}
+.roads .hand{font-family:var(--hand);font-weight:500}
+.roads a{justify-self:end;font-size:13px;font-weight:600;color:var(--accent-ink);text-decoration:underline;text-underline-offset:3px}
+
+.grid{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:30px;align-items:start;padding-bottom:50px}
+.weekhead{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:10px}
+.weekhead h2{font-family:var(--display);font-weight:800;font-size:30px;letter-spacing:-.035em}
+.weekhead h2 span{color:var(--muted);font-size:17px;font-weight:500;letter-spacing:0;margin-left:8px}
+.editor{margin:16px 0 18px;font-size:17px;line-height:1.55;max-width:62ch}
+.editor em{color:var(--accent-ink);font-style:normal;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-right:8px}
+.fmt-label{font-family:var(--hand);font-size:21px;color:var(--accent-ink);margin:0 0 6px;transform:rotate(-1.5deg);transform-origin:left}
+
+.entry{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;display:grid;gap:10px;min-width:0}
+.entry.sample{border-style:dashed}
+.ehead{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.proj{font:600 11px/1 var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink);margin-right:4px}
+.kind{font:600 10.5px/1 var(--body);letter-spacing:.08em;text-transform:uppercase;padding:4px 7px;border-radius:6px}
+.k-shipped{background:var(--shipped-bg);color:var(--shipped)}.k-fixed{background:var(--fixed-bg);color:var(--fixed)}.k-decided{background:var(--decided-bg);color:var(--decided)}.k-dropped{background:var(--dropped-bg);color:var(--dropped)}
+.entry h3{font-family:var(--display);font-size:21px;line-height:1.2;letter-spacing:-.025em}
+.split{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin:0;background:var(--soft);border-radius:10px;overflow:hidden}
+.split div{padding:10px 12px;border-left:1px solid var(--line);min-width:0}
+.split div:first-child{border-left:0}
+.split dt{font:600 10.5px/1 var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.split dd{margin:0;font-size:13.5px;line-height:1.45;color:var(--muted)}
+.split .call{background:var(--accent-soft)}
+.split .call dt{color:var(--accent-ink)}
+.road{margin:0;font-size:13px;color:var(--muted);display:flex;gap:6px;align-items:baseline;flex-wrap:wrap}
+.road b{font-family:var(--hand);font-size:18px;font-weight:500}
+.road span{text-decoration:line-through;text-decoration-color:var(--light)}
+
+.side{display:grid;gap:16px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;display:grid;gap:10px}
+.panel h4{margin:0;font-family:var(--display);font-weight:600;font-size:17px}
+.panel p{margin:0;font-size:13.5px;color:var(--muted)}
+.how{list-style:none;margin:0;padding:0;display:grid;gap:8px;counter-reset:s}
+.how li{display:grid;grid-template-columns:22px 1fr;gap:8px;font-size:13.5px;counter-increment:s}
+.how li::before{content:counter(s);font:600 11px/20px var(--body);text-align:center;width:20px;height:20px;border-radius:50%;border:1px solid var(--line)}
+.how b{font-weight:600}
+.empty{font-family:var(--hand);font-size:19px;color:var(--accent-ink)}
+
+footer{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;border-top:1px solid var(--line);padding-block:16px 28px;font-size:12.5px;color:var(--muted)}
+footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink)}
+
+@media (max-width:1000px){.hero{grid-template-columns:minmax(0,1fr)}.grid{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:760px){.split{grid-template-columns:1fr 1fr}.split div:nth-child(3){border-left:0}.split div:nth-child(n+3){border-top:1px solid var(--line)}}
+@media (max-width:560px){.wrap{width:calc(100% - 32px)}.split{grid-template-columns:1fr}.split div{border-left:0;border-top:1px solid var(--line)}.split div:first-child{border-top:0}.brand i{display:none}}
+</style></head>
+<body><div class="wrap">
+<header class="top">
+  <a class="brand" href="../"><b>João Carreiro / Whipit</b><i>No boring stuff. Impossible is welcome.</i></a>
+  <nav class="nav" aria-label="Main"><a href="../">About me</a><a href="../#projects">Projects</a><a href="./" aria-current="page">Build Log</a></nav>
+</header>
+
+<section class="hero">
+  <div>
+    <span class="eyebrow">Build log</span>
+    <h1>Building, one week at a time<span class="dot">.</span></h1>
+    <p>The problems I picked, the calls I made, and what AI built. One short issue every Sunday.</p>
+  </div>
+  <figure class="roads">
+    <svg viewBox="0 0 420 210" role="img" aria-label="A week drawn as a path: at each decision, the road taken continues and the road not taken is dashed and crossed out.">
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 112 C 60 110, 80 114, 120 112 C 170 110, 200 114, 250 112 C 300 110, 340 113, 392 110" style="stroke:var(--accent-ink)" stroke-width="3"/>
+        <path d="M384 102 L 396 110 L 384 119" style="stroke:var(--accent-ink)" stroke-width="3"/>
+        <path d="M98 112 C 112 90, 126 70, 150 58" style="stroke:var(--muted)" stroke-width="2" stroke-dasharray="5 6"/>
+        <path d="M228 112 C 242 136, 258 156, 284 164" style="stroke:var(--muted)" stroke-width="2" stroke-dasharray="5 6"/>
+        <path d="M318 112 C 330 90, 344 72, 368 62" style="stroke:var(--muted)" stroke-width="2" stroke-dasharray="5 6"/>
+      </g>
+      <circle cx="14" cy="112" r="6" style="fill:var(--accent-ink)"/>
+      <circle cx="98" cy="112" r="5" style="fill:var(--bg);stroke:var(--accent-ink)" stroke-width="2.5"/>
+      <circle cx="228" cy="112" r="5" style="fill:var(--bg);stroke:var(--accent-ink)" stroke-width="2.5"/>
+      <circle cx="318" cy="112" r="5" style="fill:var(--bg);stroke:var(--accent-ink)" stroke-width="2.5"/>
+      <g class="hand" font-size="19" style="fill:var(--accent-ink)">
+        <text x="4" y="22" font-size="23" transform="rotate(-3 4 22)">this week's roads not taken</text>
+        <text x="2" y="140" font-size="16">Mon</text>
+        <text x="62" y="138">my call</text>
+        <text x="190" y="98">my call</text>
+        <text x="290" y="138">my call</text>
+        <text x="372" y="138" font-size="16">Sun</text>
+      </g>
+      <g class="hand" font-size="17" style="fill:var(--muted)">
+        <text x="128" y="50" text-decoration="line-through">road not taken</text>
+        <text x="248" y="186" text-decoration="line-through">road not taken</text>
+        <text x="330" y="54" text-decoration="line-through">another one</text>
+      </g>
+    </svg>
+    <a href="../#roads-not-taken">The Roads Not Taken →</a>
+  </figure>
+</section>
+
+<div class="grid">
+  <main>
+    <div class="weekhead"><h2>First issue<span>coming on a Sunday soon</span></h2></div>
+    <p class="editor"><em>This week</em>Nothing published yet. Every entry is written from real working sessions and reviewed by me before it goes out, so the log starts when the first reviewed week is ready.</p>
+    <p class="fmt-label">what an entry will look like ↓</p>
+    <article class="entry sample" aria-label="Entry format">
+      <div class="ehead"><span class="proj">Project</span><span class="kind k-shipped">Shipped</span><span class="kind k-fixed">Fixed</span><span class="kind k-decided">Decided</span><span class="kind k-dropped">Dropped</span></div>
+      <h3>What changed, in one line</h3>
+      <dl class="split">
+        <div><dt>Problem</dt><dd>What was wrong or missing.</dd></div>
+        <div class="call"><dt>My call</dt><dd>The decision I made and why.</dd></div>
+        <div><dt>AI did</dt><dd>The work AI carried out.</dd></div>
+        <div><dt>Result</dt><dd>What is true now.</dd></div>
+      </dl>
+      <p class="road"><b>road not taken:</b><span>the alternative I passed on</span></p>
+    </article>
+  </main>
+
+  <aside class="side" aria-label="About this log">
+    <section class="panel">
+      <h4>Featured project</h4>
+      <p>The project with the most entries each week, shown with its card from the About page.</p>
+      <span class="empty">first one with the first issue</span>
+    </section>
+    <section class="panel">
+      <h4>Agent usage</h4>
+      <p>Share of working sessions by tool: ChatGPT + Codex, Claude, OpenCode and CommandCode. Sessions, not tokens, because sessions compare across tools.</p>
+      <span class="empty">no numbers until they are real</span>
+    </section>
+    <section class="panel">
+      <h4>How an entry gets here</h4>
+      <ol class="how">
+        <li><span><b>Collected</b> from my working sessions, kept private.</span></li>
+        <li><span><b>Summarised</b> into problem, call, work, result and road not taken.</span></li>
+        <li><span><b>Reviewed</b> by me. Anything private or internal is cut.</span></li>
+        <li><span><b>Published</b> on Sunday.</span></li>
+      </ol>
+    </section>
+  </aside>
+</div>
+
+<footer><span><b>João Carreiro / Whipit</b></span><span>Built in public. Details stay private.</span></footer>
+</div></body></html>

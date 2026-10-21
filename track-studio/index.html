@@ -3,148 +3,184 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Track Studio — Your track day, with the data on screen.</title>
-  <meta name="description" content="Turn Tesla Track Mode recordings into videos with speed, lap times, G-forces, map and pedals on screen. Automatic sync, ready layouts, vertical video. Request access to the beta.">
-  <meta name="theme-color" content="#f8f4f3">
+  <title>Track Studio — Every lap. Every number. On screen.</title>
+  <meta name="description" content="Track Studio puts your car's data on top of your track-day footage: speed, lap times, G-forces, pedals and the track map. Tesla Track Mode recordings are imported and synced automatically.">
+  <meta name="theme-color" content="#0b1014">
   <link rel="canonical" href="https://whipit.gallivanter.biz/track-studio/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Track Studio">
-  <meta property="og:title" content="Track Studio — Your track day, with the data on screen.">
-  <meta property="og:description" content="Tesla Track Mode video and telemetry, synced automatically and exported with overlays. Beta by invitation.">
+  <meta property="og:title" content="Track Studio — Every lap. Every number. On screen.">
+  <meta property="og:description" content="Your car's data on top of your track-day footage. Tesla Track Mode recordings imported and synced automatically.">
   <meta property="og:url" content="https://whipit.gallivanter.biz/track-studio/">
-  <meta property="og:image" content="https://whipit.gallivanter.biz/track-studio/img/studio-desktop.jpg">
-  <meta property="og:locale" content="en_GB">
+  <meta property="og:image" content="https://whipit.gallivanter.biz/track-studio/img/hero-road.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="./icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./style.css?v=20261013-features">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="./style.css?v=20261021-sales">
+  <script src="https://www.creem.io/embed.js" async></script>
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="./"><img src="./icon.svg" alt=""><span>Track Studio</span></a>
-    <nav><a class="btn small primary" href="#request-access">Request access</a></nav>
-  </header>
+  <header class="nav"><div class="wrap">
+    <a class="logo" href="./"><img src="./icon.svg" alt="">Track Studio</a>
+    <nav><a href="#how-it-works">How it works</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a class="btn primary" href="#pricing">Get Track Studio</a></nav>
+  </div></header>
 
   <main>
-    <section class="hero">
+    <section class="hero"><div class="wrap">
+      <div class="hero-copy">
+        <span class="eyebrow">Onboard video × car data</span>
+        <h1>Every lap. Every number. On screen.</h1>
+        <p class="lead">Track Studio puts your car's data on top of your track-day footage: speed, lap times, G-forces, pedals and the track map. Tesla Track Mode recordings are imported and synced automatically.</p>
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/Jhacarreiro/track-mode-studio-releases/releases/latest" data-download>Download free</a>
+          <a class="btn" href="https://www.creem.io/payment/prod_5Z1E3AjEX2DDT5OjhSRfSz" data-creem-checkout data-creem-theme="dark">Buy licence <small>$59.95 · one-time</small></a>
+        </div>
+        <p class="fine">Free version included · Runs on your computer · No account</p>
+        <p class="os-note" data-os-note hidden>The Mac version is in development. The download is for PC.</p>
+      </div>
+      <div class="screen">
+        <img src="./img/hero-road.jpg" width="920" height="770" alt="Onboard view of a lap at Estoril with Track Studio panels for lap time, G-forces and the track map.">
+        <span class="tag">Estoril · Lap 02</span>
+        <img class="map" src="./img/features/map.png" alt="">
+        <div class="hud">
+          <img src="./img/features/lap-timer.png" alt="">
+          <img src="./img/features/g-forces.png" alt="">
+        </div>
+      </div>
+    </div></section>
+
+    <div class="strip"><div class="wrap">
+      <span>Speed</span><span>Lap timer + delta</span><span>G-forces</span><span>Pedals</span><span>Steering</span><span>Track map</span><span>Energy</span><span>Temperatures</span>
+    </div></div>
+
+    <section class="block" id="how-it-works"><div class="wrap">
+      <div class="head">
+        <span class="eyebrow">How it works</span>
+        <h2>From the car to YouTube in three steps</h2>
+      </div>
+      <div class="steps">
+        <article class="step"><span class="n">01 · Import</span><h3>Open your session</h3><p>Point the app at your recordings. Tesla Track Mode videos and telemetry from the USB drive are paired and synced for you.</p></article>
+        <article class="step"><span class="n">02 · Style</span><h3>Pick a layout</h3><p>Race, Engineering or Vertical 9:16. Move, resize or hide any panel, then play the lap back with the data on screen.</p></article>
+        <article class="step"><span class="n">03 · Export</span><h3>Share the lap</h3><p>Export a finished video for YouTube, Shorts or Reels, one lap or the whole session.</p><span class="soon">Coming in a free update</span></article>
+      </div>
+    </div></section>
+
+    <section class="block tight"><div class="wrap layouts">
+      <figure><img src="./img/features/layout.png" width="1058" height="400" loading="lazy" alt="Race layout panels: speed, lap timer, pedals, G-forces, steering and energy."></figure>
+      <div style="display:grid;gap:22px;min-width:0">
+        <div class="head" style="margin:0"><span class="eyebrow">Layouts</span><h2>Start from a layout, make it yours</h2></div>
+        <ul>
+          <li><b>Race</b><span>Speed, lap time with delta, pedals and G-forces along the bottom of the frame.</span><span class="chip">Free</span></li>
+          <li><b>Engineering</b><span>Everything at once: temperatures, tyres, energy and steering around the frame.</span><span class="chip pro">Licence</span></li>
+          <li><b>Vertical 9:16</b><span>Panels stacked and sized for Shorts, Reels and TikTok.</span><span class="chip pro">Licence</span></li>
+        </ul>
+      </div>
+    </div></section>
+
+    <section class="block tight"><div class="wrap">
+      <div class="head">
+        <span class="eyebrow">Data on screen</span>
+        <h2>Only what your car really recorded</h2>
+        <p>Panels for data a session doesn't have stay hidden. Sessions without lap timing still work.</p>
+      </div>
+      <div class="data">
+        <div><b>Speed &amp; gear</b><span>km/h · mph</span></div>
+        <div><b>Lap timer</b><span>lap · time · delta to best</span></div>
+        <div><b>G-forces</b><span>lateral · longitudinal g</span></div>
+        <div><b>Pedals</b><span>throttle % · brake bar</span></div>
+        <div><b>Steering</b><span>angle ° · rate °/s</span></div>
+        <div><b>Track map</b><span>drawn from GPS</span></div>
+        <div><b>Energy</b><span>power kW · battery %</span></div>
+        <div><b>Thermal load</b><span>battery · inverters · tyres</span></div>
+      </div>
+    </div></section>
+
+    <section class="block tight"><div class="wrap tesla">
       <div>
-        <span class="badge">Beta · limited access</span>
-        <h1>Your track day, with the data on screen.</h1>
-        <p class="lead">Track Studio takes the lap video and telemetry your Tesla records in Track Mode, lines them up on its own and exports a video with speed, lap times, G-forces, map and pedals on screen.</p>
-        <div class="actions"><a class="btn primary large" href="#request-access">Request access</a><a class="btn large" href="#how-it-works">How it works</a></div>
+        <span class="eyebrow">Tesla Track Mode</span>
+        <h2>Plug in the USB drive. That's it.</h2>
+        <ul class="checks">
+          <li>Finds every video and its telemetry file in the folder and pairs them</li>
+          <li>Syncs them using the data the car embeds in each video frame, with no manual offset</li>
+          <li>Detects laps and shows the gap to your best lap</li>
+          <li>A sync check flags the rare session that needs a small nudge</li>
+        </ul>
       </div>
-      <aside class="notice">
-        <b>We're in beta</b>
-        <p>Testing starts on Windows. Some features may fail, take longer than expected or change without notice. iPhone and Android are planned.</p>
-        <span>Your recordings are processed on your own device.</span>
-      </aside>
-    </section>
+      <div class="syncviz" aria-hidden="true">
+        <div class="trk"><span>VIDEO</span><div class="bar"><i></i></div></div>
+        <div class="trk"><span>TELEMETRY</span><div class="bar csv"><i></i></div></div>
+        <div class="trk"><span>STATUS</span><span class="ok">● Synced from embedded frame data</span></div>
+      </div>
+    </div></section>
 
-    <section class="showcase" aria-label="Screenshots">
-      <div class="devices">
-        <figure class="laptop">
-          <div class="screen"><img src="./img/studio-desktop.jpg" width="1600" height="1038" alt="Track Studio on a computer: onboard video from a race track with speed, lap timer, pedals, G-forces, steering, energy, track map and tyre panels on screen."></div>
-          <div class="base"></div>
-        </figure>
-        <figure class="tablet">
-          <img src="./img/studio-tablet.jpg" width="1200" height="900" loading="lazy" alt="Track Studio on a tablet: the same session with speed, lap timer, pedals and G-force panels.">
-        </figure>
+    <section class="block tight" id="pricing"><div class="wrap">
+      <div class="head">
+        <span class="eyebrow">Pricing</span>
+        <h2>Free to start. Pay once.</h2>
+        <p>No subscription. Taxes are added at checkout where they apply.</p>
       </div>
-      <p class="caption">Real screenshots from a track session in the current Windows build.</p>
-    </section>
+      <div class="plans">
+        <article class="plan">
+          <h3>Free</h3>
+          <div class="price">$0</div>
+          <ul>
+            <li>Import, automatic sync and playback</li>
+            <li>Race layout, one style per panel</li>
+            <li>Units and filters</li>
+          </ul>
+          <a class="btn" href="https://github.com/Jhacarreiro/track-mode-studio-releases/releases/latest" data-download>Download free</a>
+        </article>
+        <article class="plan paid">
+          <h3>Track Studio licence</h3>
+          <div class="price">$59.95<small>one-time</small></div>
+          <ul>
+            <li>Everything in Free</li>
+            <li>Engineering and Vertical 9:16 layouts</li>
+            <li>Every panel style, plus energy and thermal panels</li>
+            <li>Video export when it ships, at no extra cost</li>
+            <li>Use it on 2 computers. The licence never expires.</li>
+          </ul>
+          <a class="btn primary" href="https://www.creem.io/payment/prod_5Z1E3AjEX2DDT5OjhSRfSz" data-creem-checkout data-creem-theme="dark">Buy licence</a>
+        </article>
+      </div>
+      <p class="pricing-note">Got a discount code? Enter it at checkout. Your licence key arrives by email right after payment.</p>
+    </div></section>
 
-    <section class="section">
-      <div class="section-head">
-        <p class="eyebrow">What it does</p>
-        <h2>The main features</h2>
-        <p>From the files your car already records to a video you can share, without lining anything up by hand.</p>
-      </div>
-      <div class="grid">
-        <article class="feature"><div class="thumb"><img src="./img/features/sync.png" alt="Speed panel showing 86 km/h read from the video" loading="lazy"></div><div class="body"><span>01</span><h3>Automatic sync</h3><p>Video and telemetry are lined up using the data embedded in the video itself. No manual offsets.</p></div></article>
-        <article class="feature"><div class="thumb"><img src="./img/features/lap-timer.png" alt="Lap timer panel showing lap 2" loading="lazy"></div><div class="body"><span>02</span><h3>Lap timer with delta</h3><p>Every lap, its time and the gap to your best lap, as you drive it.</p></div></article>
-        <article class="feature"><div class="thumb"><img src="./img/features/g-forces.png" alt="G-force panel showing lateral and longitudinal g" loading="lazy"></div><div class="body"><span>03</span><h3>Speed, pedals and G-forces</h3><p>Throttle, brake, steering, power and G-forces in panels you can move, resize or hide.</p></div></article>
-        <article class="feature"><div class="thumb"><img src="./img/features/map.png" alt="Track map panel with the car position on the circuit" loading="lazy"></div><div class="body"><span>04</span><h3>Track map</h3><p>The track drawn from your GPS, with your position on it. No map downloads needed.</p></div></article>
-        <article class="feature"><div class="thumb"><img src="./img/features/layout.png" alt="A full row of panels: speed, lap timer, pedals, G-forces, steering and energy" loading="lazy"></div><div class="body"><span>05</span><h3>Ready layouts</h3><p>Start from Race, Engineering or Vertical 9:16 for Shorts and Reels, then make it yours.</p></div></article>
-        <article class="feature"><div class="thumb"><img src="./img/features/pedals.png" alt="Pedals panel showing throttle and brake pressure" loading="lazy"></div><div class="body"><span>06</span><h3>Only real data</h3><p>Panels for data your session doesn't have stay hidden. Sessions without lap timing still work.</p></div></article>
-      </div>
-    </section>
+    <section class="privacy"><div class="wrap">
+      <div><span class="eyebrow">Privacy</span><h2>Your laps stay on your computer.</h2></div>
+      <p>Video and data are processed locally. There's no account to create and no car login to share. Nothing is uploaded unless you post the finished video yourself.</p>
+    </div></section>
 
-    <section class="section" id="how-it-works">
-      <div class="section-head">
-        <p class="eyebrow">How it works</p>
-        <h2>From the USB drive to your channel</h2>
+    <section class="block" id="faq"><div class="wrap">
+      <div class="head"><span class="eyebrow">Questions</span><h2>FAQ</h2></div>
+      <div class="faq">
+        <details open><summary>Which cars does it work with?</summary><p>Tesla Track Mode recordings are imported and synced automatically today. Support for more data sources is on the way.</p></details>
+        <details><summary>Is it a subscription?</summary><p>No. You pay once and the licence never expires.</p></details>
+        <details><summary>How many computers can I use?</summary><p>Two. To move the licence to another computer, deactivate it in Help › License first.</p></details>
+        <details><summary>Does it need the internet?</summary><p>Only to activate the licence and to check it now and then. It keeps working offline for up to 30 days.</p></details>
+        <details><summary>When does video export arrive?</summary><p>It is being built now and ships as a free update for every licence. The app updates itself.</p></details>
+        <details><summary>What if a session has no lap times?</summary><p>It still works: you get the video with speed, G-forces, pedals and the map.</p></details>
+        <details><summary>What about Mac, iPhone and Android?</summary><p>They are in development.</p></details>
+        <details><summary>Can I get a refund?</summary><p>Yes, within 14 days of purchase. See the <a href="./refunds/">refund policy</a>.</p></details>
       </div>
-      <ol class="steps">
-        <li><div><h3>Copy your Track Mode recordings</h3><p>The lap video and the telemetry file your Tesla saves to its USB drive after a session.</p></div></li>
-        <li><div><h3>Open them in the app</h3><p>It pairs each video with its telemetry and lines them up automatically.</p></div></li>
-        <li><div><h3>Pick a layout</h3><p>Start from a ready layout, choose a lap or keep the whole session.</p></div></li>
-        <li><div><h3>Export and share</h3><p>1080p by default, or the original resolution. Landscape for YouTube, vertical for Shorts and Reels.</p></div></li>
-      </ol>
-    </section>
-
-    <section class="privacy">
-      <p class="eyebrow">Privacy</p>
-      <h2>Your recordings stay with you.</h2>
-      <p>Video and telemetry are processed on your own device. There is no Tesla account to connect and no password to share, and nothing is uploaded unless you choose to share the finished video.</p>
-    </section>
-
-    <section class="section roadmap">
-      <div class="section-head">
-        <p class="eyebrow">Roadmap</p>
-        <h2>What comes next</h2>
-      </div>
-      <div class="roadmap-grid">
-        <article><span>01</span><div><h3>iPhone and Android</h3><p>Edit and export on your phone or tablet, right after the session.</p></div></article>
-        <article><span>02</span><div><h3>Faster sharing</h3><p>Send a finished lap straight to YouTube and social apps.</p></div></article>
-      </div>
-    </section>
-
-    <section class="access" id="request-access">
-      <div class="access-copy">
-        <p class="eyebrow">Limited access</p>
-        <h2>Want to try it?</h2>
-        <p>We're opening the beta to a few drivers at a time. If you take your Tesla to the track and record with Track Mode, tell us a little about your car and your sessions. Requests are reviewed by hand and do not grant access automatically.</p>
-        <ol class="mini-steps">
-          <li><div><b>Send your request</b><span>Your name, your car and the tracks you drive.</span></div></li>
-          <li><div><b>Wait for a reply</b><span>If your request is accepted, you get instructions by email.</span></div></li>
-          <li><div><b>Try it with your own sessions</b><span>Open a Track Mode recording, pick a layout and export your first video.</span></div></li>
-        </ol>
-      </div>
-      <form id="access-form" action="mailto:trackstudio@gallivanter.biz" method="get">
-        <label>Name<input class="input" name="name" autocomplete="name" maxlength="120" required placeholder="Your name"></label>
-        <label>Car<input class="input" name="car" maxlength="120" required placeholder="For example: Model 3 Performance"></label>
-        <label>Device you would use<select class="input" name="device"><option>Windows computer</option><option>iPhone or iPad</option><option>Android</option></select></label>
-        <label>What would you like to try? <span>optional</span><textarea class="input" name="message" maxlength="800" placeholder="For example: onboard videos from my track days"></textarea></label>
-        <button class="btn primary large" type="submit">Request access</button>
-        <p class="form-note">Opens your email app with the request ready to send. We use it only to review and reply to your request.</p>
-      </form>
-    </section>
-
-    <section class="section faq">
-      <div class="section-head">
-        <p class="eyebrow">Questions</p>
-        <h2>Frequently asked</h2>
-      </div>
-      <details><summary>Which cars does it work with?</summary><p>Teslas with Track Mode that save lap video and telemetry after a session. Tell us your car when you request access.</p></details>
-      <details><summary>Do I need anything besides the car?</summary><p>No extra hardware. The video and telemetry come from the files your Tesla already records in Track Mode.</p></details>
-      <details><summary>Which devices?</summary><p>Testing starts on Windows. iPhone and Android are planned.</p></details>
-      <details><summary>What if my session has no lap times?</summary><p>It still works. You get the video with speed, G-forces, map and pedals, and you can keep the whole session.</p></details>
-      <details><summary>Will it be free?</summary><p>It is planned as a paid app. Pricing is not set yet.</p></details>
-      <details><summary>Is it ready for everyone?</summary><p>Not yet. It is in beta and access is limited. Features may change or break along the way.</p></details>
-    </section>
-
-    <footer>
-      <span>Track Studio · Beta<br>An independent project. Not affiliated with or endorsed by Tesla.</span>
-      <div><a href="mailto:trackstudio@gallivanter.biz">trackstudio@gallivanter.biz</a><a href="https://whipit.gallivanter.biz/">About me</a><a href="#request-access">Request access</a></div>
-    </footer>
+    </div></section>
   </main>
 
+  <footer><div class="wrap">
+    <span>© 2026 João Carreiro · Track Studio is commercial software.<br>Not affiliated with or endorsed by Tesla, Inc.</span>
+    <nav><a href="./terms/">Terms</a><a href="./refunds/">Refund policy</a><a href="./privacy/">Privacy</a><a href="mailto:trackstudio@gallivanter.biz">trackstudio@gallivanter.biz</a><a href="https://whipit.gallivanter.biz/">About me</a></nav>
+  </div></footer>
+
   <script>
-    document.getElementById('access-form').addEventListener('submit', function (event) {
-      event.preventDefault();
-      var data = new FormData(event.target);
-      var body = ['Name: ' + data.get('name'), 'Car: ' + data.get('car'), 'Device: ' + data.get('device'), '', String(data.get('message') || '')].join('\r\n');
-      location.href = 'mailto:trackstudio@gallivanter.biz?subject=' + encodeURIComponent('Track Studio beta access') + '&body=' + encodeURIComponent(body);
-    });
+    (function () {
+      var ua = navigator.userAgent || '';
+      if (/Macintosh|Mac OS X|iPhone|iPad|Android/.test(ua) && !/Windows/.test(ua)) {
+        var note = document.querySelector('[data-os-note]');
+        if (note) note.hidden = false;
+      }
+    })();
   </script>
 </body>
 </html>

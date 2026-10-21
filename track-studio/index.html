@@ -134,7 +134,7 @@
 
     <footer>
       <span>Track Studio · Beta<br>An independent project. Not affiliated with or endorsed by Tesla.</span>
-      <div><a href="https://whipit.gallivanter.biz/">About me</a><a href="#request-access">Request access</a></div>
+      <div><a href="mailto:trackstudio@gallivanter.biz">trackstudio@gallivanter.biz</a><a href="https://whipit.gallivanter.biz/">About me</a><a href="#request-access">Request access</a></div>
     </footer>
   </main>
 
@@ -143,7 +143,7 @@
       event.preventDefault();
       var data = new FormData(event.target);
       var body = ['Name: ' + data.get('name'), 'Car: ' + data.get('car'), 'Device: ' + data.get('device'), '', String(data.get('message') || '')].join('\r\n');
-      location.href = 'mailto:joaocarreiro@gmail.com?subject=' + encodeURIComponent('Track Studio beta access') + '&body=' + encodeURIComponent(body);
+      location.href = 'mailto:trackstudio@gallivanter.biz?subject=' + encodeURIComponent('Track Studio beta access') + '&body=' + encodeURIComponent(body);
     });
   </script>
 </body>

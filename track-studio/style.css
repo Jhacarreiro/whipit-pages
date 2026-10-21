@@ -1,7 +1,7 @@
 /* Track Studio product page: timing-screen look, dark only. */
 :root{
   --asphalt:#0b1014;--panel:#121a20;--panel-2:#18232b;--line:#24323c;
-  --fg:#eef3f6;--soft:#c8d4dc;--muted:#93a4b0;--cyan:#41c8e8;--cyan-ink:#04141a;--kerb:#e5484d;--green:#6fe0a0;
+  --fg:#eef3f6;--soft:#c8d4dc;--muted:#93a4b0;--cyan:#41c8e8;--cyan-ink:#04141a;--kerb:#e5484d;--green:#6fe0a0;--amber:#ffb648;
   --display:"Barlow Condensed","Arial Narrow",system-ui,sans-serif;
   --body:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;
   --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
@@ -31,6 +31,7 @@ p{margin:0}
 .nav .wrap{display:flex;align-items:center;gap:24px;height:64px}
 .logo{display:flex;align-items:center;gap:10px;font:700 22px var(--display);letter-spacing:.06em;text-transform:uppercase;text-decoration:none}
 .logo img{width:28px;height:28px;border-radius:7px}
+.logo b{color:var(--amber);font-weight:700}
 .nav nav{display:flex;gap:22px;margin-left:auto;align-items:center;font-size:15px}
 .nav nav a{text-decoration:none;color:var(--muted)}
 .nav nav a:hover{color:var(--fg)}

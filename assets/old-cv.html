@@ -1,9 +1,46 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>João Carreiro — CV</title><style>
-:root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f6f4ee;color:#20242a;font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}main{max-width:850px;margin:0 auto;padding:48px 24px 88px}a{color:#855332}a:hover{text-decoration-thickness:2px}header{border-bottom:2px solid #272a30;padding-bottom:24px;margin-bottom:28px}h1{font-size:clamp(38px,8vw,64px);letter-spacing:-.06em;line-height:1.05;margin:12px 0}h2{font-size:20px;letter-spacing:.02em;text-transform:uppercase;margin:38px 0 16px;border-bottom:1px solid #d2cfc7;padding-bottom:8px}h3{font-size:17px;margin:0}p{margin:8px 0 16px}.date{font-size:14px;color:#667079}.entry{margin-bottom:24px}.meta{font-size:13px;color:#64676b}.intro{font-size:19px;max-width:700px}.back{font-size:14px;font-weight:650}ul{padding-left:22px}li{margin:7px 0}@page{size:A4;margin:13mm 15mm}@media print{body{background:#fff;font-size:11px;line-height:1.35}main{max-width:none;padding:0}header{margin-bottom:9px;padding-bottom:9px}h1{font-size:37px;margin:5px 0}h2{font-size:13px;margin:13px 0 7px;padding-bottom:3px}h3{font-size:12px}p{margin:4px 0 7px}.date,.meta,.back{font-size:10px}.intro{font-size:12px}.entry{margin-bottom:8px;break-inside:avoid}h2,h3{break-after:avoid}.cv-nav{margin:8px 0 10px;padding:6px 9px;border:1px solid #ccc;break-inside:avoid}.qr{width:70px;height:70px}.qr-block{gap:9px}a{color:inherit;text-decoration:underline}footer{break-inside:avoid}}.cv-nav{display:flex;justify-content:space-between;align-items:center;gap:16px;border:1px solid #d2cfc7;border-radius:8px;padding:12px 14px;margin:20px 0 22px}.qr-block{display:flex;align-items:center;gap:13px}.qr{width:84px;height:84px;image-rendering:pixelated;flex:none}.cv-url{font-size:13px;overflow-wrap:anywhere}.cv-nav p{margin:2px 0}.cv-nav strong{font-size:14px}</style></head><body><main>
+:root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f6f4ee;color:#20242a;font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}main{max-width:850px;margin:0 auto;padding:48px 24px 88px}a{color:#855332}a:hover{text-decoration-thickness:2px}header{border-bottom:2px solid #272a30;padding-bottom:24px;margin-bottom:28px}h1{font-size:clamp(38px,8vw,64px);letter-spacing:-.06em;line-height:1.05;margin:12px 0}h2{font-size:20px;letter-spacing:.02em;text-transform:uppercase;margin:38px 0 16px;border-bottom:1px solid #d2cfc7;padding-bottom:8px}h3{font-size:17px;margin:0}p{margin:8px 0 16px}.date{font-size:14px;color:#667079}.entry{margin-bottom:24px}.meta{font-size:13px;color:#64676b}.intro{font-size:19px;max-width:700px}.back{font-size:14px;font-weight:650}ul{padding-left:22px}li{margin:7px 0}.cv-nav{display:flex;justify-content:space-between;align-items:center;gap:16px;border:1px solid #d2cfc7;border-radius:8px;padding:12px 14px;margin:20px 0 22px}.qr-block{display:flex;align-items:center;gap:13px}.qr{width:84px;height:84px;image-rendering:pixelated;flex:none}.cv-url{font-size:13px;overflow-wrap:anywhere}.cv-nav p{margin:2px 0}.cv-nav strong{font-size:14px}
+/* Keep print rules last so screen styles cannot override the A4 layout. */
+.print-actions{max-width:850px;margin:24px auto 0;padding:0 24px;display:flex;justify-content:flex-end}
+.print-button{font:inherit;font-size:14px;font-weight:600;color:#20242a;background:#fff;border:1px solid #a8a59e;border-radius:6px;padding:10px 16px;cursor:pointer}
+.print-button:hover{background:#ece9e1}
+.print-button:focus-visible{outline:2px solid #855332;outline-offset:3px}
+@media screen and (max-width:560px){.cv-nav{gap:12px}.cv-nav strong{font-size:13px}.qr{width:68px;height:68px}}
+@page{size:A4 portrait;margin:16mm 17mm}
+@media print{
+  html,body{margin:0;padding:0;background:#fff;color:#20242a}
+  body{font-family:Arial,Helvetica,sans-serif;font-size:10.5pt;line-height:1.4}
+  main{position:relative;max-width:none;width:auto;margin:0;padding:0}
+  .print-actions{display:none}
+  header{min-height:30mm;padding:0 43mm 5mm 0;margin:0 0 6mm;border-bottom:1.5pt solid #272a30;break-inside:avoid}
+  header .meta{font-size:8pt;letter-spacing:.09em;text-transform:uppercase;color:#535b63;margin:0 0 3mm}
+  h1{font-size:30pt;letter-spacing:-.045em;line-height:1.05;margin:0 0 3mm}
+  header p{font-size:10pt;margin:1.5mm 0 0}
+  h2{font-size:10pt;line-height:1.25;letter-spacing:.08em;margin:6mm 0 3mm;padding-bottom:2mm;border-bottom:.5pt solid #aeb2b5;break-after:avoid-page}
+  h3{font-size:10.5pt;line-height:1.3;margin:0;break-after:avoid-page}
+  p{margin:1.5mm 0 3mm;orphans:3;widows:3}
+  .intro{font-size:11pt;line-height:1.4;max-width:none}
+  .date{font-size:9pt;color:#535b63;margin:1mm 0;break-after:avoid-page}
+  .entry{margin:0 0 4mm;break-inside:avoid-page}
+  .entry p:last-child{margin-bottom:0}
+  .profile h2{margin-top:0}
+  .experience{break-before:page}
+  .experience h2{margin-top:0}
+  .experience .entry{margin-bottom:5mm}
+  a{color:inherit;text-decoration:none}
+  .cv-nav{position:absolute;top:0;right:0;display:flex;flex-direction:column-reverse;align-items:center;justify-content:flex-start;gap:2mm;width:39mm;border:0;border-radius:0;padding:0;margin:0;break-inside:avoid}
+  .cv-nav strong{display:none}
+  .cv-nav p{margin:0;text-align:center;line-height:1.2}
+  .cv-url{font-size:7pt;overflow-wrap:normal;white-space:nowrap}
+  .qr-block{display:block}
+  .qr{display:block;width:19mm;height:19mm}
+  ul{padding-left:5mm}li{margin:1mm 0}
+}
+</style></head><body><div class="print-actions"><button class="print-button" type="button" onclick="window.print()">Print / Save PDF</button></div><main>
 <div class="cv-nav"><div><strong>For the current story, visit my About page.</strong><p><a class="cv-url" href="https://whipit.gallivanter.biz/">whipit.gallivanter.biz</a></p></div><div class="qr-block"><a href="https://whipit.gallivanter.biz/" aria-label="Open About page"><img class="qr" alt="QR code for my About page" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGMAAABjAQAAAACnQIM4AAABWUlEQVR42rVUQW7CMBAcx0jmQtxjK6U1z0glJPIWXgA99RTIA0ra53ALEpK59QsJROo14WQkJ9tje8qiSt2bpfF4djy7gvBTVYDf9edTJ8RjsB9dIMSYubcm2czL96OhgkG24279HFHSBbwWaWyVuZtUtwnCG/rTrst3swVkzyEzgcUncKxEMogEEVHrqFdEVA77+YLRZFxt4vpyZDhbe+6VT5Xs1SAnfAqzjaMwLoVlkJq8tlg5yonllBsYsoYYTiJbpjANOJ0BcJ0JOkA9ZMMJgQ/npS6IrF8zOmkLLONyVUhWZ+6oUT5UsuH8DGOzQZSqUg9zBvKkDuG8FsVsGTNz9LR/PGcRrnXOZ8mvnCHrmd8MOiGmE324YJqCn025696SkoZfH6Ed309eD7iOtON3iLBfd7FvmY78UkW6AOBTLiHayRNkW9QfjuEEIsyJrF8PuyT+YSt+A5v4sASoe54+AAAAAElFTkSuQmCC"></a></div></div><header><p class="meta">CV · Experience and selected projects</p><h1>João Carreiro</h1><p>Innovation · Product Development · Entrepreneurship</p><p><a href="mailto:joaocarreiro@gmail.com">joaocarreiro@gmail.com</a></p></header>
-<section><h2>Profile</h2><p class="intro">I define problems, design solutions, challenge the architecture and validate the outcome, while AI handles the implementation. Like a chef running a Michelin-star kitchen.</p><p>I founded my first company at 18 and have spent more than two decades building companies, products and technology-driven solutions across hardware, marketplaces and financial services. Today my work focuses on supervised agentic development, orchestration, validation and real-world products.</p></section>
-<section><h2>Current Work · Open-Source AI Tools &amp; Research</h2>
+<section class="profile"><h2>Profile</h2><p class="intro">I define problems, design solutions, challenge the architecture and validate the outcome, while AI handles the implementation. Like a chef running a Michelin-star kitchen.</p><p>I founded my first company at 18 and have spent more than two decades building companies, products and technology-driven solutions across hardware, marketplaces and financial services. Today my work focuses on supervised agentic development, orchestration, validation and real-world products.</p></section>
+<section class="projects"><h2>Current Work · Open-Source AI Tools &amp; Research</h2>
 <div class="entry"><h3>Independent AI Systems &amp; Product Development</h3><div class="date">Recent work · Ongoing</div><p>Conceive solutions and direct AI coding agents through architecture, implementation choices, validation and delivery. Agents write the code; I remain responsible for direction and outcomes. Most of this work is open source on GitHub.</p></div>
 <div class="entry"><h3><a href="https://github.com/Jhacarreiro/elsewhere">Elsewhere — The Roads Not Taken</a></h3><div class="date">Current research focus</div><p>Open research into how people and AI agents can explore consequential choices instead of following a single path: mapping the decisions behind a solution, the evidence for each and the alternatives not taken, and comparing different solution paths.</p></div>
 <div class="entry"><h3><a href="https://github.com/Jhacarreiro/openclaw-development-cycle">Development Cycle</a></h3><p>Designed a supervised system for sustained agentic engineering with planning, execution, approval gates, validation and recoverable workflows.</p></div>
@@ -12,7 +49,7 @@
 <div class="entry"><h3><a href="https://github.com/Jhacarreiro/octopus-role-benchmarks">Octopus Role Benchmarks</a> · <a href="https://getrad.ar/">Radar</a></h3><p>Model-comparison and evaluation workflows; a production AI-assisted information and publishing system.</p></div>
 <div class="entry"><h3>More open-source tools</h3><p><a href="https://github.com/Jhacarreiro/headful-auth-tunnel">Headful Auth Tunnel</a> · <a href="https://github.com/Jhacarreiro/host-observability-pack">Server Observability</a> · <a href="https://github.com/Jhacarreiro/openai-compatible-tool-adapter">OpenAI Adapter</a> · <a href="https://github.com/Jhacarreiro/kids-explorer">Kids Explorer</a>. Contributor to <a href="https://github.com/openclaw/clawsweeper">ClawSweeper</a>.</p></div>
 </section>
-<section><h2>Relevant Experience</h2>
+<section class="experience"><h2>Relevant Experience</h2>
 <div class="entry"><h3>Head of Product (external consultant) — Santander Bank</h3><div class="date">Sep 2022 – May 2023</div><p>Led strategic projects in Payments and Beyond Banking across Europe and South America, reporting directly to the board.</p></div>
 <div class="entry"><h3>Chief Product Officer — Landing.Jobs</h3><div class="date">2021 – 2022</div><p>Joined as the technology department was collapsing: €6M in revenue, with one developer, one designer and one product manager. In under six months the team grew to 17 while developing a workforce payment solution.</p></div>
 <div class="entry"><h3>Product Director — Crédit Agricole Group</h3><div class="date">2019 – 2020</div><p>Responsible for product strategy, design and implementation of piscapisca, a B2C automotive marketplace with an integrated CRM and a machine-learning-driven homepage, taken from idea to launch in under 12 months. Approximately €2M budget and over 40 people involved. Became a market leader within 18 months.</p></div>
@@ -20,5 +57,5 @@
 <div class="entry"><h3>Founder and CEO — Nozomi Criminal Investigation Solutions S.A.</h3><div class="date">2012 – 2015</div><p>Developed the world’s smallest and most power-efficient Full HD streaming server over 3G/4G, with a built-in web server that no competitor at international trade fairs offered, while raising close to $1M. Responsible for business strategy and product development.</p></div>
 <div class="entry"><h3>Founder and CEO — Sistecnica / Neodomus</h3><div class="date">2002 – 2012</div><p>Founded my first company at 18, with no initial capital. The company grew into a Portuguese leader in government surveillance equipment and a significant participant in home automation.</p></div></section>
 
-<section><h2>Other Experience</h2><p><strong>Speaker and Advisor — Nova SBE.</strong> Product and strategy advisory, including companies such as Auchan, Nestlé, Leroy Merlin and Vodafone.</p><p>Jury member, mentor and advisor at entrepreneurship events, including Startup Lisboa, European Innovation Academy, Startup Weekend and others.</p></section>
+<section class="other"><h2>Other Experience</h2><p><strong>Speaker and Advisor — Nova SBE.</strong> Product and strategy advisory, including companies such as Auchan, Nestlé, Leroy Merlin and Vodafone.</p><p>Jury member, mentor and advisor at entrepreneurship events, including Startup Lisboa, European Innovation Academy, Startup Weekend and others.</p></section>
 </main></body></html>

@@ -1,6 +1,6 @@
-# Chapter 1 — revised supplied draft
+# Chapter 1 — revised draft for review
 
-31 January 2024 · 14:25 · Supplied draft
+31 January 2024 · 14:25 · Draft for review
 
 Captain Priya Singh stood at the observation deck, her eyes fixed on the stars that lay beyond the spacecraft's window. The vast expanse of space stretched out before her, a silent reminder of the enormity of their mission. As she gazed at the celestial bodies that had inspired her since childhood, Priya felt the weight of responsibility settle upon her shoulders like an invisible cloak. This mission was more than just fulfilling a lifelong dream; it was her chance to honour the memory of her late mentor, Dr. Avinash Rao, who had believed in her when no one else would.
 

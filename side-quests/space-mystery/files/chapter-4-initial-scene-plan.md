@@ -1,6 +1,6 @@
 # Chapter 4 — initial scene plan
 
-31 January 2024 · 15:15 · Supplied draft
+31 January 2024 · 15:15 · Draft for review
 
 1. Alex's mental state continues to deteriorate, with their paranoia intensifying. Show their increasing suspicion towards the crew members, particularly Captain Priya Singh and Dr. Leo Hernandez, whom they believe are involved in the conspiracy.
 

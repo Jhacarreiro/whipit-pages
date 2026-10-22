@@ -1,6 +1,6 @@
 # The 21-chapter outline
 
-31 January 2024 · 09:35 · Supplied draft
+31 January 2024 · 09:35 · Draft for review
 
 Act 1 - Introduction:
 

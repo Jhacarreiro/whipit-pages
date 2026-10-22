@@ -1,6 +1,6 @@
-# Chapter 4 — supplied draft
+# Chapter 4 — draft for review
 
-31 January 2024 · 15:20 · Supplied draft
+31 January 2024 · 15:20 · Draft for review
 
 The dim red glow of the command center's emergency lighting bathed Alex's face in ominous shadows as they hunched over a console, eyes darting back and forth between displays. Their heart raced with every breath, sweat beading on their forehead. The once-trusted faces of their crewmates now seemed to leer at them from the edges of their vision.
 

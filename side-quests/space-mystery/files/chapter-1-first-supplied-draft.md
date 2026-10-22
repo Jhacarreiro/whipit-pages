@@ -1,6 +1,6 @@
-# Chapter 1 — first supplied draft
+# Chapter 1 — first draft for review
 
-31 January 2024 · 09:46 · Supplied draft
+31 January 2024 · 09:46 · Draft for review
 
 Captain Priya Singh stood at the helm, her gaze sweeping over the control panels with practiced precision. The soft hum of machinery filled the air, punctuated by the occasional beep or chime as she verified each system's readiness for the mission ahead. Her crew members moved with quiet efficiency around her, their respect and trust in her leadership palpable even in this tense atmosphere. It was a delicate balance, the weight of responsibility she carried for their lives and the success of this monumental undertaking, but Priya bore it well.
 

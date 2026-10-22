@@ -1,6 +1,6 @@
 # Character profiles — revised version
 
-31 January 2024 · 09:30 · Supplied draft
+31 January 2024 · 09:30 · Draft for review
 
 Alex Mendoza: A brilliant scientist with a passion for knowledge and discovery, Alex is dedicated to the Mars mission's success. However, they struggle with their mental health during the journey, making it difficult for them to maintain their composure. Their psychological state leads to intense paranoia and obsessions, affecting relationships with the crew and their sense of reality.
 

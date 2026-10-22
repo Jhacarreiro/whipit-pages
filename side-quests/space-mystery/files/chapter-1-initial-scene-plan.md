@@ -1,6 +1,6 @@
 # Chapter 1 — initial scene plan
 
-31 January 2024 · 09:38 · Supplied draft
+31 January 2024 · 09:38 · Draft for review
 
 1. Introduce Captain Priya Singh as she oversees the final preparations for the Mars mission, displaying her calm demeanor and strong leadership skills.
 2. Show Dr. Leo Hernandez troubleshooting technical issues on the spacecraft, highlighting his analytical mind and pragmatic approach.

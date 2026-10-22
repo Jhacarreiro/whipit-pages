@@ -1,6 +1,6 @@
 # Character profiles — first version
 
-31 January 2024 · 09:25 · Supplied draft
+31 January 2024 · 09:25 · Draft for review
 
 Alex Sterling: A brilliant scientist with an enigmatic personality, Alex is deeply passionate about their work in space exploration. As the central figure of the story, they harbor a strong determination to uncover hidden truths. Physically, Alex has short-cropped hair and sharp facial features that hint at their calculative nature. Their psychological struggles are apparent as they grapple with the stress of the Mars mission.
 

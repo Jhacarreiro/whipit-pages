@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="./style.css?v=20261021-shots">
+  <link rel="stylesheet" href="./style.css?v=20261022-loop">
   <script src="https://www.creem.io/embed.js" async></script>
 </head>
 <body>
@@ -41,7 +41,7 @@
         <p class="os-note" data-os-note hidden>The Mac version is in development. The download is for PC.</p>
       </div>
       <div class="screen">
-        <img src="./img/hero-race.jpg" width="1600" height="1036" alt="Onboard video of a lap at Estoril with Track Studio's Race layout: lap time and delta, track map, speed, pedals and G-forces on screen.">
+        <video src="./img/hero-loop.mp4" poster="./img/hero-loop.jpg" width="1280" height="830" autoplay muted loop playsinline preload="metadata" data-hero-loop aria-label="Onboard video of a lap at Estoril with Track Studio's Race layout: lap time, track map, speed, pedals and G-forces on screen."></video>
       </div>
     </div></section>
 
@@ -168,6 +168,13 @@
   </div></footer>
 
   <script>
+    (function () {
+      var loop = document.querySelector('[data-hero-loop]');
+      if (loop && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        loop.removeAttribute('autoplay');
+        loop.pause();
+      }
+    })();
     (function () {
       var ua = navigator.userAgent || '';
       if (/Macintosh|Mac OS X|iPhone|iPad|Android/.test(ua) && !/Windows/.test(ua)) {

@@ -54,6 +54,9 @@ h1,h2,h3{text-wrap:balance;margin:0;font-weight:600}
 .split dd{margin:0;font-size:13.5px;line-height:1.45;color:var(--muted)}
 .split .call{background:var(--accent-soft)}
 .split .call dt{color:var(--accent-ink)}
+.split ol{margin:0;padding-left:18px;display:grid;gap:6px}
+main{display:grid;gap:14px;align-content:start;min-width:0}
+@media (min-width:761px){.split{display:flex}.split div{flex:1 1 0}.split .call{flex:2 1 0}}
 .road{margin:0;font-size:13px;color:var(--muted);display:flex;gap:6px;align-items:baseline;flex-wrap:wrap}
 .road b{font-family:var(--hand);font-size:18px;font-weight:500}
 .road span{text-decoration:line-through;text-decoration-color:var(--light)}
@@ -130,19 +133,30 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
 
 <div class="grid">
   <main>
-    <div class="weekhead"><h2>First issue<span>coming on a Sunday soon</span></h2></div>
-    <p class="editor"><em>This week</em>Nothing published yet. Every entry is written from real working sessions and reviewed by me before it goes out, so the log starts when the first reviewed week is ready.</p>
-    <p class="fmt-label">what an entry will look like ↓</p>
-    <article class="entry sample" aria-label="Entry format">
-      <div class="ehead"><span class="proj">Project</span><span class="kind k-shipped">Shipped</span><span class="kind k-fixed">Fixed</span><span class="kind k-decided">Decided</span><span class="kind k-dropped">Dropped</span></div>
-      <h3>What changed, in one line</h3>
+    <div class="weekhead"><h2>Week of 29 January<span>2024</span></h2></div>
+    <article class="entry" id="day-2024-01-31">
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/space-mystery/">Space mystery novel</a><span class="kind k-decided">Decided</span></div>
+      <h3>Chapter plans grounded in the scenes already written</h3>
       <dl class="split">
-        <div><dt>Problem</dt><dd>What was wrong or missing.</dd></div>
-        <div class="call"><dt>My call</dt><dd>The decision I made and why.</dd></div>
-        <div><dt>AI did</dt><dd>The work AI carried out.</dd></div>
-        <div><dt>Result</dt><dd>What is true now.</dd></div>
+        <div><dt>Problem</dt><dd>Plans for chapters two to four had to account for the events already written in the earlier chapters.</dd></div>
+        <div class="call"><dt>My call</dt><dd><ol>
+          <li><b>Carry earlier scenes into each chapter plan.</b> I made the preceding chapters part of the brief for the next one, so new scenes would follow the story already on the page.</li>
+          <li><b>Turn chapter reviews into scene instructions.</b> I used the feedback to revise the scene beats into guidance the writer could apply.</li>
+        </ol></dd></div>
+        <div><dt>AI did</dt><dd>Reviewed the supplied chapter drafts, rewrote scene plans with the earlier chapters in view, and drafted a revised opening.</dd></div>
       </dl>
-      <p class="road"><b>road not taken:</b><span>the alternative I passed on</span></p>
+    </article>
+    <article class="entry" id="day-2024-01-30">
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/space-mystery/">Space mystery novel</a><span class="kind k-decided">Decided</span></div>
+      <h3>Make the Mars mission a simulation with political stakes</h3>
+      <dl class="split">
+        <div><dt>Problem</dt><dd>The Mars mystery had two political subplots, and the ending had to explain them alongside a virtual training reveal.</dd></div>
+        <div class="call"><dt>My call</dt><dd><ol>
+          <li><b>Reveal that the mission is a simulation.</b> I chose the virtual training reveal and kept the territorial dispute and demographic pressure in the resolution, with espionage and ethical questions at its centre.</li>
+          <li><b>Give a corporation a role in the conspiracy.</b> I extended the ending beyond governments to include a major corporate actor.</li>
+        </ol></dd></div>
+        <div><dt>AI did</dt><dd>Drafted a resolution connecting the simulation and political subplots, then revised it to include corporate and government involvement.</dd></div>
+      </dl>
     </article>
   </main>
 

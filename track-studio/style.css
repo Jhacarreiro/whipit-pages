@@ -73,7 +73,13 @@ p{margin:0}
 .layouts{display:grid;grid-template-columns:1.6fr 1fr;gap:32px;align-items:center}
 .layouts figure{margin:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#0a0f12}
 .layouts ul{list-style:none;margin:0;padding:0;display:grid;gap:18px}
-.layouts li{display:grid;gap:4px;border-top:1px solid var(--line);padding-top:14px}
+.layouts li{border-top:1px solid var(--line);padding-top:14px}
+.layouts li button{all:unset;box-sizing:border-box;display:grid;gap:4px;width:100%;cursor:pointer;padding:6px 0 6px 14px;border-left:3px solid transparent}
+.layouts li button:hover b{color:var(--cyan)}
+.layouts li button[aria-pressed="true"]{border-left-color:var(--cyan)}
+.layouts li button:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+.layout-view{aspect-ratio:1280/830}
+.layout-view video{display:block;width:100%;height:100%;object-fit:contain;background:#000}
 .layouts li b{font:700 22px var(--display);text-transform:uppercase;letter-spacing:.03em}
 .layouts li span{color:var(--muted)}
 .chip{font:600 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}

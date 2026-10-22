@@ -2,7 +2,7 @@
 
 Draft manuscript · January 2024
 
-The latest supplied drafts of chapters 1–4. This is an unfinished manuscript.
+The latest drafts of chapters 1–4. This is an unfinished manuscript.
 
 ## Chapter 1
 

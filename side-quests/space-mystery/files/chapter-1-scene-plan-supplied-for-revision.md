@@ -1,6 +1,6 @@
-# Chapter 1 — scene plan supplied for revision
+# Chapter 1 — scene plan for revision
 
-31 January 2024 · 09:50 · Supplied draft
+31 January 2024 · 09:50 · Draft for review
 
 1. Opening with Leadership: Start with Captain Priya Singh overseeing the final mission checks, her calm authority instilling confidence yet betraying the weight of the mission ahead. This moment captures the crew's trust in her and the enormity of their task.
 

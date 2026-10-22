@@ -42,6 +42,17 @@
 .starting-points ul{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:0 28px}
 .starting-points li{border-bottom:1px solid var(--line)}
 .starting-points li a{padding:15px 0;display:flex;justify-content:space-between;gap:15px;font-weight:600}
+.my-call{border-top:1px solid var(--line);padding:34px 0 30px}
+.my-call ol{margin:14px 0 0;padding-left:1.4em;display:grid;gap:10px;max-width:70ch;line-height:1.65;color:var(--muted)}
+.my-call li::marker{color:var(--accent-ink);font-weight:700}
+.my-call b{color:var(--ink)}
+.story-idea{border-top:1px solid var(--line);padding:40px 0 34px}
+.story-idea h2{font:800 29px/1.15 var(--display);letter-spacing:-.035em;margin:12px 0 18px}
+.story-idea p:not(.eyebrow){color:var(--muted);line-height:1.7;max-width:64ch}
+.spoiler{margin:18px 0 22px;border-left:2px solid var(--accent-ink);padding-left:20px}
+.spoiler summary{cursor:pointer;font-weight:700;color:var(--accent-ink)}
+.spoiler summary span{font:500 18px/1 var(--hand);margin-left:6px}
+.spoiler p{margin:12px 0 0}
 .opening-excerpt{max-width:760px;margin:28px 0 10px;padding:24px 0;border-top:1px solid var(--line)}
 .opening-excerpt blockquote{font:400 22px/1.65 var(--sq-serif);margin:20px 0;color:var(--ink)}
 .document-head{max-width:820px;margin:20px auto 28px}
@@ -118,6 +129,8 @@
  .opening-excerpt blockquote{font-size:20px}
  .side-quests-home .quest-feature{grid-template-columns:1fr;gap:24px}
  .side-quests-home .book-cover{width:165px;min-height:220px}
+ .book-cover{margin-left:6px}
+ .orbit-mark::after{display:none}
 }
 @media print{
  .site-topbar,.breadcrumbs,.sq-footer,.document-end,.chapter-nav,.chapter-toc,.archive-toc,.skip-link{display:none}

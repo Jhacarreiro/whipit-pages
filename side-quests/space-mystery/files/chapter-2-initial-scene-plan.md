@@ -1,6 +1,6 @@
 # Chapter 2 — initial scene plan
 
-31 January 2024 · 14:28 · Supplied draft
+31 January 2024 · 14:28 · Draft for review
 
 1. Start the chapter with Alex's increasing paranoia becoming evident through their actions and thoughts. Show them constantly looking over their shoulder, jumping at small noises, and exhibiting signs of anxiety.
 

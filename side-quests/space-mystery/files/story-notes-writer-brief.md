@@ -1,6 +1,6 @@
 # Story notes — writer brief
 
-30 January 2024 · 15:22 · Supplied draft
+30 January 2024 · 15:22 · Draft for review
 
 Setting and Background
 Near-Future Space Exploration: Set in a future where space travel is common, driven by both geopolitical motives and corporate interests.

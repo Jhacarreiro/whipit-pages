@@ -1,6 +1,6 @@
 # Synopsis
 
-31 January 2024 · 09:21 · Supplied draft
+31 January 2024 · 09:21 · Draft for review
 
 In a near-future world where space travel is common, driven by both geopolitical motives and corporate interests, a Mars mission becomes the backdrop for an intense psychological thriller. At the centre of the story is Alex, a brilliant scientist whose mental health deteriorates during the mission. As Alex's breakdown leads to paranoia and delusions, causing disruptive and dangerous behaviour, the other crew members must manage the crisis while dealing with the mission’s challenges.
 

@@ -1,6 +1,6 @@
-# Chapter 3 — supplied draft
+# Chapter 3 — draft for review
 
-31 January 2024 · 15:06 · Supplied draft
+31 January 2024 · 15:06 · Draft for review
 
 Beads of sweat trailed down Alex's face as they paced the confined space of their quarters, their breaths coming in shallow gasps. The dim overhead light cast shadows on the walls that seemed to stretch and retract with each pass. Tacked to a corner was a sprawling map of Mars, its borders sectioned into disputed territories that snaked like veins across its surface.
 

@@ -1,6 +1,6 @@
-# Chapter 2 — supplied draft
+# Chapter 2 — draft for review
 
-31 January 2024 · 14:33 · Supplied draft
+31 January 2024 · 14:33 · Draft for review
 
 The dim lights cast a melancholic glow on the spacecraft's narrow corridors, reflecting Alex Mendoza's furrowed brow as they cautiously navigated their way through. Every step they took seemed to echo back at them, further fueling the paranoia that had taken root in their mind. It was as if the ship itself had become an adversary, its soft whirring and rhythmic hums amplifying rather than soothing their growing anxiety.
 

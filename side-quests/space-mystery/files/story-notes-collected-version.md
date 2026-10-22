@@ -1,6 +1,6 @@
 # Story notes — collected version
 
-30 January 2024 · 14:54 · Supplied draft
+30 January 2024 · 14:54 · Draft for review
 
 Setting: The novel is set in a near-future world where space exploration has become the new frontier for geopolitical and corporate competition. The backdrop is a major private space exploration company.
 

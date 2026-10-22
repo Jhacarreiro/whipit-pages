@@ -1,6 +1,6 @@
 # Chapter 3 — initial scene plan
 
-31 January 2024 · 14:44 · Supplied draft
+31 January 2024 · 14:44 · Draft for review
 
 1. Alex's mental state continues to deteriorate, with their paranoia and obsession with the Mars territorial dispute intensifying. Show their increasing agitation and erratic behaviour, such as pacing, muttering to themselves, and fixating on maps and news articles about the dispute.
 

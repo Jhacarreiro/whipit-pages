@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="./style.css?v=20261022-download">
+  <link rel="stylesheet" href="./style.css?v=20261022-layouts">
   <script src="https://www.creem.io/embed.js" async></script>
 </head>
 <body>
@@ -62,13 +62,13 @@
     </div></section>
 
     <section class="block tight"><div class="wrap layouts">
-      <figure><img src="./img/editor-engineering.jpg" width="1600" height="942" loading="lazy" alt="The Track Studio editor with the Engineering layout: thermal load, tyres, energy, steering, pedals trace and G-force bars over the video, with the lap timeline below."></figure>
+      <figure class="layout-view"><video src="./img/loop-engineering.mp4" poster="./img/loop-engineering.jpg" muted loop playsinline preload="none" data-layout-video aria-label="The same lap in the selected layout."></video></figure>
       <div style="display:grid;gap:22px;min-width:0">
         <div class="head" style="margin:0"><span class="eyebrow">Layouts</span><h2>Start from a layout, make it yours</h2></div>
         <ul>
-          <li><b>Race</b><span>Speed, lap time with delta, pedals and G-forces along the bottom of the frame.</span><span class="chip">Free</span></li>
-          <li><b>Engineering</b><span>Everything at once: temperatures, tyres, energy and steering around the frame.</span><span class="chip pro">Licence</span></li>
-          <li><b>Vertical 9:16</b><span>Panels stacked and sized for Shorts, Reels and TikTok.</span><span class="chip pro">Licence</span></li>
+          <li><button type="button" data-loop="hero-loop"><b>Race</b><span>Speed, lap time with delta, pedals and G-forces along the bottom of the frame.</span><span class="chip">Free</span></button></li>
+          <li><button type="button" data-loop="loop-engineering" aria-pressed="true"><b>Engineering</b><span>Everything at once: temperatures, tyres, energy and steering around the frame.</span><span class="chip pro">Licence</span></button></li>
+          <li><button type="button" data-loop="loop-vertical"><b>Vertical 9:16</b><span>Panels stacked and sized for Shorts, Reels and TikTok.</span><span class="chip pro">Licence</span></button></li>
         </ul>
       </div>
     </div></section>
@@ -187,6 +187,27 @@
       if (loop && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) {
         loop.removeAttribute('autoplay');
         loop.pause();
+      }
+    })();
+    (function () {
+      // Layout picker: swap the loop, and only play it while it is on screen.
+      var v = document.querySelector('[data-layout-video]');
+      if (!v) return;
+      var still = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var seen = false;
+      function play() { if (!still && seen) { var p = v.play(); if (p && p.catch) p.catch(function () {}); } }
+      document.querySelectorAll('[data-loop]').forEach(function (b) {
+        b.addEventListener('click', function () {
+          document.querySelectorAll('[data-loop]').forEach(function (o) { o.setAttribute('aria-pressed', o === b ? 'true' : 'false'); });
+          v.poster = './img/' + b.dataset.loop + '.jpg';
+          v.src = './img/' + b.dataset.loop + '.mp4';
+          play();
+        });
+      });
+      if ('IntersectionObserver' in window) {
+        new IntersectionObserver(function (es) {
+          es.forEach(function (e) { seen = e.isIntersecting; if (seen) play(); else v.pause(); });
+        }, { threshold: 0.4 }).observe(v);
       }
     })();
     (function () {

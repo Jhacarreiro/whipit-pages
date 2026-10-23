@@ -102,8 +102,6 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
 .index-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}
 .index-head h2{font-family:var(--display);font-size:17px;font-weight:600;margin:0}
 .index-head p{margin:0;font-size:12px;color:var(--muted)}
-.key{display:inline-block;width:9px;height:9px;border-radius:2px;margin:0 4px 0 8px;vertical-align:-1px}
-.key.e{background:var(--accent)}.key.w{background:var(--accent-soft);border:1px solid var(--accent)}
 .yr{display:grid;grid-template-columns:44px 1fr;gap:8px;align-items:end}
 .yl{font:700 13px/1 var(--body);color:var(--ink);text-decoration:none;padding-bottom:18px}
 .mos{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:4px}
@@ -116,41 +114,31 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
 .mo .ml{line-height:1}
 .empty-mo{opacity:.35}.empty-mo .bar{border-bottom:1px solid var(--line)}
 .month-anchor{display:block;scroll-margin-top:16px}
-.models{display:grid;gap:8px}
-.mrow{display:grid;gap:4px}.my{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
-.mbar{display:flex;gap:2px;height:14px}
-.seg{border-radius:3px;min-width:3px}
-.s1{background:#2a78d6}.s2{background:#eb6834}.s3{background:#1baf7a}.s4{background:#eda100}
-.mleg{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px 12px;font-size:12px;color:var(--muted)}
-.mleg .key{margin-left:0}
-.mleg .sub{color:var(--light)}
 @media (max-width:520px){.later{display:none}.mos{grid-template-columns:repeat(6,minmax(0,1fr));row-gap:8px}.yl{padding-bottom:0}.yr{grid-template-columns:1fr}}
 .older summary{cursor:pointer;font-size:12.5px;font-weight:600;color:var(--accent-ink);list-style:none;padding:2px 0}
 .older summary::-webkit-details-marker{display:none}
 .older summary::after{content:" ▾"}
 .older[open] summary::after{content:" ▴"}
 .older[open]{display:grid;gap:10px}
+.day .more{font:600 11px/1 var(--body);color:var(--accent-ink);margin-left:auto;align-self:flex-end}
 .counts{display:grid;grid-template-columns:repeat(3,1fr)}.counts.kinds{grid-template-columns:repeat(4,1fr);padding-top:10px;border-top:1px solid var(--line)}
 .counts div{display:grid;gap:2px;padding-left:10px;border-left:1px solid var(--line)}.counts div:first-child{padding-left:0;border-left:0}
 .counts b{font-family:var(--display);font-weight:600;font-size:28px;line-height:1;font-variant-numeric:tabular-nums}.counts.kinds b{font-size:20px}
 .counts span{font-size:11.5px;color:var(--muted)}
-.mix{display:flex;gap:3px;height:14px}.mix span{border-radius:4px;min-width:6px}
 .mixleg{list-style:none;margin:0;padding:0;display:grid;gap:7px}
-.mixleg li{display:grid;grid-template-columns:12px auto 1fr;gap:8px;align-items:baseline;font-size:13.5px}
-.mixleg .key{width:10px;height:10px;border-radius:3px;margin:0;align-self:center}.mixleg b{font-weight:600}.mixleg small{color:var(--muted);font-size:12.5px}
+.mixleg li{display:grid;grid-template-columns:12px 1fr;gap:8px;align-items:baseline;font-size:13.5px}.mixleg b{font-weight:600}
+.key{display:inline-block;width:10px;height:10px;border-radius:3px;align-self:center}
+.also{margin:0;font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 12px}.also > span{display:inline-flex;align-items:center;gap:5px}
 .big{margin:0;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}.big b{color:var(--ink);font-family:var(--display);font-weight:800;font-size:40px;letter-spacing:-.03em;line-height:1}.big span{color:var(--muted);font-size:13px}
 .years{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;align-items:end;height:190px;padding-top:6px}
+.years.usage{height:150px}.years.usage .ycol{grid-template-rows:1fr auto}
 .ycol{display:grid;grid-template-rows:auto 1fr auto;gap:6px;height:100%;justify-items:center}
 .ystack{width:100%;max-width:46px;display:flex;flex-direction:column;justify-content:flex-end;gap:2px;height:100%}
-.ystack i{display:block;width:100%;border-radius:4px;min-height:3px}
-.yv{font:600 12.5px/1 var(--body);font-variant-numeric:tabular-nums}.yl2{font-size:12px;color:var(--muted)}
-.mixleg li{display:grid;grid-template-columns:12px auto 1fr auto;gap:8px;align-items:baseline;font-size:13.5px}
-.mixleg em{font-style:normal;font-size:12px;color:var(--muted)}
-.years.usage{height:150px}.years.usage .ycol{grid-template-rows:1fr auto}
-.day .more{font:600 11px/1 var(--body);color:var(--accent-ink);margin-left:auto;align-self:flex-end}
-.ystack i{position:relative;cursor:default}.ystack i:hover{z-index:20;outline:2px solid var(--card)}
+.ystack i{display:block;width:100%;border-radius:4px;min-height:3px;position:relative;cursor:default}
+.ystack i:hover{z-index:20;outline:2px solid var(--card)}
 .ystack i:hover::after{content:attr(data-tip);position:absolute;right:calc(100% + 8px);top:50%;transform:translateY(-50%);white-space:nowrap;background:var(--ink);color:var(--card);font:600 11.5px/1 var(--body);padding:6px 8px;border-radius:6px;z-index:5;pointer-events:none}
 .ycol:first-child .ystack i:hover::after{right:auto;left:calc(100% + 8px)}
+.yv{font:600 12.5px/1 var(--body);font-variant-numeric:tabular-nums}.yl2{font-size:12px;color:var(--muted)}
 .fine{margin:0;font-size:11.5px;color:var(--muted)}
 </style></head>
 <body><div class="wrap">
@@ -3804,14 +3792,15 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
     </section>
     <section class="panel">
       <h4>AI I build with</h4>
-      <div class="years usage"><div class="ycol"><div class="ystack"><i style="height:70.4%;background:#9aa0a6" data-tip="Other · 70%"></i><i style="height:29.6%;background:#2a78d6" data-tip="OpenAI · 30%"></i></div><span class="yl2">2023</span></div><div class="ycol"><div class="ystack"><i style="height:0.5%;background:#eb6834" data-tip="Anthropic · 1%"></i><i style="height:99.5%;background:#2a78d6" data-tip="OpenAI · 99%"></i></div><span class="yl2">2024</span></div><div class="ycol"><div class="ystack"><i style="height:4.0%;background:#9aa0a6" data-tip="Other · 4%"></i><i style="height:6.3%;background:#eda100" data-tip="xAI · 6%"></i><i style="height:7.5%;background:#eb6834" data-tip="Anthropic · 7%"></i><i style="height:82.3%;background:#2a78d6" data-tip="OpenAI · 82%"></i></div><span class="yl2">2025</span></div><div class="ycol"><div class="ystack"><i style="height:9.7%;background:#9aa0a6" data-tip="Other · 10%"></i><i style="height:34.1%;background:#1baf7a" data-tip="Antigravity · 34%"></i><i style="height:37.7%;background:#eb6834" data-tip="Anthropic · 38%"></i><i style="height:18.4%;background:#2a78d6" data-tip="OpenAI · 18%"></i></div><span class="yl2">2026*</span></div></div>
-      <ul class="mixleg"><li><span class="key" style="background:#2a78d6"></span><b>OpenAI</b><small></small><em>since 2023</em></li><li><span class="key" style="background:#eb6834"></span><b>Anthropic</b><small></small><em>since 2024</em></li><li><span class="key" style="background:#1baf7a"></span><b>Antigravity</b><small></small><em>since 2026</em></li><li><span class="key" style="background:#eda100"></span><b>xAI</b><small></small><em>since 2024</em></li><li><span class="key" style="background:#9aa0a6"></span><b>Other</b><small>Qwen, Kimi, MiMo and more</small><em>since 2023</em></li></ul>
+      <div class="years usage"><div class="ycol"><div class="ystack"><i style="height:2.6%;background:#9aa0a6" data-tip="Other · 3%"></i><i style="height:67.8%;background:#e87ba4" data-tip="Sudowrite · 68%"></i><i style="height:29.6%;background:#2a78d6" data-tip="OpenAI · 30%"></i></div><span class="yl2">2023</span></div><div class="ycol"><div class="ystack"><i style="height:0.5%;background:#eb6834" data-tip="Anthropic · 1%"></i><i style="height:99.5%;background:#2a78d6" data-tip="OpenAI · 99%"></i></div><span class="yl2">2024</span></div><div class="ycol"><div class="ystack"><i style="height:4.0%;background:#008300" data-tip="Jeda.ai · 4%"></i><i style="height:6.3%;background:#eda100" data-tip="xAI · 6%"></i><i style="height:7.5%;background:#eb6834" data-tip="Anthropic · 7%"></i><i style="height:82.3%;background:#2a78d6" data-tip="OpenAI · 82%"></i></div><span class="yl2">2025</span></div><div class="ycol"><div class="ystack"><i style="height:5.4%;background:#9aa0a6" data-tip="Other · 5%"></i><i style="height:3.3%;background:#e34948" data-tip="OpenCode · 3%"></i><i style="height:0.2%;background:#eda100" data-tip="xAI · 0%"></i><i style="height:34.5%;background:#1baf7a" data-tip="Antigravity · 34%"></i><i style="height:38.1%;background:#eb6834" data-tip="Anthropic · 38%"></i><i style="height:18.6%;background:#2a78d6" data-tip="OpenAI · 19%"></i></div><span class="yl2">2026*</span></div></div>
+      <ul class="mixleg"><li><span class="key" style="background:#2a78d6"></span><b>OpenAI</b></li><li><span class="key" style="background:#eb6834"></span><b>Anthropic</b></li><li><span class="key" style="background:#1baf7a"></span><b>Antigravity</b></li><li><span class="key" style="background:#eda100"></span><b>xAI</b></li><li><span class="key" style="background:#e34948"></span><b>OpenCode</b></li></ul><p class="also">Earlier years: <span><span class="key" style="background:#e87ba4"></span>Sudowrite</span> · <span><span class="key" style="background:#008300"></span>Jeda.ai</span></p>
       <p class="fine">*2026 up to April.</p>
     </section>
     <section class="panel">
       <h4>AI spend</h4>
       <p class="big"><b>$2,560</b><span>since April 2023</span></p>
-      <div class="years"><div class="ycol"><span class="yv">$472</span><div class="ystack"><i style="height:28.8%;background:#9aa0a6" data-tip="Other · $332"></i><i style="height:12.1%;background:#2a78d6" data-tip="OpenAI · $140"></i></div><span class="yl2">2023</span></div><div class="ycol"><span class="yv">$433</span><div class="ystack"><i style="height:9.9%;background:#eda100" data-tip="xAI · $114"></i><i style="height:2.1%;background:#eb6834" data-tip="Anthropic · $24"></i><i style="height:25.6%;background:#2a78d6" data-tip="OpenAI · $295"></i></div><span class="yl2">2024</span></div><div class="ycol"><span class="yv">$500</span><div class="ystack"><i style="height:1.7%;background:#9aa0a6" data-tip="Other · $20"></i><i style="height:7.3%;background:#eda100" data-tip="xAI · $85"></i><i style="height:8.7%;background:#eb6834" data-tip="Anthropic · $100"></i><i style="height:25.6%;background:#2a78d6" data-tip="OpenAI · $295"></i></div><span class="yl2">2025</span></div><div class="ycol"><span class="yv">$1,154</span><div class="ystack"><i style="height:16.7%;background:#9aa0a6" data-tip="Other · $193"></i><i style="height:3.5%;background:#eda100" data-tip="xAI · $40"></i><i style="height:37.1%;background:#eb6834" data-tip="Anthropic · $429"></i><i style="height:42.6%;background:#2a78d6" data-tip="OpenAI · $492"></i></div><span class="yl2">2026*</span></div></div>
+      <div class="years"><div class="ycol"><span class="yv">$472</span><div class="ystack"><i style="height:1.1%;background:#9aa0a6" data-tip="Other · $12"></i><i style="height:27.7%;background:#e87ba4" data-tip="Sudowrite · $320"></i><i style="height:12.1%;background:#2a78d6" data-tip="OpenAI · $140"></i></div><span class="yl2">2023</span></div><div class="ycol"><span class="yv">$433</span><div class="ystack"><i style="height:9.9%;background:#eda100" data-tip="xAI · $114"></i><i style="height:2.1%;background:#eb6834" data-tip="Anthropic · $24"></i><i style="height:25.6%;background:#2a78d6" data-tip="OpenAI · $295"></i></div><span class="yl2">2024</span></div><div class="ycol"><span class="yv">$500</span><div class="ystack"><i style="height:1.7%;background:#008300" data-tip="Jeda.ai · $20"></i><i style="height:7.3%;background:#eda100" data-tip="xAI · $85"></i><i style="height:8.7%;background:#eb6834" data-tip="Anthropic · $100"></i><i style="height:25.6%;background:#2a78d6" data-tip="OpenAI · $295"></i></div><span class="yl2">2025</span></div><div class="ycol"><span class="yv">$1,154</span><div class="ystack"><i style="height:6.7%;background:#9aa0a6" data-tip="Other · $78"></i><i style="height:3.0%;background:#e34948" data-tip="OpenCode · $35"></i><i style="height:7.0%;background:#6250d6" data-tip="Command Code · $81"></i><i style="height:3.5%;background:#eda100" data-tip="xAI · $40"></i><i style="height:37.1%;background:#eb6834" data-tip="Anthropic · $429"></i><i style="height:42.6%;background:#2a78d6" data-tip="OpenAI · $492"></i></div><span class="yl2">2026*</span></div></div>
+      <ul class="mixleg"><li><span class="key" style="background:#2a78d6"></span><b>OpenAI</b></li><li><span class="key" style="background:#eb6834"></span><b>Anthropic</b></li><li><span class="key" style="background:#eda100"></span><b>xAI</b></li><li><span class="key" style="background:#6250d6"></span><b>Command Code</b></li><li><span class="key" style="background:#e34948"></span><b>OpenCode</b></li></ul><p class="also">Earlier years: <span><span class="key" style="background:#e87ba4"></span>Sudowrite</span> · <span><span class="key" style="background:#008300"></span>Jeda.ai</span></p>
       <p class="fine">*2026 up to September.</p>
     </section>
     <section class="panel">

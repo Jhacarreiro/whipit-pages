@@ -1,7 +1,7 @@
 :root{--bg:#f7f7f5;--card:#fff;--ink:#171717;--muted:#666;--line:#e8e5df;--pill:#efede8;--strike:#b8b4ab;--green:#0f7b3a;--green-bg:#e7f6eb;--amber:#9a5b00;--amber-bg:#fff2dc;--blue:#2454a6;--blue-bg:#eef0ff;--teal:#08715a;--teal-bg:#e8f7f1;--rose:#a8324a;--rose-bg:#fbe9ec;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}
-.container{width:min(1480px,calc(100% - 40px));margin:auto}
+.container{width:min(1200px,calc(100% - 40px));margin:auto}
 a{text-decoration:none;color:inherit}
 h1,h2,h3{text-wrap:balance}
 :focus-visible{outline:2px solid var(--blue);outline-offset:2px}

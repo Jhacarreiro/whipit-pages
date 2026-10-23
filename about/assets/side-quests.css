@@ -1,6 +1,6 @@
 /* Side Quests reuses Whipit's type, paper surfaces and ballpoint-blue accent. */
 .sq-page{--sq-serif:Georgia,"Times New Roman",serif}
-.sq-page .container{max-width:1160px}
+.sq-page 
 .sq-page .topbar-inner{gap:16px;flex-wrap:wrap}
 .sq-page .topbar-nav{flex-wrap:wrap}
 .sq-page 

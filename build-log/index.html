@@ -180,6 +180,8 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
 .footer-mark{padding-left:16px;border-left:1px solid var(--line)}
 @media(max-width:720px){.site-footer .footer-inner{grid-template-columns:1fr;gap:14px}.footer-mark{border-left:0;padding-left:0}}
 /* end top bar */
+@media (max-width:1000px){main [hidden]{display:none!important}.grid > .side{order:-1;display:flex;align-items:flex-start;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:2px 2px 10px;margin:0 -2px;scrollbar-width:none}.grid > .side::-webkit-scrollbar{display:none}.side > .panel{flex:0 0 min(86%,340px);scroll-snap-align:start}.side > .panel:has(.feat){order:8}.side > .panel:has(.how){order:9}.bl-more{display:block;width:100%;margin:8px 0 24px;padding:12px 16px;border:1px solid var(--line);border-radius:10px;background:var(--card);font:600 14px/1.2 var(--body);color:var(--accent-ink);cursor:pointer}.bl-swipe{order:-2;display:block;margin:0 0 -18px;text-align:right;font-size:12px;color:var(--muted)}}
+@media (min-width:1001px){.bl-more,.bl-swipe{display:none}}
 </style></head>
 <body><header class="site-topbar"><div class="wrap topbar-inner"><a class="topbar-brand" href="/"><b>João Carreiro</b><i>No boring stuff. Impossible is welcome.</i></a><nav class="topbar-nav" aria-label="Main navigation"><a class="topbar-link" href="/">About</a><a class="topbar-link" href="/build-log/" aria-current="page">Build Log</a><a class="topbar-link" href="/side-quests/">Side Quests</a></nav><span class="topbar-mark">Whipit</span></div></header><div class="wrap">
 
@@ -3878,5 +3880,20 @@ e.forEach(function(a){var h=a.querySelector('.ehead');if(!h)return;h.querySelect
 var set=function(sel,v){var b=document.querySelector(sel);if(b)b.textContent=v};
 set('[data-count="entries"]',e.length);set('[data-count="weeks"]',w.length);set('[data-count="projects"]',Object.keys(p).length);
 ['decided','investigated','fixed','dropped'].forEach(function(n){set('[data-count="'+n+'"]',k[n]||0)});
+})();</script>
+<script id="bl-mobile">(function(){
+var mq=matchMedia('(max-width:1000px)');var main=document.querySelector('.grid > main');if(!main)return;
+var groups=[],cur=null;Array.prototype.forEach.call(main.children,function(el){if(el.classList.contains('month-anchor')){cur={id:el.id,els:[el]};groups.push(cur)}else if(cur){cur.els.push(el)}});
+if(groups.length<2)return;
+var side=document.querySelector('.grid > .side');var hint=document.createElement('span');hint.className='bl-swipe';hint.textContent='Swipe for more \u2192';side.parentNode.insertBefore(hint,side);
+var shown=1;var btn=document.createElement('button');btn.type='button';btn.className='bl-more';
+function label(g){var m=/m-(\d{4})-(\d{2})/.exec(g.id);return m?new Date(+m[1],+m[2]-1,1).toLocaleString('en',{month:'long',year:'numeric'}):'earlier'}
+function render(){groups.forEach(function(g,k){g.els.forEach(function(e){e.hidden=mq.matches&&k>=shown})});var last=groups[shown-1].els;last[last.length-1].after(btn);btn.hidden=!mq.matches||shown>=groups.length;if(shown<groups.length)btn.textContent='Show '+label(groups[shown])}
+function reveal(id){var el=id&&document.getElementById(id);if(!el)return;for(var k=0;k<groups.length;k++){if(groups[k].els.some(function(e){return e===el||e.contains(el)})){if(k>=shown){shown=k+1;render()}return}}}
+btn.addEventListener('click',function(){shown++;render()});
+document.addEventListener('click',function(ev){var a=ev.target.closest&&ev.target.closest('a[href^="#"]');if(a)reveal(a.getAttribute('href').slice(1))},true);
+addEventListener('hashchange',function(){reveal(location.hash.slice(1));var t=document.getElementById(location.hash.slice(1));if(t)t.scrollIntoView()});
+(mq.addEventListener?mq.addEventListener('change',render):mq.addListener(render));
+render();if(location.hash){reveal(location.hash.slice(1));var t=document.getElementById(location.hash.slice(1));if(t)setTimeout(function(){t.scrollIntoView()},0)}
 })();</script>
 </body></html>

@@ -160,6 +160,7 @@ h1,h2,h3{text-wrap:balance}
 .topbar-nav{gap:8px;align-items:center}
 .topbar-link{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:9px 13px;font-size:14px;font-weight:850;white-space:nowrap}
 .topbar-link:hover{border-color:var(--accent);color:var(--accent-ink)}
+.topbar-link[aria-current="page"],.topbar-link[aria-current="page"]:hover{background:var(--ink);border-color:var(--ink);color:var(--card)}
 .hero{background-image:radial-gradient(var(--dots) 1.1px,transparent 1.3px);background-size:20px 20px;background-position:-4px -4px;border-radius:0 0 24px 24px}
 .eyebrow{color:var(--accent-ink)}
 .phrases .old{text-decoration-color:var(--accent)}

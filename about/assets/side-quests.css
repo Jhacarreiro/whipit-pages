@@ -107,7 +107,7 @@
 @media(max-width:560px){
  .sq-page .topbar-inner{align-items:flex-start;gap:10px}
  .sq-page .topbar-nav{width:100%;justify-content:flex-start;gap:6px}
- .sq-page .topbar-link{font-size:12px;padding:8px 10px}
+
  .sq-hero{padding:40px 0 32px}
  .quest-feature{grid-template-columns:1fr;gap:26px}
  .quest-feature .cover-link{max-width:185px}

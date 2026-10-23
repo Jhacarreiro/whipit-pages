@@ -123,24 +123,35 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
 .s1{background:#2a78d6}.s2{background:#eb6834}.s3{background:#1baf7a}.s4{background:#eda100}
 .mleg{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px 12px;font-size:12px;color:var(--muted)}
 .mleg .key{margin-left:0}
-.pline{display:grid;grid-template-columns:72px 1fr 44px;gap:6px;align-items:center;font-size:12px}
-.pn{color:var(--muted)}.pv{text-align:right;font-variant-numeric:tabular-nums;color:var(--ink)}
-.pbar{height:10px;display:flex}.pbar .seg{height:100%}
 .mleg .sub{color:var(--light)}
-.mtable summary{font-size:12px;color:var(--muted);cursor:pointer}
-.mtable table{border-collapse:collapse;font-size:11.5px;margin-top:6px;font-variant-numeric:tabular-nums}
-.mtable th,.mtable td{padding:3px 6px;border-bottom:1px solid var(--line);text-align:right}
-.mtable th:first-child{text-align:left}
 @media (max-width:520px){.later{display:none}.mos{grid-template-columns:repeat(6,minmax(0,1fr));row-gap:8px}.yl{padding-bottom:0}.yr{grid-template-columns:1fr}}
 .older summary{cursor:pointer;font-size:12.5px;font-weight:600;color:var(--accent-ink);list-style:none;padding:2px 0}
 .older summary::-webkit-details-marker{display:none}
 .older summary::after{content:" ▾"}
 .older[open] summary::after{content:" ▴"}
 .older[open]{display:grid;gap:10px}
-.kpi{margin:0;font-size:13px;color:var(--muted)}.kpi b{font-family:var(--display);font-size:20px;color:var(--ink);margin-right:2px}
-.spend{width:100%;height:auto;display:block}.spend text{font:9px var(--body);fill:var(--muted)}.spend .hit{fill:transparent}.spend .hit:hover{fill:#0000000d}
+.counts{display:grid;grid-template-columns:repeat(3,1fr)}.counts.kinds{grid-template-columns:repeat(4,1fr);padding-top:10px;border-top:1px solid var(--line)}
+.counts div{display:grid;gap:2px;padding-left:10px;border-left:1px solid var(--line)}.counts div:first-child{padding-left:0;border-left:0}
+.counts b{font-family:var(--display);font-weight:600;font-size:28px;line-height:1;font-variant-numeric:tabular-nums}.counts.kinds b{font-size:20px}
+.counts span{font-size:11.5px;color:var(--muted)}
+.mix{display:flex;gap:3px;height:14px}.mix span{border-radius:4px;min-width:6px}
+.mixleg{list-style:none;margin:0;padding:0;display:grid;gap:7px}
+.mixleg li{display:grid;grid-template-columns:12px auto 1fr;gap:8px;align-items:baseline;font-size:13.5px}
+.mixleg .key{width:10px;height:10px;border-radius:3px;margin:0;align-self:center}.mixleg b{font-weight:600}.mixleg small{color:var(--muted);font-size:12.5px}
+.big{margin:0;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}.big b{color:var(--ink);font-family:var(--display);font-weight:800;font-size:40px;letter-spacing:-.03em;line-height:1}.big span{color:var(--muted);font-size:13px}
+.years{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;align-items:end;height:190px;padding-top:6px}
+.ycol{display:grid;grid-template-rows:auto 1fr auto;gap:6px;height:100%;justify-items:center}
+.ystack{width:100%;max-width:46px;display:flex;flex-direction:column;justify-content:flex-end;gap:2px;height:100%}
+.ystack i{display:block;width:100%;border-radius:4px;min-height:3px}
+.yv{font:600 12.5px/1 var(--body);font-variant-numeric:tabular-nums}.yl2{font-size:12px;color:var(--muted)}
+.mixleg li{display:grid;grid-template-columns:12px auto 1fr auto;gap:8px;align-items:baseline;font-size:13.5px}
+.mixleg em{font-style:normal;font-size:12px;color:var(--muted)}
+.years.usage{height:150px}.years.usage .ycol{grid-template-rows:1fr auto}
+.day .more{font:600 11px/1 var(--body);color:var(--accent-ink);margin-left:auto;align-self:flex-end}
+.ystack i{position:relative;cursor:default}.ystack i:hover{z-index:20;outline:2px solid var(--card)}
+.ystack i:hover::after{content:attr(data-tip);position:absolute;right:calc(100% + 8px);top:50%;transform:translateY(-50%);white-space:nowrap;background:var(--ink);color:var(--card);font:600 11.5px/1 var(--body);padding:6px 8px;border-radius:6px;z-index:5;pointer-events:none}
+.ycol:first-child .ystack i:hover::after{right:auto;left:calc(100% + 8px)}
 .fine{margin:0;font-size:11.5px;color:var(--muted)}
-.tw{max-height:220px;overflow:auto}
 </style></head>
 <body><div class="wrap">
 <header class="top">
@@ -328,7 +339,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       <a class="day card" data-day="2026-04-05" href="#day-2026-04-05"><span class="d">Sun<b>5</b></span><span class="t">Branded groceries first, harder comparisons in later phases</span></a>
     </div>
     <article class="entry" id="day-2026-04-05">
-      <div class="ehead"><span class="proj">Grocery comparison</span><span class="kind k-decided">Decided</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/grocery-comparison/">Grocery comparison</a><span class="kind k-decided">Decided</span></div>
       <h3>Branded groceries first, harder comparisons in later phases</h3>
       <dl class="split">
         <div class="call"><dt>My call</dt><dd><ol>
@@ -549,7 +560,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       </dl>
     </article>
     <article class="entry" id="day-2026-02-24">
-      <div class="ehead"><span class="proj">IDE Chat Bridge</span><span class="proj">Website acquisition study</span><span class="proj">Antigravity</span><span class="kind k-decided">Decided</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/agent-tooling/">IDE Chat Bridge</a><span class="proj">Website acquisition study</span><span class="proj">Antigravity</span><span class="kind k-decided">Decided</span></div>
       <h3>Target a few controls in the existing IDE chat</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>The bridge had to read and answer an existing IDE chat through a few target controls with a short interaction delay.</dd></div>
@@ -560,7 +571,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       </dl>
     </article>
     <article class="entry" id="day-2026-02-23">
-      <div class="ehead"><span class="proj">Assistant Interaction Policy</span><span class="kind k-decided">Decided</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/agent-tooling/">Assistant Interaction Policy</a><span class="kind k-decided">Decided</span></div>
       <h3>Read passively and send only on explicit instruction</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>Incoming messages triggered unsolicited outgoing replies when I wanted the assistant to observe quietly.</dd></div>
@@ -582,7 +593,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       <div class="day off" data-day="2026-02-22"><span class="d">Sun<b>22</b></span></div>
     </div>
     <article class="entry" id="day-2026-02-17">
-      <div class="ehead"><span class="proj">IDE Chat Bridge</span><span class="proj">Antigravity</span><span class="kind k-decided">Decided</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/agent-tooling/">IDE Chat Bridge</a><span class="proj">Antigravity</span><span class="kind k-decided">Decided</span></div>
       <h3>Control the agent already inside the IDE</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>The bridge had to read and answer a conversation held by an agent inside the IDE.</dd></div>
@@ -642,7 +653,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       </dl>
     </article>
     <article class="entry" id="day-2026-02-11">
-      <div class="ehead"><span class="proj">Manual Print Layout</span><a class="proj" href="https://whipit.gallivanter.biz/#regime-suite" target="_blank" rel="noopener">Regime Suite</a><a class="proj" href="https://www.tradingview.com/pine-script-docs/">Pine Script</a><span class="kind k-decided">Decided</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/agent-tooling/">Manual Print Layout</a><a class="proj" href="https://whipit.gallivanter.biz/#regime-suite" target="_blank" rel="noopener">Regime Suite</a><a class="proj" href="https://www.tradingview.com/pine-script-docs/">Pine Script</a><span class="kind k-decided">Decided</span></div>
       <h3>Printable instructions need prerequisites and inline images</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>The successive printable versions omitted necessary access steps, omitted images or separated the images from the instructions.</dd></div>
@@ -1038,7 +1049,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       <a class="day card" data-day="2026-01-04" href="#day-2026-01-04"><span class="d">Sun<b>4</b></span><span class="t">A buried joint rules out UV curing</span></a>
     </div>
     <article class="entry" id="day-2026-01-04">
-      <div class="ehead"><span class="proj">Adhesive constraint investigation</span><span class="kind k-investigated">Investigated</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/workbench/">Adhesive constraint investigation</a><span class="kind k-investigated">Investigated</span></div>
       <h3>A buried joint rules out UV curing</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>The joint had less than half a millimetre of clearance, and curing light could not reach the adhesive once the parts were assembled.</dd></div>
@@ -1054,7 +1065,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
     <div class="days">
       <a class="day card" data-day="2025-12-15" href="#day-2025-12-15"><span class="d">Mon<b>15</b></span><span class="t">Successful signals should show their threshold margins</span></a>
       <a class="day card" data-day="2025-12-16" href="#day-2025-12-16"><span class="d">Tue<b>16</b></span><span class="t">Classify the completed entry before applying retry locks</span></a>
-      <a class="day card" data-day="2025-12-17" href="#day-2025-12-17"><span class="d">Wed<b>17</b></span><span class="t">Three live layers with one view in focus</span></a>
+      <a class="day card" data-day="2025-12-17" href="#day-2025-12-17"><span class="d">Wed<b>17</b></span><span class="t">Three live layers with one view in focus</span><span class="more">+1</span></a>
       <a class="day card" data-day="2025-12-18" href="#day-2025-12-18"><span class="d">Thu<b>18</b></span><span class="t">Closed higher-timeframe values for signals and diagnostics</span></a>
       <div class="day off" data-day="2025-12-19"><span class="d">Fri<b>19</b></span></div>
       <a class="day card" data-day="2025-12-20" href="#day-2025-12-20"><span class="d">Sat<b>20</b></span><span class="t">Four-month cycles for the rolling strategy study</span></a>
@@ -1072,7 +1083,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       </dl>
     </article>
     <article class="entry" id="day-2025-12-18">
-      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/#trend-suite" target="_blank" rel="noopener">Hull Trading Suite</a><a class="proj" href="https://whipit.gallivanter.biz/#freqtrade" target="_blank" rel="noopener">Freqtrade Strategies</a><span class="proj">Live film concept</span><a class="proj" href="https://www.tradingview.com/pine-script-docs/">TradingView</a><span class="kind k-decided">Decided</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/#trend-suite" target="_blank" rel="noopener">Hull Trading Suite</a><a class="proj" href="https://whipit.gallivanter.biz/#freqtrade" target="_blank" rel="noopener">Freqtrade Strategies</a><a class="proj" href="https://whipit.gallivanter.biz/side-quests/live-film/">Live film concept</a><a class="proj" href="https://www.tradingview.com/pine-script-docs/">TradingView</a><span class="kind k-decided">Decided</span></div>
       <h3>Closed higher-timeframe values for signals and diagnostics</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>The higher-timeframe oscillator on the entry label differed from the reference indicator on the same candle.</dd></div>
@@ -1084,7 +1095,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       </dl>
     </article>
     <article class="entry" id="day-2025-12-17">
-      <div class="ehead"><span class="proj">Live film concept</span><a class="proj" href="https://whipit.gallivanter.biz/#freqtrade" target="_blank" rel="noopener">Freqtrade Strategies</a><a class="proj" href="https://whipit.gallivanter.biz/#trend-suite" target="_blank" rel="noopener">Hull Trading Suite</a><a class="proj" href="https://developers.google.com/youtube/iframe_api_reference">YouTube Player API</a><span class="kind k-decided">Decided</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/live-film/">Live film concept</a><a class="proj" href="https://whipit.gallivanter.biz/#freqtrade" target="_blank" rel="noopener">Freqtrade Strategies</a><a class="proj" href="https://whipit.gallivanter.biz/#trend-suite" target="_blank" rel="noopener">Hull Trading Suite</a><a class="proj" href="https://developers.google.com/youtube/iframe_api_reference">YouTube Player API</a><span class="kind k-decided">Decided</span></div>
       <h3>Three live layers with one view in focus</h3>
       <dl class="split">
         <div class="call"><dt>My call</dt><dd><ol>
@@ -1094,6 +1105,18 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
         </ol></dd></div>
         <div><dt>AI did</dt><dd>Outlined a two-player interface and revised the production-role and camera tables for the three simultaneous layers.</dd></div>
       </dl>
+    </article>
+    <article class="entry" id="day-2025-12-17-2">
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/#trend-suite" target="_blank" rel="noopener">Hull Trading Suite</a><a class="proj" href="https://www.tradingview.com/pine-script-docs/">TradingView</a><span class="kind k-decided">Decided</span></div>
+      <h3>Spike entries skip only the slow filters</h3>
+      <dl class="split">
+        <div><dt>Problem</dt><dd>Turning on the higher-timeframe RSI filter made spike entries disappear, although spikes were meant to override the slower filters.</dd></div>
+        <div class="call"><dt>My call</dt><dd><ol>
+          <li><b>Spike entries ignore the Value Area, the range gate and the higher-timeframe RSI.</b> I limited the override to those three filters and kept every other entry check in place.</li>
+        </ol></dd></div>
+        <div><dt>AI did</dt><dd>Traced how the RSI block reached the final entry condition and reviewed successive versions of the bypass.</dd></div>
+      </dl>
+      <p class="road"><b>road not taken:</b><span>Letting spike entries bypass every filter. Only the filters too slow for a spike should step aside.</span></p>
     </article>
     <article class="entry" id="day-2025-12-16">
       <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/#trend-suite" target="_blank" rel="noopener">Hull Trading Suite</a><a class="proj" href="https://whipit.gallivanter.biz/#freqtrade" target="_blank" rel="noopener">Freqtrade Strategies</a><a class="proj" href="https://www.tradingview.com/pine-script-docs/">TradingView</a><span class="kind k-decided">Decided</span></div>
@@ -1123,7 +1146,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
     <div class="weekhead"><h2>Week of 8 December<span>2025</span></h2></div>
     <div class="days">
       <a class="day card" data-day="2025-12-08" href="#day-2025-12-08"><span class="d">Mon<b>8</b></span><span class="t">Both entry types get a final loss check at the deadline</span></a>
-      <div class="day" data-day="2025-12-09"><span class="d">Tue<b>9</b></span><a class="proj" href="https://whipit.gallivanter.biz/#trend-suite" target="_blank" rel="noopener">Hull Trading Suite</a></div>
+      <a class="day card" data-day="2025-12-09" href="#day-2025-12-09"><span class="d">Tue<b>9</b></span><span class="t">Reversals reuse the existing alerts</span></a>
       <a class="day card" data-day="2025-12-10" href="#day-2025-12-10"><span class="d">Wed<b>10</b></span><span class="t">The entry candle body bounds immediate spike failure</span></a>
       <a class="day card" data-day="2025-12-11" href="#day-2025-12-11"><span class="d">Thu<b>11</b></span><span class="t">Entry-body tolerance at the ordinary cooldown deadline</span></a>
       <a class="day card" data-day="2025-12-12" href="#day-2025-12-12"><span class="d">Fri<b>12</b></span><span class="t">Preserve every signal rule in the proposed strategy port</span></a>
@@ -1179,6 +1202,18 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
           <li><b>Use the entry candle’s body as the retracement boundary.</b> I moved the immediate spike-failure check away from treating every small negative move as failure.</li>
         </ol></dd></div>
         <div><dt>AI did</dt><dd>Drafted the entry-body boundary and the direction-specific breach conditions.</dd></div>
+      </dl>
+    </article>
+    <article class="entry" id="day-2025-12-09">
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/#trend-suite" target="_blank" rel="noopener">Hull Trading Suite</a><a class="proj" href="https://www.tradingview.com/pine-script-docs/">TradingView</a><span class="kind k-decided">Decided</span></div>
+      <h3>Reversals reuse the existing exit and entry alerts</h3>
+      <dl class="split">
+        <div><dt>Problem</dt><dd>An entry against an open trade no longer drew the exit label on the same bar or fired both alerts.</dd></div>
+        <div class="call"><dt>My call</dt><dd><ol>
+          <li><b>Fire the existing exit and entry alerts on a reversal.</b> I rejected new alert conditions, so the reversal had to trigger the alerts already set up on the chart.</li>
+          <li><b>Check the cited source before accepting the fix.</b> The article offered as evidence only covered an indentation rollback, nothing about labels on the same bar.</li>
+        </ol></dd></div>
+        <div><dt>AI did</dt><dd>Drafted reversal flags that call the existing alerts for the exit and the new entry on the same bar.</dd></div>
       </dl>
     </article>
     <article class="entry" id="day-2025-12-08">
@@ -1323,7 +1358,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       </dl>
     </article>
     <article class="entry" id="day-2025-11-24">
-      <div class="ehead"><span class="proj">Alert configuration</span><a class="proj" href="https://github.com/alleyway/add-tradingview-alerts-tool">TradingView alert tool</a><span class="kind k-decided">Decided</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/indicator-lab/">Alert configuration</a><a class="proj" href="https://github.com/alleyway/add-tradingview-alerts-tool">TradingView alert tool</a><span class="kind k-decided">Decided</span></div>
       <h3>Update the alert generator after the indicator rename</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>The alert inputs still named the previous indicator, and a duplicated alert group needed a bounded cleanup.</dd></div>
@@ -1371,7 +1406,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       </dl>
     </article>
     <article class="entry" id="day-2025-11-21">
-      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/#freqtrade" target="_blank" rel="noopener">Freqtrade Strategies</a><span class="proj">Alert configuration</span><span class="proj">Launcher diagnostics</span><a class="proj" href="https://whipit.gallivanter.biz/#trend-suite" target="_blank" rel="noopener">Hull Trading Suite</a><span class="kind k-decided">Decided</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/#freqtrade" target="_blank" rel="noopener">Freqtrade Strategies</a><a class="proj" href="https://whipit.gallivanter.biz/side-quests/indicator-lab/">Alert configuration</a><span class="proj">Launcher diagnostics</span><a class="proj" href="https://whipit.gallivanter.biz/#trend-suite" target="_blank" rel="noopener">Hull Trading Suite</a><span class="kind k-decided">Decided</span></div>
       <h3>Calculate value areas on their native timeframe</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>The Python profile used midpoint volume bins and calculated higher-timeframe levels after merging candles, so its inputs differed from the chart version.</dd></div>
@@ -1385,7 +1420,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       </dl>
     </article>
     <article class="entry" id="day-2025-11-20">
-      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/#trend-suite" target="_blank" rel="noopener">Hull Trading Suite</a><a class="proj" href="https://www.tradingview.com/pine-script-docs/">TradingView</a><span class="proj">Alert configuration</span><span class="kind k-decided">Decided</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/#trend-suite" target="_blank" rel="noopener">Hull Trading Suite</a><a class="proj" href="https://www.tradingview.com/pine-script-docs/">TradingView</a><a class="proj" href="https://whipit.gallivanter.biz/side-quests/indicator-lab/">Alert configuration</a><span class="kind k-decided">Decided</span></div>
       <h3>Keep failed-signal retries away from the original entry</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>The indicator could signal another entry at the same price immediately after the preceding signal closed near break-even.</dd></div>
@@ -1420,7 +1455,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       </dl>
     </article>
     <article class="entry" id="day-2025-11-10">
-      <div class="ehead"><span class="proj">Alert configuration</span><a class="proj" href="https://github.com/alleyway/add-tradingview-alerts-tool">TradingView alert tool</a><a class="proj" href="https://whipit.gallivanter.biz/#trend-suite" target="_blank" rel="noopener">Hull Trading Suite</a><span class="kind k-decided">Decided</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/indicator-lab/">Alert configuration</a><a class="proj" href="https://github.com/alleyway/add-tradingview-alerts-tool">TradingView alert tool</a><a class="proj" href="https://whipit.gallivanter.biz/#trend-suite" target="_blank" rel="noopener">Hull Trading Suite</a><span class="kind k-decided">Decided</span></div>
       <h3>Configure each symbol once per alert batch</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>The automation repeatedly selected the same symbol and timeframe while creating nine conditions for each pair.</dd></div>
@@ -1491,7 +1526,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       </dl>
     </article>
     <article class="entry" id="day-2025-11-04">
-      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/#trend-suite" target="_blank" rel="noopener">Hull Trading Suite</a><a class="proj" href="https://www.tradingview.com/pine-script-docs/">TradingView</a><span class="proj">Alert configuration</span><span class="kind k-decided">Decided</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/#trend-suite" target="_blank" rel="noopener">Hull Trading Suite</a><a class="proj" href="https://www.tradingview.com/pine-script-docs/">TradingView</a><a class="proj" href="https://whipit.gallivanter.biz/side-quests/indicator-lab/">Alert configuration</a><span class="kind k-decided">Decided</span></div>
       <h3>One switch for the complete spike path</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>The spike path had separate controls, while a small candle body alone did not distinguish the doji shapes I wanted to flag.</dd></div>
@@ -1559,7 +1594,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       <a class="day card" data-day="2025-10-26" href="#day-2025-10-26"><span class="d">Sun<b>26</b></span><span class="t">Prepare partial alert batches for another run</span></a>
     </div>
     <article class="entry" id="day-2025-10-26">
-      <div class="ehead"><span class="proj">Alert configuration</span><a class="proj" href="https://github.com/alleyway/add-tradingview-alerts-tool">TradingView alert tool</a><span class="kind k-decided">Decided</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/indicator-lab/">Alert configuration</a><a class="proj" href="https://github.com/alleyway/add-tradingview-alerts-tool">TradingView alert tool</a><span class="kind k-decided">Decided</span></div>
       <h3>Prepare partial alert batches for another run</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>A large alert run stopped partway through, leaving completed rows mixed with work still to create.</dd></div>
@@ -1570,7 +1605,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       </dl>
     </article>
     <article class="entry" id="day-2025-10-25">
-      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/#trend-suite" target="_blank" rel="noopener">Hull Trading Suite</a><a class="proj" href="https://www.tradingview.com/pine-script-docs/">TradingView</a><span class="proj">Vehicle lighting</span><span class="proj">Alert configuration</span><span class="kind k-decided">Decided</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/#trend-suite" target="_blank" rel="noopener">Hull Trading Suite</a><a class="proj" href="https://www.tradingview.com/pine-script-docs/">TradingView</a><span class="proj">Vehicle lighting</span><a class="proj" href="https://whipit.gallivanter.biz/side-quests/indicator-lab/">Alert configuration</a><span class="kind k-decided">Decided</span></div>
       <h3>Keep spike exits independent of range gating</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>Turning off the range filter also changed spike exits because their eligibility came from how the entry had been tagged.</dd></div>
@@ -1732,7 +1767,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
     <div class="days">
       <a class="day card" data-day="2025-09-15" href="#day-2025-09-15"><span class="d">Mon<b>15</b></span><span class="t">Confirm price divergences with same-side volume signals</span></a>
       <a class="day card" data-day="2025-09-16" href="#day-2025-09-16"><span class="d">Tue<b>16</b></span><span class="t">Build the watchlist manually before automating it</span></a>
-      <a class="day card" data-day="2025-09-17" href="#day-2025-09-17"><span class="d">Wed<b>17</b></span><span class="t">Compare volume at the same point in each day</span></a>
+      <a class="day card" data-day="2025-09-17" href="#day-2025-09-17"><span class="d">Wed<b>17</b></span><span class="t">Compare volume at the same point in each day</span><span class="more">+1</span></a>
       <a class="day card" data-day="2025-09-18" href="#day-2025-09-18"><span class="d">Thu<b>18</b></span><span class="t">Wait for a blocked Hull signal to leave the range</span></a>
       <a class="day card" data-day="2025-09-19" href="#day-2025-09-19"><span class="d">Fri<b>19</b></span><span class="t">Let exits bypass the entry range filter</span></a>
       <a class="day card" data-day="2025-09-20" href="#day-2025-09-20"><span class="d">Sat<b>20</b></span><span class="t">Default to shorts above value and longs below it</span></a>
@@ -1773,7 +1808,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       </dl>
     </article>
     <article class="entry" id="day-2025-09-17">
-      <div class="ehead"><span class="proj">Volume progress indicator</span><a class="proj" href="https://www.tradingview.com/pine-script-docs/">TradingView</a><span class="kind k-investigated">Investigated</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/indicator-lab/">Volume progress indicator</a><a class="proj" href="https://www.tradingview.com/pine-script-docs/">TradingView</a><span class="kind k-investigated">Investigated</span></div>
       <h3>Compare volume at the same point in each day</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>The proposed daily comparison mixed partial and complete periods, then replaced the historical intraday pattern with a straight-line estimate.</dd></div>
@@ -1784,8 +1819,19 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
         <div><dt>AI did</dt><dd>Drafted successive time-aligned baseline approaches and revised them after my corrections.</dd></div>
       </dl>
     </article>
+    <article class="entry" id="day-2025-09-17-2">
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/#trend-suite" target="_blank" rel="noopener">Hull Trading Suite</a><a class="proj" href="https://www.tradingview.com/pine-script-docs/">TradingView</a><span class="kind k-decided">Decided</span></div>
+      <h3>A faster Hull for exits, the original Hull for entries</h3>
+      <dl class="split">
+        <div><dt>Problem</dt><dd>The Hull Suite timed entries well, but it was written for Pine Script v4 and had no faster signal to time exits.</dd></div>
+        <div class="call"><dt>My call</dt><dd><ol>
+          <li><b>Port the suite to Pine Script v6 with a second, faster Hull for exits.</b> I kept the original Hull on entries because it already worked, and required both hulls to keep the original cloud, with their colours set in the Style tab.</li>
+        </ol></dd></div>
+        <div><dt>AI did</dt><dd>Ported the script to Pine Script v6, added the faster Hull and worked through the compile errors I reported.</dd></div>
+      </dl>
+    </article>
     <article class="entry" id="day-2025-09-16">
-      <div class="ehead"><span class="proj">Market watchlists</span><a class="proj" href="https://www.tradingview.com/pine-script-docs/">TradingView</a><span class="kind k-decided">Decided</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/indicator-lab/">Market watchlists</a><a class="proj" href="https://www.tradingview.com/pine-script-docs/">TradingView</a><span class="kind k-decided">Decided</span></div>
       <h3>Build the watchlist manually before automating it</h3>
       <dl class="split">
         <div class="call"><dt>My call</dt><dd><ol>
@@ -1796,7 +1842,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       </dl>
     </article>
     <article class="entry" id="day-2025-09-15">
-      <div class="ehead"><span class="proj">Divergence indicator</span><a class="proj" href="https://www.tradingview.com/pine-script-docs/">TradingView</a><span class="kind k-decided">Decided</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/indicator-lab/">Divergence indicator</a><a class="proj" href="https://www.tradingview.com/pine-script-docs/">TradingView</a><span class="kind k-decided">Decided</span></div>
       <h3>Confirm price divergences with same-side volume signals</h3>
       <dl class="split">
         <div class="call"><dt>My call</dt><dd><ol>
@@ -1829,7 +1875,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       </dl>
     </article>
     <article class="entry" id="day-2025-09-01">
-      <div class="ehead"><span class="proj">RC boat repair</span><span class="kind k-dropped">Dropped</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/workbench/">RC boat repair</a><span class="kind k-dropped">Dropped</span></div>
       <h3>Stop a boat repair when replacement costs less</h3>
       <dl class="split">
         <div class="call"><dt>My call</dt><dd><ol>
@@ -1963,7 +2009,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       <div class="day off" data-day="2025-07-27"><span class="d">Sun<b>27</b></span></div>
     </div>
     <article class="entry" id="day-2025-07-24">
-      <div class="ehead"><span class="proj">TradingView alerts</span><span class="kind k-investigated">Investigated</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/indicator-lab/">TradingView alerts</a><span class="kind k-investigated">Investigated</span></div>
       <h3>Function alerts rejected a forced firing frequency</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>The chart rejected explicit firing-frequency options for the script’s function-based alerts.</dd></div>
@@ -1986,7 +2032,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       </dl>
     </article>
     <article class="entry" id="day-2025-07-21">
-      <div class="ehead"><span class="proj">Sensor selection</span><span class="kind k-investigated">Investigated</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/workbench/">Sensor selection</a><span class="kind k-investigated">Investigated</span></div>
       <h3>A water cutoff needs a water-temperature measurement</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>The proposed valves measured ambient air, which could not govern a water-temperature cutoff.</dd></div>
@@ -2158,7 +2204,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       </dl>
     </article>
     <article class="entry" id="day-2025-07-05">
-      <div class="ehead"><span class="proj">Smartwatch design study</span><span class="kind k-decided">Decided</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/smartwatch-study/">Smartwatch design study</a><span class="kind k-decided">Decided</span></div>
       <h3>Price the whole wireless-charging redesign</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>The initial wireless-charging estimate left out the base and the enclosure redesign.</dd></div>
@@ -2263,7 +2309,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       </dl>
     </article>
     <article class="entry" id="day-2025-06-23">
-      <div class="ehead"><span class="proj">Charger diagnostics</span><span class="kind k-investigated">Investigated</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/workbench/">Charger diagnostics</a><span class="kind k-investigated">Investigated</span></div>
       <h3>Two voltage scales behind the charger-setting confusion</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>The suggested voltage values and button instructions did not match the charger’s labelled controls.</dd></div>
@@ -2358,7 +2404,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       </dl>
     </article>
     <article class="entry" id="day-2025-05-28">
-      <div class="ehead"><span class="proj">Code poster</span><a class="proj" href="https://whipit.gallivanter.biz/#freqtrade" target="_blank" rel="noopener">Freqtrade Strategies</a><span class="kind k-decided">Decided</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/code-poster/">Code poster</a><a class="proj" href="https://whipit.gallivanter.biz/#freqtrade" target="_blank" rel="noopener">Freqtrade Strategies</a><span class="kind k-decided">Decided</span></div>
       <h3>Turn code structure into a generative poster</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>A long source file had personal significance but did not yet have a visual form suitable for a poster.</dd></div>
@@ -2477,7 +2523,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       </dl>
     </article>
     <article class="entry" id="day-2025-05-12">
-      <div class="ehead"><span class="proj">Product prototyping lab</span><span class="kind k-decided">Decided</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/prototyping-lab/">Product prototyping lab</a><span class="kind k-decided">Decided</span></div>
       <h3>A lower equipment budget without losing fabrication scope</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>Reducing the proposed laboratory budget risked removing the fabrication capabilities the project was meant to provide.</dd></div>
@@ -2501,7 +2547,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       <div class="day off" data-day="2025-05-11"><span class="d">Sun<b>11</b></span></div>
     </div>
     <article class="entry" id="day-2025-05-10">
-      <div class="ehead"><span class="proj">Energy signal concept</span><a class="proj" href="https://whipit.gallivanter.biz/#freqtrade" target="_blank" rel="noopener">Freqtrade Strategies</a><span class="kind k-decided">Decided</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/energy-signal/">Energy signal concept</a><a class="proj" href="https://whipit.gallivanter.biz/#freqtrade" target="_blank" rel="noopener">Freqtrade Strategies</a><span class="kind k-decided">Decided</span></div>
       <h3>One-tap energy signalling for close relationships</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>The first product outline treated a personal energy signal as a workplace status tool.</dd></div>
@@ -2572,7 +2618,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       <div class="day off" data-day="2025-05-04"><span class="d">Sun<b>4</b></span></div>
     </div>
     <article class="entry" id="day-2025-05-03">
-      <div class="ehead"><span class="proj">Inclusion talk</span><span class="kind k-investigated">Investigated</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/inclusion-talk/">Inclusion talk</a><span class="kind k-investigated">Investigated</span></div>
       <h3>Show the evidence behind a gender-bias claim</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>Broad claims about bias were too vague to turn into an evidence-led talk.</dd></div>
@@ -2594,7 +2640,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       </dl>
     </article>
     <article class="entry" id="day-2025-04-29">
-      <div class="ehead"><span class="proj">Inclusion talk</span><span class="kind k-decided">Decided</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/inclusion-talk/">Inclusion talk</a><span class="kind k-decided">Decided</span></div>
       <h3>Inclusion practices tied to operating measures</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>The inclusion talk argued for continuing the practices, but had not yet tied them to measurable organisational decisions.</dd></div>
@@ -2647,8 +2693,20 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       <a class="day card" data-day="2025-04-17" href="#day-2025-04-17"><span class="d">Thu<b>17</b></span><span class="t">Speed changes must preserve the bucket-based volume score</span></a>
       <a class="day card" data-day="2025-04-18" href="#day-2025-04-18"><span class="d">Fri<b>18</b></span><span class="t">Retain fast caching within each run; clear it between runs</span></a>
       <a class="day card" data-day="2025-04-19" href="#day-2025-04-19"><span class="d">Sat<b>19</b></span><span class="t">Reversed thresholds can disable the level block</span></a>
-      <div class="day" data-day="2025-04-20"><span class="d">Sun<b>20</b></span><a class="proj" href="https://whipit.gallivanter.biz/#freqtrade" target="_blank" rel="noopener">Freqtrade Strategies</a></div>
+      <a class="day card" data-day="2025-04-20" href="#day-2025-04-20"><span class="d">Sun<b>20</b></span><span class="t">Trend from a 24-hour VWAP</span></a>
     </div>
+    <article class="entry" id="day-2025-04-20">
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/#freqtrade" target="_blank" rel="noopener">Freqtrade Strategies</a><a class="proj" href="https://www.freqtrade.io/en/stable/">Freqtrade</a><span class="kind k-decided">Decided</span></div>
+      <h3>Trend from a 24-hour VWAP, entries from a 5-minute EMA cross</h3>
+      <dl class="split">
+        <div><dt>Problem</dt><dd>A 5-minute EMA crossover filtered only by volume took too many trades in crypto.</dd></div>
+        <div class="call"><dt>My call</dt><dd><ol>
+          <li><b>Keep the filter stack short.</b> I settled on the EMA cross, price above the 5-minute 50 EMA, a 1-hour volume spike and a 24-hour VWAP for trend, after weighing a 7-day VWAP.</li>
+        </ol></dd></div>
+        <div><dt>AI did</dt><dd>Compared trend filters for the crossover and proposed switching between a 5/12 and a 9/21 cross by market state.</dd></div>
+      </dl>
+      <p class="road"><b>road not taken:</b><span>Combining a 7-day and a 24-hour VWAP. I wanted the setup simple, so one VWAP decides the trend.</span></p>
+    </article>
     <article class="entry" id="day-2025-04-19">
       <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/#freqtrade" target="_blank" rel="noopener">Freqtrade Strategies</a><a class="proj" href="https://www.freqtrade.io/en/stable/">Freqtrade</a><span class="kind k-investigated">Investigated</span></div>
       <h3>Reversed thresholds can disable the level block</h3>
@@ -3280,7 +3338,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       <div class="day off" data-day="2025-01-26"><span class="d">Sun<b>26</b></span></div>
     </div>
     <article class="entry" id="day-2025-01-24">
-      <div class="ehead"><span class="proj">Indicator research</span><span class="kind k-investigated">Investigated</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/indicator-lab/">Indicator research</a><span class="kind k-investigated">Investigated</span></div>
       <h3>Premarket boundaries behind the indicator’s range label</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>Generic price-action explanations did not explain how the supplied indicator description defined its label.</dd></div>
@@ -3303,7 +3361,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       <div class="day off" data-day="2024-12-29"><span class="d">Sun<b>29</b></span></div>
     </div>
     <article class="entry" id="day-2024-12-25">
-      <div class="ehead"><span class="proj">Optical button actuator</span><a class="proj" href="https://docs.arduino.cc/language-reference/">Arduino</a><span class="kind k-investigated">Investigated</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/workbench/">Optical button actuator</a><a class="proj" href="https://docs.arduino.cc/language-reference/">Arduino</a><span class="kind k-investigated">Investigated</span></div>
       <h3>Touch input changed the button-actuator requirements</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>The target control detected a finger touch instead of a conventional button press.</dd></div>
@@ -3325,7 +3383,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       <a class="day card" data-day="2024-12-22" href="#day-2024-12-22"><span class="d">Sun<b>22</b></span><span class="t">Arduino control for a button actuator</span></a>
     </div>
     <article class="entry" id="day-2024-12-22">
-      <div class="ehead"><span class="proj">Optical button actuator</span><a class="proj" href="https://docs.arduino.cc/language-reference/">Arduino</a><span class="kind k-decided">Decided</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/workbench/">Optical button actuator</a><a class="proj" href="https://docs.arduino.cc/language-reference/">Arduino</a><span class="kind k-decided">Decided</span></div>
       <h3>Arduino control for a button actuator</h3>
       <dl class="split">
         <div class="call"><dt>My call</dt><dd><ol>
@@ -3346,7 +3404,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       <div class="day off" data-day="2024-12-15"><span class="d">Sun<b>15</b></span></div>
     </div>
     <article class="entry" id="day-2024-12-09">
-      <div class="ehead"><span class="proj">Relative volume indicator</span><a class="proj" href="https://www.tradingview.com/pine-script-docs/">Pine Script</a><span class="kind k-investigated">Investigated</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/indicator-lab/">Relative volume indicator</a><a class="proj" href="https://www.tradingview.com/pine-script-docs/">Pine Script</a><span class="kind k-investigated">Investigated</span></div>
       <h3>Two lines for volume totals and candle comparisons</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>The absolute-volume switches did nothing, and later display revisions left the chart without labels.</dd></div>
@@ -3381,7 +3439,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       <div class="day off" data-day="2024-12-01"><span class="d">Sun<b>1</b></span></div>
     </div>
     <article class="entry" id="day-2024-11-28">
-      <div class="ehead"><span class="proj">RFID reader recovery</span><a class="proj" href="https://github.com/RfidResearchGroup/proxmark3">Proxmark3</a><span class="kind k-investigated">Investigated</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/workbench/">RFID reader recovery</a><a class="proj" href="https://github.com/RfidResearchGroup/proxmark3">Proxmark3</a><span class="kind k-investigated">Investigated</span></div>
       <h3>Keep NFC within the RFID reader’s firmware budget</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>After repeated firmware flashes, the reader appeared in Windows only while its button was held.</dd></div>
@@ -3416,7 +3474,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       <div class="day off" data-day="2024-11-17"><span class="d">Sun<b>17</b></span></div>
     </div>
     <article class="entry" id="day-2024-11-15">
-      <div class="ehead"><span class="proj">Compression spring investigation</span><span class="kind k-investigated">Investigated</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/workbench/">Compression spring investigation</a><span class="kind k-investigated">Investigated</span></div>
       <h3>A 10 mm space limit for the replacement spring</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>The existing spring was too stiff, and a softer replacement still had to fit into 10 mm when compressed.</dd></div>
@@ -3429,7 +3487,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       </dl>
     </article>
     <article class="entry" id="day-2024-11-13">
-      <div class="ehead"><span class="proj">Pedal response investigation</span><span class="kind k-investigated">Investigated</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/workbench/">Pedal response investigation</a><span class="kind k-investigated">Investigated</span></div>
       <h3>The pedal’s rest position changed the wiring discussion</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>A resistor experiment left the pedal showing almost no resistance at rest, while its normal rest position had maximum resistance.</dd></div>
@@ -3452,7 +3510,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       <div class="day off" data-day="2024-11-10"><span class="d">Sun<b>10</b></span></div>
     </div>
     <article class="entry" id="day-2024-11-08">
-      <div class="ehead"><span class="proj">Relative volume indicator</span><a class="proj" href="https://www.tradingview.com/pine-script-docs/">Pine Script</a><span class="kind k-investigated">Investigated</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/indicator-lab/">Relative volume indicator</a><a class="proj" href="https://www.tradingview.com/pine-script-docs/">Pine Script</a><span class="kind k-investigated">Investigated</span></div>
       <h3>Relative volume at the same point in the trading day</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>The intraday value compared recent bars instead of accumulated volume over the same elapsed part of previous days.</dd></div>
@@ -3476,7 +3534,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       <div class="day off" data-day="2024-10-13"><span class="d">Sun<b>13</b></span></div>
     </div>
     <article class="entry" id="day-2024-10-11">
-      <div class="ehead"><span class="proj">Composite indicator</span><a class="proj" href="https://www.tradingview.com/pine-script-docs/">Pine Script</a><span class="kind k-investigated">Investigated</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/indicator-lab/">Composite indicator</a><a class="proj" href="https://www.tradingview.com/pine-script-docs/">Pine Script</a><span class="kind k-investigated">Investigated</span></div>
       <h3>Isolating missing MACD plots while retaining RSI features</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>MACD and its histogram were absent from the combined indicator, and a proposed fix removed the other features.</dd></div>
@@ -3488,7 +3546,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       </dl>
     </article>
     <article class="entry" id="day-2024-10-09">
-      <div class="ehead"><span class="proj">Composite indicator</span><a class="proj" href="https://www.tradingview.com/pine-script-docs/">Pine Script</a><span class="kind k-decided">Decided</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/indicator-lab/">Composite indicator</a><a class="proj" href="https://www.tradingview.com/pine-script-docs/">Pine Script</a><span class="kind k-decided">Decided</span></div>
       <h3>RSI and MACD on one shared scale</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>Separate RSI and MACD scripts did not provide the combined display I wanted in one pane.</dd></div>
@@ -3499,7 +3557,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       </dl>
     </article>
     <article class="entry" id="day-2024-10-08">
-      <div class="ehead"><span class="proj">Key Level Suite</span><a class="proj" href="https://www.tradingview.com/pine-script-docs/">Pine Script</a><span class="kind k-decided">Decided</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/indicator-lab/">Key Level Suite</a><a class="proj" href="https://www.tradingview.com/pine-script-docs/">Pine Script</a><span class="kind k-decided">Decided</span></div>
       <h3>Current-period levels with controls grouped by timeframe</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>The indicator drew levels for past hours while the controls for four selectable timeframes were still being reorganised.</dd></div>
@@ -3522,7 +3580,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       <div class="day off" data-day="2024-07-14"><span class="d">Sun<b>14</b></span></div>
     </div>
     <article class="entry" id="day-2024-07-12">
-      <div class="ehead"><span class="proj">Pairs trading research</span><a class="proj" href="https://www.tradingview.com/pine-script-docs/">Pine Script</a><span class="kind k-investigated">Investigated</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/indicator-lab/">Pairs trading research</a><a class="proj" href="https://www.tradingview.com/pine-script-docs/">Pine Script</a><span class="kind k-investigated">Investigated</span></div>
       <h3>A TradingView route for hard-to-download pair data</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>Some tickers were hard to download for the Python pair-analysis workflow.</dd></div>
@@ -3545,7 +3603,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       <div class="day off" data-day="2024-03-24"><span class="d">Sun<b>24</b></span></div>
     </div>
     <article class="entry" id="day-2024-03-19">
-      <div class="ehead"><span class="proj">Pine strategy experiments</span><a class="proj" href="https://www.tradingview.com/pine-script-docs/">Pine Script</a><span class="kind k-investigated">Investigated</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/indicator-lab/">Pine strategy experiments</a><a class="proj" href="https://www.tradingview.com/pine-script-docs/">Pine Script</a><span class="kind k-investigated">Investigated</span></div>
       <h3>An ADX threshold of 17 as the backtest candidate</h3>
       <dl class="split">
         <div class="call"><dt>My call</dt><dd><ol>
@@ -3555,7 +3613,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       </dl>
     </article>
     <article class="entry" id="day-2024-03-18">
-      <div class="ehead"><span class="proj">Pine strategy experiments</span><a class="proj" href="https://www.tradingview.com/pine-script-docs/">Pine Script</a><span class="kind k-decided">Decided</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/indicator-lab/">Pine strategy experiments</a><a class="proj" href="https://www.tradingview.com/pine-script-docs/">Pine Script</a><span class="kind k-decided">Decided</span></div>
       <h3>Require a price move before another strategy entry</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>A new order had to wait until price had moved by more than 1% from the previous order’s close.</dd></div>
@@ -3577,7 +3635,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       <div class="day off" data-day="2024-03-17"><span class="d">Sun<b>17</b></span></div>
     </div>
     <article class="entry" id="day-2024-03-15">
-      <div class="ehead"><span class="proj">Interactive storybook app</span><span class="kind k-decided">Decided</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/interactive-storybook/">Interactive storybook app</a><span class="kind k-decided">Decided</span></div>
       <h3>Endings that remember discoveries along the way</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>The shared birthday ending had to reflect which characters and toys the reader had encountered.</dd></div>
@@ -3589,7 +3647,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       </dl>
     </article>
     <article class="entry" id="day-2024-03-14">
-      <div class="ehead"><span class="proj">Interactive storybook app</span><span class="kind k-decided">Decided</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/interactive-storybook/">Interactive storybook app</a><span class="kind k-decided">Decided</span></div>
       <h3>A dinosaur adventure for children learning to read</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>The story adaptation had to preserve reader choices while using language for children just starting to read.</dd></div>
@@ -3612,7 +3670,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       <div class="day off" data-day="2024-03-10"><span class="d">Sun<b>10</b></span></div>
     </div>
     <article class="entry" id="day-2024-03-07">
-      <div class="ehead"><span class="proj">Elysium club concept</span><span class="kind k-decided">Decided</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/elysium-club/">Elysium club concept</a><span class="kind k-decided">Decided</span></div>
       <h3>Two membership tiers with referral-led access</h3>
       <dl class="split">
         <div class="call"><dt>My call</dt><dd><ol>
@@ -3634,7 +3692,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       <div class="day off" data-day="2024-03-03"><span class="d">Sun<b>3</b></span></div>
     </div>
     <article class="entry" id="day-2024-02-29">
-      <div class="ehead"><span class="proj">Elysium club concept</span><span class="kind k-decided">Decided</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/elysium-club/">Elysium club concept</a><span class="kind k-decided">Decided</span></div>
       <h3>A three-step welcome centred on an NFC token</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>The token ceremony, locker handover and clock activation had to read as one continuous induction.</dd></div>
@@ -3647,7 +3705,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       </dl>
     </article>
     <article class="entry" id="day-2024-02-28">
-      <div class="ehead"><span class="proj">Elysium club concept</span><span class="kind k-decided">Decided</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/elysium-club/">Elysium club concept</a><span class="kind k-decided">Decided</span></div>
       <h3>Personal spirits storage with a discreet digital screen</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>I wanted the individual spirits locker to hold personal objects too, with a smaller digital screen.</dd></div>
@@ -3659,7 +3717,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       </dl>
     </article>
     <article class="entry" id="day-2024-02-27">
-      <div class="ehead"><span class="proj">Elysium club concept</span><span class="kind k-decided">Decided</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/elysium-club/">Elysium club concept</a><span class="kind k-decided">Decided</span></div>
       <h3>Club access tied to automatic payments</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>I wanted members and their guests to enter and leave without a separate payment moment.</dd></div>
@@ -3682,7 +3740,7 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       <div class="day off" data-day="2024-02-18"><span class="d">Sun<b>18</b></span></div>
     </div>
     <article class="entry" id="day-2024-02-15">
-      <div class="ehead"><span class="proj">Interactive storybook app</span><span class="kind k-investigated">Investigated</span></div>
+      <div class="ehead"><a class="proj" href="https://whipit.gallivanter.biz/side-quests/interactive-storybook/">Interactive storybook app</a><span class="kind k-investigated">Investigated</span></div>
       <h3>A mobile app concept for an interactive children’s book</h3>
       <dl class="split">
         <div><dt>Problem</dt><dd>The app discussion started with the assistant identifying a different book from the one I meant to adapt.</dd></div>
@@ -3740,20 +3798,21 @@ footer b{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-tr
       </article>
     </section>
     <section class="panel">
-      <h4>AI sessions by provider</h4>
-      <p>Working sessions per year by the company behind the model. Until April 2026 every session ran on OpenAI; Claude sessions from later months are not counted yet.</p>
-      <div class="models"><div class="mrow"><span class="my">2026 to April</span><div class="pline"><span class="pn">OpenAI</span><span class="pbar"><span class="seg s1" style="width:31.1%"></span></span><span class="pv">866</span></div><div class="pline"><span class="pn">Anthropic</span><span class="pbar"><span class="seg s2" style="width:0.0%"></span></span><span class="pv">0</span></div></div><div class="mrow"><span class="my">2025</span><div class="pline"><span class="pn">OpenAI</span><span class="pbar"><span class="seg s1" style="width:100.0%"></span></span><span class="pv">2,784</span></div><div class="pline"><span class="pn">Anthropic</span><span class="pbar"><span class="seg s2" style="width:0.0%"></span></span><span class="pv">0</span></div></div><div class="mrow"><span class="my">2024</span><div class="pline"><span class="pn">OpenAI</span><span class="pbar"><span class="seg s1" style="width:23.1%"></span></span><span class="pv">642</span></div><div class="pline"><span class="pn">Anthropic</span><span class="pbar"><span class="seg s2" style="width:0.0%"></span></span><span class="pv">0</span></div></div></div>
-      <ul class="mleg"><li><span class="key s1"></span>OpenAI <span class="sub">(ChatGPT, Codex)</span></li><li><span class="key s2"></span>Anthropic <span class="sub">(Claude, Claude Code)</span></li></ul>
-      <details class="mtable"><summary>Table</summary><table><tr><th></th><th>OpenAI</th><th>Anthropic</th></tr><tr><th>2026</th><td>866</td><td>0</td></tr><tr><th>2025</th><td>2,784</td><td>0</td></tr><tr><th>2024</th><td>642</td><td>0</td></tr></table></details>
+      <h4>The log so far</h4>
+      <div class="counts"><div><b>234</b><span>entries</span></div><div><b>74</b><span>weeks</span></div><div><b>69</b><span>projects &amp; tools</span></div></div>
+      <div class="counts kinds"><div><b>165</b><span>decided</span></div><div><b>51</b><span>investigated</span></div><div><b>15</b><span>fixed</span></div><div><b>3</b><span>dropped</span></div></div>
     </section>
     <section class="panel">
-      <h4>AI spend per month</h4>
-      <p>Every AI subscription, API credit and tool I paid for, in US dollars, by the company behind the models.</p>
-      <p class="kpi"><b>$2,629</b> in total since April 2023</p>
-      <svg class="spend" viewBox="0 0 462 106" role="img" aria-label="AI spend per month up to September 2026, stacked by model company"><rect x="0" y="85.7" width="9" height="4.3" fill="#2a78d6"/><rect class="hit" x="0" y="0" width="11" height="90"><title>Apr 2023: $20 · OpenAI $20</title></rect><rect x="11" y="85.7" width="9" height="4.3" fill="#2a78d6"/><rect x="11" y="60.2" width="9" height="25.5" fill="#9aa0a6"/><rect class="hit" x="11" y="0" width="11" height="90"><title>May 2023: $140 · OpenAI $20 · Other $120</title></rect><rect x="22" y="85.7" width="9" height="4.3" fill="#2a78d6"/><rect x="22" y="40.6" width="9" height="45.1" fill="#9aa0a6"/><rect class="hit" x="22" y="0" width="11" height="90"><title>Jun 2023: $232 · OpenAI $20 · Other $212</title></rect><rect x="33" y="85.7" width="9" height="4.3" fill="#2a78d6"/><rect class="hit" x="33" y="0" width="11" height="90"><title>Jul 2023: $20 · OpenAI $20</title></rect><rect x="44" y="85.7" width="9" height="4.3" fill="#2a78d6"/><rect class="hit" x="44" y="0" width="11" height="90"><title>Aug 2023: $20 · OpenAI $20</title></rect><rect x="55" y="85.7" width="9" height="4.3" fill="#2a78d6"/><rect class="hit" x="55" y="0" width="11" height="90"><title>Sep 2023: $20 · OpenAI $20</title></rect><rect x="66" y="85.7" width="9" height="4.3" fill="#2a78d6"/><rect class="hit" x="66" y="0" width="11" height="90"><title>Oct 2023: $20 · OpenAI $20</title></rect><rect class="hit" x="77" y="0" width="11" height="90"><title>Nov 2023: $0</title></rect><rect class="hit" x="88" y="0" width="11" height="90"><title>Dec 2023: $0</title></rect><rect x="99" y="84.8" width="9" height="5.2" fill="#2a78d6"/><rect class="hit" x="99" y="0" width="11" height="90"><title>Jan 2024: $25 · OpenAI $25</title></rect><rect x="110" y="84.8" width="9" height="5.2" fill="#2a78d6"/><rect class="hit" x="110" y="0" width="11" height="90"><title>Feb 2024: $25 · OpenAI $25</title></rect><rect x="121" y="84.8" width="9" height="5.2" fill="#2a78d6"/><rect class="hit" x="121" y="0" width="11" height="90"><title>Mar 2024: $25 · OpenAI $25</title></rect><rect x="132" y="84.8" width="9" height="5.2" fill="#2a78d6"/><rect class="hit" x="132" y="0" width="11" height="90"><title>Apr 2024: $25 · OpenAI $25</title></rect><rect x="143" y="84.8" width="9" height="5.2" fill="#2a78d6"/><rect class="hit" x="143" y="0" width="11" height="90"><title>May 2024: $25 · OpenAI $25</title></rect><rect x="154" y="84.8" width="9" height="5.2" fill="#2a78d6"/><rect class="hit" x="154" y="0" width="11" height="90"><title>Jun 2024: $25 · OpenAI $25</title></rect><rect x="165" y="84.8" width="9" height="5.2" fill="#2a78d6"/><rect x="165" y="79.7" width="9" height="5.1" fill="#eb6834"/><rect class="hit" x="165" y="0" width="11" height="90"><title>Jul 2024: $48 · OpenAI $25 · Anthropic $24</title></rect><rect x="176" y="84.8" width="9" height="5.2" fill="#2a78d6"/><rect class="hit" x="176" y="0" width="11" height="90"><title>Aug 2024: $25 · OpenAI $25</title></rect><rect x="187" y="84.8" width="9" height="5.2" fill="#2a78d6"/><rect class="hit" x="187" y="0" width="11" height="90"><title>Sep 2024: $25 · OpenAI $25</title></rect><rect x="198" y="84.8" width="9" height="5.2" fill="#2a78d6"/><rect x="198" y="60.4" width="9" height="24.3" fill="#eda100"/><rect class="hit" x="198" y="0" width="11" height="90"><title>Oct 2024: $139 · OpenAI $25 · xAI $114</title></rect><rect x="209" y="84.8" width="9" height="5.2" fill="#2a78d6"/><rect class="hit" x="209" y="0" width="11" height="90"><title>Nov 2024: $25 · OpenAI $25</title></rect><rect x="220" y="84.8" width="9" height="5.2" fill="#2a78d6"/><rect class="hit" x="220" y="0" width="11" height="90"><title>Dec 2024: $25 · OpenAI $25</title></rect><rect x="231" y="84.8" width="9" height="5.2" fill="#2a78d6"/><rect class="hit" x="231" y="0" width="11" height="90"><title>Jan 2025: $25 · OpenAI $25</title></rect><rect x="242" y="84.8" width="9" height="5.2" fill="#2a78d6"/><rect class="hit" x="242" y="0" width="11" height="90"><title>Feb 2025: $25 · OpenAI $25</title></rect><rect x="253" y="84.8" width="9" height="5.2" fill="#2a78d6"/><rect x="253" y="79.7" width="9" height="5.1" fill="#eb6834"/><rect x="253" y="77.6" width="9" height="2.1" fill="#9aa0a6"/><rect class="hit" x="253" y="0" width="11" height="90"><title>Mar 2025: $58 · OpenAI $25 · Anthropic $24 · Other $10</title></rect><rect x="264" y="84.8" width="9" height="5.2" fill="#2a78d6"/><rect x="264" y="82.6" width="9" height="2.1" fill="#9aa0a6"/><rect class="hit" x="264" y="0" width="11" height="90"><title>Apr 2025: $35 · OpenAI $25 · Other $10</title></rect><rect x="275" y="84.8" width="9" height="5.2" fill="#2a78d6"/><rect x="275" y="79.4" width="9" height="5.3" fill="#eb6834"/><rect class="hit" x="275" y="0" width="11" height="90"><title>May 2025: $50 · OpenAI $25 · Anthropic $25</title></rect><rect x="286" y="84.8" width="9" height="5.2" fill="#2a78d6"/><rect x="286" y="79.3" width="9" height="5.5" fill="#eb6834"/><rect class="hit" x="286" y="0" width="11" height="90"><title>Jun 2025: $50 · OpenAI $25 · Anthropic $26</title></rect><rect x="297" y="84.8" width="9" height="5.2" fill="#2a78d6"/><rect class="hit" x="297" y="0" width="11" height="90"><title>Jul 2025: $25 · OpenAI $25</title></rect><rect x="308" y="84.8" width="9" height="5.2" fill="#2a78d6"/><rect class="hit" x="308" y="0" width="11" height="90"><title>Aug 2025: $25 · OpenAI $25</title></rect><rect x="319" y="84.8" width="9" height="5.2" fill="#2a78d6"/><rect class="hit" x="319" y="0" width="11" height="90"><title>Sep 2025: $25 · OpenAI $25</title></rect><rect x="330" y="84.8" width="9" height="5.2" fill="#2a78d6"/><rect x="330" y="66.8" width="9" height="18.0" fill="#eda100"/><rect class="hit" x="330" y="0" width="11" height="90"><title>Oct 2025: $109 · OpenAI $25 · xAI $85</title></rect><rect x="341" y="84.8" width="9" height="5.2" fill="#2a78d6"/><rect class="hit" x="341" y="0" width="11" height="90"><title>Nov 2025: $25 · OpenAI $25</title></rect><rect x="352" y="84.8" width="9" height="5.2" fill="#2a78d6"/><rect x="352" y="79.3" width="9" height="5.5" fill="#eb6834"/><rect class="hit" x="352" y="0" width="11" height="90"><title>Dec 2025: $50 · OpenAI $25 · Anthropic $26</title></rect><rect x="363" y="84.8" width="9" height="5.2" fill="#2a78d6"/><rect x="363" y="83.3" width="9" height="1.5" fill="#9aa0a6"/><rect class="hit" x="363" y="0" width="11" height="90"><title>Jan 2026: $26 · OpenAI $25 · Other $1</title></rect><rect x="374" y="74.3" width="9" height="15.7" fill="#2a78d6"/><rect x="374" y="24.6" width="9" height="49.7" fill="#eb6834"/><rect x="374" y="18.9" width="9" height="5.7" fill="#9aa0a6"/><rect class="hit" x="374" y="0" width="11" height="90"><title>Feb 2026: $334 · OpenAI $74 · Anthropic $234 · Other $27</title></rect><rect x="385" y="65.4" width="9" height="24.6" fill="#eb6834"/><rect class="hit" x="385" y="0" width="11" height="90"><title>Mar 2026: $116 · Anthropic $116</title></rect><rect x="396" y="83.1" width="9" height="6.9" fill="#eb6834"/><rect x="396" y="81.6" width="9" height="1.5" fill="#9aa0a6"/><rect class="hit" x="396" y="0" width="11" height="90"><title>Apr 2026: $38 · Anthropic $33 · Other $5</title></rect><rect x="407" y="84.3" width="9" height="5.7" fill="#2a78d6"/><rect x="407" y="79.9" width="9" height="4.5" fill="#eb6834"/><rect x="407" y="77.7" width="9" height="2.1" fill="#9aa0a6"/><rect class="hit" x="407" y="0" width="11" height="90"><title>May 2026: $58 · OpenAI $27 · Anthropic $21 · Other $10</title></rect><rect x="418" y="84.3" width="9" height="5.7" fill="#2a78d6"/><rect x="418" y="82.8" width="9" height="1.5" fill="#1baf7a"/><rect x="418" y="74.3" width="9" height="8.5" fill="#9aa0a6"/><rect class="hit" x="418" y="0" width="11" height="90"><title>Jun 2026: $68 · OpenAI $27 · Google $2 · Other $40</title></rect><rect x="429" y="84.4" width="9" height="5.6" fill="#2a78d6"/><rect x="429" y="80.9" width="9" height="3.5" fill="#1baf7a"/><rect x="429" y="74.5" width="9" height="6.4" fill="#9aa0a6"/><rect class="hit" x="429" y="0" width="11" height="90"><title>Jul 2026: $73 · OpenAI $26 · Google $16 · Other $30</title></rect><rect x="440" y="84.3" width="9" height="5.7" fill="#2a78d6"/><rect x="440" y="74.7" width="9" height="9.6" fill="#1baf7a"/><rect x="440" y="73.2" width="9" height="1.5" fill="#eda100"/><rect x="440" y="70.9" width="9" height="2.3" fill="#9aa0a6"/><rect class="hit" x="440" y="0" width="11" height="90"><title>Aug 2026: $88 · OpenAI $27 · Google $45 · xAI $5 · Other $11</title></rect><rect x="451" y="29.0" width="9" height="61.0" fill="#2a78d6"/><rect x="451" y="23.5" width="9" height="5.5" fill="#eb6834"/><rect x="451" y="22.0" width="9" height="1.5" fill="#1baf7a"/><rect x="451" y="14.6" width="9" height="7.4" fill="#eda100"/><rect x="451" y="-0.3" width="9" height="14.9" fill="#9aa0a6"/><rect class="hit" x="451" y="0" width="11" height="90"><title>Sep 2026: $423 · OpenAI $287 · Anthropic $26 · Google $6 · xAI $35 · Other $70</title></rect><text x="0" y="102">2023</text><text x="99" y="102">2024</text><text x="231" y="102">2025</text><text x="363" y="102">2026</text></svg>
-      <ul class="mleg"><li><span class="key" style="background:#2a78d6"></span>OpenAI</li><li><span class="key" style="background:#eb6834"></span>Anthropic</li><li><span class="key" style="background:#1baf7a"></span>Google</li><li><span class="key" style="background:#eda100"></span>xAI</li><li><span class="key" style="background:#9aa0a6"></span>Other</li></ul>
-      <p class="fine">Up to September 2026. Euro payments converted at the ECB rate of the payment day. Multi-model tools count under the companies whose models they ran; Other covers smaller model companies and tools without a model record.</p>
-      <details class="mtable"><summary>Table (USD)</summary><div class="tw"><table><tr><th></th><th>OpenAI</th><th>Anthropic</th><th>Google</th><th>xAI</th><th>Other</th><th>Total</th></tr><tr><th>2023-04</th><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>20</td></tr><tr><th>2023-05</th><td>20</td><td>0</td><td>0</td><td>0</td><td>120</td><td>140</td></tr><tr><th>2023-06</th><td>20</td><td>0</td><td>0</td><td>0</td><td>212</td><td>232</td></tr><tr><th>2023-07</th><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>20</td></tr><tr><th>2023-08</th><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>20</td></tr><tr><th>2023-09</th><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>20</td></tr><tr><th>2023-10</th><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>20</td></tr><tr><th>2023-11</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><th>2023-12</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><th>2024-01</th><td>25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>25</td></tr><tr><th>2024-02</th><td>25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>25</td></tr><tr><th>2024-03</th><td>25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>25</td></tr><tr><th>2024-04</th><td>25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>25</td></tr><tr><th>2024-05</th><td>25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>25</td></tr><tr><th>2024-06</th><td>25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>25</td></tr><tr><th>2024-07</th><td>25</td><td>24</td><td>0</td><td>0</td><td>0</td><td>48</td></tr><tr><th>2024-08</th><td>25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>25</td></tr><tr><th>2024-09</th><td>25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>25</td></tr><tr><th>2024-10</th><td>25</td><td>0</td><td>0</td><td>114</td><td>0</td><td>139</td></tr><tr><th>2024-11</th><td>25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>25</td></tr><tr><th>2024-12</th><td>25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>25</td></tr><tr><th>2025-01</th><td>25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>25</td></tr><tr><th>2025-02</th><td>25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>25</td></tr><tr><th>2025-03</th><td>25</td><td>24</td><td>0</td><td>0</td><td>10</td><td>58</td></tr><tr><th>2025-04</th><td>25</td><td>0</td><td>0</td><td>0</td><td>10</td><td>35</td></tr><tr><th>2025-05</th><td>25</td><td>25</td><td>0</td><td>0</td><td>0</td><td>50</td></tr><tr><th>2025-06</th><td>25</td><td>26</td><td>0</td><td>0</td><td>0</td><td>50</td></tr><tr><th>2025-07</th><td>25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>25</td></tr><tr><th>2025-08</th><td>25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>25</td></tr><tr><th>2025-09</th><td>25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>25</td></tr><tr><th>2025-10</th><td>25</td><td>0</td><td>0</td><td>85</td><td>0</td><td>109</td></tr><tr><th>2025-11</th><td>25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>25</td></tr><tr><th>2025-12</th><td>25</td><td>26</td><td>0</td><td>0</td><td>0</td><td>50</td></tr><tr><th>2026-01</th><td>25</td><td>0</td><td>0</td><td>0</td><td>1</td><td>26</td></tr><tr><th>2026-02</th><td>74</td><td>234</td><td>0</td><td>0</td><td>27</td><td>334</td></tr><tr><th>2026-03</th><td>0</td><td>116</td><td>0</td><td>0</td><td>0</td><td>116</td></tr><tr><th>2026-04</th><td>0</td><td>33</td><td>0</td><td>0</td><td>5</td><td>38</td></tr><tr><th>2026-05</th><td>27</td><td>21</td><td>0</td><td>0</td><td>10</td><td>58</td></tr><tr><th>2026-06</th><td>27</td><td>0</td><td>2</td><td>0</td><td>40</td><td>68</td></tr><tr><th>2026-07</th><td>26</td><td>0</td><td>16</td><td>0</td><td>30</td><td>73</td></tr><tr><th>2026-08</th><td>27</td><td>0</td><td>45</td><td>5</td><td>11</td><td>88</td></tr><tr><th>2026-09</th><td>287</td><td>26</td><td>6</td><td>35</td><td>70</td><td>423</td></tr></table></div></details>
+      <h4>AI I build with</h4>
+      <div class="years usage"><div class="ycol"><div class="ystack"><i style="height:70.4%;background:#9aa0a6" data-tip="Other · 70%"></i><i style="height:29.6%;background:#2a78d6" data-tip="OpenAI · 30%"></i></div><span class="yl2">2023</span></div><div class="ycol"><div class="ystack"><i style="height:0.5%;background:#eb6834" data-tip="Anthropic · 1%"></i><i style="height:99.5%;background:#2a78d6" data-tip="OpenAI · 99%"></i></div><span class="yl2">2024</span></div><div class="ycol"><div class="ystack"><i style="height:4.0%;background:#9aa0a6" data-tip="Other · 4%"></i><i style="height:6.3%;background:#eda100" data-tip="xAI · 6%"></i><i style="height:7.5%;background:#eb6834" data-tip="Anthropic · 7%"></i><i style="height:82.3%;background:#2a78d6" data-tip="OpenAI · 82%"></i></div><span class="yl2">2025</span></div><div class="ycol"><div class="ystack"><i style="height:6.4%;background:#9aa0a6" data-tip="Other · 6%"></i><i style="height:35.4%;background:#1baf7a" data-tip="Antigravity · 35%"></i><i style="height:39.1%;background:#eb6834" data-tip="Anthropic · 39%"></i><i style="height:19.1%;background:#2a78d6" data-tip="OpenAI · 19%"></i></div><span class="yl2">2026*</span></div></div>
+      <ul class="mixleg"><li><span class="key" style="background:#2a78d6"></span><b>OpenAI</b><small></small><em>since 2023</em></li><li><span class="key" style="background:#eb6834"></span><b>Anthropic</b><small></small><em>since 2024</em></li><li><span class="key" style="background:#1baf7a"></span><b>Antigravity</b><small></small><em>since 2026</em></li><li><span class="key" style="background:#eda100"></span><b>xAI</b><small></small><em>since 2024</em></li><li><span class="key" style="background:#9aa0a6"></span><b>Other</b><small>Qwen, Kimi, MiMo and more</small><em>since 2023</em></li></ul>
+      <p class="fine">*2026 up to April.</p>
+    </section>
+    <section class="panel">
+      <h4>AI spend</h4>
+      <p class="big"><b>$2,560</b><span>since April 2023</span></p>
+      <div class="years"><div class="ycol"><span class="yv">$472</span><div class="ystack"><i style="height:28.8%;background:#9aa0a6" data-tip="Other · $332"></i><i style="height:12.1%;background:#2a78d6" data-tip="OpenAI · $140"></i></div><span class="yl2">2023</span></div><div class="ycol"><span class="yv">$433</span><div class="ystack"><i style="height:9.9%;background:#eda100" data-tip="xAI · $114"></i><i style="height:2.1%;background:#eb6834" data-tip="Anthropic · $24"></i><i style="height:25.6%;background:#2a78d6" data-tip="OpenAI · $295"></i></div><span class="yl2">2024</span></div><div class="ycol"><span class="yv">$500</span><div class="ystack"><i style="height:1.7%;background:#9aa0a6" data-tip="Other · $20"></i><i style="height:7.3%;background:#eda100" data-tip="xAI · $85"></i><i style="height:8.7%;background:#eb6834" data-tip="Anthropic · $100"></i><i style="height:25.6%;background:#2a78d6" data-tip="OpenAI · $295"></i></div><span class="yl2">2025</span></div><div class="ycol"><span class="yv">$1,154</span><div class="ystack"><i style="height:16.7%;background:#9aa0a6" data-tip="Other · $193"></i><i style="height:3.5%;background:#eda100" data-tip="xAI · $40"></i><i style="height:37.1%;background:#eb6834" data-tip="Anthropic · $429"></i><i style="height:42.6%;background:#2a78d6" data-tip="OpenAI · $492"></i></div><span class="yl2">2026*</span></div></div>
+      <p class="fine">*2026 up to September.</p>
     </section>
     <section class="panel">
       <h4>How an entry gets here</h4>

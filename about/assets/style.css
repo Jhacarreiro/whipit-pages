@@ -199,7 +199,7 @@ h1,h2,h3{text-wrap:balance}
 .feat-dots{display:flex;justify-content:center;gap:6px}
 .feat-dots button{width:8px;height:8px;border-radius:50%;border:0;padding:0;background:var(--line);cursor:pointer}
 .feat-dots button[aria-current="true"]{background:var(--accent-ink);width:20px;border-radius:4px}
-@media (max-width:900px){.cv-row{grid-template-columns:1fr}}
+@media (max-width:900px){.cv-row{grid-template-columns:1fr}.feat-about{display:none}}
 /* Site top bar */
 .site-topbar{position:sticky;top:0;z-index:20;background:var(--bg);backdrop-filter:none;border-bottom:1px solid var(--line)}
 .site-topbar .topbar-inner{display:flex;justify-content:space-between;align-items:center;gap:14px;padding-block:16px;flex-wrap:wrap}

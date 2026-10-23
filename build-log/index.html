@@ -188,8 +188,12 @@ main [hidden]{display:none!important}
 .grid > .side{display:contents}
 .grid > main{order:3}
 .grid > .side > .panel{min-width:0}
-.grid > .side > .panel:has(.usage){order:1}.grid > .side > .panel:has(.big){order:2}
-.grid > .side > .panel:has(.feat){order:4}.grid > .side > .panel:has(.counts){order:5}.grid > .side > .panel:has(.how){order:6}
+.bl-row{display:flex;flex-wrap:nowrap;align-items:stretch;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:2px 2px 6px;margin:0 -2px;min-width:0}
+.bl-row::-webkit-scrollbar{display:none}
+.bl-row > .panel{flex:0 0 min(86%,340px);scroll-snap-align:start}
+.bl-row.r-top{order:1}
+.grid > .side > .panel:has(.feat){order:4}
+.bl-row.r-bottom{order:5}
 .bl-more{display:block;width:100%;margin:8px 0 8px;padding:12px 16px;border:1px solid var(--line);border-radius:10px;background:var(--card);font:600 14px/1.2 var(--body);color:var(--accent-ink);cursor:pointer}
 }
 /* end Build Log layout */
@@ -3906,6 +3910,11 @@ btn.addEventListener('click',function(){shown+=step;render()});
 document.addEventListener('click',function(ev){var a=ev.target.closest&&ev.target.closest('a[href^="#"]');if(a)reveal(decodeURIComponent(a.getAttribute('href').slice(1)))},true);
 addEventListener('hashchange',function(){reveal(decodeURIComponent(location.hash.slice(1)))});
 (mq.addEventListener?mq.addEventListener('change',render):mq.addListener(render));
+var side=document.querySelector('.grid > .side'),home=[].slice.call(side.children);
+function pick(sel){return home.filter(function(p){return p.querySelector(sel)})[0]}
+var rows=[['r-top',['.usage','.big']],['r-bottom',['.counts','.how']]].map(function(r){var d=document.createElement('div');d.className='bl-row '+r[0];d.setAttribute('role','group');d.dataset.sel=r[1].join(',');side.appendChild(d);return{el:d,panels:r[1].map(pick).filter(Boolean)}});
+function place(){rows.forEach(function(r){r.el.hidden=!mq.matches;r.panels.forEach(function(p){if(mq.matches)r.el.appendChild(p)})});if(!mq.matches)home.forEach(function(p){side.insertBefore(p,rows[0].el)})}
+place();(mq.addEventListener?mq.addEventListener('change',place):mq.addListener(place));
 render();if(location.hash){var id=decodeURIComponent(location.hash.slice(1));reveal(id);var t=document.getElementById(id);if(t)setTimeout(function(){t.scrollIntoView()},0)}
 })();</script>
 </body></html>

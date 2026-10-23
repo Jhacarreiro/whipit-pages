@@ -187,3 +187,16 @@ h1,h2,h3{text-wrap:balance}
 
 /* Keep the expanded site navigation usable on narrow screens. */
 @media(max-width:560px){.topbar-inner{flex-wrap:wrap;gap:10px}.topbar-nav{width:100%;justify-content:flex-start;flex-wrap:wrap}}
+/* Featured projects on About */
+.cv-row{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:20px;align-items:start;margin-bottom:38px}
+.cv-row .cv{margin-bottom:0}
+.feat-about{display:grid;gap:12px;align-content:start}
+.feat-about h2{margin:0;font:800 22px/1.1 var(--display);letter-spacing:-.03em}
+.feat-about .feat-track{display:grid;grid-auto-flow:column;grid-auto-columns:100%;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:2px 2px 14px}
+.feat-about .feat-track::-webkit-scrollbar{display:none}
+.feat-about .product-card{scroll-snap-align:start}
+.feat-about .product-card p{min-height:0}
+.feat-dots{display:flex;justify-content:center;gap:6px}
+.feat-dots button{width:8px;height:8px;border-radius:50%;border:0;padding:0;background:var(--line);cursor:pointer}
+.feat-dots button[aria-current="true"]{background:var(--accent-ink);width:20px;border-radius:4px}
+@media (max-width:900px){.cv-row{grid-template-columns:1fr}}

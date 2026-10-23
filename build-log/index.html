@@ -171,7 +171,7 @@ main [hidden]{display:none!important}
 }
 /* end Build Log layout */
 .counts{display:grid;grid-template-columns:repeat(3,1fr)}.counts.kinds{grid-template-columns:repeat(4,minmax(max-content,1fr));padding-top:10px;border-top:1px solid var(--line)}
-.counts div{display:grid;gap:2px;padding-left:10px;border-left:1px solid var(--line)}.counts div:first-child{padding-left:0;border-left:0}
+.counts div{display:grid;gap:2px;padding:0 10px;border-left:1px solid var(--line);min-width:0}.counts div:last-child{padding-right:0}.counts div:first-child{padding-left:0;border-left:0}
 .counts b{font-family:var(--display);font-weight:600;font-size:28px;line-height:1;font-variant-numeric:tabular-nums}.counts.kinds b{font-size:20px}
 .counts span{font-size:11.5px;color:var(--muted)}
 .mixleg{list-style:none;margin:0;padding:0;display:grid;gap:7px}

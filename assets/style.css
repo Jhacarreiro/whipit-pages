@@ -243,3 +243,16 @@ h1,h2,h3{text-wrap:balance}
 @media(max-width:720px){.site-topbar .topbar-inner{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"brand mark" "nav nav";gap:8px 16px;padding-block:12px}.site-topbar .topbar-mark{border-left:0;padding-left:0}}
 @media(max-width:560px){.site-topbar .topbar-brand i{display:none}.site-topbar .topbar-nav{gap:16px}}
 /* end top bar */
+/* CV box and spacing */
+.dims:not(.all) .dim-more{display:none}
+.dims-toggle{justify-self:start;border:0;background:none;padding:0;color:var(--accent-ink);font:700 13px/1.2 var(--body,Inter,system-ui,sans-serif);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.verdict{display:grid;gap:8px;border-left:3px solid var(--line);padding-left:14px}
+.verdict p{margin:0;font-size:14.5px;line-height:1.45;color:var(--ink)}
+.verdict b{display:inline-block;min-width:74px;font:700 11px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase}
+.verdict .good b{color:var(--green)}
+.verdict .bad b{color:var(--rose)}
+.cv-row,.research-direction,.product-section{margin-bottom:clamp(48px,6vw,72px)}
+.section-title{margin-bottom:18px}
+.lab-strip{margin-bottom:clamp(40px,5vw,56px)}
+@media(max-width:720px){.verdict b{display:block;margin-bottom:4px}}
+/* end CV box and spacing */

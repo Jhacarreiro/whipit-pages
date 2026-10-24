@@ -2,7 +2,7 @@
 
 Code example · 2024-12-22
 
-English translation of the Portuguese source. Original Arduino demonstration. It does not establish a built actuator or solve the later capacitive-touch requirement.
+English translation of an Arduino sketch for a proposed light-sensing actuator. Retained as a new-device concept from a mixed session; the appliance diagnosis and repair steps are excluded. No physical build or solution to the later capacitive-touch requirement is established.
 
 ---
 

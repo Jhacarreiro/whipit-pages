@@ -1,6 +1,6 @@
 # A spring that cannot compress to the target height
 
-Calculation excerpt · 2024-11-15
+Mechanics study · 2024-11-15
 
 English translation of the Portuguese source. Original solid-height calculation. The later redesign advice is omitted because it did not resolve the stated solid-height constraint.
 

@@ -1,8 +1,8 @@
 # A bridge to the conversation inside the IDE
 
-Reconstructed brief · 2026-10-24
+Reconstructed concept brief · 2026-10-24
 
-A reconstructed interaction specification from two working sessions.
+An editorial reconstruction made on 24 October 2026 from the February 2026 interface-design sessions. No completed bridge or measured latency is preserved.
 
 ---
 

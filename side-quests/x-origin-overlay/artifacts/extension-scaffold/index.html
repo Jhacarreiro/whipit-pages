@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Manifest and badge-rendering sketch — Whipit</title><link rel="stylesheet" href="/assets/style.css"><link rel="stylesheet" href="/assets/side-quests.css"><link rel="stylesheet" href="/assets/archive.css"><link rel="canonical" href="https://whipit.gallivanter.biz/side-quests/x-origin-overlay/artifacts/extension-scaffold/"></head><body class="sq-page"><a class="skip-link" href="#content">Skip to content</a><header class="site-topbar"><div class="container topbar-inner"><a class="topbar-brand" href="/"><b>João Carreiro</b><i>No boring stuff. Impossible is welcome.</i></a><nav class="topbar-nav"><a class="topbar-link" href="/">About</a><a class="topbar-link" href="/build-log/">Build Log</a><a aria-current="page" class="topbar-link" href="/side-quests/">Side Quests</a></nav><span class="topbar-mark">Whipit</span></div></header><main class="container sq-main" id="content"><div class="document-shell"><nav class="breadcrumbs"><a href="/side-quests/">Side Quests</a><span>/</span><a href="/side-quests/x-origin-overlay/">X account-origin overlay</a></nav><header><p class="eyebrow">Selected code excerpts · 2025-11-23</p><h1 class="document-title">Manifest and badge-rendering sketch</h1><div class="archive-note"><p>Historical scaffolding with the description translated into English. This is not an installable extension.</p></div><div class="sq-actions"><a class="button" download="extension-scaffold.md" href="/side-quests/x-origin-overlay/files/extension-scaffold.md">Download text ↓</a><a class="text-link" download="manifest-draft.json" href="/side-quests/x-origin-overlay/files/manifest-draft.json">Download manifest-draft.json ↓</a><a class="text-link" download="badge-excerpt.js" href="/side-quests/x-origin-overlay/files/badge-excerpt.js">Download badge-excerpt.js ↓</a></div></header><article class="document-body"><h2>Manifest draft</h2>
+<p>The proposed Manifest V3 file names the content script and a background worker. Those filenames describe the intended package; this excerpt does not supply a complete package.</p>
+<pre><code class="language-json">{
+  &quot;manifest_version&quot;: 3,
+  &quot;name&quot;: &quot;X Origin Overlay&quot;,
+  &quot;version&quot;: &quot;0.1&quot;,
+  &quot;description&quot;: &quot;Display account-origin information beside posts in the X feed.&quot;,
+  &quot;permissions&quot;: [&quot;scripting&quot;, &quot;activeTab&quot;, &quot;storage&quot;],
+  &quot;host_permissions&quot;: [&quot;https://x.com/*&quot;, &quot;https://twitter.com/*&quot;],
+  &quot;background&quot;: {&quot;service_worker&quot;: &quot;background.js&quot;},
+  &quot;content_scripts&quot;: [{
+    &quot;matches&quot;: [&quot;https://x.com/*&quot;, &quot;https://twitter.com/*&quot;],
+    &quot;js&quot;: [&quot;content.js&quot;],
+    &quot;run_at&quot;: &quot;document_idle&quot;
+  }]
+}
+</code></pre>
+<h2>Badge renderer</h2>
+<p>This function assumes that a trustworthy origin value has already been resolved. It does not fetch or infer one.</p>
+<pre><code class="language-javascript">function injectBadge(article, origin) {
+  const nameNode = article.querySelector('div[data-testid=&quot;User-Name&quot;]')
+  if (!nameNode) return
+  const badge = document.createElement(&quot;span&quot;)
+  badge.textContent = ` ${origin.flag} ${origin.code}`
+  badge.style.marginLeft = &quot;4px&quot;
+  badge.style.fontSize = &quot;0.7rem&quot;
+  badge.style.opacity = &quot;0.8&quot;
+  nameNode.appendChild(badge)
+}
+</code></pre>
+<p>The original lookup mixed account-origin data with free-form profile location. It is left out here rather than presented as a working implementation. DOM selectors, permissions and packaging also remain historical, unvalidated choices.</p>
+</article><nav class="document-pager"><a href="/side-quests/x-origin-overlay/">← Back to X account-origin overlay</a></nav></div></main><footer class="site-footer"><div class="container footer-inner"><div class="footer-brand"><b>João Carreiro</b><span>Drafts, experiments and things worth keeping.</span></div><nav class="footer-nav"><a href="/">About</a><a href="/build-log/">Build Log</a><a href="/side-quests/">Side Quests</a></nav><span class="footer-mark">Whipit · 2023–</span></div></footer></body></html>

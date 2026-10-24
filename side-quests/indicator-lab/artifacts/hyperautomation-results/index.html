@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>A result row needs its run context — Whipit</title><link href="/assets/style.css" rel="stylesheet"/><link href="/assets/side-quests.css" rel="stylesheet"/><link href="/assets/archive.css" rel="stylesheet"/><link href="https://whipit.gallivanter.biz/side-quests/indicator-lab/artifacts/hyperautomation-results/" rel="canonical"/></head><body class="sq-page"><a class="skip-link" href="#content">Skip to content</a><header class="site-topbar"><div class="container topbar-inner"><a class="topbar-brand" href="/"><b>João Carreiro</b><i>No boring stuff. Impossible is welcome.</i></a><nav class="topbar-nav"><a class="topbar-link" href="/">About</a><a class="topbar-link" href="/build-log/">Build Log</a><a aria-current="page" class="topbar-link" href="/side-quests/">Side Quests</a></nav><span class="topbar-mark">Whipit</span></div></header><main class="container sq-main" id="content"><div class="document-shell"><nav class="breadcrumbs"><a href="/side-quests/">Side Quests</a><span>/</span><a href="/side-quests/indicator-lab/">Indicator lab</a></nav><header><p class="eyebrow">Reconstructed data layout · 2025-05-05</p><h1 class="document-title">A result row needs its run context</h1><div class="archive-note"><p>Selected field groups from the historical implementation. No private sheet, account or configuration is included.</p></div><div class="sq-actions"><a class="button" download="hyperautomation-results.md" href="/side-quests/indicator-lab/files/hyperautomation-results.md">Download text ↓</a></div></header><article class="document-body"><div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>Fields recorded or selected in the implementation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identity</td>
+<td>Date and time, run number, strategy, configuration name</td>
+</tr>
+<tr>
+<td>Search setup</td>
+<td>Epochs, random state, time range, pairs and loss function</td>
+</tr>
+<tr>
+<td>Strategy context</td>
+<td>Leverage, trade allocation and selected strategy parameters</td>
+</tr>
+<tr>
+<td>Reported metrics</td>
+<td>Trade count, win rate, average profit, total profit, duration and drawdown</td>
+</tr>
+<tr>
+<td>Failure context</td>
+<td>The known run settings and a failed-result marker when execution or parsing did not yield a result</td>
+</tr>
+</tbody>
+</table></div>
+<p>The result columns were configurable. The script combined configuration fields, selected strategy fields and result fields rather than relying on one fixed report layout.</p>
+<p>That flexibility also introduced a constraint: sheet headers and the script's field names had to match. The code reported missing headers and skipped metrics that were not in the selected result columns.</p>
+<p>This layout belongs to <a href="/#freqtrade">Freqtrade Strategies</a>. The archive records the mechanism, not any particular account's trading results.</p>
+</article><nav class="document-pager"><a href="/side-quests/indicator-lab/">← Back to Indicator lab</a></nav></div></main><footer class="site-footer"><div class="container footer-inner"><div class="footer-brand"><b>João Carreiro</b><span>Drafts, experiments and things worth keeping.</span></div><nav class="footer-nav"><a href="/">About</a><a href="/build-log/">Build Log</a><a href="/side-quests/">Side Quests</a></nav><span class="footer-mark">Whipit · 2023–</span></div></footer></body></html>

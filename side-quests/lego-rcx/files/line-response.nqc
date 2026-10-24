@@ -1,0 +1,25 @@
+#define YELLOW_THRESHOLD 45 // Adjust after calibration
+#define TIME_THRESHOLD 50   // Original draft describes this as tenths of a second
+
+task main() {
+    SetSensor(SENSOR_1, SENSOR_LIGHT);
+    int counter = 0;
+
+    while (true) {
+        int reading = Sensor(SENSOR_1);
+        if (reading > YELLOW_THRESHOLD) {
+            counter++;
+            if (counter > TIME_THRESHOLD) {
+                // Original draft uses opposite motor directions for the turn
+                OnFwd(OUT_A);
+                OnRev(OUT_C);
+                Wait(10);
+                counter = 0;
+            }
+        } else {
+            counter = 0;
+            OnFwd(OUT_A + OUT_C);
+        }
+        Wait(1);
+    }
+}

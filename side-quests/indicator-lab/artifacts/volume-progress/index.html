@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Volume progress against the same time of day — Whipit</title><link href="/assets/style.css" rel="stylesheet"/><link href="/assets/side-quests.css" rel="stylesheet"/><link href="/assets/archive.css" rel="stylesheet"/><link href="https://whipit.gallivanter.biz/side-quests/indicator-lab/artifacts/volume-progress/" rel="canonical"/></head><body class="sq-page"><a class="skip-link" href="#content">Skip to content</a><header class="site-topbar"><div class="container topbar-inner"><a class="topbar-brand" href="/"><b>João Carreiro</b><i>No boring stuff. Impossible is welcome.</i></a><nav class="topbar-nav"><a class="topbar-link" href="/">About</a><a class="topbar-link" href="/build-log/">Build Log</a><a aria-current="page" class="topbar-link" href="/side-quests/">Side Quests</a></nav><span class="topbar-mark">Whipit</span></div></header><main class="container sq-main" id="content"><div class="document-shell"><nav class="breadcrumbs"><a href="/side-quests/">Side Quests</a><span>/</span><a href="/side-quests/indicator-lab/">Indicator lab</a><span>/</span><span>03</span></nav><header><p class="eyebrow">Calculation note · 2025-09-17</p><h1 class="document-title">Volume progress against the same time of day</h1><div class="archive-note"><p>English translation of the Portuguese source. Original explanation with worked example. It describes the intended metric, not measured trading performance.</p></div><div class="sq-actions"><a class="button" download="volume-progress.md" href="/side-quests/indicator-lab/files/volume-progress.md">Download text ↓</a></div></header><article class="document-body"><p><strong>Time-based RVol (%) = 100 × (volume accumulated up to this bar) / (daily average × typical fraction up to this time).</strong><br/>
+The “typical fraction” is learned from the last <em>N</em> days, with a default of 14: the “up to the same time” profile.</p>
+<h3>Example at 13:00 on a 10-minute chart</h3>
+<ul>
+<li>There are 144 bars per day; at 13:00 we are at bar 78, counting from 00:00 in the chart's time zone.</li>
+<li>Daily average over the last 14 days: <strong>120M</strong>.</li>
+<li>Typical fraction of volume up to 13:00, learned from the data: <strong>0.62</strong> → expected volume of <strong>74.4M</strong> (= 120M × 0.62).</li>
+<li>Today's accumulated volume up to 13:00: <strong>76.6M</strong>.</li>
+</ul>
+<p><strong>Time-based RVol = 76.6 / 74.4 × 100 = 103%</strong>.<br/>
+In other words, by 13:00 the market has traded <strong>3% more volume</strong> than normal for this time of day.</p>
+<p>For <strong>time-based R/ATR</strong>, the same reasoning applies, using the range (high–low) versus ATR:</p>
+<ul>
+<li>Daily ATR(14): <strong>2.00</strong>.</li>
+<li>Typical fraction of the range up to 13:00: <strong>0.55</strong> → expected range of <strong>1.10</strong> (= 2.00 × 0.55).</li>
+<li>Today's range up to 13:00: <strong>1.13</strong>.</li>
+</ul>
+<p><strong>Time-based R/ATR = 1.13 / 1.10 × 100 ≈ 103%</strong>.<br/>
+The range up to this time is about 3% above what is expected for this time of day.</p>
+<p>A quick note:</p>
+<ul>
+<li>“Time-based” uses the <strong>time-of-day profile</strong>. In 24/7 crypto markets, the day changes at <strong>00:00</strong> in the chart's time zone.</li>
+<li><strong>Simple</strong> mode ignores the time and compares progress against the <strong>whole-day average</strong>. At noon, it tends to produce values below 100% even when activity is on track, because the day is not over yet.</li>
+</ul>
+</article><nav class="reading-nav"><a href="/side-quests/indicator-lab/artifacts/key-level-lines/">← Previous: Extending higher-timeframe levels across a chart</a><a href="/side-quests/indicator-lab/artifacts/alert-lifecycle/">Next →: Alert settings and saved indicator state</a></nav></div></main><footer class="site-footer"><div class="container footer-inner"><div class="footer-brand"><b>João Carreiro</b><span>Drafts, experiments and things worth keeping.</span></div><nav class="footer-nav"><a href="/">About</a><a href="/build-log/">Build Log</a><a href="/side-quests/">Side Quests</a></nav><span class="footer-mark">Whipit · 2023–</span></div></footer></body></html>

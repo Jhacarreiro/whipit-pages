@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Changing the spring wire diameter — Whipit</title><link href="/assets/style.css" rel="stylesheet"/><link href="/assets/side-quests.css" rel="stylesheet"/><link href="/assets/archive.css" rel="stylesheet"/><link href="https://whipit.gallivanter.biz/side-quests/workbench/artifacts/spring-stiffness/" rel="canonical"/></head><body class="sq-page"><a class="skip-link" href="#content">Skip to content</a><header class="site-topbar"><div class="container topbar-inner"><a class="topbar-brand" href="/"><b>João Carreiro</b><i>No boring stuff. Impossible is welcome.</i></a><nav class="topbar-nav"><a class="topbar-link" href="/">About</a><a class="topbar-link" href="/build-log/">Build Log</a><a aria-current="page" class="topbar-link" href="/side-quests/">Side Quests</a></nav><span class="topbar-mark">Whipit</span></div></header><main class="container sq-main" id="content"><div class="document-shell"><nav class="breadcrumbs"><a href="/side-quests/">Side Quests</a><span>/</span><a href="/side-quests/workbench/">Workbench</a><span>/</span><span>02</span></nav><header><p class="eyebrow">Calculation draft · 2024-11-15</p><h1 class="document-title">Changing the spring wire diameter</h1><div class="archive-note"><p>English translation of the Portuguese source. The ratio assumes the remaining spring geometry and material stay fixed. This is a calculation from the design discussion.</p></div><div class="sq-actions"><a class="button" download="spring-stiffness.md" href="/side-quests/workbench/files/spring-stiffness.md">Download text ↓</a></div></header><article class="document-body"><p>Spring stiffness (<span class="formula">k</span>) depends on wire diameter (<span class="formula">d</span>) to the <strong>fourth power</strong>:</p>
+<p><span class="formula display">k ∝ d<sup>4</sup></span></p>
+<p>To calculate the reduction in stiffness when changing from <strong>2 mm</strong> to <strong>1.6 mm</strong>, use the ratio:</p>
+<p><span class="formula display">Reduction in stiffness = ( (1.6 / 2) )<sup>4</sup></span></p>
+<h3>Calculation:</h3>
+<p><span class="formula display">(1.6 / 2) = 0.8</span>
+<span class="formula display">(0.8)<sup>4</sup> = 0.4096</span></p>
+<h3>Result:</h3>
+<p>The spring's stiffness will be <strong>40.96% of the original</strong>, a reduction of approximately <strong>59.04%</strong>.</p>
+<hr/>
+<h3>Practical interpretation:</h3>
+<ul>
+<li>The spring will be <strong>significantly more flexible</strong>.</li>
+<li>The force needed to compress it by the same distance will be <strong>59% lower</strong> than with 2 mm wire.</li>
+</ul>
+</article><nav class="reading-nav"><a href="/side-quests/workbench/artifacts/spring-clearance/">← Previous: A spring that cannot compress to the target height</a><a href="/side-quests/workbench/artifacts/light-actuator/">Next →: A light-triggered servo sketch</a></nav></div></main><footer class="site-footer"><div class="container footer-inner"><div class="footer-brand"><b>João Carreiro</b><span>Drafts, experiments and things worth keeping.</span></div><nav class="footer-nav"><a href="/">About</a><a href="/build-log/">Build Log</a><a href="/side-quests/">Side Quests</a></nav><span class="footer-mark">Whipit · 2023–</span></div></footer></body></html>

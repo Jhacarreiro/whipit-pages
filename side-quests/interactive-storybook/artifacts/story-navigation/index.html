@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>A branching-story navigation example — Whipit</title><link href="/assets/style.css" rel="stylesheet"/><link href="/assets/side-quests.css" rel="stylesheet"/><link href="/assets/archive.css" rel="stylesheet"/><link href="https://whipit.gallivanter.biz/side-quests/interactive-storybook/artifacts/story-navigation/" rel="canonical"/></head><body class="sq-page"><a class="skip-link" href="#content">Skip to content</a><header class="site-topbar"><div class="container topbar-inner"><a class="topbar-brand" href="/"><b>João Carreiro</b><i>No boring stuff. Impossible is welcome.</i></a><nav class="topbar-nav"><a class="topbar-link" href="/">About</a><a class="topbar-link" href="/build-log/">Build Log</a><a aria-current="page" class="topbar-link" href="/side-quests/">Side Quests</a></nav><span class="topbar-mark">Whipit</span></div></header><main class="container sq-main" id="content"><div class="document-shell"><nav class="breadcrumbs"><a href="/side-quests/">Side Quests</a><span>/</span><a href="/side-quests/interactive-storybook/">Interactive storybook</a><span>/</span><span>13</span></nav><header><p class="eyebrow">Code example · 2024-02-15</p><h1 class="document-title">A branching-story navigation example</h1><div class="archive-note"><p>Original Python console example from the app discussion. It is not a recovered mobile application.</p></div><div class="sq-actions"><a class="button" download="story-navigation.md" href="/side-quests/interactive-storybook/files/story-navigation.md">Download text ↓</a><a class="text-link" download="story-navigation.py" href="/side-quests/interactive-storybook/files/story-navigation.py">Download code ↓</a></div></header><article class="document-body"><pre><code class="language-python"># Example of a simplified structure for handling story branches
+
+class StoryNode:
+    def __init__(self, text, choices):
+        self.text = text
+        self.choices = choices  # Dictionary mapping choice text to the next StoryNode
+
+class StoryApp:
+    def __init__(self, start_node):
+        self.current_node = start_node
+
+    def display_story(self):
+        print(self.current_node.text)
+        for i, choice in enumerate(self.current_node.choices.keys(), start=1):
+            print(f"{i}. {choice}")
+
+    def make_choice(self, choice_index):
+        choice_list = list(self.current_node.choices.values())
+        if 0 &lt;= choice_index &lt; len(choice_list):
+            self.current_node = choice_list[choice_index]
+        else:
+            print("Invalid choice. Please try again.")
+
+    def run(self):
+        while self.current_node.choices:
+            self.display_story()
+            user_choice = int(input("Choose an option: ")) - 1
+            self.make_choice(user_choice)
+        # Display the final part of the story without choices
+        print(self.current_node.text)
+
+# Example usage
+if __name__ == "__main__":
+    # Creating a simple story structure
+    end_node1 = StoryNode("The adventure ends here. Thanks for playing!", {})
+    end_node2 = StoryNode("You've found a secret path. Congratulations!", {})
+    choice_node = StoryNode("You're at a crossroad. Where do you want to go?", {
+        "Left": end_node1,
+        "Right": end_node2
+    })
+    start_node = StoryNode("Your adventure begins. You're in a forest.", {
+        "Explore": choice_node,
+        "Go home": end_node1
+    })
+
+    app = StoryApp(start_node)
+    app.run()
+</code></pre>
+</article><nav class="reading-nav"><a href="/side-quests/interactive-storybook/artifacts/dragon-ending/">← Previous: An ending with the dragon</a></nav></div></main><footer class="site-footer"><div class="container footer-inner"><div class="footer-brand"><b>João Carreiro</b><span>Drafts, experiments and things worth keeping.</span></div><nav class="footer-nav"><a href="/">About</a><a href="/build-log/">Build Log</a><a href="/side-quests/">Side Quests</a></nav><span class="footer-mark">Whipit · 2023–</span></div></footer></body></html>

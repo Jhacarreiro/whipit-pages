@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "X Origin Overlay",
+  "version": "0.1",
+  "description": "Display account-origin information beside posts in the X feed.",
+  "permissions": ["scripting", "activeTab", "storage"],
+  "host_permissions": ["https://x.com/*", "https://twitter.com/*"],
+  "background": {"service_worker": "background.js"},
+  "content_scripts": [{
+    "matches": ["https://x.com/*", "https://twitter.com/*"],
+    "js": ["content.js"],
+    "run_at": "document_idle"
+  }]
+}

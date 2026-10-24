@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Rolling or anchored VWAP? — Whipit</title><link href="/assets/style.css" rel="stylesheet"/><link href="/assets/side-quests.css" rel="stylesheet"/><link href="/assets/archive.css" rel="stylesheet"/><link href="https://whipit.gallivanter.biz/side-quests/indicator-lab/artifacts/vwap-research/" rel="canonical"/></head><body class="sq-page"><a class="skip-link" href="#content">Skip to content</a><header class="site-topbar"><div class="container topbar-inner"><a class="topbar-brand" href="/"><b>João Carreiro</b><i>No boring stuff. Impossible is welcome.</i></a><nav class="topbar-nav"><a class="topbar-link" href="/">About</a><a class="topbar-link" href="/build-log/">Build Log</a><a aria-current="page" class="topbar-link" href="/side-quests/">Side Quests</a></nav><span class="topbar-mark">Whipit</span></div></header><main class="container sq-main" id="content"><div class="document-shell"><nav class="breadcrumbs"><a href="/side-quests/">Side Quests</a><span>/</span><a href="/side-quests/indicator-lab/">Indicator lab</a></nav><header><p class="eyebrow">Reconstructed research brief · 2025-04-04</p><h1 class="document-title">Rolling or anchored VWAP?</h1><div class="archive-note"><p>Questions from a strategy-design discussion. No profitable strategy or validated indicator choice is claimed.</p></div><div class="sq-actions"><a class="button" download="vwap-research.md" href="/side-quests/indicator-lab/files/vwap-research.md">Download text ↓</a></div></header><article class="document-body"><h2>The design question</h2>
+<p>The existing strategy used EMA clouds. The discussion explored whether VWAP could provide a higher-timeframe trend reference while retaining the clouds for other parts of the strategy.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Question</th>
+<th>What needed to be decided</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rolling or anchored</td>
+<td>Use a moving window, or choose a point from which accumulation starts?</td>
+</tr>
+<tr>
+<td>Anchor selection</td>
+<td>A week, a month or an event such as a change in open interest?</td>
+</tr>
+<tr>
+<td>Timeframe</td>
+<td>Keep the existing short timeframe, or evaluate a longer one?</td>
+</tr>
+<tr>
+<td>Open-interest data</td>
+<td>Which data would actually be available to the implementation?</td>
+</tr>
+<tr>
+<td>Volume profile</td>
+<td>Could its levels add a useful reference alongside the existing rules?</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Implementation context</h2>
+<p>The follow-up focused on how to express these ideas in Freqtrade and which indicator implementation could support them. A later question returned to the availability of open-interest-based indicators.</p>
+<p>This is a research brief: it preserves the alternatives and data questions that needed testing. It does not turn the assistant's suggestions into a proven strategy.</p>
+</article><nav class="document-pager"><a href="/side-quests/indicator-lab/">← Back to Indicator lab</a></nav></div></main><footer class="site-footer"><div class="container footer-inner"><div class="footer-brand"><b>João Carreiro</b><span>Drafts, experiments and things worth keeping.</span></div><nav class="footer-nav"><a href="/">About</a><a href="/build-log/">Build Log</a><a href="/side-quests/">Side Quests</a></nav><span class="footer-mark">Whipit · 2023–</span></div></footer></body></html>

@@ -1,6 +1,6 @@
 # Changing the spring wire diameter
 
-Calculation draft · 2024-11-15
+Mechanics study · 2024-11-15
 
 English translation of the Portuguese source. The ratio assumes the remaining spring geometry and material stay fixed. This is a calculation from the design discussion.
 

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Select the runs from the configuration sheet — Whipit</title><link rel="stylesheet" href="/assets/style.css"><link rel="stylesheet" href="/assets/side-quests.css"><link rel="stylesheet" href="/assets/archive.css"><link rel="canonical" href="https://whipit.gallivanter.biz/side-quests/indicator-lab/artifacts/hyperautomation-input-parser/"></head><body class="sq-page"><a class="skip-link" href="#content">Skip to content</a><header class="site-topbar"><div class="container topbar-inner"><a class="topbar-brand" href="/"><b>João Carreiro</b><i>No boring stuff. Impossible is welcome.</i></a><nav class="topbar-nav"><a class="topbar-link" href="/">About</a><a class="topbar-link" href="/build-log/">Build Log</a><a aria-current="page" class="topbar-link" href="/side-quests/">Side Quests</a></nav><span class="topbar-mark">Whipit</span></div></header><main class="container sq-main" id="content"><div class="document-shell"><nav class="breadcrumbs"><a href="/side-quests/">Side Quests</a><span>/</span><a href="/side-quests/indicator-lab/">Indicator lab</a></nav><header><p class="eyebrow">Historical code excerpt · 2025-05-05</p><h1 class="document-title">Select the runs from the configuration sheet</h1><div class="archive-note"><p>Two functions from the May 2025 source, with their traceback import. Configuration, credentials and execution code are omitted.</p></div><div class="sq-actions"><a class="button" download="hyperautomation-input-parser.md" href="/side-quests/indicator-lab/files/hyperautomation-input-parser.md">Download text ↓</a><a class="text-link" download="input-parser-excerpt.py" href="/side-quests/indicator-lab/files/input-parser-excerpt.py">Download input-parser-excerpt.py ↓</a></div></header><article class="document-body"><p>The reader requires strategy, epochs and time range before accepting a row. Optional settings are copied when supplied, while empty values and the <code>OFF</code> marker are omitted.</p>
+<pre><code class="language-python"># Historical excerpt: configuration-sheet parsing only.
+import traceback
+
+def get_value_from_dict(data_dict, key, default=&quot;&quot;):
+    &quot;&quot;&quot;Retrieve a value from a dictionary with a default if missing or invalid.&quot;&quot;&quot;
+    val = data_dict.get(key)
+    if val in [None, &quot;&quot;, &quot;#N/A&quot;]:
+        return default
+    return val
+
+def read_hyperopt_runs_from_sheet(config_worksheet):
+    &quot;&quot;&quot;Read hyperopt run configurations from the config worksheet.&quot;&quot;&quot;
+    print(f&quot;Reading runs from sheet '{config_worksheet.title}'...&quot;)
+    expected_headers = [&quot;Runs&quot;, &quot;Config&quot;, &quot;Strategy&quot;, &quot;Pairs&quot;, &quot;Leverage&quot;, &quot;% per trade&quot;, &quot;epochs&quot;, &quot;spaces&quot;, &quot;timerange&quot;, &quot;loss_function&quot;, &quot;jobs&quot;, &quot;min_trades&quot;, &quot;random_state&quot;, &quot;timeframe_detail&quot;]
+    try:
+        all_runs_data = config_worksheet.get_all_records(head=1)
+        valid_runs = []
+        required_columns = [&quot;epochs&quot;, &quot;timerange&quot;, &quot;Strategy&quot;]
+        if not all_runs_data and config_worksheet.row_count &gt; 0:
+            print(&quot;Warning: Sheet has rows but get_all_records returned empty. Check header row.&quot;)
+            return []
+        print(f&quot;Processing {len(all_runs_data)} potential runs...&quot;)
+        for i, run_data in enumerate(all_runs_data):
+            row_num = i + 2
+            if any(get_value_from_dict(run_data, col) == &quot;&quot; for col in required_columns):
+                print(f&quot;Skipping Row {row_num}: A required column is empty.&quot;)
+                continue
+            run_dict = {
+                &quot;strategy_name&quot;: str(get_value_from_dict(run_data, &quot;Strategy&quot;)),
+                &quot;config_filename&quot;: str(get_value_from_dict(run_data, &quot;Config&quot;)),
+                &quot;epochs&quot;: str(get_value_from_dict(run_data, &quot;epochs&quot;)),
+                &quot;timerange&quot;: str(get_value_from_dict(run_data, &quot;timerange&quot;)),
+                &quot;Leverage&quot;: str(get_value_from_dict(run_data, &quot;Leverage&quot;)),
+                &quot;% per trade&quot;: str(get_value_from_dict(run_data, &quot;% per trade&quot;)),
+                &quot;Pairs&quot;: str(get_value_from_dict(run_data, &quot;Pairs&quot;)),
+            }
+            for key in [&quot;spaces&quot;, &quot;loss_function&quot;, &quot;jobs&quot;, &quot;min_trades&quot;, &quot;random_state&quot;, &quot;timeframe_detail&quot;]:
+                value = get_value_from_dict(run_data, key)
+                if value != &quot;&quot; and value != &quot;OFF&quot;:
+                    run_dict[key] = str(value)
+            valid_runs.append(run_dict)
+        if not valid_runs:
+            print(&quot;Warning: No valid runs found after processing sheet.&quot;)
+        else:
+            print(f&quot;Prepared {len(valid_runs)} valid runs.&quot;)
+        return valid_runs
+    except Exception as e:
+        print(f&quot;ERROR: Failed reading config sheet: {e}&quot;)
+        traceback.print_exc()
+        return None
+</code></pre>
+<p>This is an excerpt for reading, not a complete runner. It expects a worksheet object with the methods used above. The full project belongs to <a href="/#freqtrade">Freqtrade Strategies</a> and is available in the <a href="https://github.com/Jhacarreiro/hyperautomation">public repository</a>.</p>
+</article><nav class="document-pager"><a href="/side-quests/indicator-lab/">← Back to Indicator lab</a></nav></div></main><footer class="site-footer"><div class="container footer-inner"><div class="footer-brand"><b>João Carreiro</b><span>Drafts, experiments and things worth keeping.</span></div><nav class="footer-nav"><a href="/">About</a><a href="/build-log/">Build Log</a><a href="/side-quests/">Side Quests</a></nav><span class="footer-mark">Whipit · 2023–</span></div></footer></body></html>

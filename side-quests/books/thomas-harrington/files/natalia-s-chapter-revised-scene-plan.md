@@ -1,0 +1,14 @@
+# Natalia’s chapter — revised scene plan
+
+1. Introduce Natalia Ivanova, a determined Ukrainian journalist with short dark hair, who possesses an acute understanding of the complexities and human costs of the war that ravages Ukraine. (Driver: The human cost of war)
+2. Highlight Natalia's love for her country and an unyielding sense of justice by providing specific examples of her actions and beliefs. (Driver: Duty and sacrifice)
+3. Emphasize Natalia's unexpected alliance with Thomas and Marie, a tall, lean British diplomat with sharp features and piercing blue eyes, and his mentor who challenges him to confront his personal demons, by describing how they meet and what draws them together. (Guardrail: Focus on Natalia's introduction and motivations)
+4. Describe how Natalia's journalistic background and patriotic motivations provide depth to the unfolding events by providing specific examples of her reporting and how it impacts the story. (Driver: The search for truth)
+5. Show how Natalia's resolve matches Thomas's internal struggle by describing their similarities and how they complement each other. (Driver: The moral ambiguity of war)
+6. Emphasize Natalia's unwavering commitment to exposing the truth and protecting her country by providing specific examples of her actions and how they impact the story. (Driver: The search for truth)
+7. Describe how Natalia's character provides a local perspective and a strong female presence to the story by providing specific examples of how her perspective differs from Thomas and Marie's. (Guardrail: Focus on Natalia's introduction and motivations)
+8. Highlight the complexities and human costs of the war that Natalia possesses an acute understanding of by providing specific examples of how she has witnessed these costs firsthand. (Driver: The human cost of war)
+9. Show how Natalia's alliance with Thomas and Marie embarks on a treacherous journey that will test their mettle, challenge their notions of trust, and confront the shadows of their pasts by describing specific obstacles they face and how they overcome them. (Guardrail: Focus on setting up the treacherous journey)
+10. Emphasize the importance of Natalia's character in the story, adding depth and complexity to the unfolding events by describing how her actions impact the story and the other characters. (Guardrail: Focus on Natalia's introduction and motivations)
+11. Describe how Natalia and Thomas must untangle a perilous web of conspiracy to uncover the truth that lies buried beneath layers of deception by providing specific examples of the conspiracy and how they uncover it. (Driver: The search for truth)
+12. End the scene by setting the stage for the conflicts that await, diving deeper into their interconnected destinies by describing what the next steps are for Natalia, Thomas, and Marie. (Guardrail: Do not reveal major plot points or spoilers)

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Quiet indication, deliberate alarm — Whipit</title><link href="/assets/style.css" rel="stylesheet"/><link href="/assets/side-quests.css" rel="stylesheet"/><link href="/assets/archive.css" rel="stylesheet"/><link href="https://whipit.gallivanter.biz/side-quests/sprinter/security/artifacts/quiet-indication-deliberate-alarm" rel="canonical"/></head><body class="sq-page"><a class="skip-link" href="#content">Skip to content</a><header class="site-topbar"><div class="container topbar-inner"><a class="topbar-brand" href="/"><b>João Carreiro</b><i>No boring stuff. Impossible is welcome.</i></a><nav class="topbar-nav"><a class="topbar-link" href="/">About</a><a class="topbar-link" href="/build-log/">Build Log</a><a aria-current="page" class="topbar-link" href="/side-quests/">Side Quests</a></nav><span class="topbar-mark">Whipit</span></div></header><main class="container sq-main" id="content"><nav class="breadcrumbs"><a href="/side-quests/">Side Quests</a><span>/</span><a href="/side-quests/sprinter/">Sprinter</a><span>/</span><a href="/side-quests/sprinter/security/">Security</a></nav><div class="document-shell"><header><p class="eyebrow">Retrospective design study · 2026-05-07</p><h1 class="document-title">Quiet indication, deliberate alarm</h1><div class="archive-note"><p>Design requirements and tradeoffs; no installation or tested security performance is claimed.</p></div><div class="sq-actions"><a class="button" download="" href="/side-quests/sprinter/security/files/quiet-indication-deliberate-alarm.md">Download text ↓</a></div></header><article class="document-body"><p>7 May 2026 · Security design study</p>
+<p>The electronic-security concept began with two distinct responses: a discreet visual indication for nearby activity and an audible alarm for a stronger event. Keeping those responses separate mattered more than choosing a sensor brand.</p>
+<p>The discussion produced a practical brief for comparing components:</p>
+<table>
+<thead>
+<tr>
+<th>Requirement</th>
+<th>Design consequence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Different events deserve different responses</td>
+<td>Keep the visual indication and audible alarm independently controlled.</td>
+</tr>
+<tr>
+<td>A vehicle supplies low-voltage power</td>
+<td>Compare components that fit that power constraint instead of starting with household mains-powered devices.</td>
+</tr>
+<tr>
+<td>Detection should cover a limited area</td>
+<td>Look for meaningful adjustment of detection range, rather than treating every motion sensor as interchangeable.</td>
+</tr>
+<tr>
+<td>Notifications must reach the user</td>
+<td>Evaluate the complete detection, control and notification path; a sensor listing alone is insufficient.</td>
+</tr>
+<tr>
+<td>Arming should be convenient</td>
+<td>Include a physical control and an explicit armed/disarmed state in the proposed behaviour.</td>
+</tr>
+</tbody>
+</table>
+<p>The false-alarm discussion changed the direction. Normal environmental movement was a reason to reject vibration as the primary trigger. The preferred next approach used motion detection, with the visual indication remaining a separate function.</p>
+<p>The AI compared sensor families and drafted possible control arrangements. The useful output was a clearer specification: power, controllability, detection footprint, notification and false-alarm behaviour could be evaluated separately. The study ended at component comparison and proposed behaviour; it did not establish a completed installation or measured detection performance.</p>
+</article></div></main><footer class="site-footer"><div class="container footer-inner"><div class="footer-brand"><b>João Carreiro</b><span>Drafts, experiments and things worth keeping.</span></div><nav class="footer-nav"><a href="/">About</a><a href="/build-log/">Build Log</a><a href="/side-quests/">Side Quests</a></nav><span class="footer-mark">Whipit · 2023–</span></div></footer></body></html>

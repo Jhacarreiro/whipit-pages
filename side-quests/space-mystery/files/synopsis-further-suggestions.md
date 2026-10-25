@@ -2,7 +2,7 @@
 
 31 January 2024 · 09:24 · AI review
 
-Your synopsis already sets a solid foundation for an engaging and complex narrative, blending elements of science fiction with psychological and geopolitical intrigue. To further refine and enhance it:
+Further synopsis revisions focus on the crew’s motivations, Alex’s psychological journey, the mission setting and the relationship between personal and geopolitical conflict.
 
 1. **Character Arcs and Development**: While the crew's roles and nationalities are clearly outlined, integrating hints about their personal motivations, fears, and arcs could add depth. Suggest how the mission challenges and transforms them, aligning with or pushing against their initial beliefs or fears.
 
@@ -19,5 +19,3 @@ Your synopsis already sets a solid foundation for an engaging and complex narrat
 7. **Intrigue and Mystery**: Intensify the sense of mystery surrounding Alex's condition and the mission's hidden objectives. Tease readers with questions or dilemmas that the narrative promises to explore, making the mystery more compelling.
 
 8. **Interpersonal Dynamics**: Elaborate on the dynamics between crew members, particularly how Alex's deteriorating condition affects their relationships and the mission's success. How do alliances form, and how are conflicts resolved?
-
-Incorporating these elements can add layers to your synopsis, making it more dynamic and providing a clearer picture of the novel's scope, themes, and narrative arc. This approach not only entices potential readers but also offers a comprehensive roadmap for the junior writer to develop a richly woven tale.

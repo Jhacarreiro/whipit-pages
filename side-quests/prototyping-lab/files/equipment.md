@@ -6,7 +6,7 @@ English translation of the Portuguese source. A 2025 concept draft. Estimates, c
 
 ---
 
-Here is a table with more realistic figures, retaining industrial-level machines, including a 3D scanner, but using less expensive or imported brands and substantially reducing building-work and labour costs:
+This revised estimate retains industrial-level machines, including a 3D scanner, while assuming less expensive or imported brands and lower building-work and labour costs:
 
 | Laboratory | Equipment (USD) | Infrastructure (USD) | Installation (USD) |
 |---|---:|---:|---:|
@@ -25,7 +25,7 @@ Here is a table with more realistic figures, retaining industrial-level machines
 | Woodworking | 10 000 | 10 000 | 5 000 |
 | **Total** | **253 000** | **127 000** | **76 000** |
 
-**What I included in each item**
+**Scope of each cost category**
 - **Equipment**: prices for prosumer or entry-level industrial machines, such as a benchtop 3D scanner (~2 000 USD), mini-SLS (~150 000 USD), three-axis CNC routers (~10 000 USD), Chinese laser cutters (~6 000 USD), soldering stations and an oscilloscope (~10 000 USD in total), etc.
 - **Infrastructure**: workbenches and furniture, light floor reinforcement for heavy machines, dedicated power points and network cabling, extraction and local air conditioning for the more demanding modules (SLS and welding), and basic floor coverings.
 - **Installation**: freight, unpacking, technicians' travel, rigging/crane hire for larger equipment, mechanical assembly, basic calibration and brief training for the local team.

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 
-<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>The circle-drawing experiment — Whipit</title><link href="/assets/style.css" rel="stylesheet"/><link href="/assets/side-quests.css" rel="stylesheet"/><link href="/assets/archive.css" rel="stylesheet"/><link href="https://whipit.gallivanter.biz/side-quests/code-poster/artifacts/drawing-example/" rel="canonical"/></head><body class="sq-page"><a class="skip-link" href="#content">Skip to content</a><header class="site-topbar"><div class="container topbar-inner"><a class="topbar-brand" href="/"><b>João Carreiro</b><i>No boring stuff. Impossible is welcome.</i></a><nav class="topbar-nav"><a class="topbar-link" href="/">About</a><a class="topbar-link" href="/build-log/">Build Log</a><a aria-current="page" class="topbar-link" href="/side-quests/">Side Quests</a></nav><span class="topbar-mark">Whipit</span></div></header><main class="container sq-main" id="content"><div class="document-shell"><nav class="breadcrumbs"><a href="/side-quests/">Side Quests</a><span>/</span><a href="/side-quests/code-poster/">Code poster</a><span>/</span><span>02</span></nav><header><p class="eyebrow">Code and process draft · 2025-05-28</p><h1 class="document-title">The circle-drawing experiment</h1><div class="archive-note"><p>English translation of the Portuguese source. An illustrative pipeline, including random placement. This is source text, not the final poster.</p></div><div class="sq-actions"><a class="button" download="drawing-example.md" href="/side-quests/code-poster/files/drawing-example.md">Download text ↓</a></div></header><article class="document-body"><h3>✅ 1. <strong>Prepare the code</strong></h3>
-<p>You need the <code>.py</code> file or the text in a <code>.txt</code> file.</p>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>The circle-drawing experiment — Whipit</title><link href="/assets/style.css" rel="stylesheet"/><link href="/assets/side-quests.css" rel="stylesheet"/><link href="/assets/archive.css" rel="stylesheet"/><link href="https://whipit.gallivanter.biz/side-quests/code-poster/artifacts/drawing-example/" rel="canonical"/></head><body class="sq-page"><a class="skip-link" href="#content">Skip to content</a><header class="site-topbar"><div class="container topbar-inner"><a class="topbar-brand" href="/"><b>João Carreiro</b><i>No boring stuff. Impossible is welcome.</i></a><nav class="topbar-nav"><a class="topbar-link" href="/">About</a><a class="topbar-link" href="/build-log/">Build Log</a><a aria-current="page" class="topbar-link" href="/side-quests/">Side Quests</a></nav><span class="topbar-mark">Whipit</span></div></header><main class="container sq-main" id="content"><div class="document-shell"><nav class="breadcrumbs"><a href="/side-quests/">Side Quests</a><span>/</span><a href="/side-quests/code-poster/">Code poster</a><span>/</span><span>02</span></nav><header><p class="eyebrow">Code and process draft · 2025-05-28</p><h1 class="document-title">The circle-drawing experiment</h1><div class="archive-note"><p>English translation of the Portuguese source. An illustrative pipeline, including random placement. This is source text, not the final poster.</p></div><div class="sq-actions"><a class="button" download="drawing-example.md" href="/side-quests/code-poster/files/drawing-example.md">Download text ↓</a></div></header><article class="document-body"><h3>1. <strong>Prepare the code</strong></h3>
+<p>Input: a <code>.py</code> file or source text in a <code>.txt</code> file.</p>
 <pre><code class="language-python"># A simple example of reading the code
-with open("your_code.py", "r") as f:
+with open(&quot;your_code.py&quot;, &quot;r&quot;) as f:
     lines = f.readlines()
 </code></pre>
-<hr/>
-<h3>✅ 2. <strong>Analyse the code to extract its structure</strong></h3>
-<p>You can use regular expressions or Python's <code>tokenize</code> module to detect <code>def</code>, <code>if</code>, <code>for</code>, <code>return</code>, etc.</p>
+<hr />
+<h3>2. <strong>Analyse the code to extract its structure</strong></h3>
+<p>Regular expressions or Python's <code>tokenize</code> module can detect <code>def</code>, <code>if</code>, <code>for</code>, <code>return</code>, etc.</p>
 <pre><code class="language-python">import tokenize
 from io import BytesIO
 
@@ -23,15 +23,15 @@ tokens = list(tokenize.tokenize(BytesIO(code.encode('utf-8')).readline))
 <li><code>#</code> or docstring = comment</li>
 <li>others = instructions</li>
 </ul>
-<hr/>
-<h3>✅ 3. <strong>Generate shapes or colours from that analysis</strong></h3>
-<p>You can map each line to a visual object: for example, a circle whose radius depends on the line's length and whose colour depends on the instruction type.</p>
+<hr />
+<h3>3. <strong>Generate shapes or colours from that analysis</strong></h3>
+<p>Each line can map to a visual object: for example, a circle whose radius depends on the line's length and whose colour depends on the instruction type.</p>
 <pre><code class="language-python">import matplotlib.pyplot as plt
 import random
 
 fig, ax = plt.subplots(figsize=(20, 20))
-ax.set_facecolor("black")
-ax.axis("off")
+ax.set_facecolor(&quot;black&quot;)
+ax.axis(&quot;off&quot;)
 
 y = 0
 for i, line in enumerate(lines):
@@ -42,16 +42,16 @@ for i, line in enumerate(lines):
     ax.add_patch(plt.Circle((random.uniform(0, 100), y), radius, color=colour, alpha=0.6))
     y += 1.5
 
-plt.savefig("code_poster.png", dpi=300, bbox_inches="tight")
+plt.savefig(&quot;code_poster.png&quot;, dpi=300, bbox_inches=&quot;tight&quot;)
 </code></pre>
-<p>This is a simple example. You can adapt it to use:</p>
+<p>Possible extensions to this example:</p>
 <ul>
 <li>Colours by token type.</li>
 <li>Shapes that connect to one another, such as lines and curves.</li>
 <li>Symmetrical patterns.</li>
 </ul>
-<hr/>
-<h3>✅ 4. <strong>Adjust the artistic style</strong></h3>
+<hr />
+<h3>4. <strong>Adjust the artistic style</strong></h3>
 <p>Explore these options:</p>
 <ul>
 <li>Replace <code>plt.Circle</code> with <code>plt.Rectangle</code>, <code>plt.Polygon</code>, etc.</li>

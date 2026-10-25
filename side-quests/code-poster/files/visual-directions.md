@@ -19,7 +19,7 @@ English translation of the Portuguese source. Original directions proposed durin
 ### 2. **Code in the Background, Visible Only Up Close**
 - Make a poster with an image, such as a minimalist composition or a portrait, and use **every line of code as a background texture**.
 - Set the text very small (~3–5pt), in horizontal lines or curves that form the image.
-- From a distance, you see the image; up close, you read the code.
+- The image reads at a distance; the code becomes legible up close.
 
 ---
 
@@ -36,13 +36,13 @@ English translation of the Portuguese source. Original directions proposed durin
 ### 4. **A Colour Map for Each Line**
 - Convert each line of code into a hash value and represent it as a **colour** (HEX).
 - Make a poster as a **colour mosaic**, such as 1000 squares for 1000 lines.
-- You could include a discreet key linking line → colour → code, like a private decryption key.
+- An optional discreet key could be included to link line → colour → code.
 
 ---
 
 ### 5. **Custom Typography**
-- Use **a font you have made** or adapted, with unusual characters: for example, each `a` could be a small triangle and each `b` a spiral.
-- The code is there, but only you know how to read it directly.
+- Use **a custom or adapted font**, with unusual characters: for example, each `a` could be a small triangle and each `b` a spiral.
+- The custom character mapping controls how the code can be read.
 - Tools: [FontForge](https://fontforge.org/), [Glyphr Studio](https://glyphrstudio.com/online/).
 
 ---
@@ -55,4 +55,4 @@ English translation of the Portuguese source. Original directions proposed durin
 
 ### 7. **A Mix of Text and ASCII Art**
 - Mix the actual code with ASCII-art figures.
-- Or create a larger figure, such as a portrait, animal or symbol, from small sections of your code.
+- Or create a larger figure, such as a portrait, animal or symbol, from small sections of the code.

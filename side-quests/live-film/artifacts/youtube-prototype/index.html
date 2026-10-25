@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 
-<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>A YouTube-based proof of concept — Whipit</title><link href="/assets/style.css" rel="stylesheet"/><link href="/assets/side-quests.css" rel="stylesheet"/><link href="/assets/archive.css" rel="stylesheet"/><link href="https://whipit.gallivanter.biz/side-quests/live-film/artifacts/youtube-prototype/" rel="canonical"/></head><body class="sq-page"><a class="skip-link" href="#content">Skip to content</a><header class="site-topbar"><div class="container topbar-inner"><a class="topbar-brand" href="/"><b>João Carreiro</b><i>No boring stuff. Impossible is welcome.</i></a><nav class="topbar-nav"><a class="topbar-link" href="/">About</a><a class="topbar-link" href="/build-log/">Build Log</a><a aria-current="page" class="topbar-link" href="/side-quests/">Side Quests</a></nav><span class="topbar-mark">Whipit</span></div></header><main class="container sq-main" id="content"><div class="document-shell"><nav class="breadcrumbs"><a href="/side-quests/">Side Quests</a><span>/</span><a href="/side-quests/live-film/">Live film</a><span>/</span><span>02</span></nav><header><p class="eyebrow">Prototype proposal · 2025-12-17</p><h1 class="document-title">A YouTube-based proof of concept</h1><div class="archive-note"><p>English translation of the Portuguese source. Draft architecture and a small JavaScript sketch, not a recovered working player.</p></div><div class="sq-actions"><a class="button" download="youtube-prototype.md" href="/side-quests/live-film/files/youtube-prototype.md">Download text ↓</a><a class="text-link" download="youtube-prototype.js" href="/side-quests/live-film/files/youtube-prototype.js">Download code ↓</a></div></header><article class="document-body"><p>There is one key point: for <strong>clickable PiP with swapping and automatic muting</strong>, you need <strong>your own page</strong>, even a simple static one, embedding <strong>two YouTube iframes</strong> and controlling them through the <strong>YouTube IFrame Player API</strong>. That lets you call <code>mute()</code> and <code>unMute()</code> on a click.</p>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>A YouTube-based proof of concept — Whipit</title><link href="/assets/style.css" rel="stylesheet"/><link href="/assets/side-quests.css" rel="stylesheet"/><link href="/assets/archive.css" rel="stylesheet"/><link href="https://whipit.gallivanter.biz/side-quests/live-film/artifacts/youtube-prototype/" rel="canonical"/></head><body class="sq-page"><a class="skip-link" href="#content">Skip to content</a><header class="site-topbar"><div class="container topbar-inner"><a class="topbar-brand" href="/"><b>João Carreiro</b><i>No boring stuff. Impossible is welcome.</i></a><nav class="topbar-nav"><a class="topbar-link" href="/">About</a><a class="topbar-link" href="/build-log/">Build Log</a><a aria-current="page" class="topbar-link" href="/side-quests/">Side Quests</a></nav><span class="topbar-mark">Whipit</span></div></header><main class="container sq-main" id="content"><div class="document-shell"><nav class="breadcrumbs"><a href="/side-quests/">Side Quests</a><span>/</span><a href="/side-quests/live-film/">Live film</a><span>/</span><span>02</span></nav><header><p class="eyebrow">Prototype proposal · 2025-12-17</p><h1 class="document-title">A YouTube-based proof of concept</h1><div class="archive-note"><p>English translation of the Portuguese source. Draft architecture and a small JavaScript sketch, not a recovered working player.</p></div><div class="sq-actions"><a class="button" download="youtube-prototype.md" href="/side-quests/live-film/files/youtube-prototype.md">Download text ↓</a><a class="text-link" download="youtube-prototype.js" href="/side-quests/live-film/files/youtube-prototype.js">Download code ↓</a></div></header><article class="document-body"><p>The proposed <strong>clickable PiP with swapping and automatic muting</strong> uses a dedicated page with <strong>two YouTube iframes</strong>, controlled through the <strong>YouTube IFrame Player API</strong>. The click handler calls <code>mute()</code> and <code>unMute()</code>.</p>
 <h3>The working pattern</h3>
 <ol>
 <li>
-<p>Run two YouTube live streams:<br/>
+<p>Run two YouTube live streams:<br />
 L1 unlisted, L2 unlisted.</p>
 </li>
 <li>
-<p>Render both players on your site:<br/>
+<p>Render both players on the page:<br />
 one large, with a smaller one over it.</p>
 </li>
 <li>
-<p>Clicking the PiP swaps the views, and audio follows the main view.<br/>
+<p>Clicking the PiP swaps the views, and audio follows the main view.<br />
 In the click handler:</p>
 </li>
 </ol>
@@ -22,14 +22,14 @@ In the click handler:</p>
 <li><code>pip.mute()</code></li>
 </ul>
 <p>Browsers allow autoplay with sound only after a user gesture, so start everything muted and enable sound on the click.</p>
-<h3>“Can both audio feeds play at once?”</h3>
-<p>Yes. Technically, you just leave the PiP unmuted and control the volumes. The YouTube API supports this.<br/>
-In practice, it is usually chaotic because of echo and some timing difference between the streams. Fine for a proof of concept; for production, I would keep it as an advanced mode.</p>
+<h3>Simultaneous audio</h3>
+<p>Both feeds can play by leaving the PiP unmuted and controlling the volumes. The YouTube API supports this.<br />
+In practice, it is usually chaotic because of echo and some timing difference between the streams. The proposal keeps simultaneous audio as an advanced mode beyond the proof of concept.</p>
 <h3>A small logic skeleton (concept)</h3>
 <pre><code class="language-js">function setMain(main, pip) {
   // UI swap
-  mainEl.classList.add("main")
-  pipEl.classList.remove("main")
+  mainEl.classList.add(&quot;main&quot;)
+  pipEl.classList.remove(&quot;main&quot;)
 
   // audio policy: audio follows main
   pip.mute()

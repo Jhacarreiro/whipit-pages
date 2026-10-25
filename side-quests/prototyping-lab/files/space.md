@@ -6,7 +6,7 @@ English translation of the Portuguese source. A 2025 concept draft. Estimates, c
 
 ---
 
-To accommodate all the laboratories and support areas comfortably, I recommend between **1 200 and 1 500 m²**. Below is a suggested allocation:
+The proposed allocation is **1 200 to 1 500 m²** for the laboratories and support areas:
 
 | Area | Module | Area (m²) |
 |---|---|---:|

@@ -1,6 +1,6 @@
 # Chapter one — editorial review
 
-Your outline for the first chapter is well-structured and thorough. It does a good job in introducing Thomas Harrington, highlighting his skills, his past, and his current situation. However, it could benefit from some minor adjustments to enhance the pacing and to ensure it doesn't reveal too much information at once. Here is a revised version:
+The revision introduces Thomas’s skills and current role before revealing his history gradually. The main editorial concerns are pacing and avoiding too much exposition at once.
 
 1. Introduce Thomas Harrington, a 45-year-old British diplomat with two decades of experience in intelligence, stationed in Kyiv, Ukraine. (This sets up the scene, introducing the protagonist and his setting.)
 2. Describe his daily routine, attending diplomatic functions, liaising with local officials, and subtly gathering information for the British government's intelligence agency, MI6. (This provides context about Thomas's role and responsibilities.)

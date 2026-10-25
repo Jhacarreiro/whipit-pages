@@ -6,13 +6,13 @@ English translation of the Portuguese source. Draft architecture and a small Jav
 
 ---
 
-There is one key point: for **clickable PiP with swapping and automatic muting**, you need **your own page**, even a simple static one, embedding **two YouTube iframes** and controlling them through the **YouTube IFrame Player API**. That lets you call `mute()` and `unMute()` on a click.
+The proposed **clickable PiP with swapping and automatic muting** uses a dedicated page with **two YouTube iframes**, controlled through the **YouTube IFrame Player API**. The click handler calls `mute()` and `unMute()`.
 
 ### The working pattern
 1) Run two YouTube live streams:\
 L1 unlisted, L2 unlisted.
 
-2) Render both players on your site:\
+2) Render both players on the page:\
 one large, with a smaller one over it.
 
 3) Clicking the PiP swaps the views, and audio follows the main view.\
@@ -23,9 +23,9 @@ In the click handler:
 
 Browsers allow autoplay with sound only after a user gesture, so start everything muted and enable sound on the click.
 
-### “Can both audio feeds play at once?”
-Yes. Technically, you just leave the PiP unmuted and control the volumes. The YouTube API supports this.\
-In practice, it is usually chaotic because of echo and some timing difference between the streams. Fine for a proof of concept; for production, I would keep it as an advanced mode.
+### Simultaneous audio
+Both feeds can play by leaving the PiP unmuted and controlling the volumes. The YouTube API supports this.\
+In practice, it is usually chaotic because of echo and some timing difference between the streams. The proposal keeps simultaneous audio as an advanced mode beyond the proof of concept.
 
 ### A small logic skeleton (concept)
 ```js

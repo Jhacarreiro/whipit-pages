@@ -2,7 +2,7 @@
 
 31 January 2024 · 09:36 · AI review
 
-Your outline provides a structured and detailed roadmap for a gripping narrative that skillfully combines elements of psychological drama, mystery, and science fiction. Here are a few suggestions to further refine and enhance the story:
+Editorial priorities for the outline: character backgrounds, the timing of discoveries, crew dynamics and the consequences of the mission.
 
 1. **Deepen Character Backgrounds in Act 1**: Introduce subtle hints of each character's past and motivations early on. This can add depth to their reactions to the mission's challenges and Alex's deteriorating state.
 
@@ -19,5 +19,3 @@ Your outline provides a structured and detailed roadmap for a gripping narrative
 7. **Reflect on Consequences in the Resolution**: In Chapter 19, alongside reflecting on lessons learned, consider showing tangible changes in international policies or attitudes towards space exploration as a result of the mission. This can provide a satisfying sense of closure and impact.
 
 8. **Epilogue Potential for Future Stories**: While hinting at future adventures, also give a sense of resolution or peace for the characters, ensuring readers feel a sense of completion with the journey they've followed.
-
-Your outline sets up a compelling narrative arc that promises to take readers on an emotional and thrilling journey. Focusing on character depth, suspense, and thematic exploration will enrich the story, making it resonate with readers long after they turn the last page.

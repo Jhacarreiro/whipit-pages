@@ -2,7 +2,7 @@
 
 31 January 2024 · 09:26 · AI review
 
-The main characters as described bring a rich tapestry of backgrounds, personalities, and visual traits that are crucial for the depth and engagement of the narrative. Each character is distinct, providing a broad spectrum of human experience and perspective that is essential for a story set against the backdrop of space exploration. Here are some thoughts on further refining and enhancing these characters:
+Revision priorities for the initial character profiles: personal motivations, relationships and connections between professional roles and the central mystery.
 
 1. **Alex Sterling**: The detailed description of Alex sets a strong foundation for a complex protagonist whose mental and emotional journey could be the heart of the narrative. To deepen Alex's character, consider exploring the specific origins of their passion for space and how their past experiences shape their reactions to the mission's challenges.
 
@@ -18,4 +18,4 @@ The main characters as described bring a rich tapestry of backgrounds, personali
 
 7. **Zara Al-Farsi**: Zara's role as a mediator and government liaison suggests a character skilled in negotiation and diplomacy. Delving into her motivations for taking on such a challenging role, her perspectives on the mission, and how she navigates the complexities of space politics could provide depth.
 
-In weaving these characters into the narrative, consider how their backgrounds, personal goals, and fears interact with the story's central themes and plot developments. Their relationships with each other, how they evolve over the course of the narrative, and how they respond to the psychological and physical challenges of space travel are key to creating a compelling and emotionally resonant story. Balancing their professional roles with their personal journeys will enrich the narrative, making it not just a story of space exploration but also a deep dive into what makes us human.
+The next revision should connect character backgrounds, personal goals and fears to the central plot, then track how relationships and responses change during the mission.

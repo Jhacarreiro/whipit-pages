@@ -28,4 +28,4 @@
 
 14. **The Unsolved Enigma**: Back at his temporary residence, as Thomas delves into Viktor Dmytrovich's files, end with a shocking revelation or discovery, compelling readers to move eagerly to the next chapter.
 
-Remember, these beats are merely guiding lights; the beauty of Agatha Christie's style lies in the intricate weaving of characters, plot, and atmosphere. The details and layers you add will give your story its unique voice.
+These beats are provisional guides for developing character, plot and atmosphere.

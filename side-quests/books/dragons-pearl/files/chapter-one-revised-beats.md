@@ -1,6 +1,6 @@
 # Chapter one — revised beats
 
-Your beat structure for the first chapter is well-constructed and it offers a clear path from the beginning to the end of the chapter. Here are a few suggestions to refine it:
+Revised opening beats for the diplomatic event and the Dragon’s Pearl mystery:
 
 1. Introduce Thomas Harrington, a seasoned British diplomat, who is attending an international diplomatic event at the American embassy in Beijing. Provide some background on Thomas's career and reputation in the diplomatic community.
 
@@ -22,4 +22,4 @@ Your beat structure for the first chapter is well-constructed and it offers a cl
 
 10. Conclude the chapter with a cliffhanger - a cryptic note, an unexpected interruption, or a mysterious revelation about the Dragon's Pearl - to create suspense and anticipation for the next chapter. 
 
-Remember to imbue the chapter with tension and intrigue to keep your readers engaged and invested in Thomas's mission.
+Maintain tension through the diplomatic exchanges and the chapter’s closing reveal.

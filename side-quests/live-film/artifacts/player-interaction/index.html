@@ -3,29 +3,29 @@
 <html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>A main view and a picture-in-picture view — Whipit</title><link href="/assets/style.css" rel="stylesheet"/><link href="/assets/side-quests.css" rel="stylesheet"/><link href="/assets/archive.css" rel="stylesheet"/><link href="https://whipit.gallivanter.biz/side-quests/live-film/artifacts/player-interaction/" rel="canonical"/></head><body class="sq-page"><a class="skip-link" href="#content">Skip to content</a><header class="site-topbar"><div class="container topbar-inner"><a class="topbar-brand" href="/"><b>João Carreiro</b><i>No boring stuff. Impossible is welcome.</i></a><nav class="topbar-nav"><a class="topbar-link" href="/">About</a><a class="topbar-link" href="/build-log/">Build Log</a><a aria-current="page" class="topbar-link" href="/side-quests/">Side Quests</a></nav><span class="topbar-mark">Whipit</span></div></header><main class="container sq-main" id="content"><div class="document-shell"><nav class="breadcrumbs"><a href="/side-quests/">Side Quests</a><span>/</span><a href="/side-quests/live-film/">Live film</a><span>/</span><span>01</span></nav><header><p class="eyebrow">Interaction proposal · 2025-12-17</p><h1 class="document-title">A main view and a picture-in-picture view</h1><div class="archive-note"><p>English translation of the Portuguese source. An early two-player interaction proposal. The later production plan has three feeds; this draft explores the swap and audio behaviour.</p></div><div class="sq-actions"><a class="button" download="player-interaction.md" href="/side-quests/live-film/files/player-interaction.md">Download text ↓</a></div></header><article class="document-body"><p>The working model is:</p>
 <ol>
 <li>
-<p>Two players on the same page<br/>
-• Player A loads stream L2.<br/>
-• Player B loads stream L1.<br/>
-• CSS places B in picture-in-picture (PiP) over A.<br/>
+<p>Two players on the same page<br />
+• Player A loads stream L2.<br />
+• Player B loads stream L1.<br />
+• CSS places B in picture-in-picture (PiP) over A.<br />
 • Clicking the PiP swaps them, either by switching sources or by changing classes and z-index.</p>
 </li>
 <li>
-<p>Audio logic exactly as described<br/>
-• Default mode: “audio follows the main view”.<br/>
-When swapping, set <code>main.muted=false</code> and <code>pip.muted=true</code>.<br/>
-• Manual controls: “Mute L1” and “Mute L2” buttons, with optional volume sliders.<br/>
-You can allow both to play at once, but always start with the PiP muted because of browser rules on autoplay with sound.</p>
+<p>Audio behaviour<br />
+• Default mode: “audio follows the main view”.<br />
+When swapping, set <code>main.muted=false</code> and <code>pip.muted=true</code>.<br />
+• Manual controls: “Mute L1” and “Mute L2” buttons, with optional volume sliders.<br />
+Both feeds can play at once, but always start with the PiP muted because of browser rules on autoplay with sound.</p>
 </li>
 <li>
-<p>A simple stack for this<br/>
+<p>A simple stack for this<br />
 A practical option is HLS in two <code>&lt;video&gt;</code> elements with JS on top: hls.js where needed, or native playback in Safari. MDN has an overview of HLS playback in the browser.</p>
 </li>
 </ol>
-<p>To avoid writing a lot of player code, you can use a provider and control it through an API:<br/>
-• Cloudflare Stream offers live embeds and a Player API for play, pause, mute, etc.<br/>
+<p>A provider with a player API is an alternative to writing the player controls:<br />
+• Cloudflare Stream offers live embeds and a Player API for play, pause, mute, etc.<br />
 • Amazon IVS Player SDK has volume control and lets you place two players side by side using JS.</p>
-<p>Two awkward details to account for from the start:<br/>
-• Two simultaneous streams mean more bandwidth and client-side CPU use. If that is a problem, lazy-load the PiP so it starts only when clicked, or force it to a lower quality if your pipeline allows it.<br/>
-• Perfect synchronisation between L1 and L2 over HLS is difficult. It is fine for glancing at the other feed. If you need tight synchronisation, you are moving into WebRTC, which changes the approach.</p>
-<p>In product terms, your site could literally be one page with login, permissions and two signed URLs per level. The rest is UI and a handful of JS.</p>
+<p>Two awkward details to account for from the start:<br />
+• Two simultaneous streams mean more bandwidth and client-side CPU use. If that is a problem, lazy-load the PiP so it starts only when clicked, or force it to a lower quality if the pipeline allows it.<br />
+• Perfect synchronisation between L1 and L2 over HLS is difficult. It is fine for glancing at the other feed. Tight synchronisation would require a different approach, such as WebRTC.</p>
+<p>The proposed interface is a single page with login, permissions and two signed URLs per level, plus the view and audio controls.</p>
 </article><nav class="reading-nav"><a href="/side-quests/live-film/artifacts/youtube-prototype/">Next →: A YouTube-based proof of concept</a></nav></div></main><footer class="site-footer"><div class="container footer-inner"><div class="footer-brand"><b>João Carreiro</b><span>Drafts, experiments and things worth keeping.</span></div><nav class="footer-nav"><a href="/">About</a><a href="/build-log/">Build Log</a><a href="/side-quests/">Side Quests</a></nav><span class="footer-mark">Whipit · 2023–</span></div></footer></body></html>

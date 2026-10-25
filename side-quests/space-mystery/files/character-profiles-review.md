@@ -2,7 +2,7 @@
 
 31 January 2024 · 09:32 · AI review
 
-The main characters you've outlined for your novel present a diverse and complex ensemble, each with their own unique challenges and contributions to the mission. Their detailed descriptions suggest a well-thought-out dynamic that promises to drive the narrative forward effectively. Here are some thoughts on these character profiles:
+The ensemble is organized around technical expertise, leadership, diplomacy and care. These notes examine each role and identify opportunities for character development.
 
 1. **Alex Mendoza**: The portrayal of Alex as both brilliant and troubled is compelling, offering a nuanced look at how mental health issues can impact high-stress environments like space missions. Exploring Alex's internal struggle and its effect on the crew adds depth and tension to the story.
 
@@ -18,9 +18,7 @@ The main characters you've outlined for your novel present a diverse and complex
 
 7. **Zara Al-Farsi**: Zara's diplomatic role and unclear allegiances add layers of political intrigue and tension. Her character could effectively explore the challenges of diplomacy in isolated, high-stakes environments and the complexities of representing diverse interests.
 
-Each character's background and role seem thoughtfully considered, promising a richly woven narrative full of interpersonal drama, ethical questions, and the challenges of space exploration. To enhance these profiles, consider:
+Further profile development:
 - **Deepening Backstories**: Provide glimpses into their pasts to explain their motivations, fears, and aspirations.
 - **Interpersonal Relationships**: Develop complex relationships between characters, adding layers to the narrative through alliances, conflicts, and potential betrayals.
 - **Character Growth**: Plan arcs for each character that allow them to evolve in response to the mission's challenges, offering satisfying developments and resolutions to their individual stories.
-
-By focusing on these aspects, you can ensure each character not only contributes to the mission's goals but also enriches the story's emotional and thematic depth.

@@ -27,5 +27,3 @@
 ### Subplots
 - **Mars Territorial Conflict**: Mirroring Earth’s geopolitical tensions, a subplot involves a territorial dispute over Mars, adding diplomatic complexity to the narrative.
 - **Global Shifts**: Another subplot focuses on the changing geopolitical landscape, particularly the rising influence of countries like India and China in space exploration.
-
-This condensed outline captures the essence of your novel, blending space exploration with psychological drama and international intrigue. The narrative is poised to explore the depths of human psychology in extreme conditions, set against the backdrop of a future where space is the next frontier of human achievement and conflict.

@@ -20,4 +20,4 @@
 
 10. **Chapter Conclusion**: Conclude the chapter with a high-stakes event or reveal that escalates tension and teases the conflict in the following chapter. It could be a cryptic note about the Pearl found in Thomas's pocket, a sudden disruption in the event, or an unexpected revelation about the Pearl's location. This would leave the reader eager to know what happens next.
 
-Remember, the key to a compelling first chapter is to draw the reader in with vivid descriptions, interesting characters, intriguing plot, and a promise of what's to come. You want to strike a balance between providing enough information to understand the story and maintaining enough mystery to keep them turning the pages.
+Balance the information needed to follow the opening with the unanswered questions that carry the mystery into the next chapter.

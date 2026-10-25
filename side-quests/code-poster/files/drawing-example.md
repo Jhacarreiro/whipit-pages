@@ -6,8 +6,8 @@ English translation of the Portuguese source. An illustrative pipeline, includin
 
 ---
 
-### ✅ 1. **Prepare the code**
-You need the `.py` file or the text in a `.txt` file.
+### 1. **Prepare the code**
+Input: a `.py` file or source text in a `.txt` file.
 
 ```python
 # A simple example of reading the code
@@ -17,8 +17,8 @@ with open("your_code.py", "r") as f:
 
 ---
 
-### ✅ 2. **Analyse the code to extract its structure**
-You can use regular expressions or Python's `tokenize` module to detect `def`, `if`, `for`, `return`, etc.
+### 2. **Analyse the code to extract its structure**
+Regular expressions or Python's `tokenize` module can detect `def`, `if`, `for`, `return`, etc.
 
 ```python
 import tokenize
@@ -37,8 +37,8 @@ Assign a “weight” or “type” to each line based on its token type:
 
 ---
 
-### ✅ 3. **Generate shapes or colours from that analysis**
-You can map each line to a visual object: for example, a circle whose radius depends on the line's length and whose colour depends on the instruction type.
+### 3. **Generate shapes or colours from that analysis**
+Each line can map to a visual object: for example, a circle whose radius depends on the line's length and whose colour depends on the instruction type.
 
 ```python
 import matplotlib.pyplot as plt
@@ -60,14 +60,14 @@ for i, line in enumerate(lines):
 plt.savefig("code_poster.png", dpi=300, bbox_inches="tight")
 ```
 
-This is a simple example. You can adapt it to use:
+Possible extensions to this example:
 - Colours by token type.
 - Shapes that connect to one another, such as lines and curves.
 - Symmetrical patterns.
 
 ---
 
-### ✅ 4. **Adjust the artistic style**
+### 4. **Adjust the artistic style**
 Explore these options:
 - Replace `plt.Circle` with `plt.Rectangle`, `plt.Polygon`, etc.
 - Use libraries such as:

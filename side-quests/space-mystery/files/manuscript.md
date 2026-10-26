@@ -1,4 +1,4 @@
-# Space mystery novel
+# Echoes of the Void — January 2024 review version
 
 Draft manuscript · January 2024
 

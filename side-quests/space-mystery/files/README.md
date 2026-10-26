@@ -1,14 +1,12 @@
-# Space mystery novel — artefact archive
+# Echoes of the Void — artefact archive
 
-Unfinished fiction developed with AI on 30–31 January 2024.
+Unfinished fiction, 2023–.
 
-- manuscript.md: latest drafts of chapters 1–4.
-- 69 individually named documents: drafts, character profiles, an outline,
-  scene plans, style guidance and AI editorial notes.
+- sudowrite-manuscript.md: the four-chapter Sudowrite draft, dated 2023 by the author. Two PNG illustrations accompany it in this folder.
+- sudowrite-illustrations.md: the two illustrations with their original chapter positions.
+- manuscript.md: the four-chapter sequence reviewed in January 2024.
+- 69 earlier documents: chapter drafts, profiles, an outline, scene plans, style guidance and editorial notes.
 
-These are working versions. They include alternatives, contradictions and two
-partial drafts. AI-generated documents are labelled. "Draft for review" marks text written
-outside the AI conversation and brought in for its review. “Echoes of the Void” is a proposed
-title, not an accepted final title.
+The collection contains 71 artefacts. The combined January 2024 manuscript is a reading copy of its individual chapter documents. These are working versions with alternatives and inconsistencies, not a finished book. Historical review dates are preserved. The 2023 material does not supply an exact working day or an artist credit for the images.
 
 Read online: https://whipit.gallivanter.biz/side-quests/space-mystery/

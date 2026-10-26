@@ -1,0 +1,21 @@
+# Chapter one — a rewrite with more active scenes
+
+The Kyiv sun had just dipped below the horizon, casting an orange glow onto the cobblestone streets. Thomas Harrington, a seasoned British diplomat, was standing on his apartment balcony, reflecting on the day’s events and the ever-twisting game of politics and subterfuge that defined his life.
+
+He had just concluded another day of orchestrated meetings, diplomatic functions, and gathering information. His job was as much a dance as it was a profession, requiring tact and finesse to navigate the delicate world of international relations. He'd drained the last of his lukewarm tea and murmured to himself, "Another day, another diplomatic dance."
+
+His day had started with a breakfast meeting with Ukraine's Deputy Foreign Minister at a luxurious hotel. Thomas was always searching for useful nuggets of information that could be relayed back to London, even amid casual conversations. "Of course, we value our partnership with the United Kingdom," the Deputy Foreign Minister said, dabbing his mouth with a napkin, "But there are always those who seek to disrupt such relationships, aren't there?"
+
+Thomas's eyes narrowed slightly. "Indeed," he replied, "We must be vigilant against any threats, from within or without."
+
+Later at the British embassy, he busied himself with classified documents, composing reports to be sent back to MI6 headquarters. When his assistant, Natasha, handed him a stack of papers and mentioned new developments regarding Ukraine's military budget, he made a note to follow up. "I'll follow up with him this evening. Thank you, Natasha."
+
+By evening, Thomas was at a cocktail party, rubbing elbows with Kyiv's elite. His attention was attuned to the whispers that could prove valuable, like pieces of a puzzle slowly coming together. A prominent businessman made a joke, and as he laughed along, he was observing who was speaking to whom and what they might be discussing.
+
+"Thomas, my friend!" a well-dressed man named Petro exclaimed as he approached. "It's been too long since our last meeting. How have you been?"
+
+"Very well, thank you, Petro," Thomas replied, his smile reaching his eyes. "And how is your family?"
+
+"Ah, they are well, thank you for asking," Petro said, taking a sip of his champagne. "But enough about me, I hear there have been some interesting developments in London lately..."
+
+As the evening wore on, Thomas navigated the social waters, collecting information and building alliances. As the stars began to appear in the night sky above Kyiv, he retreated to his apartment, satisfied with the day's work. It was just another day in his life of diplomacy and espionage.

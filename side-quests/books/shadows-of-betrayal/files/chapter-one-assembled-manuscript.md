@@ -321,3 +321,23 @@ The rest of the night was spent in futile attempts to crack open the digital eni
 As dawn broke, Thomas found himself staring at the screen, the encrypted file seeming to mock him. The realization sank in slowly, but with undeniable certainty. Without the password, they were looking at decades of computational work to decrypt it.
 
 With a heavy sigh, he turned to Marie. "It seems our dance with this Weaver has only just begun."
+
+## Variant passages
+
+Passages from separate versions of these scenes that differ from the text above.
+
+### From "The spilled glass"
+
+Her words, her acceptance, eased the lingering tension in his muscles. He gave her a grateful smile, feeling a strange sense of relief. His secret was out, and Marie hadn't recoiled or laughed. Instead, she'd offered him comfort, understanding, and a sense of normalcy amidst his chaos.
+
+And in that moment, amidst the worried murmurs and apologetic glances of the café patrons, Thomas felt more connected to Marie than ever before. His fear, his panic, his vulnerability - they'd all been laid bare before her, and she'd embraced them with grace and kindness. It was a moment of unexpected intimacy, a shared understanding that brought them closer amidst the chaos of the spilled water.
+
+### From "The encrypted file — an alternate ending"
+
+With those ominous words hanging in the air, Thomas couldn't help but feel a shiver of apprehension. They were not dealing with an ordinary foe. The Shadow Weaver was a phantom in the wires, a digital specter who had successfully danced around their defenses.
+
+And so, as the first rays of dawn illuminated the embassy, Thomas Harrington found himself embroiled in a new mystery, one that would take him into the nebulous world of shadows and codes. The game was on, and the stakes had never been higher.
+
+### From "Marie’s invitation"
+
+Thomas turned towards her, recognizing the invitation for more than just a casual meet. "Sounds like a plan, Marie. Let's do that," he said, a hint of anticipation in his voice.

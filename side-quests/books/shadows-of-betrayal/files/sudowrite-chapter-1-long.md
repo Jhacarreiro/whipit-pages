@@ -403,3 +403,13 @@ As the hours ticked by, Thomas's frustration grew. He knew that time was running
 "Think, Thomas, think!" he whispered urgently, his voice barely audible above the rustle of papers.
 
 And then, as if the universe had finally granted him a reprieve, he saw it – a single sentence buried within the documents, as innocuous as it was revelatory. Thomas felt his heart lurch in his chest, the implications of this new information settling heavily upon him.
+
+## Variant passages
+
+Passages from separate versions of these scenes that differ from the text above.
+
+### From "Chapter 1 — Story Engine version"
+
+The airplane's descent sent shudders through the cabin, and Thomas Harrington's leather-clad hand gripped the armrest with a white-knuckled intensity. His face, a roadmap of weary lines and creases, told stories of countless undercover operations and sleepless nights spent in service to his country. As he looked out the window, the piercing blue eyes that had made him both an asset and a target in his line of work captured fleeting glimpses of the clouds and the land below. Each reflection hinted at a reservoir of introspection, a mind constantly analyzing and questioning the world around it.
+
+With that, Thomas stepped outside and into the vibrant world of Kyiv, where danger and adventure awaited him in equal measure.

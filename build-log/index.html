@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Build Log — João Carreiro / Whipit</title><meta name="description" content="A weekly log of what I build with AI: the problem, my call, what AI did, the result, and the road not taken.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600;800&family=Inter:wght@400;500;600;700;800&family=Caveat:wght@500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600;800&family=Inter:wght@400;500;600;700;800;900&family=Caveat:wght@500&display=swap">
 <style>
-:root{--bg:#f7f7f5;--card:#fff;--ink:#14171c;--muted:#5d636b;--line:#e4e5e1;--soft:#f1f2ef;--accent:#2f4bd1;--accent-soft:#eaeefc;--accent-ink:#2540bd;--dots:#dcded9;--light:#aab2bc;
-  --shipped:#1f8a55;--shipped-bg:#e5f5ec;--fixed:#a1600a;--fixed-bg:#fdf1dc;--steered:#2f5aa8;--steered-bg:#e8eefa;
-  --display:"Schibsted Grotesk",Inter,ui-sans-serif,system-ui,sans-serif;--body:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;--hand:Caveat,"Segoe Print","Bradley Hand",cursive}
+:root{--bg:#fff;--card:#fff;--ink:#0b0b0b;--muted:#555;--line:#dedede;--soft:#f4f4f4;--accent:#e10600;--accent-soft:#fde6e5;--accent-ink:#d00500;--light:#a8a8a8;
+  --shipped:#1f8a55;--shipped-bg:#e5f5ec;--fixed:#a1600a;--fixed-bg:#fdf1dc;--steered:#0b0b0b;--steered-bg:#ececec;
+  --display:Inter,"Helvetica Neue",Helvetica,Arial,sans-serif;--body:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;--hand:Caveat,"Segoe Print","Bradley Hand",cursive}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5}
 a{color:inherit}
@@ -21,7 +21,7 @@ h1,h2,h3{text-wrap:balance;margin:0;font-weight:600}
 .nav a{text-decoration:none;color:var(--muted);padding-bottom:4px}
 .nav a[aria-current]{color:var(--ink);border-bottom:2px solid var(--accent)}
 
-.hero{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:end;padding-block:38px 28px;background-image:radial-gradient(var(--dots) 1.1px,transparent 1.3px);background-size:20px 20px;background-position:-4px -4px}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:end;padding-block:38px 28px}
 .eyebrow{font:600 11.5px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink)}
 .hero h1{font-family:var(--display);font-weight:800;font-size:clamp(36px,5.8vw,62px);line-height:.98;letter-spacing:-.04em;margin-top:10px}
 .hero h1 .dot{color:var(--accent)}
@@ -204,6 +204,16 @@ main [hidden]{display:none!important}
 .feat-dots button{width:8px;height:8px;border-radius:50%;border:0;padding:0;background:var(--line);cursor:pointer}
 .feat-dots button[aria-current="true"]{background:var(--accent-ink);width:20px;border-radius:4px}
 .status.live{background:var(--shipped-bg,#e5f5ec);color:var(--shipped,#1f8a55)}
+
+/* Swiss look: square corners, no shadows, one red */
+*{border-radius:0!important;box-shadow:none!important}
+.site-topbar .topbar-brand b{font-weight:900;letter-spacing:-.02em}
+.site-topbar .topbar-link[aria-current="page"]{color:var(--accent);border-bottom-color:var(--accent)}
+.hero h1,.weekhead h2,.entry h3,.pcard h3{letter-spacing:-.035em}
+.eyebrow,.proj{color:var(--accent)}
+.roads [stroke="#2540bd"]{stroke:var(--accent-ink)}
+.roads [fill="#2540bd"]{fill:var(--accent-ink)}
+.roads [fill="#fff"]{fill:var(--bg)}
 </style></head>
 <body><header class="site-topbar"><div class="wrap topbar-inner"><a class="topbar-brand" href="/"><b>João Carreiro</b><i>No boring stuff. Impossible is welcome.</i></a><nav class="topbar-nav" aria-label="Main navigation"><a class="topbar-link" href="/">About</a><a class="topbar-link" href="/build-log/" aria-current="page">Build Log</a><a class="topbar-link" href="/side-quests/">Side Quests</a></nav><span class="topbar-mark">Whipit</span></div></header><div class="wrap">
 

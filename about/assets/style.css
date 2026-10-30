@@ -307,3 +307,24 @@ h1,h2,h3,.hero h1{font-family:var(--display)!important;letter-spacing:-.035em!im
 .row details[open] summary{align-items:start}
 .row details[open] .row-text{padding-top:8px}
 @media(max-width:520px){.row details[open] .row-text{padding-top:6px}}
+
+/* Roast block: the other side of the CV */
+.roast{background:var(--ink);color:#fff;padding:clamp(20px,3.4vw,40px);display:grid;gap:18px;margin-bottom:clamp(48px,6vw,72px);grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);column-gap:clamp(24px,4vw,56px)}
+.roast>*{grid-column:1/-1;margin:0}
+.roast-eyebrow{font:700 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.roast h2{font-family:var(--display);font-weight:800;font-size:clamp(28px,4.4vw,44px);letter-spacing:-.05em;line-height:1;color:#fff}
+.roast-sub{color:#b8b8b8;font-size:15.5px;margin-top:-8px}
+.roast .roast-quote{grid-column:1;border-left:4px solid var(--accent);padding-left:18px;align-self:start}
+.roast-quote p{margin:0;font-family:var(--display);font-weight:700;font-size:clamp(21px,2.5vw,30px);line-height:1.18;letter-spacing:-.03em}
+.roast-quote cite{display:block;margin-top:12px;font:500 12px/1.3 var(--mono);color:#9a9a9a;font-style:normal}
+.roast-quote cite::before{content:"— "}
+.roast .roast-body{grid-column:2;display:grid;gap:12px;align-content:start}
+.roast-hand{margin:0;font-family:var(--hand);font-size:24px;color:var(--accent);transform:rotate(-1.5deg);transform-origin:left}
+.roast-list{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.roast-list li{font-size:15px;line-height:1.45;color:#e6e6e6;padding-left:18px;position:relative}
+.roast-list li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:2px;background:var(--accent)}
+.roast-end{margin:4px 0 0;font-weight:800;font-size:17px;color:#fff}
+.roast .cv-foot{border-top:1px solid #333}
+.roast .cv-foot a{color:#fff}
+.roast .cv-foot small{color:var(--accent);font-size:19px}
+@media(max-width:760px){.roast{grid-template-columns:1fr}.roast .roast-quote,.roast .roast-body{grid-column:1}.roast-list li{font-size:14px}.roast .cv-foot small{font-size:16px}}

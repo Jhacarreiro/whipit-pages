@@ -15,9 +15,6 @@ jobs:
         with:
           fetch-depth: 0
       - name: Protect Limited Offers subtree
-        env:
-          BASE_SHA: ${{ github.event.pull_request.base.sha }}
-          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
         run: |
           python3 - <<PY
           import datetime as dt
@@ -26,13 +23,17 @@ jobs:
           import subprocess
           import sys
 
-          base = os.environ["BASE_SHA"]
-          head = os.environ["HEAD_SHA"]
-
           def git(*args):
-              return subprocess.check_output(["git", *args], text=True).strip()
+              return subprocess.check_output(["git", *args], text=True)
 
-          changed = [p for p in git("diff", "--name-only", base, head).splitlines() if p]
+          # pull_request checks out the proposed merge. Its first parent is
+          # the base tested by this run, including other projects' updates.
+          result = os.environ["GITHUB_SHA"]
+          base = git("rev-parse", f"{result}^1").strip()
+          changed = [
+              p for p in git("diff", "--name-only", "--no-renames", "-z", base, result).split("\0")
+              if p
+          ]
           limited = [p for p in changed if p.startswith("limited-offers/")]
           if not limited:
               print("Limited Offers not touched; nothing to guard.")
@@ -52,12 +53,12 @@ jobs:
               ).returncode == 0
 
           marker = "limited-offers/.limited-offers-deploy"
-          if not exists(head, marker):
+          if not exists(result, marker):
               print(f"Missing deploy ownership marker: {marker}", file=sys.stderr)
               raise SystemExit(1)
 
           products = "limited-offers/data/products.json"
-          if not exists(head, products):
+          if not exists(result, products):
               print(f"Missing published catalog: {products}", file=sys.stderr)
               raise SystemExit(1)
 
@@ -69,7 +70,7 @@ jobs:
                   raise ValueError("missing generated_at")
               return dt.datetime.fromisoformat(str(value).replace("Z", "+00:00"))
 
-          candidate = load(head)
+          candidate = load(result)
           candidate_at = stamp(candidate.get("generated_at"))
           candidate_count = len(candidate.get("products") or [])
           if candidate_count <= 0:

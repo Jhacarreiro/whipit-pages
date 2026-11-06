@@ -1,6 +1,48 @@
 {
-  "generated_at": "2026-09-19T19:03:09Z",
+  "generated_at": "2026-11-06T01:30:49Z",
   "health": [
+    {
+      "id": 9,
+      "source_id": "pcdiga-recondicionados",
+      "checked_at": "2026-11-06T01:30:33Z",
+      "status": "ok",
+      "message": "products=144 listed_only=137 retired=0"
+    },
+    {
+      "id": 8,
+      "source_id": "worten-recondicionados-tablets",
+      "checked_at": "2026-11-06T01:30:33Z",
+      "status": "error",
+      "message": "RuntimeError: OpenCLI worten refurbished failed (1): ok: false error: code: UNKNOWN message: Worten search-products returned HTTP 429 exitCode: 1 # AutoFix: re-run with --trace=retain-on-failure for trace artifact # opencli worten refurbished --trace retain-on-failure"
+    },
+    {
+      "id": 7,
+      "source_id": "worten-recondicionados-computadores",
+      "checked_at": "2026-11-06T01:30:33Z",
+      "status": "error",
+      "message": "RuntimeError: OpenCLI worten refurbished failed (1): ok: false error: code: UNKNOWN message: Worten search-products returned HTTP 429 exitCode: 1 # AutoFix: re-run with --trace=retain-on-failure for trace artifact # opencli worten refurbished --trace retain-on-failure"
+    },
+    {
+      "id": 6,
+      "source_id": "worten-recondicionados-smartwatches",
+      "checked_at": "2026-11-06T01:30:33Z",
+      "status": "error",
+      "message": "RuntimeError: OpenCLI worten refurbished failed (1): ok: false error: code: UNKNOWN message: Worten search-products returned HTTP 429 exitCode: 1 # AutoFix: re-run with --trace=retain-on-failure for trace artifact # opencli worten refurbished --trace retain-on-failure"
+    },
+    {
+      "id": 5,
+      "source_id": "worten-recondicionados-telemoveis",
+      "checked_at": "2026-11-06T01:30:33Z",
+      "status": "ok",
+      "message": "products=103 partial listing, nothing retired"
+    },
+    {
+      "id": 4,
+      "source_id": "pccomponentes-replay",
+      "checked_at": "2026-11-06T01:30:33Z",
+      "status": "error",
+      "message": "RuntimeError: OpenCLI pccomponentes replay failed (1): ok: false error: code: UNKNOWN message: No PcComponentes Replay offers found returned no data exitCode: 1 # AutoFix: re-run with --trace=retain-on-failure for trace artifact # opencli pccomponentes replay --trace retain-on-failure"
+    },
     {
       "id": 3,
       "source_id": "pcdiga-recondicionados",

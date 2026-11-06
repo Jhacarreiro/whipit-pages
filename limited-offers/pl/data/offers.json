@@ -1,71 +1,9 @@
 {
-  "generated_at": "2026-11-05T21:39:09Z",
+  "generated_at": "2026-11-06T10:17:30Z",
   "country": "PL",
   "source": "https://www.lidl.pl official campaign/category pages",
   "product_count": 147,
   "products": [
-    {
-      "id": "45c495172aaf73d7",
-      "country": "PL",
-      "brand": "PARKSIDE PERFORMANCE®",
-      "title": "PARKSIDE PERFORMANCE® Myjka wysokociśnieniowa »PHDP 180 D3«",
-      "raw_title": "Myjka wysokociśnieniowa »PHDP 180 D3«",
-      "original_title": "Myjka wysokociśnieniowa »PHDP 180 D3«",
-      "price": 1299.0,
-      "currency": "PLN",
-      "unit": "szt.",
-      "product_code": "100398798",
-      "product_id": "100398798",
-      "availability_id": "100398798",
-      "category": "Narzędzia",
-      "image": "https://www.lidl.pl/assets/gcp056daa47a925407ba29aa0608e3cce33.jpg",
-      "availability_start": "2026-11-04",
-      "source_title": "Zadbaj o swój ogród",
-      "source_url": "https://www.lidl.pl/c/zadbaj-o-swoj-ogrod/a10095255",
-      "product_url": "https://www.lidl.pl/p/parkside-performance-myjka-wysokocisnieniowa-phdp-180-d3/p100398798",
-      "source_type": "official_campaign_page",
-      "availability_source": "official_lidl_campaign_with_date",
-      "extraction_method": "campaign_html_embedded_product_data",
-      "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
-      "retailer": "LIDL",
-      "stock_mode": "live",
-      "product_url_label": "Zobacz w Lidl",
-      "_page_key": "747178a6481173e5a8d8",
-      "_raw_category": "Narzędzia"
-    },
-    {
-      "id": "56ae2d7989927578",
-      "country": "PL",
-      "brand": "ULTIMATE SPEED®",
-      "title": "ULTIMATE SPEED® Podnośnik hydrauliczny",
-      "raw_title": "Podnośnik hydrauliczny",
-      "original_title": "Podnośnik hydrauliczny",
-      "price": 119.0,
-      "currency": "PLN",
-      "unit": "szt.",
-      "product_code": "100400454",
-      "product_id": "100400454",
-      "availability_id": "100400454",
-      "category": "Inne okazje",
-      "image": "https://www.lidl.pl/assets/gcp4947e69a97224995af2fc3250c440081.jpg",
-      "availability_start": "2026-11-05",
-      "source_title": "Promocje",
-      "source_url": "https://www.lidl.pl/c/promocje/s10076831",
-      "product_url": "https://www.lidl.pl/p/ultimate-speed-podnosnik-hydrauliczny/p100400454",
-      "source_type": "official_campaign_page",
-      "availability_source": "official_lidl_campaign_with_date",
-      "extraction_method": "campaign_html_embedded_product_data",
-      "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
-      "retailer": "LIDL",
-      "stock_mode": "live",
-      "product_url_label": "Zobacz w Lidl",
-      "_page_key": "042b93e79e636c914085",
-      "_raw_category": "Inne okazje"
-    },
     {
       "id": "bed07446339b4a67",
       "country": "PL",
@@ -89,13 +27,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "552f4e3c431cde7d7c97",
-      "_raw_category": "Inne okazje"
+      "_page_key": "552f4e3c431cde7d7c97"
     },
     {
       "id": "6745952b9332d986",
@@ -120,13 +57,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "d2da8150572586efdc8a",
-      "_raw_category": "Moda"
+      "_page_key": "d2da8150572586efdc8a"
     },
     {
       "id": "b210c72632caf9a7",
@@ -151,137 +87,42 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "df858025429d1be00a10",
-      "_raw_category": "Moda"
+      "_page_key": "df858025429d1be00a10"
     },
     {
-      "id": "2dcf768a6e51a50f",
+      "id": "45c495172aaf73d7",
       "country": "PL",
-      "brand": "LUPILU®",
-      "title": "LUPILU® Drewniane artykuły spożywcze do zabawy",
-      "raw_title": "Drewniane artykuły spożywcze do zabawy",
-      "original_title": "Drewniane artykuły spożywcze do zabawy",
-      "price": 29.99,
+      "brand": "PARKSIDE PERFORMANCE®",
+      "title": "PARKSIDE PERFORMANCE® Myjka wysokociśnieniowa »PHDP 180 D3«",
+      "raw_title": "Myjka wysokociśnieniowa »PHDP 180 D3«",
+      "original_title": "Myjka wysokociśnieniowa »PHDP 180 D3«",
+      "price": 1299.0,
       "currency": "PLN",
       "unit": "szt.",
-      "product_code": "100410923",
-      "product_id": "100410923",
-      "availability_id": "100410923",
-      "category": "Dziecko i zabawki",
-      "image": "https://www.lidl.pl/assets/gcp06c3f31993644ff4bc2d713f26cdff2e.jpg",
-      "availability_start": "2026-10-30",
-      "source_title": "Promocje",
-      "source_url": "https://www.lidl.pl/c/promocje/s10076831",
-      "product_url": "https://www.lidl.pl/p/lupilu-drewniane-artykuly-spozywcze-do-zabawy/p100410923",
+      "product_code": "100398798",
+      "product_id": "100398798",
+      "availability_id": "100398798",
+      "category": "Narzędzia",
+      "image": "https://www.lidl.pl/assets/gcp056daa47a925407ba29aa0608e3cce33.jpg",
+      "availability_start": "2026-11-04",
+      "source_title": "Zadbaj o swój ogród",
+      "source_url": "https://www.lidl.pl/c/zadbaj-o-swoj-ogrod/a10095255",
+      "product_url": "https://www.lidl.pl/p/parkside-performance-myjka-wysokocisnieniowa-phdp-180-d3/p100398798",
       "source_type": "official_campaign_page",
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "5f6de09e146888169237",
-      "_raw_category": "Dziecko i zabawki"
-    },
-    {
-      "id": "c923a6acfa85baf3",
-      "country": "PL",
-      "brand": "LUPILU®",
-      "title": "LUPILU® Zabawka drewniana z zestawem akcesoriów",
-      "raw_title": "Zabawka drewniana z zestawem akcesoriów",
-      "original_title": "Zabawka drewniana z zestawem akcesoriów",
-      "price": 34.99,
-      "currency": "PLN",
-      "unit": "szt.",
-      "product_code": "100410520",
-      "product_id": "100410520",
-      "availability_id": "100410520",
-      "category": "Dziecko i zabawki",
-      "image": "https://www.lidl.pl/assets/gcp3e7effeee8f94216b1c50fd0e66f26b3.jpg",
-      "availability_start": "2026-10-30",
-      "source_title": "Promocje",
-      "source_url": "https://www.lidl.pl/c/promocje/s10076831",
-      "product_url": "https://www.lidl.pl/p/lupilu-zabawka-drewniana-z-zestawem-akcesoriow/p100410520",
-      "source_type": "official_campaign_page",
-      "availability_source": "official_lidl_campaign_with_date",
-      "extraction_method": "campaign_html_embedded_product_data",
-      "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
-      "retailer": "LIDL",
-      "stock_mode": "live",
-      "product_url_label": "Zobacz w Lidl",
-      "_page_key": "737e22f7d23c2391ef82",
-      "_raw_category": "Dziecko i zabawki"
-    },
-    {
-      "id": "9c55975291dc5a0b",
-      "country": "PL",
-      "brand": "LUPILU®",
-      "title": "LUPILU® Zestaw drewnianych produktów spożywczych",
-      "raw_title": "Zestaw drewnianych produktów spożywczych",
-      "original_title": "Zestaw drewnianych produktów spożywczych",
-      "price": 19.99,
-      "currency": "PLN",
-      "unit": "szt.",
-      "product_code": "100410958",
-      "product_id": "100410958",
-      "availability_id": "100410958",
-      "category": "Dziecko i zabawki",
-      "image": "https://www.lidl.pl/assets/gcp3718539a6d6b46be9035d9e6925df734.jpg",
-      "availability_start": "2026-10-30",
-      "source_title": "Promocje",
-      "source_url": "https://www.lidl.pl/c/promocje/s10076831",
-      "product_url": "https://www.lidl.pl/p/lupilu-zestaw-drewnianych-produktow-spozywczych/p100410958",
-      "source_type": "official_campaign_page",
-      "availability_source": "official_lidl_campaign_with_date",
-      "extraction_method": "campaign_html_embedded_product_data",
-      "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
-      "retailer": "LIDL",
-      "stock_mode": "live",
-      "product_url_label": "Zobacz w Lidl",
-      "_page_key": "6aaa8d9c07dbeea5ebea",
-      "_raw_category": "Dziecko i zabawki"
-    },
-    {
-      "id": "8b0aa9af24f5c726",
-      "country": "PL",
-      "brand": "LIVARNO HOME",
-      "title": "LIVARNO HOME  Zestaw 2 aluminiowych foteli ogrodowych Valencia z 2 poduszkami",
-      "raw_title": " Zestaw 2 aluminiowych foteli ogrodowych Valencia z 2 poduszkami",
-      "original_title": " Zestaw 2 aluminiowych foteli ogrodowych Valencia z 2 poduszkami",
-      "price": 700.13,
-      "currency": "PLN",
-      "unit": "szt.",
-      "product_code": "800010729",
-      "product_id": "800010729",
-      "availability_id": "800010729",
-      "category": "Ogród",
-      "image": "https://www.lidl.pl/assets/gcp3e9c135d527d4d1b8599ba09915c3458.jpg",
-      "availability_start": "2026-10-30",
-      "source_title": "Relaks w Twoim ogrodzie",
-      "source_url": "https://www.lidl.pl/c/relaks-w-twoim-ogrodzie/a10092924",
-      "product_url": "https://www.lidl.pl/p/livarno-home-zestaw-2-aluminiowych-foteli-ogrodowych-valencia-z-2-poduszkami/p800010729",
-      "source_type": "official_campaign_page",
-      "availability_source": "official_lidl_campaign_with_date",
-      "extraction_method": "campaign_html_embedded_product_data",
-      "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
-      "retailer": "LIDL",
-      "stock_mode": "live",
-      "product_url_label": "Zobacz w Lidl",
-      "_page_key": "17035da6bb74f1c91d05",
-      "_raw_category": "Ogród"
+      "_page_key": "747178a6481173e5a8d8"
     },
     {
       "id": "74f00abf8b0d1aa4",
@@ -306,13 +147,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "b43240c56dcb03de1cf0",
-      "_raw_category": "Dziecko i zabawki"
+      "_page_key": "b43240c56dcb03de1cf0"
     },
     {
       "id": "b90a4a82803b133a",
@@ -337,13 +177,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "76952f55419b3bab5d4a",
-      "_raw_category": "Dziecko i zabawki"
+      "_page_key": "76952f55419b3bab5d4a"
     },
     {
       "id": "ba2360a70fed33ca",
@@ -368,13 +207,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "40f2d656ada6d4538402",
-      "_raw_category": "Dziecko i zabawki"
+      "_page_key": "40f2d656ada6d4538402"
     },
     {
       "id": "71f8061cae77406c",
@@ -399,13 +237,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "ddcf1ba33b09d7e980a8",
-      "_raw_category": "Kuchnia i dom"
+      "_page_key": "ddcf1ba33b09d7e980a8"
     },
     {
       "id": "a32ad7d6447a260c",
@@ -430,13 +267,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "4f4e820ec4c50fb3de3b",
-      "_raw_category": "Kuchnia i dom"
+      "_page_key": "4f4e820ec4c50fb3de3b"
     },
     {
       "id": "71d2a25467465f00",
@@ -461,13 +297,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "7e788cce19aa70e9e456",
-      "_raw_category": "Kuchnia i dom"
+      "_page_key": "7e788cce19aa70e9e456"
     },
     {
       "id": "31fa9c205105ce61",
@@ -492,13 +327,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "a517ddc782d06f11e639",
-      "_raw_category": "Kuchnia i dom"
+      "_page_key": "a517ddc782d06f11e639"
     },
     {
       "id": "85c2fa16ffee3758",
@@ -523,13 +357,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "6c6353b999535dd88466",
-      "_raw_category": "Kuchnia i dom"
+      "_page_key": "6c6353b999535dd88466"
     },
     {
       "id": "48f57da16685a035",
@@ -554,13 +387,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "4e1bd4682ceedf1673be",
-      "_raw_category": "Moda"
+      "_page_key": "4e1bd4682ceedf1673be"
     },
     {
       "id": "fb5a19721056cc72",
@@ -585,13 +417,42 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "6dfbd57a1ac753087527",
-      "_raw_category": "Sport i wypoczynek"
+      "_page_key": "6dfbd57a1ac753087527"
+    },
+    {
+      "id": "3ac4b441e48a6e0e",
+      "country": "PL",
+      "brand": "CRIVIT",
+      "title": "CRIVIT Rękawice narciarskie dziecięce (Różowy, 7)",
+      "raw_title": "Rękawice narciarskie dziecięce (Różowy, 7)",
+      "original_title": "Rękawice narciarskie dziecięce (Różowy, 7)",
+      "price": 29.99,
+      "currency": "PLN",
+      "unit": "szt.",
+      "product_code": "100411905",
+      "product_id": "100411905",
+      "availability_id": "100411905",
+      "category": "Sport i wypoczynek",
+      "image": "https://www.lidl.pl/assets/gcpd8709d6d33364bfd9ee763dc91b03de2.png",
+      "availability_start": "2026-11-02",
+      "source_title": "Promocje",
+      "source_url": "https://www.lidl.pl/c/promocje/s10076831",
+      "product_url": "https://www.lidl.pl/p/crivit-rekawice-narciarskie-dzieciece/p100411905003",
+      "source_type": "official_campaign_page",
+      "availability_source": "official_lidl_campaign_with_date",
+      "extraction_method": "campaign_html_embedded_product_data",
+      "confidence": 0.95,
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
+      "retailer": "LIDL",
+      "stock_mode": "live",
+      "product_url_label": "Zobacz w Lidl",
+      "_page_key": "583f82f40d4d356805ab"
     },
     {
       "id": "da7ed8b07249a266",
@@ -616,13 +477,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "5d6333a0cfa08cdbb926",
-      "_raw_category": "Sport i wypoczynek"
+      "_page_key": "5d6333a0cfa08cdbb926"
     },
     {
       "id": "8a9e260bf2f41fb1",
@@ -647,13 +507,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "9f20084600f309c3b5ab",
-      "_raw_category": "Sport i wypoczynek"
+      "_page_key": "9f20084600f309c3b5ab"
     },
     {
       "id": "fdb187430f00002d",
@@ -678,13 +537,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "c8793206afbd8450347a",
-      "_raw_category": "Akcesoria"
+      "_page_key": "c8793206afbd8450347a"
     },
     {
       "id": "0453a42e71023802",
@@ -709,13 +567,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "16523bdb8a89c84a7f65",
-      "_raw_category": "Narzędzia"
+      "_page_key": "16523bdb8a89c84a7f65"
     },
     {
       "id": "becdceec3ab6d232",
@@ -740,13 +597,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "71d1a21f3515b1193c28",
-      "_raw_category": "Akcesoria"
+      "_page_key": "71d1a21f3515b1193c28"
     },
     {
       "id": "f5f3f669509e2152",
@@ -771,13 +627,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "feada80dc4b942b97cd4",
-      "_raw_category": "Narzędzia"
+      "_page_key": "feada80dc4b942b97cd4"
     },
     {
       "id": "61283af484a11c12",
@@ -802,13 +657,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "b454b070a7a6baf6658b",
-      "_raw_category": "Narzędzia"
+      "_page_key": "b454b070a7a6baf6658b"
     },
     {
       "id": "251ee90ec72ffe1d",
@@ -833,13 +687,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "1bb37e834d56fd1f0bd1",
-      "_raw_category": "Narzędzia"
+      "_page_key": "1bb37e834d56fd1f0bd1"
     },
     {
       "id": "efcf5428b446abba",
@@ -864,13 +717,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "bf25078d10293a0b066e",
-      "_raw_category": "Narzędzia"
+      "_page_key": "bf25078d10293a0b066e"
     },
     {
       "id": "c64771c53f10d46b",
@@ -895,13 +747,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "bc422ade8e0a6ae7e6f6",
-      "_raw_category": "Narzędzia"
+      "_page_key": "bc422ade8e0a6ae7e6f6"
     },
     {
       "id": "563eea9fac8434cc",
@@ -926,13 +777,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "4fef9fe245b63cd5d991",
-      "_raw_category": "Narzędzia"
+      "_page_key": "4fef9fe245b63cd5d991"
     },
     {
       "id": "0a021d799c965dfb",
@@ -957,13 +807,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "6b991725e28020e75c28",
-      "_raw_category": "Narzędzia"
+      "_page_key": "6b991725e28020e75c28"
     },
     {
       "id": "7352c7b9e3622282",
@@ -988,13 +837,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "7957c014598d6b1b9f76",
-      "_raw_category": "Narzędzia"
+      "_page_key": "7957c014598d6b1b9f76"
     },
     {
       "id": "a9a38fc664b8dafb",
@@ -1019,13 +867,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "ce836624e3aeef033b24",
-      "_raw_category": "Narzędzia"
+      "_page_key": "ce836624e3aeef033b24"
     },
     {
       "id": "18d51f13243742b1",
@@ -1050,13 +897,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "9feec4c7627e3b76c0ca",
-      "_raw_category": "Narzędzia"
+      "_page_key": "9feec4c7627e3b76c0ca"
     },
     {
       "id": "bebba859a182cf2c",
@@ -1081,13 +927,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "6c9a5472896059afe4b2",
-      "_raw_category": "Narzędzia"
+      "_page_key": "6c9a5472896059afe4b2"
     },
     {
       "id": "c86b231aca0ef1df",
@@ -1112,13 +957,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "e54fd7cf0c31eb4de68c",
-      "_raw_category": "Narzędzia"
+      "_page_key": "e54fd7cf0c31eb4de68c"
     },
     {
       "id": "bd93e281453aa9d6",
@@ -1143,13 +987,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "1e25e088281e4693fe1a",
-      "_raw_category": "Narzędzia"
+      "_page_key": "1e25e088281e4693fe1a"
     },
     {
       "id": "96436855bcc92ab1",
@@ -1174,13 +1017,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "57a535e464d537b4b9e4",
-      "_raw_category": "Narzędzia"
+      "_page_key": "57a535e464d537b4b9e4"
     },
     {
       "id": "76f3398dcfd260fa",
@@ -1205,13 +1047,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "c15370eb4d30711894d8",
-      "_raw_category": "Narzędzia"
+      "_page_key": "c15370eb4d30711894d8"
     },
     {
       "id": "e59f2c19a84bc38c",
@@ -1236,13 +1077,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "d07cc166d0411a2d36ab",
-      "_raw_category": "Narzędzia"
+      "_page_key": "d07cc166d0411a2d36ab"
     },
     {
       "id": "e73200f25a29c11b",
@@ -1267,13 +1107,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "1fbd24f7434d95c9bdad",
-      "_raw_category": "Narzędzia"
+      "_page_key": "1fbd24f7434d95c9bdad"
     },
     {
       "id": "2b79e166eb507c70",
@@ -1298,13 +1137,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "7a7469f5aafc45cab529",
-      "_raw_category": "Narzędzia"
+      "_page_key": "7a7469f5aafc45cab529"
     },
     {
       "id": "49483408c7ab8d7d",
@@ -1329,13 +1167,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "76af1810f2440c1d50c3",
-      "_raw_category": "Narzędzia"
+      "_page_key": "76af1810f2440c1d50c3"
     },
     {
       "id": "c8a7463ab4586ac7",
@@ -1360,13 +1197,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "589c97b3ab3152bb46a4",
-      "_raw_category": "Narzędzia"
+      "_page_key": "589c97b3ab3152bb46a4"
     },
     {
       "id": "ddda84122e08636d",
@@ -1391,13 +1227,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "4c25b2c337682ca8bc50",
-      "_raw_category": "Narzędzia"
+      "_page_key": "4c25b2c337682ca8bc50"
     },
     {
       "id": "12e1616a55ccd4c0",
@@ -1422,13 +1257,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "bdc936f41d81da37cd25",
-      "_raw_category": "Narzędzia"
+      "_page_key": "bdc936f41d81da37cd25"
     },
     {
       "id": "1c02428a86730717",
@@ -1453,13 +1287,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "530029e5919edce2b108",
-      "_raw_category": "Narzędzia"
+      "_page_key": "530029e5919edce2b108"
     },
     {
       "id": "04f2f4a5c9b9b112",
@@ -1484,13 +1317,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "9e0d957226f828be7eb2",
-      "_raw_category": "Narzędzia"
+      "_page_key": "9e0d957226f828be7eb2"
     },
     {
       "id": "41b252d90e66ba57",
@@ -1515,13 +1347,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "391150fff681e704d773",
-      "_raw_category": "Narzędzia"
+      "_page_key": "391150fff681e704d773"
     },
     {
       "id": "8c4dbff7488febc1",
@@ -1546,13 +1377,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "74a090d697698730b0b7",
-      "_raw_category": "Narzędzia"
+      "_page_key": "74a090d697698730b0b7"
     },
     {
       "id": "03f3c846fe3507aa",
@@ -1577,13 +1407,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "0062777fa8c96482fa55",
-      "_raw_category": "Narzędzia"
+      "_page_key": "0062777fa8c96482fa55"
     },
     {
       "id": "201767dee3bd9418",
@@ -1608,13 +1437,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "19aef4be4d7a3f8f6d91",
-      "_raw_category": "Narzędzia"
+      "_page_key": "19aef4be4d7a3f8f6d91"
     },
     {
       "id": "c9681791611cb1cf",
@@ -1639,13 +1467,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "599052495844c04917fb",
-      "_raw_category": "Narzędzia"
+      "_page_key": "599052495844c04917fb"
     },
     {
       "id": "de7f2f2a9f39b6ea",
@@ -1670,13 +1497,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "80485bb4be01248fd494",
-      "_raw_category": "Narzędzia"
+      "_page_key": "80485bb4be01248fd494"
     },
     {
       "id": "3eb243d17cc30d84",
@@ -1701,13 +1527,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "a42a0f05157bfed16734",
-      "_raw_category": "Narzędzia"
+      "_page_key": "a42a0f05157bfed16734"
     },
     {
       "id": "15024e5abb487300",
@@ -1732,13 +1557,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "12260d9956c7f91ec0bf",
-      "_raw_category": "Narzędzia"
+      "_page_key": "12260d9956c7f91ec0bf"
     },
     {
       "id": "dae9af973b6de85f",
@@ -1763,13 +1587,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "4af59ad8b071e304da30",
-      "_raw_category": "Narzędzia"
+      "_page_key": "4af59ad8b071e304da30"
     },
     {
       "id": "ade3f250fa23afd0",
@@ -1794,13 +1617,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "d6b6ef730a96b778b505",
-      "_raw_category": "Narzędzia"
+      "_page_key": "d6b6ef730a96b778b505"
     },
     {
       "id": "bf462aaccbdf8644",
@@ -1825,13 +1647,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "cb68596307a14cfb50c6",
-      "_raw_category": "Narzędzia"
+      "_page_key": "cb68596307a14cfb50c6"
     },
     {
       "id": "ae3d3b26dd03a304",
@@ -1856,13 +1677,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "3b38a5d8cacdeab17481",
-      "_raw_category": "Narzędzia"
+      "_page_key": "3b38a5d8cacdeab17481"
     },
     {
       "id": "117a566d820ef1cf",
@@ -1887,13 +1707,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "669581122fa7333ae4ea",
-      "_raw_category": "Narzędzia"
+      "_page_key": "669581122fa7333ae4ea"
     },
     {
       "id": "259f1b38d9e791da",
@@ -1918,13 +1737,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "8afce690c14cdc9ebf69",
-      "_raw_category": "Narzędzia"
+      "_page_key": "8afce690c14cdc9ebf69"
     },
     {
       "id": "c95c4f0f4c043e78",
@@ -1949,13 +1767,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "9a55f952e159af38347e",
-      "_raw_category": "Narzędzia"
+      "_page_key": "9a55f952e159af38347e"
     },
     {
       "id": "255f43a1759a76e6",
@@ -1980,13 +1797,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "aeed7e7980d391c221dd",
-      "_raw_category": "Narzędzia"
+      "_page_key": "aeed7e7980d391c221dd"
     },
     {
       "id": "0aec053076bbc711",
@@ -2011,13 +1827,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "bcf493d7a73bf2f03251",
-      "_raw_category": "Narzędzia"
+      "_page_key": "bcf493d7a73bf2f03251"
     },
     {
       "id": "9d9371cb75093705",
@@ -2042,13 +1857,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "fa5f0dd59b3277699292",
-      "_raw_category": "Narzędzia"
+      "_page_key": "fa5f0dd59b3277699292"
     },
     {
       "id": "8806e543a457a33a",
@@ -2073,13 +1887,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "f29c837197c76661c4c1",
-      "_raw_category": "Narzędzia"
+      "_page_key": "f29c837197c76661c4c1"
     },
     {
       "id": "ecb250f7f9edd176",
@@ -2104,13 +1917,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "71424745fe9982971b5e",
-      "_raw_category": "Narzędzia"
+      "_page_key": "71424745fe9982971b5e"
     },
     {
       "id": "4a978206f2fc3bef",
@@ -2135,13 +1947,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "cdfd1b8b7096060af13f",
-      "_raw_category": "Narzędzia"
+      "_page_key": "cdfd1b8b7096060af13f"
     },
     {
       "id": "3af5d9e1f610f26c",
@@ -2166,13 +1977,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "1149b3a817a3e318f7f5",
-      "_raw_category": "Narzędzia"
+      "_page_key": "1149b3a817a3e318f7f5"
     },
     {
       "id": "112d53d4438772a3",
@@ -2197,13 +2007,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "e22bc804cf469290773c",
-      "_raw_category": "Narzędzia"
+      "_page_key": "e22bc804cf469290773c"
     },
     {
       "id": "17490b0241cfb885",
@@ -2228,13 +2037,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "3c8de065cf31fdb1d23b",
-      "_raw_category": "Narzędzia"
+      "_page_key": "3c8de065cf31fdb1d23b"
     },
     {
       "id": "f3e07aa7c48feff7",
@@ -2259,13 +2067,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "b9d6332f2e4c4a622a7d",
-      "_raw_category": "Narzędzia"
+      "_page_key": "b9d6332f2e4c4a622a7d"
     },
     {
       "id": "df0b4984397c4c63",
@@ -2290,13 +2097,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "b4cac1d56df70fa63b3c",
-      "_raw_category": "Narzędzia"
+      "_page_key": "b4cac1d56df70fa63b3c"
     },
     {
       "id": "17b1b0fefde7da77",
@@ -2321,13 +2127,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "fd6814d14cbc4863b8e5",
-      "_raw_category": "Narzędzia"
+      "_page_key": "fd6814d14cbc4863b8e5"
     },
     {
       "id": "e0b0fe982993a2c9",
@@ -2352,13 +2157,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "9a4862e55edc5aed2cd7",
-      "_raw_category": "Narzędzia"
+      "_page_key": "9a4862e55edc5aed2cd7"
     },
     {
       "id": "d7fd1652034645f0",
@@ -2383,13 +2187,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "f557d989787e8051638e",
-      "_raw_category": "Narzędzia"
+      "_page_key": "f557d989787e8051638e"
     },
     {
       "id": "7235b31f0bfa96a4",
@@ -2414,13 +2217,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "be6355514c8075ae1aba",
-      "_raw_category": "Narzędzia"
+      "_page_key": "be6355514c8075ae1aba"
     },
     {
       "id": "528c4c6df3aedfeb",
@@ -2445,13 +2247,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "9968e0e270de888be645",
-      "_raw_category": "Narzędzia"
+      "_page_key": "9968e0e270de888be645"
     },
     {
       "id": "e2537370021bd952",
@@ -2476,13 +2277,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "794a94a41484c3818d73",
-      "_raw_category": "Narzędzia"
+      "_page_key": "794a94a41484c3818d73"
     },
     {
       "id": "28de1298b98d265b",
@@ -2507,13 +2307,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "a62931044883bafa2936",
-      "_raw_category": "Narzędzia"
+      "_page_key": "a62931044883bafa2936"
     },
     {
       "id": "46907d2675e4b014",
@@ -2538,13 +2337,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "b3a0e2a2026cd5dc9be6",
-      "_raw_category": "Narzędzia"
+      "_page_key": "b3a0e2a2026cd5dc9be6"
     },
     {
       "id": "b6cfbe67770792ea",
@@ -2569,13 +2367,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "10df7a61a68e708ccbc0",
-      "_raw_category": "Narzędzia"
+      "_page_key": "10df7a61a68e708ccbc0"
     },
     {
       "id": "dce4471539805be0",
@@ -2600,13 +2397,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "da741c98fa06ea306ac8",
-      "_raw_category": "Narzędzia"
+      "_page_key": "da741c98fa06ea306ac8"
     },
     {
       "id": "9f38173d3662d38d",
@@ -2631,13 +2427,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "ee6e2cbbc50913a699ee",
-      "_raw_category": "Narzędzia"
+      "_page_key": "ee6e2cbbc50913a699ee"
     },
     {
       "id": "ac3a083c0efda2cd",
@@ -2662,13 +2457,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "219460c0bcd1652b4c59",
-      "_raw_category": "Narzędzia"
+      "_page_key": "219460c0bcd1652b4c59"
     },
     {
       "id": "d81ce0a49da4e450",
@@ -2693,13 +2487,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "dadf243e767381f7f690",
-      "_raw_category": "Narzędzia"
+      "_page_key": "dadf243e767381f7f690"
     },
     {
       "id": "dbda4c5564e90235",
@@ -2724,13 +2517,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "4ea0a86fc3b04525bcc3",
-      "_raw_category": "Narzędzia"
+      "_page_key": "4ea0a86fc3b04525bcc3"
     },
     {
       "id": "51bc954245071f8b",
@@ -2755,13 +2547,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "d558d9da24c5fc18b78b",
-      "_raw_category": "Narzędzia"
+      "_page_key": "d558d9da24c5fc18b78b"
     },
     {
       "id": "1fa46a3346d30f4f",
@@ -2786,13 +2577,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "bc634cbda039e59ed512",
-      "_raw_category": "Narzędzia"
+      "_page_key": "bc634cbda039e59ed512"
     },
     {
       "id": "c656e6554d3900a1",
@@ -2817,13 +2607,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "bc634cbda039e59ed512",
-      "_raw_category": "Narzędzia"
+      "_page_key": "bc634cbda039e59ed512"
     },
     {
       "id": "49ccf682df167bb4",
@@ -2848,13 +2637,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "b435b467c0a3ae051b3f",
-      "_raw_category": "Ogród"
+      "_page_key": "b435b467c0a3ae051b3f"
     },
     {
       "id": "fb856c3f96651cd6",
@@ -2879,13 +2667,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "5cab8f53a080eac33ee4",
-      "_raw_category": "Ogród"
+      "_page_key": "5cab8f53a080eac33ee4"
     },
     {
       "id": "1d6e4375845539f9",
@@ -2910,13 +2697,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "d1f700ecf44a970059ca",
-      "_raw_category": "Ogród"
+      "_page_key": "d1f700ecf44a970059ca"
     },
     {
       "id": "00205444aca529a9",
@@ -2941,13 +2727,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "f246fdf6a268f70a8611",
-      "_raw_category": "Ogród"
+      "_page_key": "f246fdf6a268f70a8611"
     },
     {
       "id": "a67a1464540b2ad6",
@@ -2972,13 +2757,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "0fea856cdcc3fa31018b",
-      "_raw_category": "Ogród"
+      "_page_key": "0fea856cdcc3fa31018b"
     },
     {
       "id": "d3e9fd3d8b90f2d7",
@@ -3003,13 +2787,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "afad1b45e353ea0f19a5",
-      "_raw_category": "Ogród"
+      "_page_key": "afad1b45e353ea0f19a5"
     },
     {
       "id": "2337d060ce5052d3",
@@ -3034,13 +2817,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "f3835baaccacaaca9c5e",
-      "_raw_category": "Ogród"
+      "_page_key": "f3835baaccacaaca9c5e"
     },
     {
       "id": "92cb01b9bf3ae4c7",
@@ -3065,13 +2847,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "50c40c55f05e1eb52040",
-      "_raw_category": "Ogród"
+      "_page_key": "50c40c55f05e1eb52040"
     },
     {
       "id": "096165869527d727",
@@ -3096,13 +2877,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "22d53b4f941fc92c724a",
-      "_raw_category": "Ogród"
+      "_page_key": "22d53b4f941fc92c724a"
     },
     {
       "id": "48e3b86472acbd17",
@@ -3127,13 +2907,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "da7e1b68edfe63deecf1",
-      "_raw_category": "Ogród"
+      "_page_key": "da7e1b68edfe63deecf1"
     },
     {
       "id": "71445d73921cb624",
@@ -3158,13 +2937,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "fbad0b462a62ad34828c",
-      "_raw_category": "Ogród"
+      "_page_key": "fbad0b462a62ad34828c"
     },
     {
       "id": "36f8942624b4ce38",
@@ -3189,13 +2967,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "9dace7e8cec245a2bde8",
-      "_raw_category": "Ogród"
+      "_page_key": "9dace7e8cec245a2bde8"
     },
     {
       "id": "c50c6d342494fdf2",
@@ -3220,13 +2997,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "a35a43124537c72d3df0",
-      "_raw_category": "Ogród"
+      "_page_key": "a35a43124537c72d3df0"
     },
     {
       "id": "3a7ef4fb5ccd6ac8",
@@ -3251,13 +3027,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "0bb671ce4b524747c177",
-      "_raw_category": "Ogród"
+      "_page_key": "0bb671ce4b524747c177"
     },
     {
       "id": "5a02e589f8cee1ed",
@@ -3282,13 +3057,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "de75af13e7c6348e7490",
-      "_raw_category": "Ogród"
+      "_page_key": "de75af13e7c6348e7490"
     },
     {
       "id": "e4ea6fba23442942",
@@ -3313,13 +3087,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "afa533f9aead1c130c3d",
-      "_raw_category": "Ogród"
+      "_page_key": "afa533f9aead1c130c3d"
     },
     {
       "id": "df1a1b89b8644f8d",
@@ -3344,13 +3117,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "03e18de68c9e1b5a6ff4",
-      "_raw_category": "Ogród"
+      "_page_key": "03e18de68c9e1b5a6ff4"
     },
     {
       "id": "a03b06b19b048fb9",
@@ -3375,13 +3147,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "41bcac4aefa4e84f42b8",
-      "_raw_category": "Ogród"
+      "_page_key": "41bcac4aefa4e84f42b8"
     },
     {
       "id": "c65c5b00bf7ba0e2",
@@ -3406,13 +3177,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "e6d07c5ada1142529887",
-      "_raw_category": "Ogród"
+      "_page_key": "e6d07c5ada1142529887"
     },
     {
       "id": "5a4ea910f3ffe16d",
@@ -3437,13 +3207,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "d7ab8f477a20a33920ac",
-      "_raw_category": "Ogród"
+      "_page_key": "d7ab8f477a20a33920ac"
     },
     {
       "id": "63c80c0463195a77",
@@ -3468,13 +3237,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "68f1ac23cd01159686d1",
-      "_raw_category": "Ogród"
+      "_page_key": "68f1ac23cd01159686d1"
     },
     {
       "id": "b760329b08244f9d",
@@ -3499,13 +3267,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "63424a9ca0f215a3eb31",
-      "_raw_category": "Ogród"
+      "_page_key": "63424a9ca0f215a3eb31"
     },
     {
       "id": "196c56b23dd436d9",
@@ -3530,13 +3297,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "8f2691011a2eb61b50a5",
-      "_raw_category": "Ogród"
+      "_page_key": "8f2691011a2eb61b50a5"
     },
     {
       "id": "bfdcf30c4c57150d",
@@ -3561,13 +3327,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "b048e4614caecfbefc9f",
-      "_raw_category": "Dziecko i zabawki"
+      "_page_key": "b048e4614caecfbefc9f"
     },
     {
       "id": "78b4a367069d692d",
@@ -3592,44 +3357,42 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "d97a7893e0619f9b016f",
-      "_raw_category": "Inne okazje"
+      "_page_key": "d97a7893e0619f9b016f"
     },
     {
-      "id": "e82057245f039417",
+      "id": "db09b81fcd9b2a8c",
       "country": "PL",
       "brand": "LIVERGY®",
-      "title": "LIVERGY® Męskie jeansy, luźny krój, normalny stan.",
-      "raw_title": "Męskie jeansy, luźny krój, normalny stan.",
-      "original_title": "Męskie jeansy, luźny krój, normalny stan.",
+      "title": "LIVERGY® Męskie jeansy, luźny krój, normalny stan. (Niebieski, 52 (36/32))",
+      "raw_title": "Męskie jeansy, luźny krój, normalny stan. (Niebieski, 52 (36/32))",
+      "original_title": "Męskie jeansy, luźny krój, normalny stan. (Niebieski, 52 (36/32))",
       "price": 33.99,
       "currency": "PLN",
       "unit": "szt.",
       "product_code": "100386215",
       "product_id": "100386215",
-      "availability_id": "0478315",
+      "availability_id": "100386215",
       "category": "Inne okazje",
-      "image": "https://www.lidl.pl/assets/gcpcfafb4607fbe40cbb0527eeca94d05f3.jpg",
+      "image": "https://www.lidl.pl/assets/gcp6c1e4c3f5e2b4b3bbd646f8908d4418d.jpg",
       "availability_start": "2026-10-15",
       "source_title": "Promocje",
       "source_url": "https://www.lidl.pl/c/promocje/s10076831",
-      "product_url": "https://www.lidl.pl/p/livergy-meskie-jeansy-luzny-kroj-normalny-stan/p100386215",
+      "product_url": "https://www.lidl.pl/p/livergy-meskie-jeansy-luzny-kroj-normalny-stan/p100386215008",
       "source_type": "official_campaign_page",
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "67b9f0f81c0e93259fb4",
-      "_raw_category": "Inne okazje"
+      "_page_key": "67b9f0f81c0e93259fb4"
     },
     {
       "id": "e13a6972b943c5ff",
@@ -3654,13 +3417,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "eb911dd09d694841bda5",
-      "_raw_category": "Inne okazje"
+      "_page_key": "eb911dd09d694841bda5"
     },
     {
       "id": "51d71eb069a46894",
@@ -3685,13 +3447,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "629632b33160ba2ee020",
-      "_raw_category": "Moda"
+      "_page_key": "629632b33160ba2ee020"
     },
     {
       "id": "b40f305552e8073d",
@@ -3716,13 +3477,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "172bb5796ebe9fb1883c",
-      "_raw_category": "Moda"
+      "_page_key": "172bb5796ebe9fb1883c"
     },
     {
       "id": "984a4d89133467dc",
@@ -3747,13 +3507,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "7b4dbd5e1f905b82bc70",
-      "_raw_category": "Moda"
+      "_page_key": "7b4dbd5e1f905b82bc70"
     },
     {
       "id": "245939c6cabebe37",
@@ -3778,13 +3537,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "0b2a447f6905d6b11e3b",
-      "_raw_category": "Moda"
+      "_page_key": "0b2a447f6905d6b11e3b"
     },
     {
       "id": "a06f7c6d422f4bc6",
@@ -3809,13 +3567,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "a9adc9f81775afb9c08a",
-      "_raw_category": "Moda"
+      "_page_key": "a9adc9f81775afb9c08a"
     },
     {
       "id": "f215d8a343458494",
@@ -3840,13 +3597,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "fdb41bffb2ad37fbdadf",
-      "_raw_category": "Ogród"
+      "_page_key": "fdb41bffb2ad37fbdadf"
     },
     {
       "id": "f9e53c0ab1980f10",
@@ -3871,13 +3627,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "419f44a9dad516cac2e8",
-      "_raw_category": "Ogród"
+      "_page_key": "419f44a9dad516cac2e8"
     },
     {
       "id": "646c905875379daa",
@@ -3902,13 +3657,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "09fda3f289dd205d7bec",
-      "_raw_category": "Ogród"
+      "_page_key": "09fda3f289dd205d7bec"
     },
     {
       "id": "0188cd763547e111",
@@ -3933,13 +3687,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "8e2a63139fb4f51512b8",
-      "_raw_category": "Sport i wypoczynek"
+      "_page_key": "8e2a63139fb4f51512b8"
     },
     {
       "id": "0d61ebd45a7ae27d",
@@ -3964,13 +3717,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "1362f5a62ee7f23181a6",
-      "_raw_category": "Sport i wypoczynek"
+      "_page_key": "1362f5a62ee7f23181a6"
     },
     {
       "id": "fbcbe635aae0ddf9",
@@ -3995,13 +3747,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "02add00ed5dec519f42d",
-      "_raw_category": "Sport i wypoczynek"
+      "_page_key": "02add00ed5dec519f42d"
     },
     {
       "id": "d2c7fffc8c0f7199",
@@ -4026,13 +3777,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "a08ee55d893f72cd1798",
-      "_raw_category": "Dziecko i zabawki"
+      "_page_key": "a08ee55d893f72cd1798"
     },
     {
       "id": "29f0cd6297ede91c",
@@ -4057,13 +3807,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "64739e8b9a646e0b5a24",
-      "_raw_category": "Ogród"
+      "_page_key": "64739e8b9a646e0b5a24"
     },
     {
       "id": "285dce6a87461fc3",
@@ -4088,13 +3837,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "18333216413c31d27ee6",
-      "_raw_category": "Ogród"
+      "_page_key": "18333216413c31d27ee6"
     },
     {
       "id": "4788f0837202cb45",
@@ -4119,13 +3867,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "02ec616ab0a62de9ba26",
-      "_raw_category": "Ogród"
+      "_page_key": "02ec616ab0a62de9ba26"
     },
     {
       "id": "c6e53c683befbc77",
@@ -4150,13 +3897,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "aa29895bdbee8199a1f0",
-      "_raw_category": "Ogród"
+      "_page_key": "aa29895bdbee8199a1f0"
     },
     {
       "id": "8d922b599a792acb",
@@ -4181,13 +3927,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "d714de93a143bd8f2789",
-      "_raw_category": "Ogród"
+      "_page_key": "d714de93a143bd8f2789"
     },
     {
       "id": "1c5079b81fdf5832",
@@ -4212,13 +3957,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "a650949761ff40ea9dd8",
-      "_raw_category": "Ogród"
+      "_page_key": "a650949761ff40ea9dd8"
     },
     {
       "id": "747e9b1eebf8f71e",
@@ -4243,13 +3987,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "33480763af1d719bab41",
-      "_raw_category": "Ogród"
+      "_page_key": "33480763af1d719bab41"
     },
     {
       "id": "b0884f9c5f3d7d9f",
@@ -4274,13 +4017,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "86b697af618c4408011d",
-      "_raw_category": "Dziecko i zabawki"
+      "_page_key": "86b697af618c4408011d"
     },
     {
       "id": "9245dd098550bd36",
@@ -4305,13 +4047,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "22f531a9d00cffa07ff2",
-      "_raw_category": "Ogród"
+      "_page_key": "22f531a9d00cffa07ff2"
     },
     {
       "id": "b9f67b1a01b1e001",
@@ -4336,13 +4077,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "78b3e429fffc782bd8c2",
-      "_raw_category": "Kuchnia i dom"
+      "_page_key": "78b3e429fffc782bd8c2"
     },
     {
       "id": "749f370f5d8be207",
@@ -4367,13 +4107,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "257283f5db2f2fdaa085",
-      "_raw_category": "Ogród"
+      "_page_key": "257283f5db2f2fdaa085"
     },
     {
       "id": "e6b12119a43d2df0",
@@ -4398,13 +4137,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "484fc80b604d91745e69",
-      "_raw_category": "Ogród"
+      "_page_key": "484fc80b604d91745e69"
     },
     {
       "id": "c95f5effac50d5cc",
@@ -4429,13 +4167,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "5ff478a036a8bbdee926",
-      "_raw_category": "Ogród"
+      "_page_key": "5ff478a036a8bbdee926"
     },
     {
       "id": "559ee42987673af7",
@@ -4460,13 +4197,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "87f3f6f29ad94e564112",
-      "_raw_category": "Ogród"
+      "_page_key": "87f3f6f29ad94e564112"
     },
     {
       "id": "c42d43ff77227ad4",
@@ -4491,13 +4227,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "679c312491b403ac1a45",
-      "_raw_category": "Ogród"
+      "_page_key": "679c312491b403ac1a45"
     },
     {
       "id": "1e5e0d9d5e5cbf53",
@@ -4522,13 +4257,12 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "036f6bb142b7812f2296",
-      "_raw_category": "Ogród"
+      "_page_key": "036f6bb142b7812f2296"
     },
     {
       "id": "6c8f1b5ef01deacd",
@@ -4553,13 +4287,132 @@
       "availability_source": "official_lidl_campaign_with_date",
       "extraction_method": "campaign_html_embedded_product_data",
       "confidence": 0.95,
-      "first_seen": "2026-11-05T21:39:09Z",
-      "last_seen": "2026-11-05T21:39:09Z",
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
       "retailer": "LIDL",
       "stock_mode": "live",
       "product_url_label": "Zobacz w Lidl",
-      "_page_key": "31491909499946a8ab17",
-      "_raw_category": "Sport i wypoczynek"
+      "_page_key": "31491909499946a8ab17"
+    },
+    {
+      "id": "2dcf768a6e51a50f",
+      "country": "PL",
+      "brand": "LUPILU®",
+      "title": "LUPILU® Drewniane artykuły spożywcze do zabawy",
+      "raw_title": "Drewniane artykuły spożywcze do zabawy",
+      "original_title": "Drewniane artykuły spożywcze do zabawy",
+      "price": 29.99,
+      "currency": "PLN",
+      "unit": "szt.",
+      "product_code": "100410923",
+      "product_id": "100410923",
+      "availability_id": "100410923",
+      "category": "Dziecko i zabawki",
+      "image": "https://www.lidl.pl/assets/gcp06c3f31993644ff4bc2d713f26cdff2e.jpg",
+      "availability_start": "2026-10-30",
+      "source_title": "Promocje",
+      "source_url": "https://www.lidl.pl/c/promocje/s10076831",
+      "product_url": "https://www.lidl.pl/p/lupilu-drewniane-artykuly-spozywcze-do-zabawy/p100410923",
+      "source_type": "official_campaign_page",
+      "availability_source": "official_lidl_campaign_with_date",
+      "extraction_method": "campaign_html_embedded_product_data",
+      "confidence": 0.95,
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
+      "retailer": "LIDL",
+      "stock_mode": "live",
+      "product_url_label": "Zobacz w Lidl",
+      "_page_key": "5f6de09e146888169237"
+    },
+    {
+      "id": "c923a6acfa85baf3",
+      "country": "PL",
+      "brand": "LUPILU®",
+      "title": "LUPILU® Zabawka drewniana z zestawem akcesoriów",
+      "raw_title": "Zabawka drewniana z zestawem akcesoriów",
+      "original_title": "Zabawka drewniana z zestawem akcesoriów",
+      "price": 34.99,
+      "currency": "PLN",
+      "unit": "szt.",
+      "product_code": "100410520",
+      "product_id": "100410520",
+      "availability_id": "100410520",
+      "category": "Dziecko i zabawki",
+      "image": "https://www.lidl.pl/assets/gcp3e7effeee8f94216b1c50fd0e66f26b3.jpg",
+      "availability_start": "2026-10-30",
+      "source_title": "Promocje",
+      "source_url": "https://www.lidl.pl/c/promocje/s10076831",
+      "product_url": "https://www.lidl.pl/p/lupilu-zabawka-drewniana-z-zestawem-akcesoriow/p100410520",
+      "source_type": "official_campaign_page",
+      "availability_source": "official_lidl_campaign_with_date",
+      "extraction_method": "campaign_html_embedded_product_data",
+      "confidence": 0.95,
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
+      "retailer": "LIDL",
+      "stock_mode": "live",
+      "product_url_label": "Zobacz w Lidl",
+      "_page_key": "737e22f7d23c2391ef82"
+    },
+    {
+      "id": "9c55975291dc5a0b",
+      "country": "PL",
+      "brand": "LUPILU®",
+      "title": "LUPILU® Zestaw drewnianych produktów spożywczych",
+      "raw_title": "Zestaw drewnianych produktów spożywczych",
+      "original_title": "Zestaw drewnianych produktów spożywczych",
+      "price": 19.99,
+      "currency": "PLN",
+      "unit": "szt.",
+      "product_code": "100410958",
+      "product_id": "100410958",
+      "availability_id": "100410958",
+      "category": "Dziecko i zabawki",
+      "image": "https://www.lidl.pl/assets/gcp3718539a6d6b46be9035d9e6925df734.jpg",
+      "availability_start": "2026-10-30",
+      "source_title": "Promocje",
+      "source_url": "https://www.lidl.pl/c/promocje/s10076831",
+      "product_url": "https://www.lidl.pl/p/lupilu-zestaw-drewnianych-produktow-spozywczych/p100410958",
+      "source_type": "official_campaign_page",
+      "availability_source": "official_lidl_campaign_with_date",
+      "extraction_method": "campaign_html_embedded_product_data",
+      "confidence": 0.95,
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
+      "retailer": "LIDL",
+      "stock_mode": "live",
+      "product_url_label": "Zobacz w Lidl",
+      "_page_key": "6aaa8d9c07dbeea5ebea"
+    },
+    {
+      "id": "8b0aa9af24f5c726",
+      "country": "PL",
+      "brand": "LIVARNO HOME",
+      "title": "LIVARNO HOME  Zestaw 2 aluminiowych foteli ogrodowych Valencia z 2 poduszkami",
+      "raw_title": " Zestaw 2 aluminiowych foteli ogrodowych Valencia z 2 poduszkami",
+      "original_title": " Zestaw 2 aluminiowych foteli ogrodowych Valencia z 2 poduszkami",
+      "price": 700.13,
+      "currency": "PLN",
+      "unit": "szt.",
+      "product_code": "800010729",
+      "product_id": "800010729",
+      "availability_id": "800010729",
+      "category": "Ogród",
+      "image": "https://www.lidl.pl/assets/gcp3e9c135d527d4d1b8599ba09915c3458.jpg",
+      "availability_start": "2026-10-30",
+      "source_title": "Relaks w Twoim ogrodzie",
+      "source_url": "https://www.lidl.pl/c/relaks-w-twoim-ogrodzie/a10092924",
+      "product_url": "https://www.lidl.pl/p/livarno-home-zestaw-2-aluminiowych-foteli-ogrodowych-valencia-z-2-poduszkami/p800010729",
+      "source_type": "official_campaign_page",
+      "availability_source": "official_lidl_campaign_with_date",
+      "extraction_method": "campaign_html_embedded_product_data",
+      "confidence": 0.95,
+      "first_seen": "2026-11-06T10:17:30Z",
+      "last_seen": "2026-11-06T10:17:30Z",
+      "retailer": "LIDL",
+      "stock_mode": "live",
+      "product_url_label": "Zobacz w Lidl",
+      "_page_key": "17035da6bb74f1c91d05"
     }
   ],
   "campaigns": [

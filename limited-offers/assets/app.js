@@ -1,4 +1,18 @@
 function track(name,data){try{if(window.loTrack)window.loTrack(name,data||{})}catch(e){}}
+/* The page is only rebuilt by a successful run, so a stale warning decided at build time never showed once updates stopped. Decide it when the page is read. */
+(function staleWarning(){
+  const el=document.querySelector('.updated[data-generated-at]');
+  if(!el||el.nextElementSibling?.classList.contains('stale'))return;
+  const at=Date.parse(el.dataset.generatedAt);
+  const after=Number(el.dataset.staleAfterDays),copy=el.dataset.staleWarn;
+  if(!Number.isFinite(at)||!copy||!(after>=0))return;
+  const day=86400000,elapsed=Date.now()-at;
+  if(elapsed<after*day)return;
+  const warn=document.createElement('div');
+  warn.className='notice stale';
+  warn.textContent=copy.replace('{n}',Math.floor(elapsed/day));
+  el.after(warn);
+})();
 const body=document.body, country=body.dataset.country||'PT', locale=body.dataset.locale||'pt-PT', base=body.dataset.basePath||'https://whipit.gallivanter.biz/limited-offers', lidlDomain=body.dataset.lidlDomain||'https://www.lidl.pt';
 let UI={};try{UI=JSON.parse(document.getElementById('lidl-ui')?.textContent||'{}')}catch(e){};const tr=(k,f)=>UI[k]||f;
 const q=document.getElementById('q'),brand=document.getElementById('brand'),cat=document.getElementById('cat'),sortEl=document.getElementById('sort'),count=document.getElementById('count'),grid=document.getElementById('grid');
@@ -95,7 +109,6 @@ function escapeHtml(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','
     box.innerHTML=active.map(a=>`<article class="alert-item"><div><b>${escapeHtml(a.match_type)}: ${escapeHtml(a.match_value)}</b><span>${escapeHtml(a.channel)}</span></div><button class="button secondary" type="button" data-alert-delete="${a.id}">Desligar</button></article>`).join('');
     box.querySelectorAll('[data-alert-delete]').forEach(btn=>btn.addEventListener('click',async()=>{try{await call({alerts_action:'delete',alert_id:btn.dataset.alertDelete});await refresh();setStatus('Alerta desligado.')}catch(e){setStatus(e.message)}}));
   }
-  function escapeHtml(s){return String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
   $('alerts-start')?.addEventListener('click',async()=>{
     if(!validAlert()) return;
     const channel=$('alerts-channel').value,destination=$('alerts-destination').value.trim();

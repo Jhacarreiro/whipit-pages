@@ -2,6 +2,7 @@
 let __offersCache = null;
 const base = (window.REFURB_BASE_PATH || '').replace(/\/$/, '');
 const eur = v => (v === null || v === undefined) ? '—' : `${Math.round(Number(v)).toLocaleString('pt-PT')}€`;
+const eurDelta = v => Number(v) < 1 ? `${Number(v).toFixed(2).replace('.', ',')}€` : eur(v);
 const verdictLabel = v => ({excellent:'Excelente', good:'Bom', maybe:'Talvez', avoid:'Evitar', false:'Falso negócio'}[v] || '—');
 const verdictClass = v => ({excellent:'good', good:'good', maybe:'warn', avoid:'bad', false:'bad'}[v] || '');
 function escapeHtml(s){return String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
@@ -46,7 +47,7 @@ function offerCard(o){
   const delta = Number(o.refurbished_price || 0) - Number(o.best_new_price || 0);
   const dearer = delta > 0.005;
   const comparisonHead = dearer ? 'Mais caro que novo' : 'Sem poupança';
-  const comparisonText = dearer ? `Novo ${eur(delta)} mais barato` : 'Novo ao mesmo preço';
+  const comparisonText = dearer ? `Novo ${eurDelta(delta)} mais barato` : 'Novo ao mesmo preço';
   const comparisonBox = falseDeal
     ? `<div class="price-box saving-box false-box"><small>Comparação</small><strong>${comparisonHead}</strong><span class="saving-value">${comparisonText}</span></div>`
     : `<div class="price-box saving-box"><small>Poupança</small><strong>${o.saving_percent || 0}%</strong><span class="saving-value">${eur(o.saving_eur)}</span></div>`;

@@ -1,68 +1,85 @@
 {
-  "generated_at": "2026-11-06T01:30:49Z",
+  "generated_at": "2026-11-06T09:46:02Z",
   "health": [
     {
-      "id": 9,
-      "source_id": "pcdiga-recondicionados",
-      "checked_at": "2026-11-06T01:30:33Z",
-      "status": "ok",
-      "message": "products=144 listed_only=137 retired=0"
+      "source_id": "pccomponentes-replay",
+      "checked_at": "2026-11-06T09:44:54Z",
+      "status": "ok"
     },
     {
-      "id": 8,
+      "source_id": "pcdiga-recondicionados",
+      "checked_at": "2026-11-06T02:51:37Z",
+      "status": "ok"
+    },
+    {
+      "source_id": "worten-recondicionados-tablets",
+      "checked_at": "2026-11-06T02:51:37Z",
+      "status": "ok"
+    },
+    {
+      "source_id": "worten-recondicionados-computadores",
+      "checked_at": "2026-11-06T02:51:37Z",
+      "status": "ok"
+    },
+    {
+      "source_id": "worten-recondicionados-smartwatches",
+      "checked_at": "2026-11-06T02:51:37Z",
+      "status": "ok"
+    },
+    {
+      "source_id": "worten-recondicionados-telemoveis",
+      "checked_at": "2026-11-06T02:51:37Z",
+      "status": "ok"
+    },
+    {
+      "source_id": "pccomponentes-replay",
+      "checked_at": "2026-11-06T02:51:37Z",
+      "status": "ok"
+    },
+    {
+      "source_id": "pcdiga-recondicionados",
+      "checked_at": "2026-11-06T01:30:33Z",
+      "status": "ok"
+    },
+    {
       "source_id": "worten-recondicionados-tablets",
       "checked_at": "2026-11-06T01:30:33Z",
-      "status": "error",
-      "message": "RuntimeError: OpenCLI worten refurbished failed (1): ok: false error: code: UNKNOWN message: Worten search-products returned HTTP 429 exitCode: 1 # AutoFix: re-run with --trace=retain-on-failure for trace artifact # opencli worten refurbished --trace retain-on-failure"
+      "status": "error"
     },
     {
-      "id": 7,
       "source_id": "worten-recondicionados-computadores",
       "checked_at": "2026-11-06T01:30:33Z",
-      "status": "error",
-      "message": "RuntimeError: OpenCLI worten refurbished failed (1): ok: false error: code: UNKNOWN message: Worten search-products returned HTTP 429 exitCode: 1 # AutoFix: re-run with --trace=retain-on-failure for trace artifact # opencli worten refurbished --trace retain-on-failure"
+      "status": "error"
     },
     {
-      "id": 6,
       "source_id": "worten-recondicionados-smartwatches",
       "checked_at": "2026-11-06T01:30:33Z",
-      "status": "error",
-      "message": "RuntimeError: OpenCLI worten refurbished failed (1): ok: false error: code: UNKNOWN message: Worten search-products returned HTTP 429 exitCode: 1 # AutoFix: re-run with --trace=retain-on-failure for trace artifact # opencli worten refurbished --trace retain-on-failure"
+      "status": "error"
     },
     {
-      "id": 5,
       "source_id": "worten-recondicionados-telemoveis",
       "checked_at": "2026-11-06T01:30:33Z",
-      "status": "ok",
-      "message": "products=103 partial listing, nothing retired"
+      "status": "ok"
     },
     {
-      "id": 4,
       "source_id": "pccomponentes-replay",
       "checked_at": "2026-11-06T01:30:33Z",
-      "status": "error",
-      "message": "RuntimeError: OpenCLI pccomponentes replay failed (1): ok: false error: code: UNKNOWN message: No PcComponentes Replay offers found returned no data exitCode: 1 # AutoFix: re-run with --trace=retain-on-failure for trace artifact # opencli pccomponentes replay --trace retain-on-failure"
+      "status": "error"
     },
     {
-      "id": 3,
       "source_id": "pcdiga-recondicionados",
       "checked_at": "2026-09-19T18:28:12Z",
-      "status": "ok",
-      "message": "products=191"
+      "status": "ok"
     },
     {
-      "id": 2,
       "source_id": "worten-recondicionados-telemoveis",
       "checked_at": "2026-09-19T18:28:12Z",
-      "status": "ok",
-      "message": "products=58"
+      "status": "ok"
     },
     {
-      "id": 1,
       "source_id": "pccomponentes-replay",
       "checked_at": "2026-09-19T18:28:12Z",
-      "status": "ok",
-      "message": "products=9"
+      "status": "ok"
     }
   ]
 }

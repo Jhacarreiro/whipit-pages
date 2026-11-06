@@ -2,8 +2,8 @@
 let __offersCache = null;
 const base = (window.REFURB_BASE_PATH || '').replace(/\/$/, '');
 const eur = v => (v === null || v === undefined) ? '—' : `${Math.round(Number(v)).toLocaleString('pt-PT')}€`;
-const verdictLabel = v => ({excellent:'Excelente', good:'Bom', maybe:'Talvez', avoid:'Evitar'}[v] || '—');
-const verdictClass = v => ({excellent:'good', good:'good', maybe:'warn', avoid:'bad'}[v] || '');
+const verdictLabel = v => ({excellent:'Excelente', good:'Bom', maybe:'Talvez', avoid:'Evitar', false:'Falso negócio'}[v] || '—');
+const verdictClass = v => ({excellent:'good', good:'good', maybe:'warn', avoid:'bad', false:'bad'}[v] || '');
 function escapeHtml(s){return String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
 function escapeAttr(s){return escapeHtml(s).replace(/'/g, '&#39;');}
 function cleanTitle(s){
@@ -44,12 +44,13 @@ function offerCard(o){
   const displayTitle = cleanTitle(o.title);
   const falseDeal = o.verdict === 'false' || Number(o.refurbished_price || 0) >= Number(o.best_new_price || 0);
   const delta = Number(o.refurbished_price || 0) - Number(o.best_new_price || 0);
-  const falseLabel = delta > 0.005 ? 'PIOR QUE NOVO' : 'PIOR QUE NOVO';
-  const comparisonText = delta > 0.005 ? `Novo ${eur(delta)} mais barato` : 'Novo ao mesmo preço';
+  const dearer = delta > 0.005;
+  const comparisonHead = dearer ? 'Mais caro que novo' : 'Sem poupança';
+  const comparisonText = dearer ? `Novo ${eur(delta)} mais barato` : 'Novo ao mesmo preço';
   const comparisonBox = falseDeal
-    ? `<div class="price-box saving-box false-box"><small>Comparação</small><strong>PIOR QUE NOVO</strong><span class="saving-value">${comparisonText}</span></div>`
+    ? `<div class="price-box saving-box false-box"><small>Comparação</small><strong>${comparisonHead}</strong><span class="saving-value">${comparisonText}</span></div>`
     : `<div class="price-box saving-box"><small>Poupança</small><strong>${o.saving_percent || 0}%</strong><span class="saving-value">${eur(o.saving_eur)}</span></div>`;
-  return `<article class="card${falseDeal ? ' card-false' : ''}" data-offer-card><div class="card-top"><div><h3 title="${escapeAttr(displayTitle)}">${escapeHtml(displayTitle)}</h3><div class="meta">SKU: ${escapeHtml(skuOf(o))}</div></div><div class="card-status">${warrantyBadge}<span class="state-badge">Estado: ${escapeHtml(state)}</span></div></div><div class="badges">${falseDeal ? `<span class="badge bad">${falseLabel}</span>` : ''}<span class="badge warn">⚠️ ${escapeHtml(note)}</span></div><div class="price-row"><a class="price-box" target="_blank" rel="nofollow noopener" href="${escapeAttr(o.listing_url || '#')}"><small>Recondicionado</small><strong>${eur(o.refurbished_price)}</strong></a><a class="price-box" target="_blank" rel="nofollow noopener" href="${escapeAttr(o.url_new || '#')}"><small>Novo</small><strong>${eur(o.best_new_price)}</strong></a>${comparisonBox}</div><div class="meta">${escapeHtml(o.store || 'PcComponentes')}</div><div class="actions two-actions"><a class="button primary" target="_blank" rel="nofollow noopener" href="${escapeAttr(o.listing_url || '#')}">Recondicionado</a><a class="button" target="_blank" rel="nofollow noopener" href="${escapeAttr(o.url_new || '#')}">Novo</a></div></article>`;
+  return `<article class="card${falseDeal ? ' card-false' : ''}" data-offer-card><div class="card-top"><div><h3 title="${escapeAttr(displayTitle)}">${escapeHtml(displayTitle)}</h3><div class="meta">SKU: ${escapeHtml(skuOf(o))}</div></div><div class="card-status">${warrantyBadge}<span class="state-badge">Estado: ${escapeHtml(state)}</span></div></div><div class="badges">${falseDeal ? '<span class="badge bad">🚩 FALSO NEGÓCIO</span>' : ''}<span class="badge warn">⚠️ ${escapeHtml(note)}</span></div><div class="price-row"><a class="price-box" target="_blank" rel="nofollow noopener" href="${escapeAttr(o.listing_url || '#')}"><small>Recondicionado</small><strong>${eur(o.refurbished_price)}</strong></a><a class="price-box" target="_blank" rel="nofollow noopener" href="${escapeAttr(o.url_new || '#')}"><small>Novo</small><strong>${eur(o.best_new_price)}</strong></a>${comparisonBox}</div><div class="meta">${escapeHtml(o.store || 'PcComponentes')}</div><div class="actions two-actions"><a class="button primary" target="_blank" rel="nofollow noopener" href="${escapeAttr(o.listing_url || '#')}">Recondicionado</a><a class="button" target="_blank" rel="nofollow noopener" href="${escapeAttr(o.url_new || '#')}">Novo</a></div></article>`;
 }
 async function offers(){
   if(!__offersCache){

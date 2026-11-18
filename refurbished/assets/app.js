@@ -1,5 +1,6 @@
 
-let __offersCache = null;
+let offersRequest;
+let searchVersion = 0;
 const base = (window.REFURB_BASE_PATH || '').replace(/\/$/, '');
 const eur = v => (v === null || v === undefined) ? '—' : `${Math.round(Number(v)).toLocaleString('pt-PT')}€`;
 const eurDelta = v => Number(v) < 1 ? `${Number(v).toFixed(2).replace('.', ',')}€` : eur(v);
@@ -39,7 +40,8 @@ function cleanTitle(s){
 function skuOf(o){const raw = o.sku || o.model || String(o.product_id || '').replace(/^(pccomponentes|ean|worten)-/, '') || 'n/d'; return String(raw).replace(/#reac$/i, '');}
 function offerCard(o){
   const warrantyMonths = Number(o.warranty_months || 0);
-  const warrantyBadge = warrantyMonths >= 36 ? '<span class="badge good">🛡️ 3 anos</span>' : warrantyMonths ? `<span class="badge">🛡️ ${warrantyMonths} meses</span>` : '<span class="badge warn">Garantia n/d</span>';
+  const warrantyLabel = warrantyMonths % 12 === 0 && warrantyMonths >= 24 ? `${warrantyMonths / 12} anos` : `${warrantyMonths} meses`;
+  const warrantyBadge = warrantyMonths ? `<span class="badge${warrantyMonths >= 36 ? ' good' : ''}">🛡️ ${warrantyLabel}</span>` : '<span class="badge warn">Garantia n/d</span>';
   const note = (o.warnings || [])[0] || 'Confirma preço, estado e garantia na loja original antes de comprar';
   const state = o.condition || 'a confirmar na loja';
   const displayTitle = cleanTitle(o.title);
@@ -54,21 +56,54 @@ function offerCard(o){
   return `<article class="card${falseDeal ? ' card-false' : ''}" data-offer-card><div class="card-top"><div><h3 title="${escapeAttr(displayTitle)}">${escapeHtml(displayTitle)}</h3><div class="meta">SKU: ${escapeHtml(skuOf(o))}</div></div><div class="card-status">${warrantyBadge}<span class="state-badge">Estado: ${escapeHtml(state)}</span></div></div><div class="badges">${falseDeal ? '<span class="badge bad">🚩 FALSO NEGÓCIO</span>' : ''}<span class="badge warn">⚠️ ${escapeHtml(note)}</span></div><div class="price-row"><a class="price-box" target="_blank" rel="nofollow noopener" href="${escapeAttr(o.listing_url || '#')}"><small>Recondicionado</small><strong>${eur(o.refurbished_price)}</strong></a><a class="price-box" target="_blank" rel="nofollow noopener" href="${escapeAttr(o.url_new || '#')}"><small>Novo</small><strong>${eur(o.best_new_price)}</strong></a>${comparisonBox}</div><div class="meta">${escapeHtml(o.store || 'PcComponentes')}</div><div class="actions two-actions"><a class="button primary" target="_blank" rel="nofollow noopener" href="${escapeAttr(o.listing_url || '#')}">Recondicionado</a><a class="button" target="_blank" rel="nofollow noopener" href="${escapeAttr(o.url_new || '#')}">Novo</a></div></article>`;
 }
 async function offers(){
-  if(!__offersCache){
-    const res = await fetch(`${base}/data/offers.json`, {cache:'no-cache'});
-    const data = await res.json();
-    __offersCache = data.offers || [];
+  if (!offersRequest) {
+    offersRequest = fetch(`${base}/data/offers.json`, {cache:'no-cache'}).then(async response => {
+      if (!response.ok) throw new Error('Offers unavailable');
+      const data = await response.json();
+      if (!Array.isArray(data.offers)) throw new Error('Invalid offers');
+      return data.offers;
+    }).catch(error => { offersRequest = undefined; throw error; });
   }
-  return __offersCache;
+  return offersRequest;
 }
 async function runSearch(q){
   const content = document.querySelector('#page-content');
   const results = document.querySelector('#search-results');
   if(!results || !content) return;
+  const version = ++searchVersion;
   q = q.trim().toLowerCase();
   if(!q){results.hidden = true; results.innerHTML = ''; content.hidden = false; return;}
-  const list = (await offers()).filter(o => [o.title,o.category_label,o.store,o.seller,o.condition,o.brand,o.model].join(' ').toLowerCase().includes(q));
+  let allOffers;
+  try { allOffers = await offers(); }
+  catch {
+    if (version !== searchVersion) return;
+    content.hidden = false;
+    results.hidden = false;
+    results.textContent = 'Pesquisa indisponível. Podes consultar as ofertas abaixo.';
+    return;
+  }
+  if (version !== searchVersion) return;
+  const list = allOffers.filter(o => [o.title,o.category_label,o.store,o.seller,o.condition,o.brand,o.model,skuOf(o),o.sku,o.raw_sku,o.mpn,o.ean].join(' ').toLowerCase().includes(q));
   content.hidden = true; results.hidden = false;
-  results.innerHTML = `<div class="section-title full"><h2>Resultados</h2><small>${list.length} ofertas</small></div>` + (list.length ? list.map(offerCard).join('') : '<div class="empty">Sem resultados.</div>');
+  results.innerHTML = `<div class="section-title full"><h2>Resultados</h2><small>${list.length} ${list.length === 1 ? 'oferta' : 'ofertas'}</small></div>`;
+  if (!list.length) {
+    results.insertAdjacentHTML('beforeend', '<div class="empty">Sem resultados.</div>');
+    return;
+  }
+  const more = document.createElement('button');
+  more.type = 'button';
+  more.className = 'button more-results';
+  more.textContent = 'Mostrar mais resultados';
+  results.append(more);
+  let shown = 0;
+  function showBatch(event) {
+    const start = shown;
+    shown = Math.min(start + 48, list.length);
+    more.insertAdjacentHTML('beforebegin', list.slice(start, shown).map(offerCard).join(''));
+    if (event) results.querySelectorAll('[data-offer-card]')[start]?.querySelector('a')?.focus();
+    if (shown === list.length) more.remove();
+  }
+  more.addEventListener('click', showBatch);
+  showBatch();
 }
 document.addEventListener('input', e => { if(e.target && e.target.id === 'search') runSearch(e.target.value); });

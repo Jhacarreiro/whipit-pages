@@ -2,8 +2,8 @@
 let offersRequest;
 let searchVersion = 0;
 const base = (window.REFURB_BASE_PATH || '').replace(/\/$/, '');
-const eur = v => (v === null || v === undefined) ? '—' : `${Math.round(Number(v)).toLocaleString('pt-PT')}€`;
-const eurDelta = v => Number(v) < 1 ? `${Number(v).toFixed(2).replace('.', ',')}€` : eur(v);
+const euroAmount = new Intl.NumberFormat('pt-PT', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+const eur = v => v == null ? '—' : euroAmount.format(v).replace(/,00$/, '') + '€';
 const verdictLabel = v => ({excellent:'Excelente', good:'Bom', maybe:'Talvez', avoid:'Evitar', false:'Falso negócio'}[v] || '—');
 const verdictClass = v => ({excellent:'good', good:'good', maybe:'warn', avoid:'bad', false:'bad'}[v] || '');
 function escapeHtml(s){return String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
@@ -45,15 +45,19 @@ function offerCard(o){
   const note = (o.warnings || [])[0] || 'Confirma preço, estado e garantia na loja original antes de comprar';
   const state = o.condition || 'a confirmar na loja';
   const displayTitle = cleanTitle(o.title);
-  const falseDeal = o.verdict === 'false' || Number(o.refurbished_price || 0) >= Number(o.best_new_price || 0);
+  const hasNew = o.best_new_price > 0;
+  const falseDeal = hasNew && (o.verdict === 'false' || Number(o.refurbished_price) >= Number(o.best_new_price));
   const delta = Number(o.refurbished_price || 0) - Number(o.best_new_price || 0);
   const dearer = delta > 0.005;
   const comparisonHead = dearer ? 'Mais caro que novo' : 'Sem poupança';
-  const comparisonText = dearer ? `Novo ${eurDelta(delta)} mais barato` : 'Novo ao mesmo preço';
-  const comparisonBox = falseDeal
+  const comparisonText = dearer ? `Novo ${eur(delta)} mais barato` : 'Novo ao mesmo preço';
+  const comparisonBox = !hasNew ? '' : falseDeal
     ? `<div class="price-box saving-box false-box"><small>Comparação</small><strong>${comparisonHead}</strong><span class="saving-value">${comparisonText}</span></div>`
     : `<div class="price-box saving-box"><small>Poupança</small><strong>${o.saving_percent || 0}%</strong><span class="saving-value">${eur(o.saving_eur)}</span></div>`;
-  return `<article class="card${falseDeal ? ' card-false' : ''}" data-offer-card><div class="card-top"><div><h3 title="${escapeAttr(displayTitle)}">${escapeHtml(displayTitle)}</h3><div class="meta">SKU: ${escapeHtml(skuOf(o))}</div></div><div class="card-status">${warrantyBadge}<span class="state-badge">Estado: ${escapeHtml(state)}</span></div></div><div class="badges">${falseDeal ? '<span class="badge bad">🚩 FALSO NEGÓCIO</span>' : ''}<span class="badge warn">⚠️ ${escapeHtml(note)}</span></div><div class="price-row"><a class="price-box" target="_blank" rel="nofollow noopener" href="${escapeAttr(o.listing_url || '#')}"><small>Recondicionado</small><strong>${eur(o.refurbished_price)}</strong></a><a class="price-box" target="_blank" rel="nofollow noopener" href="${escapeAttr(o.url_new || '#')}"><small>Novo</small><strong>${eur(o.best_new_price)}</strong></a>${comparisonBox}</div><div class="meta">${escapeHtml(o.store || 'PcComponentes')}</div><div class="actions two-actions"><a class="button primary" target="_blank" rel="nofollow noopener" href="${escapeAttr(o.listing_url || '#')}">Recondicionado</a><a class="button" target="_blank" rel="nofollow noopener" href="${escapeAttr(o.url_new || '#')}">Novo</a></div></article>`;
+  const newPrice = hasNew ? `<a class="price-box" target="_blank" rel="nofollow noopener" href="${escapeAttr(o.url_new || '#')}"><small>Novo</small><strong>${eur(o.best_new_price)}</strong></a>`
+    : '<div class="price-box price-unavailable">Preço em novo indisponível</div>';
+  const newLink = hasNew ? `<a class="button" target="_blank" rel="nofollow noopener" href="${escapeAttr(o.url_new || '#')}">Novo</a>` : '';
+  return `<article class="card${falseDeal ? ' card-false' : ''}" data-offer-card><div class="card-top"><div><h3 title="${escapeAttr(displayTitle)}">${escapeHtml(displayTitle)}</h3><div class="meta">SKU: ${escapeHtml(skuOf(o))}</div></div><div class="card-status">${warrantyBadge}<span class="state-badge">Estado: ${escapeHtml(state)}</span></div></div><div class="badges">${falseDeal ? '<span class="badge bad">🚩 FALSO NEGÓCIO</span>' : ''}<span class="badge warn">⚠️ ${escapeHtml(note)}</span></div><div class="price-row"><a class="price-box" target="_blank" rel="nofollow noopener" href="${escapeAttr(o.listing_url || '#')}"><small>Recondicionado</small><strong>${eur(o.refurbished_price)}</strong></a>${newPrice}${comparisonBox}</div><div class="meta">${escapeHtml(o.store || 'PcComponentes')}</div><div class="actions${hasNew ? ' two-actions' : ''}"><a class="button primary" target="_blank" rel="nofollow noopener" href="${escapeAttr(o.listing_url || '#')}">Recondicionado</a>${newLink}</div></article>`;
 }
 async function offers(){
   if (!offersRequest) {

@@ -15,78 +15,171 @@ function track(name,data){try{if(window.loTrack)window.loTrack(name,data||{})}ca
 })();
 const body=document.body, country=body.dataset.country||'PT', locale=body.dataset.locale||'pt-PT', base=body.dataset.basePath||'https://offers.gallivanter.biz', lidlDomain=body.dataset.lidlDomain||'https://www.lidl.pt';
 const UI = JSON.parse(document.getElementById('lidl-ui')?.textContent || '{}');
-const q=document.getElementById('q'),brand=document.getElementById('brand'),cat=document.getElementById('cat'),sortEl=document.getElementById('sort'),count=document.getElementById('count'),grid=document.getElementById('grid');
-const cards=[...document.querySelectorAll('[data-card]')], stateRank={now:0,lastcall:1,future:2,past:3,unknown:4};
-function priceOf(card) {
-  const price = card.dataset.price;
-  return price?.trim() && Number.isFinite(Number(price)) ? Number(price) : Infinity;
+const byId = id => document.getElementById(id);
+const grid = byId('grid'), q = byId('q'), brand = byId('brand'), order = byId('order');
+const cards = [...document.querySelectorAll('[data-card]')];
+const retailers = [...document.querySelectorAll('[data-retailer-toggle]')];
+const categories = [...document.querySelectorAll('[data-category-choice]')];
+const periods = [...document.querySelectorAll('[data-period]')];
+const shops = new Set(retailers.map(button => button.dataset.retailerToggle));
+const storeKey = 'limitedOffersShops' + country, savedKey = 'limitedOffersSaved' + country;
+let saved = new Set(), savedOnly = false, category = '', period = 'all', limit = 12, featured, selectedOffer;
+function readSet(storage, key) {
+  const values = JSON.parse(storage.getItem(key) || '[]');
+  return new Set(Array.isArray(values) ? values : []);
 }
-
+function persist(storage, key, values) {
+  try { window[storage].setItem(key, JSON.stringify([...values])); } catch {}
+}
+function offerKey(card) { return card.querySelector('.card-title').getAttribute('href'); }
 function allowedByMode(status, mode) {
   if (mode === 'fresh') return status === 'now' || status === 'lastcall';
   if (mode === 'upcoming') return status === 'future';
-  if (mode === 'lastcall' || mode === 'past') return status === mode;
-  return true;
+  return mode === 'all' || status === mode;
 }
-
-function sortCards(rows, mode) {
-  rows.sort((a,b) => {
-    const dateOrder = (a.dataset.date || '').localeCompare(b.dataset.date || '');
-    let order;
-    if (mode === 'price') order = priceOf(a) - priceOf(b);
-    else if (mode === 'upcoming' || mode === 'lastcall') order = dateOrder;
-    else if (mode === 'past') order = -dateOrder;
-    else order = (stateRank[a.dataset.status] ?? 9) - (stateRank[b.dataset.status] ?? 9) || -dateOrder;
-    return order || (a.dataset.title || '').localeCompare(b.dataset.title || '', locale);
+function priceOf(card) {
+  return card.dataset.price?.trim() && Number.isFinite(Number(card.dataset.price)) ? Number(card.dataset.price) : Infinity;
+}
+function setPressed(button, on) { button.setAttribute('aria-pressed', String(on)); }
+function present(prefix, card) {
+  const photo = byId(prefix+'-image'), source = card.querySelector('.offer-photo img');
+  photo.src = source.src;
+  photo.alt = source.alt;
+  byId(prefix+'-meta').replaceChildren(...[...card.querySelector('.offer-meta').childNodes].map(node => node.cloneNode(true)));
+  byId(prefix+'-title').textContent = card.dataset.productTitle;
+  byId(prefix+'-price').textContent = card.dataset.productPrice;
+}
+function renderCatalogue() {
+  if (!grid) return;
+  const term = fold(q.value.trim());
+  retailers.forEach(button => {
+    const on = shops.has(button.dataset.retailerToggle);
+    setPressed(button,on);
+    button.setAttribute('aria-disabled', String(on && shops.size === 1));
   });
-}
-
-const retailerButtons = [...document.querySelectorAll('[data-retailer-toggle]')];
-const activeRetailers = new Set(retailerButtons.map(b => b.dataset.retailerToggle));
-retailerButtons.forEach(button => button.addEventListener('click', () => {
-  const retailer = button.dataset.retailerToggle;
-  if (activeRetailers.has(retailer)) activeRetailers.delete(retailer);
-  else activeRetailers.add(retailer);
-  button.classList.toggle('active', activeRetailers.has(retailer));
-  button.setAttribute('aria-pressed', String(activeRetailers.has(retailer)));
-  apply();
-}));
-
-function apply() {
-  const term = fold(q.value.trim()), mode = sortEl.value || 'all';
-  const visible = cards.filter(card => {
+  categories.forEach(b => setPressed(b, b.dataset.categoryChoice === category));
+  periods.forEach(b => setPressed(b, b.dataset.period === period));
+  setPressed(byId('saved'), savedOnly);
+  const rows = cards.filter(card => {
+    card.hidden = true;
     const data = card.dataset;
-    card.hidden = !activeRetailers.has(data.retailer || 'LIDL') || !allowedByMode(data.status, mode) ||
-      (term && !fold(data.search).includes(term)) || (brand.value && data.brand !== brand.value) ||
-      (cat.value && data.category !== cat.value);
-    return !card.hidden;
+    return shops.has(data.retailer) && allowedByMode(data.status,period) &&
+      (!term || fold(data.search).includes(term)) && (!brand.value || data.brand === brand.value) &&
+      (!category || data.category === category) && (!savedOnly || saved.has(offerKey(card)));
   });
-  sortCards(visible, mode);
-  visible.forEach(card => grid.appendChild(card));
-  count.textContent = visible.length;
+  const rank = {now:0,lastcall:1,future:2,past:3,unknown:4};
+  rows.sort((a,b) => {
+    const ad = a.dataset, bd = b.dataset;
+    const dateOrder = (ad.date || '').localeCompare(bd.date || '');
+    return (order.value === 'price' && (priceOf(a)-priceOf(b))) ||
+       ((rank[ad.status] ?? 9) - (rank[bd.status] ?? 9)) ||
+       (ad.status === 'future' ? dateOrder : -dateOrder) || ad.title.localeCompare(bd.title,locale);
+  });
+  rows.slice(0,limit).forEach(card => {card.hidden=false; grid.appendChild(card);});
+  byId('count').textContent = rows.length;
+  byId('empty').hidden = rows.length > 0;
+  byId('show-more').hidden = rows.length <= limit;
+  const candidates = rows.filter(card => ['now','lastcall','future'].includes(card.dataset.status));
+  featured = !category && !term && !brand.value && !savedOnly && period==='all' && order.value==='all' &&
+    (candidates.find(card => card.dataset.brand==='PARKSIDE') || candidates[0]);
+  byId('feature').hidden = !featured;
+  if (featured) {
+    present('feature',featured);
+    byId('feature-category').textContent = UI.explore+' · '+featured.dataset.category;
+  }
 }
-/* Alert links carry ?q=, ?brand= or ?cat=. Nothing read them, so every digest link opened the unfiltered catalogue. */
-(function hydrateFromQuery(){
-  var params;
-  try{params=new URLSearchParams(location.search)}catch(e){return}
-  function setField(el,value){
-    if(!el||!value)return false;
-    if(el.tagName==='SELECT'){
-      var match=Array.prototype.find.call(el.options,function(o){
-        return o.value&&o.value.toLowerCase()===value.toLowerCase()});
-      if(!match)return false;
-      el.value=match.value;return true}
-    el.value=value;return true}
-  var brandParam=params.get('brand'),catParam=params.get('cat'),qParam=params.get('q');
-  var matched=setField(brand,brandParam);
-  matched=setField(cat,catParam)||matched;
-  setField(sortEl,params.get('sort'));
-  /* A subscription stores what the user typed, which need not be an exact
-     option. Fall back to the search box so the link still narrows. */
-  var fallback=qParam||(!matched?(brandParam||catParam):'');
-  if(fallback)setField(q,fallback);
-})();
-[q,brand,cat,sortEl].forEach(el=>el&&el.addEventListener('input',apply));apply();
+function refreshCatalogue() { limit=12;renderCatalogue(); }
+function resetFilters() {
+  q.value='';brand.value='';order.value='all';category='';period='all';savedOnly=false;
+  retailers.forEach(button => shops.add(button.dataset.retailerToggle));
+  persist('sessionStorage',storeKey,shops);
+  refreshCatalogue();
+}
+function setBookmark(card, button) {
+  const on = saved.has(offerKey(card));
+  setPressed(button,on);
+  button.setAttribute('aria-label',(on ? UI.unsave : UI.save)+' · '+card.dataset.productTitle);
+}
+function restoreCatalogue() {
+  try {
+    saved=readSet(localStorage,savedKey);
+    const restored=readSet(sessionStorage,storeKey);
+    if ([...shops].some(shop => restored.has(shop))) for (const shop of shops) if (!restored.has(shop)) shops.delete(shop);
+  } catch {}
+  const params=new URLSearchParams(location.search);
+  const requestedBrand=params.get('brand'), requestedCategory=params.get('cat');
+  const matchingBrand=[...brand.options].find(o => requestedBrand && fold(o.value)===fold(requestedBrand));
+  const matchingCategory=categories.find(b => requestedCategory && fold(b.dataset.categoryChoice)===fold(requestedCategory));
+  if (matchingBrand) brand.value=matchingBrand.value;
+  if (matchingCategory) category=matchingCategory.dataset.categoryChoice;
+  q.value=params.get('q') || (!matchingBrand && requestedBrand) || (!matchingCategory && requestedCategory) || '';
+  const sort=params.get('sort');
+  if (sort==='price') order.value='price';
+  else if (periods.some(b => b.dataset.period===sort)) period=sort;
+  if (q.value || requestedBrand || requestedCategory) retailers.forEach(b => shops.add(b.dataset.retailerToggle));
+  cards.forEach(card => {
+    const button=card.querySelector('[data-save]');
+    setBookmark(card,button);
+    button.addEventListener('click', () => {
+      const key=offerKey(card);
+      if (saved.has(key)) saved.delete(key); else saved.add(key);
+      persist('localStorage',savedKey,saved);
+      setBookmark(card,button);
+      if (savedOnly) renderCatalogue();
+    });
+    card.querySelectorAll('[data-open-offer]').forEach(link => link.addEventListener('click',event => {
+      if (event.button || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      openOffer(card);
+    }));
+  });
+  retailers.forEach(button => button.addEventListener('click', () => {
+    const shop=button.dataset.retailerToggle;
+    if (shops.has(shop)) {if (shops.size===1) return; shops.delete(shop);} else shops.add(shop);
+    persist('sessionStorage',storeKey,shops);refreshCatalogue();
+  }));
+  categories.forEach(b => b.addEventListener('click', () => {category=b.dataset.categoryChoice;refreshCatalogue();}));
+  periods.forEach(b => b.addEventListener('click', () => {period=b.dataset.period;refreshCatalogue();}));
+  byId('saved').addEventListener('click', () => {savedOnly=!savedOnly;refreshCatalogue();});
+  byId('reset-filters').addEventListener('click',resetFilters);
+  byId('show-more').addEventListener('click', () => {limit+=12;renderCatalogue();});
+  byId('feature-category').addEventListener('click', () => {category=featured.dataset.category;refreshCatalogue();byId('catalogue').scrollIntoView();});
+  [q,brand,order].forEach(control => control.addEventListener('input',refreshCatalogue));
+  renderCatalogue();
+}
+if (grid && grid.querySelector) restoreCatalogue();
+const offerDialog=byId('offer-detail');
+let historyRequest;
+async function openOffer(card) {
+  selectedOffer=card;
+  present('offer',card);
+  byId('offer-date').textContent=card.querySelector('.tile-date').textContent;
+  byId('offer-stock-note').textContent=card.dataset.stockMode==='estimated' ? UI.estimated_note : UI.alert_stock_note;
+  byId('offer-store').href=card.dataset.productUrl;
+  const detail=card.querySelector('.card-title').href;
+  byId('offer-permalink').href=detail;
+  const history=byId('offer-history'), list=history.querySelector('ul');
+  history.hidden=true;
+  list.replaceChildren();
+  historyRequest?.abort();
+  const request=new AbortController();
+  historyRequest=request;
+  showDialog(offerDialog);
+  try {
+    const response=await fetch(detail,{signal:request.signal});
+    if (!response.ok) return;
+    const doc=new DOMParser().parseFromString(await response.text(),'text/html');
+    if (request.signal.aborted || !offerDialog.open) return;
+    for (const row of doc.querySelectorAll('.price-history li')) {
+      const li=document.createElement('li');
+      li.textContent=[...row.children].map(item => item.textContent).join(' · ');
+      list.appendChild(li);
+    }
+    history.hidden=!list.children.length;
+  } catch {}
+}
+bindDialog(offerDialog,'[data-close-offer]',() => historyRequest?.abort());
+byId('offer-availability')?.addEventListener('click', () => {offerDialog.close();openAvailability(selectedOffer);});
 const modal=document.getElementById('shops-modal'), list=document.getElementById('shops-list'), statusBox=document.getElementById('shops-status'), sourceNote=document.getElementById('shops-source-note')||document.querySelector('.shops-source-note'), storeSearch=document.getElementById('store-search'), useLocation=document.getElementById('use-location'), productBox=document.getElementById('availability-product'), productLink=document.getElementById('availability-product-link');
 let storesRequest, userPos, currentProduct, availabilityAbort, availabilityTimer;
 const availabilityApi = 'https://webhook.gallivanter.biz/api/lidl/availability';
@@ -96,7 +189,7 @@ function bindDialog(dialog, closeSelector, onClose) {
   dialog.querySelectorAll(closeSelector).forEach(button => button.addEventListener('click', () => dialog.close()));
   dialog.addEventListener('close', () => {
     if (dialog.open) return;
-    document.body.classList.remove('modal-open');
+    if (!document.querySelector('dialog[open]')) document.body.classList.remove('modal-open');
     if (onClose) onClose();
   });
 }
@@ -112,6 +205,7 @@ function cancelSearch() {
 }
 
 function openAvailability(card) {
+  track('availability_open',{retailer:card.dataset.retailer});
   cancelSearch();
   currentProduct = card.dataset;
   userPos = null;
@@ -132,7 +226,6 @@ function openAvailability(card) {
 
 document.querySelectorAll('[data-availability]').forEach(button => button.addEventListener('click', () => {
   const card = button.closest('[data-card]');
-  track('availability_open',{retailer:card.dataset.retailer});
   openAvailability(card);
 }));
 bindDialog(modal, '[data-close-shops]', cancelSearch);
@@ -312,9 +405,19 @@ function escapeHtml(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','
   async function call(payload,authz=true){
     const headers={'Content-Type':'application/json'};
     if(authz&&token()) headers.Authorization='Bearer '+token();
-    const res=await fetch(availabilityApi,{method:'POST',cache:'no-cache',headers,body:JSON.stringify(payload)});
-    const data=await res.json().catch(()=>({ok:false,error:'Resposta inválida'}));
-    if(!res.ok||data.ok===false) throw Object.assign(new Error(data.error||('HTTP '+res.status)), {status:res.status});
+    const res=await fetch(availabilityApi,{method:'POST',cache:'no-cache',headers,body:JSON.stringify({...payload,country})});
+    const data=await res.json().catch(()=>({ok:false,error:UI.alert_error}));
+    if (!res.ok || data.ok === false) {
+      const problems = {
+        'invalid email': ['Verifica o endereço de email.', 'Sprawdź adres e-mail.'],
+        'invalid phone': ['Indica o número com o indicativo do país.', 'Podaj numer z kodem kraju.'],
+        'invalid code': ['O código está incorreto ou expirou.', 'Kod jest nieprawidłowy lub wygasł.'],
+        'too many alerts, switch one off first': ['Atingiste o limite de alertas. Desliga um para continuar.', 'Osiągnięto limit alertów. Wyłącz jeden, aby kontynuować.']
+      };
+      const retry = ['Demasiados pedidos. Tenta mais tarde.', 'Za dużo prób. Spróbuj później.'];
+      const message = (problems[data.error] || (res.status === 429 && retry))?.[country==='PL' ? 1 : 0];
+      throw Object.assign(new Error(message || UI.alert_error), {status:res.status});
+    }
     return data;
   }
   function currentAlert(){
@@ -322,26 +425,32 @@ function escapeHtml(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','
   }
   function validAlert(){
     const a=currentAlert();
-    if(!a.match_value){setStatus('Escolhe primeiro o alerta: keyword, marca, categoria ou produto.');return null}
+    if(!a.match_value){setStatus(UI.match_required);return null}
     return a;
   }
   function open(){showDialog(modal);refresh().catch(e => setStatus(e.message))}
   bindDialog(modal, '[data-close-alerts]');
-  $('alerts-open')?.addEventListener('click',()=>{ if($('alerts-type')) $('alerts-type').value='keyword'; if($('alerts-value')) $('alerts-value').value=''; if($('alerts-label')) $('alerts-label').value=''; open(); });
+  $('alerts-open')?.addEventListener('click', () => {
+    const term=q?.value.trim();
+    $('alerts-type').value=term ? 'keyword' : brand?.value ? 'brand' : category ? 'category' : 'keyword';
+    $('alerts-value').value=term || brand?.value || category || '';
+    $('alerts-label').value='';
+    open();
+  });
   async function refresh(){
     const session = token();
     auth.hidden = !!session;
     app.hidden = !session;
     $('alerts-list').replaceChildren();
     if (!session) {
-      setStatus('Confirma o contacto por WhatsApp ou email para consultar e gerir os teus alertas.');
+      setStatus(UI.confirm_contact);
       return false;
     }
     try {
       const data = await call({alerts_action:'list'});
       if (session !== token()) return false;
       renderList(data.alerts || []);
-      setStatus('Sessão activa. Podes guardar e desligar alertas.');
+      setStatus(UI.signed_in);
       return true;
     } catch (error) {
       if (session !== token()) return false;
@@ -349,9 +458,9 @@ function escapeHtml(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','
         localStorage.removeItem(tokenKey);
         auth.hidden = false;
         app.hidden = true;
-        setStatus('Sessão expirada. Confirma o contacto outra vez.');
+        setStatus(UI.expired_session);
       } else {
-        setStatus('Não foi possível carregar os alertas. Volta a abrir para tentar novamente.');
+        setStatus(UI.load_failed);
       }
       return false;
     }
@@ -367,17 +476,17 @@ function escapeHtml(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','
 
   function renderList(alerts) {
     const box = $('alerts-list');
-    const active = alerts.filter(a => a.enabled !== 0);
+    const active = alerts.filter(a => a.enabled !== 0 && (a.country || 'PT') === country);
     if (!active.length) {
-      box.innerHTML = '<p class="modal-note">Ainda não tens alertas activos.</p>';
+      box.innerHTML = `<p class="modal-note">${escapeHtml(UI.empty_alerts)}</p>`;
       return;
     }
     box.innerHTML = active.map(a => `<article class="alert-item"><div>
       <b>${escapeHtml(a.label || a.match_value)}</b><span>${escapeHtml(a.channel)}</span>
-      </div><button class="button secondary" type="button" data-alert-delete="${escapeAttr(a.id)}">Desligar</button></article>`).join('');
+      </div><button class="button secondary" type="button" data-alert-delete="${escapeAttr(a.id)}">${escapeHtml(UI.disable)}</button></article>`).join('');
     box.querySelectorAll('[data-alert-delete]').forEach(button => bindAction(button, async () => {
       await call({alerts_action:'delete', alert_id:button.dataset.alertDelete});
-      if (await refresh()) setStatus('Alerta desligado.');
+      if (await refresh()) setStatus(UI.disabled);
     }));
   }
 
@@ -388,13 +497,13 @@ function escapeHtml(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','
   bindAction($('alerts-start'), async () => {
     const recipient = contact();
     if (!recipient.destination) {
-      setStatus('Indica o WhatsApp ou email para receber o código.');
+      setStatus(UI.need_contact);
       return;
     }
     await call({alerts_action:'auth_start', ...recipient}, false);
     $('alerts-code-row').hidden = false;
     $('alerts-code').focus();
-    setStatus('Código enviado. Introduz o código para confirmar.');
+    setStatus(UI.code_sent);
   });
 
   bindAction($('alerts-verify'), async () => {
@@ -403,7 +512,7 @@ function escapeHtml(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','
     localStorage.setItem(tokenKey, data.token);
     $('alerts-code').value = '';
     $('alerts-code-row').hidden = true;
-    if (await refresh()) setStatus('Contacto confirmado. Podes gerir os teus alertas.');
+    if (await refresh()) setStatus(UI.confirmed);
   });
 
   bindAction($('alerts-create'), async () => {
@@ -413,7 +522,7 @@ function escapeHtml(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','
     $('alerts-value').value = '';
     $('alerts-label').value = '';
     track('alert_created',{match_type:alert.match_type});
-    if (await refresh()) setStatus('Alerta guardado.');
+    if (await refresh()) setStatus(UI.alert_created);
   });
 
   bindAction($('alerts-logout'), async () => {
@@ -423,7 +532,7 @@ function escapeHtml(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','
     $('alerts-code').value = '';
     $('alerts-code-row').hidden = true;
     await refresh();
-    setStatus('Sessão terminada.');
+    setStatus(UI.logged_out);
   });
   function openManagementLink() {
     if (location.hash === '#alerts' && !modal.open) open();
@@ -431,10 +540,11 @@ function escapeHtml(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','
   window.addEventListener('hashchange', openManagementLink);
   openManagementLink();
   document.querySelectorAll('[data-alert-product]').forEach(btn=>btn.addEventListener('click',()=>{
-    const card=btn.closest('[data-card]'); if(!card) return;
+    const card=selectedOffer; if(!card) return;
+    offerDialog.close();
     open();
     const value=card.dataset.productKey||card.dataset.availabilityId||card.dataset.productTitle||'';
     $('alerts-type').value='product'; $('alerts-value').value=value; $('alerts-label').value=card.dataset.productTitle||'';
-    setStatus('Alerta preparado para este produto. Confirma contacto e guarda.')
+    setStatus(UI.product_ready)
   }));
 })();

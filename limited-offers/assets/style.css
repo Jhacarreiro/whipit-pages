@@ -76,3 +76,28 @@ dialog:not([open]), .alerts-row[hidden] { display: none; }
 .leaflet-gallery img{display:block;max-width:100%;max-height:70vh;width:auto;height:auto;object-fit:contain}
 .leaflet-gallery figcaption{margin-top:.4rem}
 .leaflet-gallery:has(figure:target) figure:not(:target){display:none}
+
+.stat-brand-value {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+  margin: 0;
+}
+.stat-brand-value strong { overflow-wrap: anywhere; }
+.stat-brand-value small {
+  background: var(--pill);
+  border-radius: 999px;
+  padding: 3px 9px;
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+@media (max-width: 719px) {
+  .stats.three .stat-brand { grid-column: 1 / -1; }
+}
+@media (min-width: 720px) {
+  .stats.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}

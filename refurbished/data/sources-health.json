@@ -1,6 +1,11 @@
 {
-  "generated_at": "2026-11-19T15:06:35Z",
+  "generated_at": "2026-11-19T23:32:06Z",
   "health": [
+    {
+      "source_id": "pcdiga-recondicionados",
+      "checked_at": "2026-11-19T23:32:04Z",
+      "status": "ok"
+    },
     {
       "source_id": "pcdiga-recondicionados",
       "checked_at": "2026-11-19T15:06:32Z",

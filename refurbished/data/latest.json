@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T23:32:06Z",
+  "generated_at": "2026-11-20T00:26:28Z",
   "demo": false,
   "sections": {
     "best_today": [
@@ -41,6 +41,7 @@
         "store": "PcComponentes",
         "category_label": "Casa & Tech",
         "warnings": [
+          "Loja indisponível · preço confirmado em 2026-11-18",
           "Confirma preço, estado e garantia na loja original antes de comprar"
         ],
         "reasons": [
@@ -50,6 +51,10 @@
           "Estado elevado",
           "Comparação alta confiança"
         ],
+        "inventory_unavailable": true,
+        "new_store_unavailable": true,
+        "offer_valid_until": "2026-11-25T14:21:46Z",
+        "new_valid_until": "2026-11-25T16:56:45Z",
         "url_pt": "https://www.pccomponentes.pt/hpe-smart-array-p408i-a-sr-gen10-controlador-modular-sas-para-servidores?offer=dbc5eba9-e5d7-4ec9-8550-e8fb62c01974",
         "url_amz": ""
       },
@@ -91,6 +96,7 @@
         "store": "PcComponentes",
         "category_label": "Casa & Tech",
         "warnings": [
+          "Loja indisponível · preço confirmado em 2026-11-18",
           "Confirma preço, estado e garantia na loja original antes de comprar"
         ],
         "reasons": [
@@ -100,6 +106,10 @@
           "Estado elevado",
           "Comparação alta confiança"
         ],
+        "inventory_unavailable": true,
+        "new_store_unavailable": true,
+        "offer_valid_until": "2026-11-25T13:59:20Z",
+        "new_valid_until": "2026-11-25T16:47:13Z",
         "url_pt": "https://www.pccomponentes.pt/comutador-cisco-catalyst-9300l-24p-4x-e-gestor-l2-l3-24-portos-gigabit-ethernet?offer=da89fe96-0c48-4c93-b939-33899d22fe82",
         "url_amz": ""
       },
@@ -141,6 +151,7 @@
         "store": "PcComponentes",
         "category_label": "Portáteis",
         "warnings": [
+          "Loja indisponível · preço confirmado em 2026-11-18",
           "Confirma preço, estado e garantia na loja original antes de comprar"
         ],
         "reasons": [
@@ -150,6 +161,10 @@
           "Estado elevado",
           "Comparação alta confiança"
         ],
+        "inventory_unavailable": true,
+        "new_store_unavailable": true,
+        "offer_valid_until": "2026-11-25T12:11:13Z",
+        "new_valid_until": "2026-11-25T12:11:13Z",
         "url_pt": "https://www.pccomponentes.pt/gigabyte-aero-x16-amd-ryzen-ai-9-hx-370-32gb-2tb-ssd-rtx-5070-16?offer=2aefb97a-a580-4876-84f0-f74fb3879af5",
         "url_amz": ""
       },
@@ -191,6 +206,7 @@
         "store": "PcComponentes",
         "category_label": "Portáteis",
         "warnings": [
+          "Loja indisponível · preço confirmado em 2026-11-18",
           "Confirma preço, estado e garantia na loja original antes de comprar"
         ],
         "reasons": [
@@ -200,6 +216,10 @@
           "Estado elevado",
           "Comparação alta confiança"
         ],
+        "inventory_unavailable": true,
+        "new_store_unavailable": true,
+        "offer_valid_until": "2026-11-25T13:30:17Z",
+        "new_valid_until": "2026-11-25T13:30:17Z",
         "url_pt": "https://www.pccomponentes.pt/portatil-hp-elitebook-8-g1i-14-intel-core-ultra-7-258v-32gb-intel-arc-graphics-1tb-ssd-windows-11-pro-seguranca-biometrica?offer=c14dd9be-e34d-4a9b-9f11-f2ff60051b0f",
         "url_amz": ""
       },
@@ -241,6 +261,7 @@
         "store": "PcComponentes",
         "category_label": "TVs & Monitores",
         "warnings": [
+          "Loja indisponível · preço confirmado em 2026-11-18",
           "Confirma preço, estado e garantia na loja original antes de comprar"
         ],
         "reasons": [
@@ -250,15 +271,19 @@
           "Estado elevado",
           "Comparação alta confiança"
         ],
+        "inventory_unavailable": true,
+        "new_store_unavailable": true,
+        "offer_valid_until": "2026-11-25T12:40:51Z",
+        "new_valid_until": "2026-11-25T17:06:34Z",
         "url_pt": "https://www.pccomponentes.pt/monitor-hp-omen-transcend-32-31-5-ultrahd-4k-240hz-qd-oled-0-03ms-freesync-premium-pro-branco?offer=6627a4f0-5a03-4c53-bd78-8d5b2fb04ac7",
         "url_amz": ""
       },
       {
-        "id": "worten-ffffffff-0000-4000-a001-0000007e80ee",
-        "product_id": "ean-5607894869703",
+        "id": "worten-ffffffff-0000-4000-a001-0000007e824c",
+        "product_id": "ean-5607894892411",
         "store_id": "worten",
-        "listing_url": "https://www.worten.pt/produtos/iphone-16-apple-recondicionado-flippers-como-novo-6-1-128-gb-preto-8290542",
-        "refurbished_price": 669.99,
+        "listing_url": "https://www.worten.pt/produtos/iphone-16-pro-max-recondicionado-flippers-como-novo-6-7-512-gb-preto-titanio-8290892",
+        "refurbished_price": 989.99,
         "condition": "Como Novo",
         "warranty_months": 36,
         "seller": "Worten",
@@ -266,28 +291,28 @@
         "match_confidence": "medium",
         "demo": 0,
         "active": 1,
-        "first_seen_at": "2026-11-18T12:53:08Z",
-        "last_seen_at": "2026-11-18T17:40:10Z",
+        "first_seen_at": "2026-11-20T00:19:48Z",
+        "last_seen_at": "2026-11-20T00:19:48Z",
         "source_id": "worten-recondicionados-telemoveis",
         "warranty_source": "retailer-policy",
         "warranty_url": "https://www.worten.pt/termos-e-condicoes-da-conta-online",
-        "identity_key": "worten-internal-ean-5607894869703",
-        "title": "iPhone 16 APPLE (Recondicionado Flippers Como Novo - 6.1'' - 128 GB - Preto)",
+        "identity_key": "mfg-MYX03QL/A",
+        "title": "iPhone 16 Pro Max (Recondicionado Flippers Como Novo - 6.7'' - 512 GB - Preto Titânio)",
         "brand": "APPLE",
         "category": "smartphones-tablets",
-        "sku": "8290542",
-        "raw_sku": "8290542",
-        "ean": "5607894869703",
+        "sku": "8290892",
+        "raw_sku": "8290892",
+        "ean": "5607894892411",
         "mpn": "",
-        "best_new_price": 979.99,
-        "saving_eur": 310.0,
-        "saving_percent": 31.6,
+        "best_new_price": 1759.0,
+        "saving_eur": 769.01,
+        "saving_percent": 43.7,
         "score": 100,
         "verdict": "excellent",
         "rn": 1,
-        "url_new": "https://www.worten.pt/produtos/iphone-16-apple-6-1-128-gb-preto-8155748",
-        "url_new_source": "worten-new-search",
-        "new_price_checked_at": "2026-11-18T12:53:08Z",
+        "url_new": "https://www.pccomponentes.pt/apple-iphone-16-pro-max-512-gb-preto?offer=633c475d-b328-4162-8759-5323b5557b4e",
+        "url_new_source": "identity-pccomponentes-product-offer",
+        "new_price_checked_at": "2026-11-18T15:29:39Z",
         "store": "Worten",
         "category_label": "Smartphones & Tablets",
         "warnings": [
@@ -300,15 +325,18 @@
           "Estado elevado",
           "Comparação alta confiança"
         ],
-        "url_pt": "https://www.worten.pt/produtos/iphone-16-apple-6-1-128-gb-preto-8155748",
+        "new_store_unavailable": true,
+        "offer_valid_until": "2026-11-23T00:19:48Z",
+        "new_valid_until": "2026-11-25T15:29:39Z",
+        "url_pt": "https://www.pccomponentes.pt/apple-iphone-16-pro-max-512-gb-preto?offer=633c475d-b328-4162-8759-5323b5557b4e",
         "url_amz": ""
       },
       {
-        "id": "worten-ffffffff-0000-4000-a001-0000007a33ad",
-        "product_id": "ean-5607894327050",
+        "id": "worten-ffffffff-0000-4000-a001-0000007a335f",
+        "product_id": "ean-5607894302019",
         "store_id": "worten",
-        "listing_url": "https://www.worten.pt/produtos/iphone-15-apple-recondicionado-como-novo-6-1-128-gb-preto-8008621",
-        "refurbished_price": 489.99,
+        "listing_url": "https://www.worten.pt/produtos/iphone-15-plus-apple-recondicionado-flippers-como-novo-6-7-256-gb-verde-8008543",
+        "refurbished_price": 599.99,
         "condition": "Como Novo",
         "warranty_months": 36,
         "seller": "Worten",
@@ -316,28 +344,28 @@
         "match_confidence": "medium",
         "demo": 0,
         "active": 1,
-        "first_seen_at": "2026-09-19T18:28:12Z",
-        "last_seen_at": "2026-11-18T17:40:10Z",
+        "first_seen_at": "2026-11-20T00:19:48Z",
+        "last_seen_at": "2026-11-20T00:19:48Z",
         "source_id": "worten-recondicionados-telemoveis",
         "warranty_source": "retailer-policy",
         "warranty_url": "https://www.worten.pt/termos-e-condicoes-da-conta-online",
-        "identity_key": "worten-internal-ean-5607894327050",
-        "title": "iPhone 15 APPLE (Recondicionado Como Novo - 6.1'' - 128 GB - Preto)",
+        "identity_key": "mfg-MU1G3QL/A",
+        "title": "iPhone 15 Plus APPLE (Recondicionado Flippers Como Novo - 6.7'' - 256 GB - Verde)",
         "brand": "APPLE",
         "category": "smartphones-tablets",
-        "sku": "8008621",
-        "raw_sku": "8008621",
-        "ean": "5607894327050",
+        "sku": "8008543",
+        "raw_sku": "8008543",
+        "ean": "5607894302019",
         "mpn": "",
-        "best_new_price": 699.99,
-        "saving_eur": 210.0,
-        "saving_percent": 30.0,
+        "best_new_price": 1039.0,
+        "saving_eur": 439.01,
+        "saving_percent": 42.3,
         "score": 100,
         "verdict": "excellent",
         "rn": 1,
-        "url_new": "https://www.worten.pt/produtos/iphone-15-apple-6-1-128-gb-preto-7851120",
-        "url_new_source": "worten-new-search",
-        "new_price_checked_at": "2026-11-18T11:46:39Z",
+        "url_new": "https://www.pccomponentes.pt/apple-iphone-15-plus-256-gb-verde?offer=076bf1dc-cffc-4cd4-adf0-84904a060768",
+        "url_new_source": "identity-pccomponentes-verified-new-offer",
+        "new_price_checked_at": "2026-11-18T16:33:36Z",
         "store": "Worten",
         "category_label": "Smartphones & Tablets",
         "warnings": [
@@ -350,15 +378,18 @@
           "Estado elevado",
           "Comparação alta confiança"
         ],
-        "url_pt": "https://www.worten.pt/produtos/iphone-15-apple-6-1-128-gb-preto-7851120",
+        "new_store_unavailable": true,
+        "offer_valid_until": "2026-11-23T00:19:48Z",
+        "new_valid_until": "2026-11-25T16:33:36Z",
+        "url_pt": "https://www.pccomponentes.pt/apple-iphone-15-plus-256-gb-verde?offer=076bf1dc-cffc-4cd4-adf0-84904a060768",
         "url_amz": ""
       },
       {
-        "id": "pcdiga-R081633",
-        "product_id": "pcdiga-9S6-3CE11M-035",
+        "id": "pcdiga-R078837",
+        "product_id": "pcdiga-90LM0AW0-B01371",
         "store_id": "pcdiga",
-        "listing_url": "https://www.pcdiga.com/imagem-e-som/monitores/monitores/monitor-curvo-msi-mag-276cf-e20-rapid-va-w-led-27-fhd-16-9-200hz-vesa-adaptive-sync-recondicionado-9s6-3ce11m-035-4711377286671-refurbished?grade=A",
-        "refurbished_price": 123.0,
+        "listing_url": "https://www.pcdiga.com/imagem-e-som/monitores/monitores/monitor-asus-rog-strix-xg279cns-ips-27-fhd-16-9-380hz-oc-adaptive-sync-recondicionado-90lm0aw0-b01371-4711387820926-refurbished?grade=A",
+        "refurbished_price": 291.0,
         "condition": "Grau A",
         "warranty_months": 36,
         "seller": "PCDIGA",
@@ -367,27 +398,27 @@
         "demo": 0,
         "active": 1,
         "first_seen_at": "2026-11-18T12:53:08Z",
-        "last_seen_at": "2026-11-19T23:32:04Z",
+        "last_seen_at": "2026-11-20T00:26:25Z",
         "source_id": "pcdiga-recondicionados",
         "warranty_source": "product-page",
-        "warranty_url": "https://www.pcdiga.com/imagem-e-som/monitores/monitores/monitor-curvo-msi-mag-276cf-e20-rapid-va-w-led-27-fhd-16-9-200hz-vesa-adaptive-sync-recondicionado-9s6-3ce11m-035-4711377286671-refurbished",
-        "identity_key": "mfg-9S6-3CE11M-035",
-        "title": "Monitor Curvo MSI MAG 276CF E20 Rapid VA W-LED 27\" FHD 16:9 200Hz VESA Adaptive Sync",
-        "brand": "MSI",
+        "warranty_url": "https://www.pcdiga.com/imagem-e-som/monitores/monitores/monitor-asus-rog-strix-xg279cns-ips-27-fhd-16-9-380hz-oc-adaptive-sync-recondicionado-90lm0aw0-b01371-4711387820926-refurbished",
+        "identity_key": "mfg-90LM0AW0-B01371",
+        "title": "Monitor Asus ROG Strix XG279CNS IPS 27\" FHD 16:9 380Hz(OC) Adaptive-Sync",
+        "brand": "Asus",
         "category": "tvs-monitores",
-        "sku": "R081633",
-        "raw_sku": "R081633",
-        "ean": "4711377286671",
-        "mpn": "9S6-3CE11M-035",
-        "best_new_price": 199.0,
-        "saving_eur": 76.0,
-        "saving_percent": 38.2,
-        "score": 90,
-        "verdict": "excellent",
+        "sku": "R078837",
+        "raw_sku": "R078837",
+        "ean": "4711387820926",
+        "mpn": "90LM0AW0-B01371",
+        "best_new_price": 399.0,
+        "saving_eur": 108.0,
+        "saving_percent": 27.1,
+        "score": 84,
+        "verdict": "good",
         "rn": 1,
-        "url_new": "https://www.pcdiga.com/imagem-e-som/monitores/monitores/monitor-curvo-msi-mag-276cf-e20-rapid-va-w-led-27-fhd-16-9-200hz-vesa-adaptive-sync-9s6-3ce11m-035-4711377286671",
+        "url_new": "https://www.pcdiga.com/imagem-e-som/monitores/monitores/monitor-asus-rog-strix-xg279cns-ips-27-fhd-16-9-380hz-oc-adaptive-sync-90lm0aw0-b01371-4711387820926",
         "url_new_source": "pcdiga-new-sku",
-        "new_price_checked_at": "2026-11-19T23:32:04Z",
+        "new_price_checked_at": "2026-11-20T00:26:25Z",
         "store": "PCDIGA",
         "category_label": "TVs & Monitores",
         "warnings": [
@@ -395,12 +426,14 @@
         ],
         "reasons": [
           "Poupança absoluta aceitável",
-          "Poupança percentual forte",
+          "Poupança percentual boa",
           "Garantia longa",
           "Estado pouco claro",
           "Comparação alta confiança"
         ],
-        "url_pt": "https://www.pcdiga.com/imagem-e-som/monitores/monitores/monitor-curvo-msi-mag-276cf-e20-rapid-va-w-led-27-fhd-16-9-200hz-vesa-adaptive-sync-9s6-3ce11m-035-4711377286671",
+        "offer_valid_until": "2026-11-23T00:26:25Z",
+        "new_valid_until": "2026-11-23T00:26:25Z",
+        "url_pt": "https://www.pcdiga.com/imagem-e-som/monitores/monitores/monitor-asus-rog-strix-xg279cns-ips-27-fhd-16-9-380hz-oc-adaptive-sync-90lm0aw0-b01371-4711387820926",
         "url_amz": ""
       },
       {
@@ -417,7 +450,7 @@
         "demo": 0,
         "active": 1,
         "first_seen_at": "2026-11-18T12:53:08Z",
-        "last_seen_at": "2026-11-19T23:32:04Z",
+        "last_seen_at": "2026-11-20T00:26:25Z",
         "source_id": "pcdiga-recondicionados",
         "warranty_source": "product-page",
         "warranty_url": "https://www.pcdiga.com/mobilidade/wearables/smartwatch/smartwatch-samsung-galaxy-watch-8-classic-46mm-gps-lte-branco-recondicionado-sm-l505fzwaeub-8806097480013-refurbished",
@@ -437,7 +470,7 @@
         "rn": 1,
         "url_new": "https://www.pcdiga.com/mobilidade/wearables/smartwatch/smartwatch-samsung-galaxy-watch-8-classic-46mm-gps-lte-branco-sm-l505fzwaeub-8806097480013",
         "url_new_source": "pcdiga-new-sku",
-        "new_price_checked_at": "2026-11-19T23:32:04Z",
+        "new_price_checked_at": "2026-11-20T00:26:25Z",
         "store": "PCDIGA",
         "category_label": "Casa & Tech",
         "warnings": [
@@ -450,6 +483,8 @@
           "Estado pouco claro",
           "Comparação alta confiança"
         ],
+        "offer_valid_until": "2026-11-23T00:26:25Z",
+        "new_valid_until": "2026-11-23T00:26:25Z",
         "url_pt": "https://www.pcdiga.com/mobilidade/wearables/smartwatch/smartwatch-samsung-galaxy-watch-8-classic-46mm-gps-lte-branco-sm-l505fzwaeub-8806097480013",
         "url_amz": ""
       },
@@ -467,7 +502,7 @@
         "demo": 0,
         "active": 1,
         "first_seen_at": "2026-09-19T18:28:12Z",
-        "last_seen_at": "2026-11-19T23:32:04Z",
+        "last_seen_at": "2026-11-20T00:26:25Z",
         "source_id": "pcdiga-recondicionados",
         "warranty_source": "product-page",
         "warranty_url": "https://www.pcdiga.com/computadores-e-software/microcomputadores/acessorios/dissipador-com-ventoinha-raspberry-pi-active-cooler-para-raspberry-pi-5-sc1148-recondicionado-095-2493-5056561803357-refurbished",
@@ -487,7 +522,7 @@
         "rn": 1,
         "url_new": "https://www.pcdiga.com/computadores-e-software/microcomputadores/acessorios/dissipador-com-ventoinha-raspberry-pi-active-cooler-para-raspberry-pi-5-sc1148-095-2493-5056561803357",
         "url_new_source": "pcdiga-new-sku",
-        "new_price_checked_at": "2026-11-19T23:32:04Z",
+        "new_price_checked_at": "2026-11-20T00:26:25Z",
         "store": "PCDIGA",
         "category_label": "Smartphones & Tablets",
         "warnings": [
@@ -500,6 +535,8 @@
           "Estado pouco claro",
           "Comparação alta confiança"
         ],
+        "offer_valid_until": "2026-11-23T00:26:25Z",
+        "new_valid_until": "2026-11-23T00:26:25Z",
         "url_pt": "https://www.pcdiga.com/computadores-e-software/microcomputadores/acessorios/dissipador-com-ventoinha-raspberry-pi-active-cooler-para-raspberry-pi-5-sc1148-095-2493-5056561803357",
         "url_amz": ""
       },
@@ -541,6 +578,7 @@
         "store": "PcComponentes",
         "category_label": "Casa & Tech",
         "warnings": [
+          "Loja indisponível · preço confirmado em 2026-11-18",
           "Confirma preço, estado e garantia na loja original antes de comprar"
         ],
         "reasons": [
@@ -550,6 +588,10 @@
           "Estado elevado",
           "Comparação alta confiança"
         ],
+        "inventory_unavailable": true,
+        "new_store_unavailable": true,
+        "offer_valid_until": "2026-11-25T13:25:38Z",
+        "new_valid_until": "2026-11-25T13:25:38Z",
         "url_pt": "https://www.pccomponentes.pt/barra-de-video-poly-studio-x72-hp-4k-ultra-hd-ia-para-salas-grandes?offer=eac18a24-6b5b-446e-a018-8c58b45d8bc6",
         "url_amz": ""
       },
@@ -591,6 +633,7 @@
         "store": "PcComponentes",
         "category_label": "Casa & Tech",
         "warnings": [
+          "Loja indisponível · preço confirmado em 2026-11-18",
           "Confirma preço, estado e garantia na loja original antes de comprar"
         ],
         "reasons": [
@@ -600,6 +643,10 @@
           "Estado elevado",
           "Comparação alta confiança"
         ],
+        "inventory_unavailable": true,
+        "new_store_unavailable": true,
+        "offer_valid_until": "2026-11-25T13:27:50Z",
+        "new_valid_until": "2026-11-25T13:27:50Z",
         "url_pt": "https://www.pccomponentes.pt/hp-z4-g5-intel-xeon-w3-2425-64gb-1tb-ssd-rtx-2000-ada-windows-11-pro-torre?offer=f1e1f242-37b0-4f59-997a-73165999b256",
         "url_amz": ""
       }

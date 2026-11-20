@@ -1,55 +1,75 @@
 {
-  "generated_at": "2026-11-20T00:34:45Z",
+  "generated_at": "2026-11-20T00:58:30Z",
   "health": [
     {
       "source_id": "pcdiga-recondicionados",
-      "checked_at": "2026-11-20T00:26:25Z",
+      "checked_at": "2026-11-20T00:51:50Z",
       "status": "ok"
     },
     {
       "source_id": "pcdiga-new-sku",
-      "checked_at": "2026-11-20T00:26:25Z",
-      "status": "ok"
-    },
-    {
-      "source_id": "pcdiga-recondicionados",
-      "checked_at": "2026-11-20T00:19:48Z",
-      "status": "ok"
-    },
-    {
-      "source_id": "pcdiga-new-sku",
-      "checked_at": "2026-11-20T00:19:48Z",
+      "checked_at": "2026-11-20T00:51:50Z",
       "status": "ok"
     },
     {
       "source_id": "worten-recondicionados-tablets",
-      "checked_at": "2026-11-20T00:19:48Z",
+      "checked_at": "2026-11-20T00:51:50Z",
       "status": "ok"
     },
     {
       "source_id": "worten-recondicionados-computadores",
-      "checked_at": "2026-11-20T00:19:48Z",
+      "checked_at": "2026-11-20T00:51:50Z",
       "status": "ok"
     },
     {
       "source_id": "worten-recondicionados-smartwatches",
-      "checked_at": "2026-11-20T00:19:48Z",
+      "checked_at": "2026-11-20T00:51:50Z",
       "status": "ok"
     },
     {
       "source_id": "worten-recondicionados-telemoveis",
-      "checked_at": "2026-11-20T00:19:48Z",
+      "checked_at": "2026-11-20T00:51:50Z",
       "status": "ok"
     },
     {
       "source_id": "pccomponentes-replay",
-      "checked_at": "2026-11-20T00:19:48Z",
+      "checked_at": "2026-11-20T00:51:50Z",
       "status": "suspended"
     },
     {
       "source_id": "worten-new-search",
-      "checked_at": "2026-11-20T00:26:18Z",
+      "checked_at": "2026-11-20T00:58:30Z",
       "status": "ok"
+    },
+    {
+      "source_id": "pcdiga-recondicionados",
+      "checked_at": "2026-11-20T00:49:07Z",
+      "status": "ok"
+    },
+    {
+      "source_id": "worten-recondicionados-tablets",
+      "checked_at": "2026-11-20T00:49:07Z",
+      "status": "ok"
+    },
+    {
+      "source_id": "worten-recondicionados-computadores",
+      "checked_at": "2026-11-20T00:49:07Z",
+      "status": "ok"
+    },
+    {
+      "source_id": "worten-recondicionados-smartwatches",
+      "checked_at": "2026-11-20T00:49:07Z",
+      "status": "ok"
+    },
+    {
+      "source_id": "worten-recondicionados-telemoveis",
+      "checked_at": "2026-11-20T00:49:07Z",
+      "status": "ok"
+    },
+    {
+      "source_id": "pccomponentes-replay",
+      "checked_at": "2026-11-20T00:49:07Z",
+      "status": "suspended"
     },
     {
       "source_id": "pcdiga-recondicionados",

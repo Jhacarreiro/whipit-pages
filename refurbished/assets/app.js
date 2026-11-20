@@ -1,6 +1,9 @@
 
 let offersRequest;
 let searchVersion = 0;
+let activeQuery = '';
+let searchDeadline = Infinity;
+let searchShown = 0;
 const base = (window.REFURB_BASE_PATH || '').replace(/\/$/, '');
 const euroAmount = new Intl.NumberFormat('pt-PT', {minimumFractionDigits: 2, maximumFractionDigits: 2});
 const eur = v => v == null ? '—' : euroAmount.format(v).replace(/,00$/, '') + '€';
@@ -71,12 +74,15 @@ async function offers(){
   }
   return offersRequest;
 }
-async function runSearch(q){
+async function runSearch(q, initialCount = 48){
   const content = document.querySelector('#page-content');
   const results = document.querySelector('#search-results');
   if(!results || !content) return;
   const version = ++searchVersion;
   q = q.trim().toLowerCase();
+  activeQuery = q;
+  searchDeadline = Infinity;
+  searchShown = 0;
   if(!q){results.hidden = true; results.innerHTML = ''; content.hidden = false; return;}
   let allOffers;
   try { allOffers = await offers(); }
@@ -89,6 +95,7 @@ async function runSearch(q){
   }
   if (version !== searchVersion) return;
   const list = allOffers.filter(o => Date.now() < Date.parse(o.offer_valid_until) && [o.title,o.category_label,o.store,o.seller,o.condition,o.brand,o.model,skuOf(o),o.sku,o.raw_sku,o.mpn,o.ean].join(' ').toLowerCase().includes(q));
+  searchDeadline = list.reduce((soonest, o) => Math.min(soonest, Date.parse(o.offer_valid_until)), Infinity);
   content.hidden = true; results.hidden = false;
   results.innerHTML = `<div class="section-title full"><h2>Resultados</h2><small>${list.length} ${list.length === 1 ? 'oferta' : 'ofertas'}</small></div>`;
   if (!list.length) {
@@ -100,10 +107,15 @@ async function runSearch(q){
   more.className = 'button more-results';
   more.textContent = 'Mostrar mais resultados';
   results.append(more);
-  let shown = 0;
   function showBatch(event) {
-    const start = shown;
-    shown = Math.min(start + 48, list.length);
+    if (version !== searchVersion) return;
+    if (Date.now() >= searchDeadline) {
+      runSearch(q, event ? searchShown + 48 : initialCount);
+      return;
+    }
+    const start = searchShown;
+    const shown = Math.min(event ? start + 48 : initialCount, list.length);
+    searchShown = shown;
     more.insertAdjacentHTML('beforebegin', list.slice(start, shown).map(offerCard).join(''));
     if (event) results.querySelectorAll('[data-offer-card]')[start]?.querySelector('a')?.focus();
     if (shown === list.length) more.remove();
@@ -116,7 +128,10 @@ let expiryTimer;
 function expireDisplayedPrices() {
   clearTimeout(expiryTimer);
   const now = Date.now();
-  let next = Infinity;
+  if (activeQuery && searchDeadline <= now) {
+    runSearch(activeQuery, Math.max(48, searchShown));
+  }
+  let next = searchDeadline;
   for (const card of document.querySelectorAll('[data-offer-until]')) {
     const expires = Date.parse(card.dataset.offerUntil);
     if (expires <= now) { card.remove(); continue; }

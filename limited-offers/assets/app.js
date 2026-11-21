@@ -420,8 +420,32 @@ function escapeHtml(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','
     }
     return data;
   }
-  function currentAlert(){
-    return {match_type:$('alerts-type')?.value||'keyword', match_value:($('alerts-value')?.value||'').trim(), label:($('alerts-label')?.value||'').trim()};
+  const matchType = $('alerts-type');
+  const matchFields = {
+    keyword: $('alerts-value'),
+    brand: $('alerts-brand'),
+    category: $('alerts-category'),
+    product: $('alerts-product')
+  };
+  function syncMatchField() {
+    for (const [type, field] of Object.entries(matchFields)) {
+      field.hidden = field.disabled = type !== matchType.value;
+    }
+  }
+  function prepareAlert(type, value, label = '') {
+    matchType.value = type;
+    for (const field of Object.values(matchFields)) field.value = '';
+    matchFields[type].value = value;
+    $('alerts-label').value = label;
+    syncMatchField();
+  }
+  matchType.addEventListener('change', syncMatchField);
+  function currentAlert() {
+    return {
+      match_type: matchType.value,
+      match_value: matchFields[matchType.value].value.trim(),
+      label: $('alerts-label').value.trim()
+    };
   }
   function validAlert(){
     const a=currentAlert();
@@ -432,9 +456,8 @@ function escapeHtml(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','
   bindDialog(modal, '[data-close-alerts]');
   $('alerts-open')?.addEventListener('click', () => {
     const term=q?.value.trim();
-    $('alerts-type').value=term ? 'keyword' : brand?.value ? 'brand' : category ? 'category' : 'keyword';
-    $('alerts-value').value=term || brand?.value || category || '';
-    $('alerts-label').value='';
+    const type = term ? 'keyword' : brand?.value ? 'brand' : category ? 'category' : 'keyword';
+    prepareAlert(type, term || brand?.value || category || '');
     open();
   });
   async function refresh(){
@@ -519,7 +542,7 @@ function escapeHtml(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','
     const alert = validAlert();
     if (!alert) return;
     await call({alerts_action:'create', ...alert});
-    $('alerts-value').value = '';
+    matchFields[alert.match_type].value = '';
     $('alerts-label').value = '';
     track('alert_created',{match_type:alert.match_type});
     if (await refresh()) setStatus(UI.alert_created);
@@ -544,7 +567,7 @@ function escapeHtml(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','
     offerDialog.close();
     open();
     const value=card.dataset.productKey||card.dataset.availabilityId||card.dataset.productTitle||'';
-    $('alerts-type').value='product'; $('alerts-value').value=value; $('alerts-label').value=card.dataset.productTitle||'';
+    prepareAlert('product', value, card.dataset.productTitle || '');
     setStatus(UI.product_ready)
   }));
 })();

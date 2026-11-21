@@ -16,6 +16,11 @@ body {--paper:#fff;--ink:#171719;--muted:#535961;--rule:#dce0e4;--line:#dce0e4;-
 #saved[aria-pressed=true] svg,.save-offer[aria-pressed=true] svg {fill:currentColor}
 .shopfront .alert-primary {display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;border:0;border-radius:6px;background:var(--action);color:white;font-size:15px;font-weight:700;padding:10px 18px}
 .alert-primary:hover {filter:brightness(.88)}
+
+.shopfront .alerts-panel button.button:not(.secondary) {color:#fff;background:#171717;font-weight:700}
+.shopfront .alerts-panel button.shops-close {color:#171717;background:#f4f2ed;font-size:24px}
+.alerts-panel label[for="alerts-label"] {display:block;font-size:14px;font-weight:600;margin-bottom:4px}
+.alerts-panel .alerts-row > * {min-width:0}
 .mast-actions .country-menu {position:relative}
 .mast-actions .country-menu summary {min-height:40px;display:flex;align-items:center;gap:6px;border:1px solid var(--rule);border-radius:5px;padding:5px 9px;cursor:pointer;font-size:14px}
 .mast-actions .country-menu summary::after {content:"▾"}

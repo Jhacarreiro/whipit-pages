@@ -402,6 +402,9 @@ function escapeHtml(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','
   const tokenKey='limitedOffersAlertToken';
   const token=()=>localStorage.getItem(tokenKey)||'';
   const setStatus=t=>{status.textContent=t};
+  const saveButton = $('alerts-create');
+  const alertList = $('alerts-list');
+  const alertEmpty = $('alerts-empty');
   async function call(payload,authz=true){
     const headers={'Content-Type':'application/json'};
     if(authz&&token()) headers.Authorization='Bearer '+token();
@@ -427,10 +430,15 @@ function escapeHtml(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','
     category: $('alerts-category'),
     product: $('alerts-product')
   };
+  const matchLabels = {keyword: UI.keyword, brand: UI.brand_option, category: UI.category_option, product: UI.alert_product_reference};
   function syncMatchField() {
+    const selected = matchType.value;
     for (const [type, field] of Object.entries(matchFields)) {
-      field.hidden = field.disabled = type !== matchType.value;
+      field.hidden = field.disabled = type !== selected;
     }
+    const label = $('alerts-match-label');
+    label.htmlFor = matchFields[selected].id;
+    label.textContent = matchLabels[selected];
   }
   function prepareAlert(type, value, label = '') {
     matchType.value = type;
@@ -462,25 +470,26 @@ function escapeHtml(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','
   });
   async function refresh(){
     const session = token();
-    auth.hidden = !!session;
-    app.hidden = !session;
-    $('alerts-list').replaceChildren();
+    auth.hidden = Boolean(session);
+    app.hidden = saveButton.hidden = !session;
+    alertList.replaceChildren();
+    alertEmpty.hidden = true;
     if (!session) {
       setStatus(UI.confirm_contact);
       return false;
     }
+    setStatus('');
     try {
       const data = await call({alerts_action:'list'});
       if (session !== token()) return false;
       renderList(data.alerts || []);
-      setStatus(UI.signed_in);
       return true;
     } catch (error) {
       if (session !== token()) return false;
       if (error.status === 401) {
         localStorage.removeItem(tokenKey);
         auth.hidden = false;
-        app.hidden = true;
+        app.hidden = saveButton.hidden = true;
         setStatus(UI.expired_session);
       } else {
         setStatus(UI.load_failed);
@@ -498,23 +507,49 @@ function escapeHtml(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','
   }
 
   function renderList(alerts) {
-    const box = $('alerts-list');
     const active = alerts.filter(a => a.enabled !== 0 && (a.country || 'PT') === country);
-    if (!active.length) {
-      box.innerHTML = `<p class="modal-note">${escapeHtml(UI.empty_alerts)}</p>`;
-      return;
-    }
-    box.innerHTML = active.map(a => `<article class="alert-item"><div>
-      <b>${escapeHtml(a.label || a.match_value)}</b><span>${escapeHtml(a.channel)}</span>
-      </div><button class="button secondary" type="button" data-alert-delete="${escapeAttr(a.id)}">${escapeHtml(UI.disable)}</button></article>`).join('');
-    box.querySelectorAll('[data-alert-delete]').forEach(button => bindAction(button, async () => {
+    const channels = {email: 'Email', whatsapp: 'WhatsApp'};
+    alertEmpty.hidden = Boolean(active.length);
+    alertList.innerHTML = active.map(alert => {
+      const id = escapeAttr(alert.id);
+      return `<li class="alert-item">
+        <div><strong id="alert-entry-${id}">${escapeHtml(alert.label || alert.match_value)}</strong><span>${escapeHtml(channels[alert.channel] || alert.channel)}</span></div>
+        <button class="alerts-text-action" type="button" data-alert-delete="${id}" aria-describedby="alert-entry-${id}">${escapeHtml(UI.disable)}</button>
+      </li>`;
+    }).join('');
+    alertList.querySelectorAll('[data-alert-delete]').forEach((button, index) => bindAction(button, async () => {
       await call({alerts_action:'delete', alert_id:button.dataset.alertDelete});
-      if (await refresh()) setStatus(UI.disabled);
+      if (await refresh()) {
+        const remaining = alertList.querySelectorAll('[data-alert-delete]');
+        const next = remaining[Math.min(index, remaining.length - 1)] || $('alerts-active-title');
+        next.focus();
+        setStatus(UI.disabled);
+      }
     }));
   }
 
+  const channel = $('alerts-channel');
+  const destination = $('alerts-destination');
+  function resetCode() {
+    $('alerts-code').value = '';
+    $('alerts-code-row').hidden = true;
+    setStatus(UI.confirm_contact);
+  }
+
+  channel.addEventListener('change', () => {
+    const email = channel.value === 'email';
+    destination.type = email ? 'email' : 'tel';
+    destination.autocomplete = email ? 'email' : 'tel';
+    destination.placeholder = email ? UI.email_example : UI.phone_example;
+    $('alerts-destination-label').textContent = email ? UI.email_label : UI.phone_label;
+    resetCode();
+  });
+  destination.addEventListener('input', () => {
+    if (!$('alerts-code-row').hidden) resetCode();
+  });
+
   function contact() {
-    return {channel:$('alerts-channel').value, destination:$('alerts-destination').value.trim()};
+    return {channel:channel.value, destination:destination.value.trim()};
   }
 
   bindAction($('alerts-start'), async () => {
@@ -524,6 +559,8 @@ function escapeHtml(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','
       return;
     }
     await call({alerts_action:'auth_start', ...recipient}, false);
+    const current = contact();
+    if (recipient.channel !== current.channel || recipient.destination !== current.destination) return;
     $('alerts-code-row').hidden = false;
     $('alerts-code').focus();
     setStatus(UI.code_sent);
@@ -538,7 +575,7 @@ function escapeHtml(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','
     if (await refresh()) setStatus(UI.confirmed);
   });
 
-  bindAction($('alerts-create'), async () => {
+  bindAction(saveButton, async () => {
     const alert = validAlert();
     if (!alert) return;
     await call({alerts_action:'create', ...alert});
@@ -551,11 +588,12 @@ function escapeHtml(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','
   bindAction($('alerts-logout'), async () => {
     await call({alerts_action:'logout'});
     localStorage.removeItem(tokenKey);
-    $('alerts-destination').value = '';
+    destination.value = '';
     $('alerts-code').value = '';
     $('alerts-code-row').hidden = true;
     await refresh();
     setStatus(UI.logged_out);
+    channel.focus();
   });
   function openManagementLink() {
     if (location.hash === '#alerts' && !modal.open) open();

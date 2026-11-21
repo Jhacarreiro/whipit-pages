@@ -17,10 +17,65 @@ body {--paper:#fff;--ink:#171719;--muted:#535961;--rule:#dce0e4;--line:#dce0e4;-
 .shopfront .alert-primary {display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;border:0;border-radius:6px;background:var(--action);color:white;font-size:15px;font-weight:700;padding:10px 18px}
 .alert-primary:hover {filter:brightness(.88)}
 
-.shopfront .alerts-panel button.button:not(.secondary) {color:#fff;background:#171717;font-weight:700}
-.shopfront .alerts-panel button.shops-close {color:#171717;background:#f4f2ed;font-size:24px}
-.alerts-panel label[for="alerts-label"] {display:block;font-size:14px;font-weight:600;margin-bottom:4px}
-.alerts-panel .alerts-row > * {min-width:0}
+dialog.alerts-modal {
+  position:fixed;inset:0;width:100%;height:100%;max-width:none;max-height:none;
+  margin:0;border:0;padding:16px;background:transparent;color:inherit
+}
+.alerts-modal[open] {display:grid;place-items:center}
+.alerts-modal::backdrop {background:#17191c99}
+.alerts-backdrop {position:absolute;inset:0}
+.alerts-panel {
+  position:relative;width:min(100%,620px);max-height:calc(100dvh - 32px);overflow:auto;
+  padding:clamp(16px,4vw,28px);border-radius:16px;background:var(--paper);
+  box-shadow:0 16px 48px #17191c33
+}
+.alerts-panel [hidden] {display:none}
+.alerts-header,.alerts-section-header {display:flex;align-items:center;justify-content:space-between;gap:12px}
+.alerts-header h2 {margin:0;font-size:clamp(20px,4vw,25px);line-height:1.2}
+.alerts-section h3 {margin:0;font-size:17px;line-height:1.3}
+.alerts-status {margin:8px 0 0;color:var(--muted);font-size:14px;line-height:1.45}
+.alerts-status:empty {margin:0}
+.alerts-section {display:grid;gap:14px;margin-top:18px}
+.alerts-section-divided {padding-top:14px;border-top:1px solid var(--rule)}
+.alerts-fields,.alerts-contact,.alerts-action-row {display:grid;gap:12px;align-items:end}
+.alerts-fields {grid-template-columns:minmax(0,1fr) minmax(0,1.65fr)}
+.alerts-contact {grid-template-columns:minmax(0,1fr) minmax(0,1.5fr) auto}
+.alerts-action-row {grid-template-columns:minmax(0,1fr) auto}
+.alerts-field {display:grid;gap:5px;min-width:0;font-size:14px;font-weight:650}
+.alerts-field :is(input,select) {
+  width:100%;min-width:0;min-height:44px;padding:8px 10px;border:1px solid var(--line);
+  border-radius:8px;background:var(--paper);color:var(--ink);font-size:16px;font-weight:400
+}
+.shopfront .alerts-panel button {
+  min-height:44px;padding:8px 12px;border:1px solid transparent;border-radius:8px;
+  font-size:14px;font-weight:650;line-height:1.2
+}
+.shopfront .alerts-panel .alerts-close {
+  display:grid;place-items:center;flex:none;width:44px;padding:0;background:#f1f2f5;color:var(--ink);font-size:24px
+}
+.shopfront .alerts-panel .alerts-primary {justify-self:start;background:var(--action);color:#fff;white-space:nowrap}
+.shopfront .alerts-panel .alerts-text-action {background:transparent;color:var(--action)}
+.alerts-panel button:hover:not(:disabled) {filter:brightness(.9)}
+.alerts-panel button:disabled {opacity:.6;cursor:wait}
+.alerts-panel :is(button,input,select):focus-visible {outline:2px solid var(--action);outline-offset:2px}
+.alerts-list {display:grid;gap:0;padding:0;margin:0;list-style:none}
+.alerts-list:empty {display:none}
+.alert-item {
+  display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center;
+  padding:8px 0;border-top:1px solid var(--rule)
+}
+.alert-item strong {display:block;font-size:15px;overflow-wrap:anywhere}
+.alert-item span,.alerts-empty {color:var(--muted);font-size:14px}
+.alerts-empty {margin:0}
+@media (max-width:560px) {
+  .alerts-contact {grid-template-columns:minmax(0,1fr) minmax(0,1.5fr)}
+  .alerts-contact .alerts-primary {grid-column:1/-1}
+}
+@media (max-width:440px) {
+  .alerts-fields,.alerts-action-row,.alerts-contact {grid-template-columns:minmax(0,1fr)}
+  .alerts-section-header {flex-wrap:wrap;gap:2px 10px}
+  .alerts-section-header .alerts-text-action {padding-inline:0}
+}
 .mast-actions .country-menu {position:relative}
 .mast-actions .country-menu summary {min-height:40px;display:flex;align-items:center;gap:6px;border:1px solid var(--rule);border-radius:5px;padding:5px 9px;cursor:pointer;font-size:14px}
 .mast-actions .country-menu summary::after {content:"▾"}

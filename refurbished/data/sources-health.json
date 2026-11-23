@@ -1,6 +1,51 @@
 {
-  "generated_at": "2026-11-22T00:53:47Z",
+  "generated_at": "2026-11-23T04:44:40Z",
   "health": [
+    {
+      "source_id": "pcdiga-campaign-identity",
+      "checked_at": "2026-11-23T04:44:34Z",
+      "status": "ok"
+    },
+    {
+      "source_id": "pcdiga-recondicionados",
+      "checked_at": "2026-11-23T04:38:00Z",
+      "status": "ok"
+    },
+    {
+      "source_id": "pcdiga-new-sku",
+      "checked_at": "2026-11-23T04:38:00Z",
+      "status": "ok"
+    },
+    {
+      "source_id": "worten-recondicionados-tablets",
+      "checked_at": "2026-11-23T04:38:00Z",
+      "status": "ok"
+    },
+    {
+      "source_id": "worten-recondicionados-computadores",
+      "checked_at": "2026-11-23T04:38:00Z",
+      "status": "ok"
+    },
+    {
+      "source_id": "worten-recondicionados-smartwatches",
+      "checked_at": "2026-11-23T04:38:00Z",
+      "status": "ok"
+    },
+    {
+      "source_id": "worten-recondicionados-telemoveis",
+      "checked_at": "2026-11-23T04:38:00Z",
+      "status": "ok"
+    },
+    {
+      "source_id": "pccomponentes-replay",
+      "checked_at": "2026-11-23T04:38:00Z",
+      "status": "ok"
+    },
+    {
+      "source_id": "worten-new-search",
+      "checked_at": "2026-11-23T04:44:32Z",
+      "status": "ok"
+    },
     {
       "source_id": "pcdiga-recondicionados",
       "checked_at": "2026-11-22T00:47:03Z",
@@ -204,31 +249,6 @@
     {
       "source_id": "worten-recondicionados-smartwatches",
       "checked_at": "2026-11-18T12:53:08Z",
-      "status": "ok"
-    },
-    {
-      "source_id": "worten-recondicionados-telemoveis",
-      "checked_at": "2026-11-18T12:53:08Z",
-      "status": "ok"
-    },
-    {
-      "source_id": "pccomponentes-replay",
-      "checked_at": "2026-11-18T12:53:08Z",
-      "status": "ok"
-    },
-    {
-      "source_id": "pcdiga-recondicionados",
-      "checked_at": "2026-09-19T18:28:12Z",
-      "status": "ok"
-    },
-    {
-      "source_id": "worten-recondicionados-telemoveis",
-      "checked_at": "2026-09-19T18:28:12Z",
-      "status": "ok"
-    },
-    {
-      "source_id": "pccomponentes-replay",
-      "checked_at": "2026-09-19T18:28:12Z",
       "status": "ok"
     }
   ]

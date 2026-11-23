@@ -154,7 +154,11 @@ async function openOffer(card) {
   selectedOffer=card;
   present('offer',card);
   byId('offer-date').textContent=card.querySelector('.tile-date').textContent;
-  byId('offer-stock-note').textContent=card.dataset.stockMode==='estimated' ? UI.estimated_note : UI.alert_stock_note;
+  const canCheckStock=card.dataset.retailer==='LIDL';
+  byId('offer-availability').hidden=!canCheckStock;
+  const stockNote=byId('offer-stock-note');
+  stockNote.hidden=!canCheckStock;
+  stockNote.textContent=UI.alert_stock_note;
   byId('offer-store').href=card.dataset.productUrl;
   const detail=card.querySelector('.card-title').href;
   byId('offer-permalink').href=detail;

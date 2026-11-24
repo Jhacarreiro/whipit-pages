@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T04:44:40Z",
+  "generated_at": "2026-11-24T00:41:50Z",
   "demo": false,
   "sections": {
     "best_today": [
@@ -41,6 +41,7 @@
         "store": "PcComponentes",
         "category_label": "Casa & Tech",
         "warnings": [
+          "Loja indisponível · preço confirmado em 2026-11-23",
           "Confirma preço, estado e garantia na loja original antes de comprar"
         ],
         "reasons": [
@@ -50,8 +51,10 @@
           "Estado elevado",
           "Comparação alta confiança"
         ],
-        "offer_valid_until": "2026-11-26T02:26:06Z",
-        "new_valid_until": "2026-11-26T03:52:13Z",
+        "inventory_unavailable": true,
+        "new_store_unavailable": true,
+        "offer_valid_until": "2026-11-30T02:26:06Z",
+        "new_valid_until": "2026-11-30T03:52:13Z",
         "url_pt": "https://www.pccomponentes.pt/hpe-smart-array-p408i-a-sr-gen10-controlador-modular-sas-para-servidores?offer=dbc5eba9-e5d7-4ec9-8550-e8fb62c01974",
         "url_amz": ""
       },
@@ -93,6 +96,7 @@
         "store": "PcComponentes",
         "category_label": "Casa & Tech",
         "warnings": [
+          "Loja indisponível · preço confirmado em 2026-11-23",
           "Confirma preço, estado e garantia na loja original antes de comprar"
         ],
         "reasons": [
@@ -102,8 +106,10 @@
           "Estado elevado",
           "Comparação alta confiança"
         ],
-        "offer_valid_until": "2026-11-26T02:06:55Z",
-        "new_valid_until": "2026-11-26T03:46:42Z",
+        "inventory_unavailable": true,
+        "new_store_unavailable": true,
+        "offer_valid_until": "2026-11-30T02:06:55Z",
+        "new_valid_until": "2026-11-30T03:46:42Z",
         "url_pt": "https://www.pccomponentes.pt/comutador-cisco-catalyst-9300l-24p-4x-e-gestor-l2-l3-24-portos-gigabit-ethernet?offer=da89fe96-0c48-4c93-b939-33899d22fe82",
         "url_amz": ""
       },
@@ -145,6 +151,7 @@
         "store": "PcComponentes",
         "category_label": "Portáteis",
         "warnings": [
+          "Loja indisponível · preço confirmado em 2026-11-23",
           "Confirma preço, estado e garantia na loja original antes de comprar"
         ],
         "reasons": [
@@ -154,8 +161,10 @@
           "Estado elevado",
           "Comparação alta confiança"
         ],
-        "offer_valid_until": "2026-11-26T01:08:59Z",
-        "new_valid_until": "2026-11-26T01:08:59Z",
+        "inventory_unavailable": true,
+        "new_store_unavailable": true,
+        "offer_valid_until": "2026-11-30T01:08:59Z",
+        "new_valid_until": "2026-11-30T01:08:59Z",
         "url_pt": "https://www.pccomponentes.pt/portatil-lenovo-yoga-7-16-amd-ryzen-ai-7-445-16gb-512gb-ssd-radeon-840m-windows-11?offer=8d2af411-b3f9-4c4c-b2c6-5f241507c88b",
         "url_amz": ""
       },
@@ -197,6 +206,7 @@
         "store": "PcComponentes",
         "category_label": "TVs & Monitores",
         "warnings": [
+          "Loja indisponível · preço confirmado em 2026-11-23",
           "Confirma preço, estado e garantia na loja original antes de comprar"
         ],
         "reasons": [
@@ -206,8 +216,10 @@
           "Estado elevado",
           "Comparação alta confiança"
         ],
-        "offer_valid_until": "2026-11-26T01:17:44Z",
-        "new_valid_until": "2026-11-26T03:21:15Z",
+        "inventory_unavailable": true,
+        "new_store_unavailable": true,
+        "offer_valid_until": "2026-11-30T01:17:44Z",
+        "new_valid_until": "2026-11-30T03:21:15Z",
         "url_pt": "https://www.pccomponentes.pt/monitor-hp-omen-transcend-32-31-5-ultrahd-4k-240hz-qd-oled-0-03ms-freesync-premium-pro-branco?offer=6627a4f0-5a03-4c53-bd78-8d5b2fb04ac7",
         "url_amz": ""
       },
@@ -249,6 +261,7 @@
         "store": "PcComponentes",
         "category_label": "Portáteis",
         "warnings": [
+          "Loja indisponível · preço confirmado em 2026-11-23",
           "Confirma preço, estado e garantia na loja original antes de comprar"
         ],
         "reasons": [
@@ -258,8 +271,10 @@
           "Estado elevado",
           "Comparação alta confiança"
         ],
-        "offer_valid_until": "2026-11-26T01:14:50Z",
-        "new_valid_until": "2026-11-26T03:18:59Z",
+        "inventory_unavailable": true,
+        "new_store_unavailable": true,
+        "offer_valid_until": "2026-11-30T01:14:50Z",
+        "new_valid_until": "2026-11-30T03:18:59Z",
         "url_pt": "https://www.pccomponentes.pt/estacao-de-energia-jackery-explorer-3000-v2-3072wh-2-portas-ac-bateria-lifepo4-carregamento-rapido-usb-c?offer=e235cb1b-814b-4e62-838d-3f7d4cabd20c",
         "url_amz": ""
       },
@@ -277,7 +292,7 @@
         "demo": 0,
         "active": 1,
         "first_seen_at": "2026-11-20T00:49:07Z",
-        "last_seen_at": "2026-11-23T04:38:00Z",
+        "last_seen_at": "2026-11-24T00:35:05Z",
         "source_id": "worten-recondicionados-telemoveis",
         "warranty_source": "retailer-policy",
         "warranty_url": "https://www.worten.pt/termos-e-condicoes-da-conta-online",
@@ -310,17 +325,18 @@
           "Estado elevado",
           "Comparação alta confiança"
         ],
-        "offer_valid_until": "2026-11-26T04:38:00Z",
-        "new_valid_until": "2026-11-26T04:16:49Z",
+        "new_store_unavailable": true,
+        "offer_valid_until": "2026-11-27T00:35:05Z",
+        "new_valid_until": "2026-11-30T04:16:49Z",
         "url_pt": "https://www.pccomponentes.pt/apple-iphone-16-pro-max-512-gb-preto?offer=633c475d-b328-4162-8759-5323b5557b4e",
         "url_amz": ""
       },
       {
-        "id": "worten-ffffffff-0000-4000-a001-0000008410eb",
-        "product_id": "ean-5608947390175",
+        "id": "worten-ffffffff-0000-4000-a001-000000841018",
+        "product_id": "ean-5608947388134",
         "store_id": "worten",
-        "listing_url": "https://www.worten.pt/produtos/iphone-17-pro-max-apple-recondicionado-flippers-como-novo-6-9-512-gb-laranja-cosmico-8655083",
-        "refurbished_price": 1289.0,
+        "listing_url": "https://www.worten.pt/produtos/iphone-17-apple-recondicionado-flippers-como-novo-6-3-256-gb-verde-salvia-8654872",
+        "refurbished_price": 899.99,
         "condition": "Como Novo",
         "warranty_months": 36,
         "seller": "Worten",
@@ -328,28 +344,28 @@
         "match_confidence": "medium",
         "demo": 0,
         "active": 1,
-        "first_seen_at": "2026-09-19T18:28:12Z",
-        "last_seen_at": "2026-11-23T04:38:00Z",
+        "first_seen_at": "2026-11-18T12:53:08Z",
+        "last_seen_at": "2026-11-24T00:35:05Z",
         "source_id": "worten-recondicionados-telemoveis",
         "warranty_source": "retailer-policy",
         "warranty_url": "https://www.worten.pt/termos-e-condicoes-da-conta-online",
-        "identity_key": "worten-internal-ean-5608947390175",
-        "title": "iPhone 17 Pro Max APPLE (Recondicionado Flippers Como Novo - 6.9'' - 512 GB - Laranja cósmico)",
+        "identity_key": "mfg-MG6N4QL/A",
+        "title": "iPhone 17 APPLE (Recondicionado Flippers Como Novo - 6.3'' - 256 GB - Verde sálvia)",
         "brand": "APPLE",
         "category": "smartphones-tablets",
-        "sku": "8655083",
-        "raw_sku": "8655083",
-        "ean": "5608947390175",
+        "sku": "8654872",
+        "raw_sku": "8654872",
+        "ean": "5608947388134",
         "mpn": "",
-        "best_new_price": 1699.0,
-        "saving_eur": 410.0,
-        "saving_percent": 24.1,
-        "score": 100,
+        "best_new_price": 1099.0,
+        "saving_eur": 199.01,
+        "saving_percent": 18.1,
+        "score": 97,
         "verdict": "excellent",
         "rn": 1,
-        "url_new": "https://www.worten.pt/produtos/iphone-17-pro-max-apple-6-9-512-gb-laranja-cosmico-8600364",
+        "url_new": "https://www.worten.pt/produtos/iphone-17-apple-6-3-256-gb-verde-salvia-8600332",
         "url_new_source": "worten-new-search",
-        "new_price_checked_at": "2026-11-22T00:47:03Z",
+        "new_price_checked_at": "2026-11-24T00:35:05Z",
         "store": "Worten",
         "category_label": "Smartphones & Tablets",
         "warnings": [
@@ -357,14 +373,14 @@
         ],
         "reasons": [
           "Poupança absoluta forte",
-          "Poupança percentual boa",
+          "Poupança mínima",
           "Garantia longa",
           "Estado elevado",
           "Comparação alta confiança"
         ],
-        "offer_valid_until": "2026-11-26T04:38:00Z",
-        "new_valid_until": "2026-11-25T00:47:03Z",
-        "url_pt": "https://www.worten.pt/produtos/iphone-17-pro-max-apple-6-9-512-gb-laranja-cosmico-8600364",
+        "offer_valid_until": "2026-11-27T00:35:05Z",
+        "new_valid_until": "2026-11-27T00:35:05Z",
+        "url_pt": "https://www.worten.pt/produtos/iphone-17-apple-6-3-256-gb-verde-salvia-8600332",
         "url_amz": ""
       },
       {
@@ -381,7 +397,7 @@
         "demo": 0,
         "active": 1,
         "first_seen_at": "2026-11-18T12:53:08Z",
-        "last_seen_at": "2026-11-23T04:38:00Z",
+        "last_seen_at": "2026-11-24T00:35:05Z",
         "source_id": "pcdiga-recondicionados",
         "warranty_source": "product-page",
         "warranty_url": "https://www.pcdiga.com/imagem-e-som/projecao-de-imagem/projetores/projetor-4led-benq-tk705sti-4k-uhd-150-3000-lumens-dlp-google-tv-premium-fabric-finish-recondicionado-9h-r0d77-57e-4718755096341-refurbished",
@@ -401,7 +417,7 @@
         "rn": 1,
         "url_new": "https://www.pcdiga.com/imagem-e-som/projecao-de-imagem/projetores/projetor-4led-benq-tk705sti-4k-uhd-150-3000-lumens-dlp-google-tv-premium-fabric-finish-9h-r0d77-57e-4718755096341",
         "url_new_source": "pcdiga-new-sku",
-        "new_price_checked_at": "2026-11-23T04:38:00Z",
+        "new_price_checked_at": "2026-11-24T00:35:05Z",
         "store": "PCDIGA",
         "category_label": "TVs & Monitores",
         "warnings": [
@@ -414,8 +430,8 @@
           "Estado pouco claro",
           "Comparação alta confiança"
         ],
-        "offer_valid_until": "2026-11-26T04:38:00Z",
-        "new_valid_until": "2026-11-26T04:38:00Z",
+        "offer_valid_until": "2026-11-27T00:35:05Z",
+        "new_valid_until": "2026-11-27T00:35:05Z",
         "url_pt": "https://www.pcdiga.com/imagem-e-som/projecao-de-imagem/projetores/projetor-4led-benq-tk705sti-4k-uhd-150-3000-lumens-dlp-google-tv-premium-fabric-finish-9h-r0d77-57e-4718755096341",
         "url_amz": ""
       },
@@ -433,7 +449,7 @@
         "demo": 0,
         "active": 1,
         "first_seen_at": "2026-11-18T12:53:08Z",
-        "last_seen_at": "2026-11-23T04:38:00Z",
+        "last_seen_at": "2026-11-24T00:35:05Z",
         "source_id": "pcdiga-recondicionados",
         "warranty_source": "product-page",
         "warranty_url": "https://www.pcdiga.com/imagem-e-som/monitores/monitores/monitor-asus-rog-strix-xg279cns-ips-27-fhd-16-9-380hz-oc-adaptive-sync-recondicionado-90lm0aw0-b01371-4711387820926-refurbished",
@@ -453,7 +469,7 @@
         "rn": 1,
         "url_new": "https://www.pcdiga.com/imagem-e-som/monitores/monitores/monitor-asus-rog-strix-xg279cns-ips-27-fhd-16-9-380hz-oc-adaptive-sync-90lm0aw0-b01371-4711387820926",
         "url_new_source": "pcdiga-new-sku",
-        "new_price_checked_at": "2026-11-23T04:38:00Z",
+        "new_price_checked_at": "2026-11-24T00:35:05Z",
         "store": "PCDIGA",
         "category_label": "TVs & Monitores",
         "warnings": [
@@ -466,61 +482,9 @@
           "Estado pouco claro",
           "Comparação alta confiança"
         ],
-        "offer_valid_until": "2026-11-26T04:38:00Z",
-        "new_valid_until": "2026-11-26T04:38:00Z",
+        "offer_valid_until": "2026-11-27T00:35:05Z",
+        "new_valid_until": "2026-11-27T00:35:05Z",
         "url_pt": "https://www.pcdiga.com/imagem-e-som/monitores/monitores/monitor-asus-rog-strix-xg279cns-ips-27-fhd-16-9-380hz-oc-adaptive-sync-90lm0aw0-b01371-4711387820926",
-        "url_amz": ""
-      },
-      {
-        "id": "pcdiga-R079386",
-        "product_id": "pcdiga-SM-L505FZWAEUB",
-        "store_id": "pcdiga",
-        "listing_url": "https://www.pcdiga.com/mobilidade/wearables/smartwatch/smartwatch-samsung-galaxy-watch-8-classic-46mm-gps-lte-branco-recondicionado-sm-l505fzwaeub-8806097480013-refurbished?grade=A",
-        "refurbished_price": 279.9,
-        "condition": "Grau A",
-        "warranty_months": 36,
-        "seller": "PCDIGA",
-        "stock_status": "available",
-        "match_confidence": "high",
-        "demo": 0,
-        "active": 1,
-        "first_seen_at": "2026-11-18T12:53:08Z",
-        "last_seen_at": "2026-11-23T04:38:00Z",
-        "source_id": "pcdiga-recondicionados",
-        "warranty_source": "product-page",
-        "warranty_url": "https://www.pcdiga.com/mobilidade/wearables/smartwatch/smartwatch-samsung-galaxy-watch-8-classic-46mm-gps-lte-branco-recondicionado-sm-l505fzwaeub-8806097480013-refurbished",
-        "identity_key": "mfg-SM-L505FZWAEUB",
-        "title": "Smartwatch Samsung Galaxy Watch 8 Classic 46mm GPS + LTE Branco",
-        "brand": "Samsung",
-        "category": "casa-tech",
-        "sku": "R079386",
-        "raw_sku": "R079386",
-        "ean": "8806097480013",
-        "mpn": "SM-L505FZWAEUB",
-        "best_new_price": 377.9,
-        "saving_eur": 98.0,
-        "saving_percent": 25.9,
-        "score": 84,
-        "verdict": "good",
-        "rn": 1,
-        "url_new": "https://www.pcdiga.com/mobilidade/wearables/smartwatch/smartwatch-samsung-galaxy-watch-8-classic-46mm-gps-lte-branco-sm-l505fzwaeub-8806097480013",
-        "url_new_source": "pcdiga-new-sku",
-        "new_price_checked_at": "2026-11-23T04:38:00Z",
-        "store": "PCDIGA",
-        "category_label": "Casa & Tech",
-        "warnings": [
-          "Confirma preço, estado e garantia na loja original antes de comprar"
-        ],
-        "reasons": [
-          "Poupança absoluta aceitável",
-          "Poupança percentual boa",
-          "Garantia longa",
-          "Estado pouco claro",
-          "Comparação alta confiança"
-        ],
-        "offer_valid_until": "2026-11-26T04:38:00Z",
-        "new_valid_until": "2026-11-26T04:38:00Z",
-        "url_pt": "https://www.pcdiga.com/mobilidade/wearables/smartwatch/smartwatch-samsung-galaxy-watch-8-classic-46mm-gps-lte-branco-sm-l505fzwaeub-8806097480013",
         "url_amz": ""
       },
       {
@@ -537,7 +501,7 @@
         "demo": 0,
         "active": 1,
         "first_seen_at": "2026-09-19T18:28:12Z",
-        "last_seen_at": "2026-11-23T04:38:00Z",
+        "last_seen_at": "2026-11-24T00:35:05Z",
         "source_id": "pcdiga-recondicionados",
         "warranty_source": "product-page",
         "warranty_url": "https://www.pcdiga.com/computadores-e-software/microcomputadores/acessorios/dissipador-com-ventoinha-raspberry-pi-active-cooler-para-raspberry-pi-5-sc1148-recondicionado-095-2493-5056561803357-refurbished",
@@ -557,7 +521,7 @@
         "rn": 1,
         "url_new": "https://www.pcdiga.com/computadores-e-software/microcomputadores/acessorios/dissipador-com-ventoinha-raspberry-pi-active-cooler-para-raspberry-pi-5-sc1148-095-2493-5056561803357",
         "url_new_source": "pcdiga-new-sku",
-        "new_price_checked_at": "2026-11-23T04:38:00Z",
+        "new_price_checked_at": "2026-11-24T00:35:05Z",
         "store": "PCDIGA",
         "category_label": "Smartphones & Tablets",
         "warnings": [
@@ -570,8 +534,8 @@
           "Estado pouco claro",
           "Comparação alta confiança"
         ],
-        "offer_valid_until": "2026-11-26T04:38:00Z",
-        "new_valid_until": "2026-11-26T04:38:00Z",
+        "offer_valid_until": "2026-11-27T00:35:05Z",
+        "new_valid_until": "2026-11-27T00:35:05Z",
         "url_pt": "https://www.pcdiga.com/computadores-e-software/microcomputadores/acessorios/dissipador-com-ventoinha-raspberry-pi-active-cooler-para-raspberry-pi-5-sc1148-095-2493-5056561803357",
         "url_amz": ""
       },
@@ -613,6 +577,7 @@
         "store": "PcComponentes",
         "category_label": "Casa & Tech",
         "warnings": [
+          "Loja indisponível · preço confirmado em 2026-11-23",
           "Confirma preço, estado e garantia na loja original antes de comprar"
         ],
         "reasons": [
@@ -622,9 +587,66 @@
           "Estado elevado",
           "Comparação alta confiança"
         ],
-        "offer_valid_until": "2026-11-26T01:30:35Z",
-        "new_valid_until": "2026-11-26T01:30:35Z",
+        "inventory_unavailable": true,
+        "new_store_unavailable": true,
+        "offer_valid_until": "2026-11-30T01:30:35Z",
+        "new_valid_until": "2026-11-30T01:30:35Z",
         "url_pt": "https://www.pccomponentes.pt/barra-de-video-poly-studio-x72-hp-4k-ultra-hd-ia-para-salas-grandes?offer=eac18a24-6b5b-446e-a018-8c58b45d8bc6",
+        "url_amz": ""
+      },
+      {
+        "id": "pccomponentes-251a5996-81c6-4d07-a6e7-baae715420ae",
+        "product_id": "pccomponentes-10988962",
+        "store_id": "pccomponentes",
+        "listing_url": "https://www.pccomponentes.pt/camara-de-videoconferencia-poly-studio-v72-4k-uhd-dual-wi-fi-branco?offer=251a5996-81c6-4d07-a6e7-baae715420ae",
+        "refurbished_price": 2968.64,
+        "condition": "Como Novo",
+        "warranty_months": 36,
+        "seller": "Leasi-pt",
+        "stock_status": "available",
+        "match_confidence": "high",
+        "demo": 0,
+        "active": 1,
+        "first_seen_at": "2026-11-23T01:31:39Z",
+        "last_seen_at": "2026-11-23T01:31:39Z",
+        "source_id": "pccomponentes-campaign",
+        "warranty_source": "retailer-policy",
+        "warranty_url": "https://www.pccomponentes.pt/landings/condicoes-gerais-de-marketplace",
+        "identity_key": "mfg-AV1E3AA",
+        "title": "Câmara de Videoconferência Poly Studio V72 4K UHD Dual Wi-Fi Branco",
+        "brand": "Poly",
+        "category": "casa-tech",
+        "sku": "10988962",
+        "raw_sku": "10988962",
+        "ean": "00198701635314",
+        "mpn": "AV1E3AA",
+        "best_new_price": 6006.1,
+        "saving_eur": 3037.46,
+        "saving_percent": 50.6,
+        "score": 100,
+        "verdict": "excellent",
+        "rn": 1,
+        "url_new": "https://www.pccomponentes.pt/camara-de-videoconferencia-poly-studio-v72-4k-uhd-dual-wi-fi-branco?offer=7488c6b7-7868-4535-9249-84d12accc47f",
+        "url_new_source": "pccomponentes-product-offer",
+        "new_price_checked_at": "2026-11-23T01:31:39Z",
+        "store": "PcComponentes",
+        "category_label": "Casa & Tech",
+        "warnings": [
+          "Loja indisponível · preço confirmado em 2026-11-23",
+          "Confirma preço, estado e garantia na loja original antes de comprar"
+        ],
+        "reasons": [
+          "Poupança absoluta forte",
+          "Poupança percentual forte",
+          "Garantia longa",
+          "Estado elevado",
+          "Comparação alta confiança"
+        ],
+        "inventory_unavailable": true,
+        "new_store_unavailable": true,
+        "offer_valid_until": "2026-11-30T01:31:39Z",
+        "new_valid_until": "2026-11-30T01:31:39Z",
+        "url_pt": "https://www.pccomponentes.pt/camara-de-videoconferencia-poly-studio-v72-4k-uhd-dual-wi-fi-branco?offer=7488c6b7-7868-4535-9249-84d12accc47f",
         "url_amz": ""
       }
     ]

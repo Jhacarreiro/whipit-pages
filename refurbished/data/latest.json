@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T00:41:59Z",
+  "generated_at": "2026-11-28T00:41:33Z",
   "demo": false,
   "sections": {
     "best_today": [
@@ -283,7 +283,7 @@
         "product_id": "ean-5608947388134",
         "store_id": "worten",
         "listing_url": "https://www.worten.pt/produtos/iphone-17-apple-recondicionado-flippers-como-novo-6-3-256-gb-verde-salvia-8654872",
-        "refurbished_price": 899.99,
+        "refurbished_price": 879.99,
         "condition": "Como Novo",
         "warranty_months": 36,
         "seller": "Worten",
@@ -292,7 +292,7 @@
         "demo": 0,
         "active": 1,
         "first_seen_at": "2026-11-18T12:53:08Z",
-        "last_seen_at": "2026-11-27T00:35:05Z",
+        "last_seen_at": "2026-11-28T00:35:06Z",
         "source_id": "worten-recondicionados-telemoveis",
         "warranty_source": "retailer-policy",
         "warranty_url": "https://www.worten.pt/termos-e-condicoes-da-conta-online",
@@ -305,9 +305,9 @@
         "ean": "5608947388134",
         "mpn": "",
         "best_new_price": 1109.0,
-        "saving_eur": 209.01,
-        "saving_percent": 18.8,
-        "score": 97,
+        "saving_eur": 229.01,
+        "saving_percent": 20.7,
+        "score": 100,
         "verdict": "excellent",
         "rn": 1,
         "url_new": "https://www.pccomponentes.pt/apple-iphone-17-256-gb-verde-salvia?offer=ed5c27f3-a632-4f4f-8089-ea3a03b4eb41",
@@ -320,13 +320,13 @@
         ],
         "reasons": [
           "Poupança absoluta forte",
-          "Poupança mínima",
+          "Poupança percentual boa",
           "Garantia longa",
           "Estado elevado",
           "Comparação alta confiança"
         ],
         "new_store_unavailable": true,
-        "offer_valid_until": "2026-11-30T00:35:05Z",
+        "offer_valid_until": "2026-12-01T00:35:06Z",
         "new_valid_until": "2026-11-30T04:15:48Z",
         "url_pt": "https://www.pccomponentes.pt/apple-iphone-17-256-gb-verde-salvia?offer=ed5c27f3-a632-4f4f-8089-ea3a03b4eb41",
         "url_amz": ""
@@ -345,7 +345,7 @@
         "demo": 0,
         "active": 1,
         "first_seen_at": "2026-11-20T00:51:50Z",
-        "last_seen_at": "2026-11-27T00:35:05Z",
+        "last_seen_at": "2026-11-28T00:35:06Z",
         "source_id": "worten-recondicionados-telemoveis",
         "warranty_source": "retailer-policy",
         "warranty_url": "https://www.worten.pt/termos-e-condicoes-da-conta-online",
@@ -379,7 +379,7 @@
           "Comparação alta confiança"
         ],
         "new_store_unavailable": true,
-        "offer_valid_until": "2026-11-30T00:35:05Z",
+        "offer_valid_until": "2026-12-01T00:35:06Z",
         "new_valid_until": "2026-11-30T01:30:10Z",
         "url_pt": "https://www.pccomponentes.pt/apple-iphone-14-pro-max-256-gb-prata?offer=9c237054-992d-4c92-8fd8-5d1d265e42fc",
         "url_amz": ""
@@ -398,7 +398,7 @@
         "demo": 0,
         "active": 1,
         "first_seen_at": "2026-11-18T12:53:08Z",
-        "last_seen_at": "2026-11-27T00:35:05Z",
+        "last_seen_at": "2026-11-28T00:35:06Z",
         "source_id": "pcdiga-recondicionados",
         "warranty_source": "product-page",
         "warranty_url": "https://www.pcdiga.com/imagem-e-som/projecao-de-imagem/projetores/projetor-4led-benq-tk705sti-4k-uhd-150-3000-lumens-dlp-google-tv-premium-fabric-finish-recondicionado-9h-r0d77-57e-4718755096341-refurbished",
@@ -418,7 +418,7 @@
         "rn": 1,
         "url_new": "https://www.pcdiga.com/imagem-e-som/projecao-de-imagem/projetores/projetor-4led-benq-tk705sti-4k-uhd-150-3000-lumens-dlp-google-tv-premium-fabric-finish-9h-r0d77-57e-4718755096341",
         "url_new_source": "pcdiga-new-sku",
-        "new_price_checked_at": "2026-11-27T00:35:05Z",
+        "new_price_checked_at": "2026-11-28T00:35:06Z",
         "store": "PCDIGA",
         "category_label": "TVs & Monitores",
         "warnings": [
@@ -431,8 +431,8 @@
           "Estado pouco claro",
           "Comparação alta confiança"
         ],
-        "offer_valid_until": "2026-11-30T00:35:05Z",
-        "new_valid_until": "2026-11-30T00:35:05Z",
+        "offer_valid_until": "2026-12-01T00:35:06Z",
+        "new_valid_until": "2026-12-01T00:35:06Z",
         "url_pt": "https://www.pcdiga.com/imagem-e-som/projecao-de-imagem/projetores/projetor-4led-benq-tk705sti-4k-uhd-150-3000-lumens-dlp-google-tv-premium-fabric-finish-9h-r0d77-57e-4718755096341",
         "url_amz": ""
       },
@@ -450,7 +450,7 @@
         "demo": 0,
         "active": 1,
         "first_seen_at": "2026-11-18T12:53:08Z",
-        "last_seen_at": "2026-11-27T00:35:05Z",
+        "last_seen_at": "2026-11-28T00:35:06Z",
         "source_id": "pcdiga-recondicionados",
         "warranty_source": "product-page",
         "warranty_url": "https://www.pcdiga.com/imagem-e-som/monitores/monitores/monitor-asus-rog-strix-xg279cns-ips-27-fhd-16-9-380hz-oc-adaptive-sync-recondicionado-90lm0aw0-b01371-4711387820926-refurbished",
@@ -470,7 +470,7 @@
         "rn": 1,
         "url_new": "https://www.pcdiga.com/imagem-e-som/monitores/monitores/monitor-asus-rog-strix-xg279cns-ips-27-fhd-16-9-380hz-oc-adaptive-sync-90lm0aw0-b01371-4711387820926",
         "url_new_source": "pcdiga-new-sku",
-        "new_price_checked_at": "2026-11-27T00:35:05Z",
+        "new_price_checked_at": "2026-11-28T00:35:06Z",
         "store": "PCDIGA",
         "category_label": "TVs & Monitores",
         "warnings": [
@@ -483,8 +483,8 @@
           "Estado pouco claro",
           "Comparação alta confiança"
         ],
-        "offer_valid_until": "2026-11-30T00:35:05Z",
-        "new_valid_until": "2026-11-30T00:35:05Z",
+        "offer_valid_until": "2026-12-01T00:35:06Z",
+        "new_valid_until": "2026-12-01T00:35:06Z",
         "url_pt": "https://www.pcdiga.com/imagem-e-som/monitores/monitores/monitor-asus-rog-strix-xg279cns-ips-27-fhd-16-9-380hz-oc-adaptive-sync-90lm0aw0-b01371-4711387820926",
         "url_amz": ""
       },
@@ -502,7 +502,7 @@
         "demo": 0,
         "active": 1,
         "first_seen_at": "2026-09-19T18:28:12Z",
-        "last_seen_at": "2026-11-27T00:35:05Z",
+        "last_seen_at": "2026-11-28T00:35:06Z",
         "source_id": "pcdiga-recondicionados",
         "warranty_source": "product-page",
         "warranty_url": "https://www.pcdiga.com/computadores-e-software/microcomputadores/acessorios/dissipador-com-ventoinha-raspberry-pi-active-cooler-para-raspberry-pi-5-sc1148-recondicionado-095-2493-5056561803357-refurbished",
@@ -522,7 +522,7 @@
         "rn": 1,
         "url_new": "https://www.pcdiga.com/computadores-e-software/microcomputadores/acessorios/dissipador-com-ventoinha-raspberry-pi-active-cooler-para-raspberry-pi-5-sc1148-095-2493-5056561803357",
         "url_new_source": "pcdiga-new-sku",
-        "new_price_checked_at": "2026-11-27T00:35:05Z",
+        "new_price_checked_at": "2026-11-28T00:35:06Z",
         "store": "PCDIGA",
         "category_label": "Smartphones & Tablets",
         "warnings": [
@@ -535,8 +535,8 @@
           "Estado pouco claro",
           "Comparação alta confiança"
         ],
-        "offer_valid_until": "2026-11-30T00:35:05Z",
-        "new_valid_until": "2026-11-30T00:35:05Z",
+        "offer_valid_until": "2026-12-01T00:35:06Z",
+        "new_valid_until": "2026-12-01T00:35:06Z",
         "url_pt": "https://www.pcdiga.com/computadores-e-software/microcomputadores/acessorios/dissipador-com-ventoinha-raspberry-pi-active-cooler-para-raspberry-pi-5-sc1148-095-2493-5056561803357",
         "url_amz": ""
       },
